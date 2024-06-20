@@ -21,7 +21,7 @@ jobs:
           dotnet-version: '8.0'
 
       - name: build
-        working-directory: ./docs.unilake
+        working-directory: .
         run: dotnet build .
 
       - name: Assign default GitHub URL base path
@@ -46,12 +46,12 @@ jobs:
           fi
 
       - name: Build tailwind
-        working-directory: ./docs.unilake
+        working-directory: ./src
         run: |
           npm run build
 
       - name: prerender
-        working-directory: ./docs.unilake
+        working-directory: ./src
         run: |
           site_base_href=${{ env.ssg_base_href }}
           site_base_url="https://${{ env.custom_domain }}"
