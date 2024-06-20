@@ -69,6 +69,6 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./www.unilake/dist
+          publish_dir: ./src/dist
           user_name: 'GitHub Action'
           user_email: 'action@github.com'
