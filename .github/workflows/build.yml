@@ -21,7 +21,7 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-22.04
     steps:
-      - name: checkout
+      - name: Checkout
         uses: actions/checkout@v2.0.0
 
       - name: setup .net core
@@ -29,7 +29,7 @@ jobs:
         with:
           dotnet-version: '8.0'
 
-      - name: build
+      - name: Build
         working-directory: .
         run: dotnet build .
 
