@@ -1,7 +1,9 @@
 name: Build
 
 permissions:
-  contents: write
+  contents: read
+  pages: write
+  id-token: write
 
 on:
   push:
@@ -57,7 +59,7 @@ jobs:
         run: |
           npm run build
 
-      - name: prerender
+      - name: Prerender Site
         working-directory: ./src
         run: |
           site_base_href=${{ env.ssg_base_href }}
