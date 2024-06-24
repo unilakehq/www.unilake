@@ -32,7 +32,8 @@ module.exports = {
                 body: '#C1C5C0',
                 neutral: '#F9F8F6',
                 brand: '#FF6849',
-                headlines:'#F9F8F6'
+                headlines: '#F9F8F6',
+                bgNeutarl:'#DDDFDA'
             },
             boxShadow: {
 
@@ -43,9 +44,10 @@ module.exports = {
                 H4: ['24px', { lineHeight: '29.05px', fontWeight: '600' }],
                 H3: ['32px', { lineHeight: '38.73px', fontWeight: '600' }],
                 H2: ['20px', { lineHeight: '21.78px', fontWeight: '700' }],
-                Regular: ['14px', { lineHeight: '16.94px', fontWeight: '400' }],
+                Regular: ['16px', { lineHeight: '28px', fontWeight: '400' }],
                 Small: ['12px', { lineHeight: '24px', fontWeight: '400' }],
                 large: ['20px', { lineHeight: '32px', fontWeight: '700' }],
+                14: ['14px', { lineHeight: '24px', fontWeight: '600' }]
             },
             fontFamily: {
                 inter: 'Inter , sans-serif'
