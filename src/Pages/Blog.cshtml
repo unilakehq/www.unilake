@@ -2,185 +2,281 @@
 @attribute [RenderStatic]
 @inject MarkdownBlog Blog
 @{
-    ViewData["Title"] = "www.unilake Blog";
+    ViewData["Title"] = "Unilake.Www Blog";
 }
 
-<div class="container mx-auto px-5 mt-24 mb-24">
-@{
-    var posts = Blog.GetPosts();
-    var primaryPost = posts.FirstOrDefault();
-    if (primaryPost != null)
-    {
-        var authorHref = Blog.GetAuthorLink(primaryPost.Author);
-        <section>
-            <div class="mb-8 md:mb-16">
-                <div class="sm:mx-0">
-                    <a aria-label="@primaryPost.Title" href="@Blog.GetPostLink(primaryPost)">
-                        <img src="@primaryPost.Image" alt="Cover Image for @primaryPost.Title" class="shadow-sm hover:shadow-2xl transition-shadow duration-200">
-                    </a>
-                </div>
+<div class="2xl:container mx-auto font-inter">
+    @*subscribe*@
+    <section class="bg-neutral py-XXXL px-L flex justify-center">
+        <div class="flex flex-col justify-center gap-XL w-fit">
+            <div class="flex flex-col gap-M justify-center">
+                <span class="text-[40px] font-[700] leading-[44px] text-[#252532] text-center">Join Our Newsletter</span>
+                <span class="text-Regular text-body text-center">Be among the first ones to receive our latest news and offers</span>
             </div>
-            <div class="md:grid md:grid-cols-2 md:gap-x-16 lg:gap-x-8 mb-20 md:mb-28">
-                <div>
-                    <h3 class="mb-4 text-4xl lg:text-6xl leading-tight">
-                        <a class="hover:underline" href="@Blog.GetPostLink(primaryPost)">@primaryPost.Title</a>
-                    </h3>
-                    <div class="mb-4 md:mb-0 text-lg">
-                        <time datetime="@Blog.GetDateTimestamp(primaryPost.Date)">@Blog.GetDateLabel(primaryPost.Date)</time>
-                    </div>
+            <div class="flex gap-M">
+                <div class="flex bg-neutral border border-[#DDDFDA] rounded-S items-center rounded-md py-S px-M md:w-[364px] h-[40px]">
+                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.41141 1.33398H10.9221C11.6502 1.33398 12.2272 1.33398 12.6923 1.37198C13.1679 1.41083 13.5703 1.49191 13.9377 1.67913C14.5336 1.98273 15.018 2.46717 15.3216 3.06301C15.5088 3.43046 15.5899 3.83288 15.6288 4.30847C15.6668 4.77355 15.6668 5.35055 15.6667 6.07864V8.256C15.6668 8.98409 15.6668 9.56108 15.6288 10.0262C15.5899 10.5018 15.5088 10.9042 15.3216 11.2716C15.018 11.8675 14.5336 12.3519 13.9377 12.6555C13.8448 12.7029 13.7496 12.7434 13.6515 12.7783C13.5134 14.0283 12.4536 15.0007 11.1667 15.0007H7.54411C6.44316 15.0007 5.58623 15.0007 4.89884 14.9445C4.20091 14.8875 3.63385 14.7701 3.12379 14.5102C2.27706 14.0788 1.58865 13.3903 1.15722 12.5436C0.897332 12.0336 0.779928 11.4665 0.722905 10.7686C0.666743 10.0812 0.666745 9.22424 0.666748 8.12328V5.16732C0.666748 4.89118 0.890606 4.66732 1.16675 4.66732C1.44289 4.66732 1.66675 4.89118 1.66675 5.16732V8.10065C1.66675 9.22901 1.66714 10.0452 1.71958 10.6871C1.77155 11.3232 1.87214 11.744 2.04823 12.0896C2.38378 12.7482 2.91921 13.2836 3.57778 13.6192C3.92337 13.7953 4.34418 13.8958 4.98027 13.9478C5.6222 14.0003 6.43839 14.0007 7.56675 14.0007H11.1667C11.8312 14.0007 12.3947 13.5686 12.5918 12.9702C12.1447 13.0007 11.5986 13.0007 10.9221 13.0007H7.4114C6.68331 13.0007 6.10632 13.0007 5.64124 12.9627C5.16564 12.9238 4.76323 12.8427 4.39578 12.6555C3.79993 12.3519 3.31549 11.8675 3.01189 11.2716C2.82467 10.9042 2.7436 10.5018 2.70474 10.0262C2.66674 9.56108 2.66674 8.98408 2.66675 8.25598V6.07865C2.66674 5.35056 2.66674 4.77356 2.70474 4.30847C2.7436 3.83288 2.82467 3.43046 3.01189 3.06301C3.31549 2.46717 3.79993 1.98273 4.39578 1.67913C4.76323 1.49191 5.16564 1.41083 5.64124 1.37198C6.10632 1.33398 6.68332 1.33398 7.41141 1.33398ZM5.72267 2.36866C5.30892 2.40246 5.05275 2.46671 4.84977 2.57014C4.44208 2.77786 4.11063 3.10932 3.9029 3.51701C3.79948 3.71999 3.73522 3.97615 3.70142 4.38991C3.66714 4.80949 3.66675 5.34566 3.66675 6.10065V8.23398C3.66675 8.98897 3.66714 9.52514 3.70142 9.94473C3.73522 10.3585 3.79948 10.6146 3.9029 10.8176C4.11063 11.2253 4.44208 11.5568 4.84977 11.7645C5.05275 11.8679 5.30892 11.9322 5.72267 11.966C6.14226 12.0003 6.67843 12.0007 7.43341 12.0007H10.9001C11.6551 12.0007 12.1912 12.0003 12.6108 11.966C13.0246 11.9322 13.2807 11.8679 13.4837 11.7645C13.8914 11.5568 14.2229 11.2253 14.4306 10.8176C14.534 10.6146 14.5983 10.3585 14.6321 9.94473C14.6664 9.52514 14.6667 8.98897 14.6667 8.23398V6.10065C14.6667 5.34566 14.6664 4.80949 14.6321 4.38991C14.5983 3.97615 14.534 3.71999 14.4306 3.51701C14.2229 3.10932 13.8914 2.77786 13.4837 2.57014C13.2807 2.46671 13.0246 2.40246 12.6108 2.36866C12.1912 2.33437 11.6551 2.33398 10.9001 2.33398H7.43342C6.67843 2.33398 6.14226 2.33437 5.72267 2.36866ZM5.44298 4.1883C5.61549 3.97267 5.93013 3.93771 6.14576 4.11022L6.81373 4.64459C7.29502 5.02962 7.63528 5.30143 7.92043 5.49716C8.20037 5.68931 8.39937 5.78808 8.58905 5.84055C8.96708 5.94513 9.36642 5.94513 9.74445 5.84055C9.93413 5.78807 10.1331 5.68931 10.4131 5.49716C10.6982 5.30143 11.0385 5.02962 11.5198 4.64459L12.1877 4.11022C12.4034 3.93771 12.718 3.97267 12.8905 4.1883C13.063 4.40393 13.0281 4.71858 12.8124 4.89109L12.1295 5.43746C11.6666 5.80779 11.2979 6.10272 10.979 6.32162C10.6514 6.54645 10.3489 6.7109 10.0111 6.80435C9.45857 6.9572 8.87493 6.9572 8.32241 6.80435C7.98461 6.7109 7.68206 6.54645 7.35452 6.32162C7.03561 6.10273 6.66695 5.8078 6.20404 5.43747L5.52107 4.89109C5.30544 4.71858 5.27048 4.40393 5.44298 4.1883Z" fill="#252532" />
+                    </svg>
+                    <input type="email" class="w-full border-none rounded-S bg-transparent px-M py-S placeholder:text-Medium placeholder:text-body" placeholder="Email">
                 </div>
-                <div>
-                    <p class="text-lg leading-relaxed mb-4">@primaryPost.Summary</p>
-                    @if (authorHref != null)
-                    {
-                        <a class="flex items-center text-xl font-bold" href="@authorHref">
-                            <img src="@Blog.GetAuthorProfileUrl(primaryPost.Author)" class="w-12 h-12 rounded-full mr-4" alt="Author">
-                            <span>@primaryPost.Author</span>
+                <button class="bg-brand px-M py-s flex items-center text-Small text-neutral justify-center rounded-S md:w-[91px] h-[40px]">
+                    Subscribe
+                </button>
+            </div>
+            <span class="text-Regular text-faded text-center">You can easily unsubscribe at any time.</span>
+        </div>
+    </section>
+
+    <section class="py-XXXL px-L flex flex-col gap-M">
+        <span class="text-[40px] leading-[48px] font-[700] text-brand">Blog</span>
+        <span class="text-large text-[#252532]">Description</span>
+        <span class="text-Regular text-body">Lorem ipsum dolor sit amet consectetur. Augue aliquam lacus enim luctus consectetur amet blandit. Eu eleifend ipsum quam quam nunc ligula at. </span>
+    </section>
+
+    <section class="py-XL px-L flex flex-col">
+        <div class="flex flex-col gap-XXL">
+            <span class="text-[40px] leading-[48px] font-[700] text-brand">Recent articles</span>
+            <div class="">
+                <ul class="flex flex-wrap gap-M h-fit">
+                    <li class="text-Regular border border-brand text-[#252532] px-L py-SM rounded-L h-[52px]">All</li>
+                    <li class="text-Regular border border-[#DDDFDA] text-[#252532] bg-neutral px-L py-SM rounded-L h-[52px] flex gap-S items-center">
+                        <span>API</span>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.94 5.72656L8 8.7799L11.06 5.72656L12 6.66656L8 10.6666L4 6.66656L4.94 5.72656Z" fill="#070D0F" />
+                        </svg>
+                    </li>
+                    <li class="text-Regular border border-[#DDDFDA] text-[#252532] bg-neutral px-L py-SM rounded-L h-[52px]">Auth</li>
+                    <li class="text-Regular border border-[#DDDFDA] text-[#252532] bg-neutral px-L py-SM rounded-L h-[52px]">Catching / Offline-First</li>
+                    <li class="text-Regular border border-[#DDDFDA] text-[#252532] bg-neutral px-L py-SM rounded-L h-[52px]">Data Platform</li>
+                    <li class="text-Regular border border-[#DDDFDA] text-[#252532] bg-neutral px-L py-SM rounded-L h-[52px]">DevTools</li>
+                    <li class="text-Regular border border-[#DDDFDA] text-[#252532] bg-neutral px-L py-SM rounded-L h-[52px]">Forreign Data Wrapper</li>
+                    <li class="text-Regular border border-[#DDDFDA] text-[#252532] bg-neutral px-L py-SM rounded-L h-[52px]">Low-Code</li>
+                    <li class="text-Regular border border-[#DDDFDA] text-[#252532] bg-neutral px-L py-SM rounded-L h-[52px]">Messaging</li>
+                </ul>
+            </div>
+
+            <div class="grid md:gap-L gap-SM md:grid-cols-2 lg:grid-cols-3 grid-cols-1">
+
+                <div class="grid grid-cols-1 gap-L">
+                    <div class="flex-shrink-0">
+                        <a href="#">
+                            <img class="w-full rounded-S object-cover" src="./img/card/img.jpg" alt="">
                         </a>
-                    }
-                    else
-                    {
-                        <span class="flex items-center text-xl font-bold">
-                            <img src="@Blog.GetAuthorProfileUrl(primaryPost.Author)" class="w-12 h-12 rounded-full mr-4" alt="Author">
-                            <span>@primaryPost.Author</span>
-                        </span>
-                    }
+                    </div>
+                    <div class="flex flex-col gap-L">
+                        <button class="h-[32px] w-[77px] py-S px-SM rounded-[6px] bg-[#619DFF5C] text-bravo text-Small flex items-center text-center justify-center">Category</button>
+                        <span class="text-H3 text-[#252532]">Blog title heading </span>
+                        <span class="text-Medium text-[#525D61]">Lorem ipsum dolor sit amet consectetur. Sit ipsum in aenean sed diam. Et pretium nec elementum enim viverra nunc risus ac facilisis.</span>
+                        <a class="" href="about#">
+                            <div class="flex items-center gap-S">
+                                <span class="text-Regular text-brand">Read the article</span>
+                                <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.97978 0.979457C8.17504 0.784193 8.49162 0.784191 8.68688 0.979452L13.3536 5.64605C13.4473 5.73982 13.5 5.867 13.5 5.99961C13.5 6.13222 13.4473 6.25939 13.3536 6.35316L8.68689 11.0198C8.49162 11.2151 8.17504 11.2151 7.97978 11.0198C7.78452 10.8246 7.78452 10.508 7.97978 10.3127L11.7929 6.49961H1C0.723858 6.49961 0.5 6.27575 0.5 5.99961C0.5 5.72347 0.723858 5.49961 1 5.49961H11.7929L7.97978 1.68656C7.78452 1.4913 7.78452 1.17472 7.97978 0.979457Z" fill="#FF6849" />
+                                </svg>
+                            </div>
+                        </a>
+                        <div class="flex flex-grow gap-M h-[48px] max-w-[272px]">
+                            <img src="./img/profile/profile.jpg" class="h-[48px] w-[48px] rounded-full">
+                            <div class="flex flex-col justify-between lg:min-w-[208px] min-w-[200px]">
+                                <span class="text-Bold text-[#252532]">Jane Coper</span>
+                                <div class="flex justify-between items-end">
+                                    <span class="text-Small text-textSecondary">31 Dec 2023</span>
+                                    <div class="flex items-center h-full">
+                                        <svg width="4" height="5" viewBox="0 0 4 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.22168 3.06641V2.70605C0.22168 2.20215 0.379883 1.78613 0.696289 1.45801C1.01855 1.12988 1.45508 0.96582 2.00586 0.96582C2.5625 0.96582 3.00195 1.12988 3.32422 1.45801C3.64648 1.78613 3.80762 2.20215 3.80762 2.70605V3.06641C3.80762 3.56445 3.64648 3.97754 3.32422 4.30566C3.00781 4.62793 2.57129 4.78906 2.01465 4.78906C1.46387 4.78906 1.02734 4.62793 0.705078 4.30566C0.382812 3.97754 0.22168 3.56445 0.22168 3.06641Z" fill="#252532" />
+                                        </svg>
+                                    </div>
+                                    <span class="text-Small text-textSecondary">5 min read</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </section>
-    }
 
-    var gridPosts = posts.Skip(1).Take(6).ToList();
-    if (gridPosts.Count > 0)
-    {
-        <section>
-            <h2 class="mb-8 text-6xl md:text-7xl font-bold tracking-tighter leading-tight">More from the blog</h2>
-            <div class="mx-auto mt-12 grid max-w-lg gap-5 lg:max-w-none lg:grid-cols-3">
-                @foreach (var post in gridPosts)
-                {
-                    var authorHref = Blog.GetAuthorLink(post.Author);
-                    <div class="flex flex-col overflow-hidden rounded-lg shadow-lg">
-                        <div class="flex-shrink-0">
-                            <a href="@Blog.GetPostLink(post)">
-                                <img class="h-48 w-full object-cover" src="@Blog.GetSplashImage(post)" alt="">
-                            </a>
-                        </div>
-                        <div class="flex flex-1 flex-col justify-between bg-white dark:bg-black p-6">
-                            <div class="flex-1">
-                                <p class="text-sm font-medium text-indigo-600 dark:text-indigo-300">
-                                    Article
-                                </p>
-                                <a href="@Blog.GetPostLink(post)" class="mt-2 block">
-                                    <p class="text-xl font-semibold text-gray-900 dark:text-gray-50">@post.Title</p>
-                                    <p class="mt-3 text-base text-gray-500">@post.Summary</p>
-                                </a>
+                <div class="grid grid-cols-1 gap-L lg:px-SM lg:mx-[-12px] lg:border-x md:border-neutralSecondary">
+                    <div class="flex-shrink-0">
+                        <a href="#">
+                            <img class="w-full rounded-S object-cover" src="./img/card/img1.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="flex flex-col gap-L">
+                        <button class="h-[32px] w-[77px] py-S px-SM rounded-[6px] bg-[#619DFF5C] text-bravo text-Small flex items-center text-center justify-center">Category</button>
+                        <span class="text-H3 text-[#252532]">Blog title heading </span>
+                        <span class="text-Medium text-[#525D61]">Lorem ipsum dolor sit amet consectetur. Sit ipsum in aenean sed diam. Et pretium nec elementum enim viverra nunc risus ac facilisis.</span>
+                        <a class="" href="about#">
+                            <div class="flex items-center gap-S">
+                                <span class="text-Regular text-brand">Read the article</span>
+                                <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.97978 0.979457C8.17504 0.784193 8.49162 0.784191 8.68688 0.979452L13.3536 5.64605C13.4473 5.73982 13.5 5.867 13.5 5.99961C13.5 6.13222 13.4473 6.25939 13.3536 6.35316L8.68689 11.0198C8.49162 11.2151 8.17504 11.2151 7.97978 11.0198C7.78452 10.8246 7.78452 10.508 7.97978 10.3127L11.7929 6.49961H1C0.723858 6.49961 0.5 6.27575 0.5 5.99961C0.5 5.72347 0.723858 5.49961 1 5.49961H11.7929L7.97978 1.68656C7.78452 1.4913 7.78452 1.17472 7.97978 0.979457Z" fill="#FF6849" />
+                                </svg>
                             </div>
-                            <div class="mt-6 flex items-center">
-                                <div class="flex-shrink-0">
-                                    <span>
-                                        <span class="sr-only">@post.Author</span>
-                                        <img class="h-10 w-10 rounded-full" src="@Blog.GetAuthorProfileUrl(post.Author)" alt="@post.Title background">
-                                    </span>
-                                </div>
-                                <div class="ml-3">
-                                    <p class="text-sm font-medium text-gray-900">
-                                        @if (authorHref != null)
-                                        {
-                                            <a href="@Blog.GetAuthorLink(post.Author!)" class="hover:underline">@post.Author</a>
-                                        }
-                                        else
-                                        {
-                                            <span>@post.Author</span>
-                                        }
-                                    </p>
-                                    <div class="flex space-x-1 text-sm text-gray-500">
-                                        <time datetime="@Blog.GetDateTimestamp(post.Date)">@Blog.GetDateLabel(post.Date)</time>
-                                        <span aria-hidden="true">&middot;</span>
-                                        <span>@Blog.MinutesToRead(post.WordCount) min read</span>
+                        </a>
+                        <div class="flex flex-grow gap-M h-[48px] max-w-[272px]">
+                            <img src="./img/profile/profile.jpg" class="h-[48px] w-[48px] rounded-full">
+                            <div class="flex flex-col justify-between lg:min-w-[208px] min-w-[200px]">
+                                <span class="text-Bold text-[#252532]">Jane Coper</span>
+                                <div class="flex justify-between items-end">
+                                    <span class="text-Small text-textSecondary">31 Dec 2023</span>
+                                    <div class="flex items-center h-full">
+                                        <svg width="4" height="5" viewBox="0 0 4 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.22168 3.06641V2.70605C0.22168 2.20215 0.379883 1.78613 0.696289 1.45801C1.01855 1.12988 1.45508 0.96582 2.00586 0.96582C2.5625 0.96582 3.00195 1.12988 3.32422 1.45801C3.64648 1.78613 3.80762 2.20215 3.80762 2.70605V3.06641C3.80762 3.56445 3.64648 3.97754 3.32422 4.30566C3.00781 4.62793 2.57129 4.78906 2.01465 4.78906C1.46387 4.78906 1.02734 4.62793 0.705078 4.30566C0.382812 3.97754 0.22168 3.56445 0.22168 3.06641Z" fill="#252532" />
+                                        </svg>
                                     </div>
+                                    <span class="text-Small text-textSecondary">5 min read</span>
                                 </div>
                             </div>
                         </div>
                     </div>
-                }                
-            </div>            
-        </section>        
-    }
-    
-    var remainingPosts = posts.Skip(7).Take(15).ToList();
-    if (remainingPosts.Count > 0)
-    {
-        <section class="mt-24 flex justify-center">
-            <div class="flex max-w-screen-lg">
-                <div class="w-2/3">
-                    @foreach (var post in remainingPosts)
-                    {
-                        var authorHref = Blog.GetAuthorLink(post.Author);
-                        <div class="border-b pb-4 mb-4">
-                            <div class="flex justify-between">
-                                <div class="w-3/4">
-                                    <a href="@Blog.GetPostLink(post)" class="mt-2 block">
-                                        <p class="text-xl font-semibold text-gray-900 dark:text-gray-50">@post.Title</p>
-                                        <p class="mt-3 text-base text-gray-500">@post.Summary</p>
-                                    </a>
-                                    <div class="mt-6 flex items-center">
-                                        <div class="flex-shrink-0">
-                                            <span>
-                                                <span class="sr-only">@post.Author</span>
-                                                <img class="h-10 w-10 rounded-full" src="@Blog.GetAuthorProfileUrl(post.Author)" alt="@post.Title background">
-                                            </span>
-                                        </div>
-                                        <div class="ml-3">
-                                            <p class="text-sm font-medium text-gray-900">
-                                                @if (authorHref != null)
-                                                {
-                                                    <a href="@Blog.GetAuthorLink(post.Author!)" class="hover:underline">@post.Author</a>
-                                                }
-                                                else
-                                                {
-                                                    <span>@post.Author</span>
-                                                }
-                                            </p>
-                                            <div class="flex space-x-1 text-sm text-gray-500">
-                                                <time datetime="@Blog.GetDateTimestamp(post.Date)">@Blog.GetDateLabel(post.Date)</time>
-                                                <span aria-hidden="true">&middot;</span>
-                                                <span>@Blog.MinutesToRead(post.WordCount) min read</span>
-                                            </div>
-                                        </div>
+                </div>
+
+                <div class="grid grid-cols-1 gap-L">
+                    <div class="flex-shrink-0">
+                        <a href="#">
+                            <img class="w-full rounded-S object-cover" src="./img/card/img2.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="flex flex-col gap-L">
+                        <button class="h-[32px] w-[77px] py-S px-SM rounded-[6px] bg-[#FF684940] text-onBrand text-Small flex items-center text-center justify-center">Category</button>
+                        <span class="text-H3 text-[#252532]">Blog title heading </span>
+                        <span class="text-Medium text-[#525D61]">Lorem ipsum dolor sit amet consectetur. Sit ipsum in aenean sed diam. Et pretium nec elementum enim viverra nunc risus ac facilisis.</span>
+                        <a class="" href="about#">
+                            <div class="flex items-center gap-S">
+                                <span class="text-Regular text-brand">Read the article</span>
+                                <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.97978 0.979457C8.17504 0.784193 8.49162 0.784191 8.68688 0.979452L13.3536 5.64605C13.4473 5.73982 13.5 5.867 13.5 5.99961C13.5 6.13222 13.4473 6.25939 13.3536 6.35316L8.68689 11.0198C8.49162 11.2151 8.17504 11.2151 7.97978 11.0198C7.78452 10.8246 7.78452 10.508 7.97978 10.3127L11.7929 6.49961H1C0.723858 6.49961 0.5 6.27575 0.5 5.99961C0.5 5.72347 0.723858 5.49961 1 5.49961H11.7929L7.97978 1.68656C7.78452 1.4913 7.78452 1.17472 7.97978 0.979457Z" fill="#FF6849" />
+                                </svg>
+                            </div>
+                        </a>
+                        <div class="flex flex-grow gap-M h-[48px] max-w-[272px]">
+                            <img src="./img/profile/profile.jpg" class="h-[48px] w-[48px] rounded-full">
+                            <div class="flex flex-col justify-between lg:min-w-[208px] min-w-[200px]">
+                                <span class="text-Bold text-[#252532]">Jane Coper</span>
+                                <div class="flex justify-between items-end">
+                                    <span class="text-Small text-textSecondary">31 Dec 2023</span>
+                                    <div class="flex items-center h-full">
+                                        <svg width="4" height="5" viewBox="0 0 4 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.22168 3.06641V2.70605C0.22168 2.20215 0.379883 1.78613 0.696289 1.45801C1.01855 1.12988 1.45508 0.96582 2.00586 0.96582C2.5625 0.96582 3.00195 1.12988 3.32422 1.45801C3.64648 1.78613 3.80762 2.20215 3.80762 2.70605V3.06641C3.80762 3.56445 3.64648 3.97754 3.32422 4.30566C3.00781 4.62793 2.57129 4.78906 2.01465 4.78906C1.46387 4.78906 1.02734 4.62793 0.705078 4.30566C0.382812 3.97754 0.22168 3.56445 0.22168 3.06641Z" fill="#252532" />
+                                        </svg>
                                     </div>
-                                </div>
-                                <div class="w-1/4">
-                                    <a href="@Blog.GetPostLink(post)" class="pt-4">
-                                        <img class="w-full object-cover max-h-[130px]" src="@Blog.GetSplashImage(post)" alt="">
-                                    </a>
+                                    <span class="text-Small text-textSecondary">5 min read</span>
                                 </div>
                             </div>
                         </div>
-                    }
-                    @if (remainingPosts.Count >= 15)
-                    {
-                        <div class="mt-8 text-center">
-                            <a class="text-sm font-semibold hover:underline" href="@Blog.GetPostsLink()">view all posts</a>
-                        </div>
-                    }
+                    </div>
                 </div>
-                <div class="w-1/3">
-                    <div class="pl-8">
-                        <div class="flex items-center">
-                            <img class="w-8 h-8" src="img/logo.svg" alt="www.unilake logo">
-                            <span class="hidden sm:block text-lg font-semibold">www.unilake</span>
-                        </div>
-                        <div class="p-2">
-                            <p class="text-gray-500">I’m Spencer Sharp. I live in New York City, where I design the future.</p>
-                            <a href="about" class="text-sm font-medium text-gray-900 hover:underline">more information</a>
-                        </div>
-                        <div class="p-4">
-                            @await Html.PartialAsync("FollowLinks")
+
+                <div class="grid grid-cols-1 gap-L">
+                    <div class="flex-shrink-0">
+                        <a href="#">
+                            <img class="w-full rounded-S object-cover" src="./img/card/img3.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="flex flex-col gap-L">
+                        <button class="h-[32px] w-[77px] py-S px-SM rounded-[6px] bg-[#619DFF5C] text-bravo text-Small flex items-center text-center justify-center">Category</button>
+                        <span class="text-H3 text-[#252532]">Blog title heading </span>
+                        <span class="text-Medium text-[#525D61]">Lorem ipsum dolor sit amet consectetur. Sit ipsum in aenean sed diam. Et pretium nec elementum enim viverra nunc risus ac facilisis.</span>
+                        <a class="" href="about#">
+                            <div class="flex items-center gap-S">
+                                <span class="text-Regular text-brand">Read the article</span>
+                                <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.97978 0.979457C8.17504 0.784193 8.49162 0.784191 8.68688 0.979452L13.3536 5.64605C13.4473 5.73982 13.5 5.867 13.5 5.99961C13.5 6.13222 13.4473 6.25939 13.3536 6.35316L8.68689 11.0198C8.49162 11.2151 8.17504 11.2151 7.97978 11.0198C7.78452 10.8246 7.78452 10.508 7.97978 10.3127L11.7929 6.49961H1C0.723858 6.49961 0.5 6.27575 0.5 5.99961C0.5 5.72347 0.723858 5.49961 1 5.49961H11.7929L7.97978 1.68656C7.78452 1.4913 7.78452 1.17472 7.97978 0.979457Z" fill="#FF6849" />
+                                </svg>
+                            </div>
+                        </a>
+                        <div class="flex flex-grow gap-M h-[48px] max-w-[272px]">
+                            <img src="./img/profile/profile.jpg" class="h-[48px] w-[48px] rounded-full">
+                            <div class="flex flex-col justify-between lg:min-w-[208px] min-w-[200px]">
+                                <span class="text-Bold text-[#252532]">Jane Coper</span>
+                                <div class="flex justify-between items-end">
+                                    <span class="text-Small text-textSecondary">31 Dec 2023</span>
+                                    <div class="flex items-center h-full">
+                                        <svg width="4" height="5" viewBox="0 0 4 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.22168 3.06641V2.70605C0.22168 2.20215 0.379883 1.78613 0.696289 1.45801C1.01855 1.12988 1.45508 0.96582 2.00586 0.96582C2.5625 0.96582 3.00195 1.12988 3.32422 1.45801C3.64648 1.78613 3.80762 2.20215 3.80762 2.70605V3.06641C3.80762 3.56445 3.64648 3.97754 3.32422 4.30566C3.00781 4.62793 2.57129 4.78906 2.01465 4.78906C1.46387 4.78906 1.02734 4.62793 0.705078 4.30566C0.382812 3.97754 0.22168 3.56445 0.22168 3.06641Z" fill="#252532" />
+                                        </svg>
+                                    </div>
+                                    <span class="text-Small text-textSecondary">5 min read</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+
+                <div class="grid grid-cols-1 gap-L lg:px-SM lg:mx-[-12px] lg:border-x md:border-neutralSecondary">
+                    <div class="flex-shrink-0">
+                        <a href="#">
+                            <img class="w-full rounded-S object-cover" src="./img/card/img4.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="flex flex-col gap-L">
+                        <button class="h-[32px] w-[77px] py-S px-SM rounded-[6px] bg-[#619DFF5C] text-bravo text-Small flex items-center text-center justify-center">Category</button>
+                        <span class="text-H3 text-[#252532]">Blog title heading </span>
+                        <span class="text-Medium text-[#525D61]">Lorem ipsum dolor sit amet consectetur. Sit ipsum in aenean sed diam. Et pretium nec elementum enim viverra nunc risus ac facilisis.</span>
+                        <a class="" href="about#">
+                            <div class="flex items-center gap-S">
+                                <span class="text-Regular text-brand">Read the article</span>
+                                <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.97978 0.979457C8.17504 0.784193 8.49162 0.784191 8.68688 0.979452L13.3536 5.64605C13.4473 5.73982 13.5 5.867 13.5 5.99961C13.5 6.13222 13.4473 6.25939 13.3536 6.35316L8.68689 11.0198C8.49162 11.2151 8.17504 11.2151 7.97978 11.0198C7.78452 10.8246 7.78452 10.508 7.97978 10.3127L11.7929 6.49961H1C0.723858 6.49961 0.5 6.27575 0.5 5.99961C0.5 5.72347 0.723858 5.49961 1 5.49961H11.7929L7.97978 1.68656C7.78452 1.4913 7.78452 1.17472 7.97978 0.979457Z" fill="#FF6849" />
+                                </svg>
+                            </div>
+                        </a>
+                        <div class="flex flex-grow gap-M h-[48px] max-w-[272px]">
+                            <img src="./img/profile/profile.jpg" class="h-[48px] w-[48px] rounded-full">
+                            <div class="flex flex-col justify-between lg:min-w-[208px] min-w-[200px]">
+                                <span class="text-Bold text-[#252532]">Jane Coper</span>
+                                <div class="flex justify-between items-end">
+                                    <span class="text-Small text-textSecondary">31 Dec 2023</span>
+                                    <div class="flex items-center h-full">
+                                        <svg width="4" height="5" viewBox="0 0 4 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.22168 3.06641V2.70605C0.22168 2.20215 0.379883 1.78613 0.696289 1.45801C1.01855 1.12988 1.45508 0.96582 2.00586 0.96582C2.5625 0.96582 3.00195 1.12988 3.32422 1.45801C3.64648 1.78613 3.80762 2.20215 3.80762 2.70605V3.06641C3.80762 3.56445 3.64648 3.97754 3.32422 4.30566C3.00781 4.62793 2.57129 4.78906 2.01465 4.78906C1.46387 4.78906 1.02734 4.62793 0.705078 4.30566C0.382812 3.97754 0.22168 3.56445 0.22168 3.06641Z" fill="#252532" />
+                                        </svg>
+                                    </div>
+                                    <span class="text-Small text-textSecondary">5 min read</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 gap-L">
+                    <div class="flex-shrink-0">
+                        <a href="#">
+                            <img class="w-full rounded-S object-cover" src="./img/card/img5.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="flex flex-col gap-L">
+                        <button class="h-[32px] w-[77px] py-S px-SM rounded-[6px] bg-[#A4CD805C] text-success text-Small flex items-center text-center justify-center">Category</button>
+                        <span class="text-H3 text-[#252532]">Blog title heading </span>
+                        <span class="text-Medium text-[#525D61]">Lorem ipsum dolor sit amet consectetur. Sit ipsum in aenean sed diam. Et pretium nec elementum enim viverra nunc risus ac facilisis.</span>
+                        <a class="" href="about#">
+                            <div class="flex items-center gap-S">
+                                <span class="text-Regular text-brand">Read the article</span>
+                                <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.97978 0.979457C8.17504 0.784193 8.49162 0.784191 8.68688 0.979452L13.3536 5.64605C13.4473 5.73982 13.5 5.867 13.5 5.99961C13.5 6.13222 13.4473 6.25939 13.3536 6.35316L8.68689 11.0198C8.49162 11.2151 8.17504 11.2151 7.97978 11.0198C7.78452 10.8246 7.78452 10.508 7.97978 10.3127L11.7929 6.49961H1C0.723858 6.49961 0.5 6.27575 0.5 5.99961C0.5 5.72347 0.723858 5.49961 1 5.49961H11.7929L7.97978 1.68656C7.78452 1.4913 7.78452 1.17472 7.97978 0.979457Z" fill="#FF6849" />
+                                </svg>
+                            </div>
+                        </a>
+                        <div class="flex flex-grow gap-M h-[48px] max-w-[272px]">
+                            <img src="./img/profile/profile.jpg" class="h-[48px] w-[48px] rounded-full">
+                            <div class="flex flex-col justify-between lg:min-w-[208px] min-w-[200px]">
+                                <span class="text-Bold text-[#252532]">Jane Coper</span>
+                                <div class="flex justify-between items-end">
+                                    <span class="text-Small text-textSecondary">31 Dec 2023</span>
+                                    <div class="flex items-center h-full">
+                                        <svg width="4" height="5" viewBox="0 0 4 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.22168 3.06641V2.70605C0.22168 2.20215 0.379883 1.78613 0.696289 1.45801C1.01855 1.12988 1.45508 0.96582 2.00586 0.96582C2.5625 0.96582 3.00195 1.12988 3.32422 1.45801C3.64648 1.78613 3.80762 2.20215 3.80762 2.70605V3.06641C3.80762 3.56445 3.64648 3.97754 3.32422 4.30566C3.00781 4.62793 2.57129 4.78906 2.01465 4.78906C1.46387 4.78906 1.02734 4.62793 0.705078 4.30566C0.382812 3.97754 0.22168 3.56445 0.22168 3.06641Z" fill="#252532" />
+                                        </svg>
+                                    </div>
+                                    <span class="text-Small text-textSecondary">5 min read</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-        </section>
-    }
-}
+        </div>
+    </section>
+
+
 </div>

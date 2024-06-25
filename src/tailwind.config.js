@@ -12,28 +12,17 @@ module.exports = {
                 '3xl': '1920px'
             },
             colors: {
-                backgroundSecondary: '#252532',
-                backgroundTertiary: '#0F0F0F',
-                brandPrimary: '#F37441',
-                textSecondary: '#CCCCCC',
-                borderSecondary: '#383838',
-                borderPrimary: '#6F6E73',
-                textTertiary: '#6F6E73',    
-                textPrimary: '#E6EFF4',
-                onBrandPrimary: '#4F1B05',
-                brandSecondary: '#822C08',
-                errorPrimary: '#F8D7D7',
-                onErrorPrimary: '#571616',
-                backgroundQuaternary: '#4A494D',
-                headingPrimary: '#F9F8F6',
-                spanPrimary: '#C1C5C0',
-                backgroundPrimary: '#252532',
                 faded: '#677575',
                 body: '#C1C5C0',
                 neutral: '#F9F8F6',
                 brand: '#FF6849',
                 headlines: '#F9F8F6',
-                bgNeutarl:'#DDDFDA'
+                bgNeutarl: '#DDDFDA',
+                neutralSecondary: '#E7E7E7',
+                bravo: '#1A76FF',
+                textSecondary:'#4A494D',
+                onBrand: '#E03C18',
+                success:'#6B9E32'
             },
             boxShadow: {
 
@@ -47,7 +36,7 @@ module.exports = {
                 Regular: ['16px', { lineHeight: '28px', fontWeight: '400' }],
                 Small: ['12px', { lineHeight: '24px', fontWeight: '400' }],
                 large: ['20px', { lineHeight: '32px', fontWeight: '700' }],
-                14: ['14px', { lineHeight: '24px', fontWeight: '600' }]
+                Bold: ['16px', { lineHeight: '18px', fontWeight: '700' }],
             },
             fontFamily: {
                 inter: 'Inter , sans-serif'
