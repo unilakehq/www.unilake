@@ -22,7 +22,8 @@ module.exports = {
                 bravo: '#1A76FF',
                 textSecondary:'#4A494D',
                 onBrand: '#E03C18',
-                success:'#6B9E32'
+                success: '#6B9E32',
+                backgroundSecondary:'#F8F7F3'
             },
             boxShadow: {
 
