@@ -23,7 +23,8 @@ module.exports = {
                 textSecondary:'#4A494D',
                 onBrand: '#E03C18',
                 success: '#6B9E32',
-                backgroundSecondary:'#F8F7F3'
+                backgroundSecondary: '#F8F7F3',
+                backgroundTertiary:'#F8F8F8'
             },
             boxShadow: {
 
