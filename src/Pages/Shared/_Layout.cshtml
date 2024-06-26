@@ -10,7 +10,7 @@
     <title>@ViewData["Title"]</title>
     <base href="@(RazorSsg.GetBaseHref() ?? "/")" />
     <script>
-    if (location.search === "?dark") localStorage.setItem('color-scheme','dark') 
+    if (location.search === "?dark") localStorage.setItem('color-scheme','light') 
     if (location.search === "?light") localStorage.removeItem('color-scheme') 
     const cls = document.querySelector('html').classList
     if (localStorage.getItem('color-scheme') === 'dark')
@@ -18,6 +18,7 @@
     else
         cls.remove('dark')
     </script>
+    @await RenderSectionAsync("FlowbiteCSS", required: false)
     <link rel="stylesheet" href="css/app.css">
     <script async src="https://ga.jspm.io/npm:es-module-shims@1.6.3/dist/es-module-shims.js"></script>
     @Html.ImportMap(new() {
@@ -43,7 +44,10 @@
 import { init } from "app.mjs"
 init()
 </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
 @await RenderSectionAsync("Scripts", required: false)
+@await RenderSectionAsync("FlowbiteJS", required: false)
 
 </body>
 </html>

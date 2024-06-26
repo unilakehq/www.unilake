@@ -86,5 +86,14 @@ select{
 [role=dialog].z-10 {
     z-index: 60;
 }
+[data-carousel-slide-to][aria-current="false"] {
+    background-color: #FF684940;
+}
+[data-carousel-slide-to][aria-current="true"] {
+    background-color: #FF6849;
+}
+[data-carousel-slide-to][aria-current="false"]:hover {
+    background-color: #FF6849;
+}
 
 @tailwind utilities;
