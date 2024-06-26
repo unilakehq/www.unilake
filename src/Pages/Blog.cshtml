@@ -36,7 +36,14 @@
 
     <section class="py-XL px-L flex flex-col">
         <div class="flex flex-col gap-XXL">
-            <span class="text-[40px] leading-[48px] font-[700] text-brand">Recent articles</span>
+            <div class="flex items-center justify-between">
+                <span class="text-[40px] leading-[48px] font-[700] text-brand">Recent articles</span>
+                <span class="md:hidden block">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2.25 6C2.25 5.58579 2.58579 5.25 3 5.25H21C21.4142 5.25 21.75 5.58579 21.75 6C21.75 6.41421 21.4142 6.75 21 6.75H3C2.58579 6.75 2.25 6.41421 2.25 6ZM5.25 12C5.25 11.5858 5.58579 11.25 6 11.25H18C18.4142 11.25 18.75 11.5858 18.75 12C18.75 12.4142 18.4142 12.75 18 12.75H6C5.58579 12.75 5.25 12.4142 5.25 12ZM9.25 18C9.25 17.5858 9.58579 17.25 10 17.25H14C14.4142 17.25 14.75 17.5858 14.75 18C14.75 18.4142 14.4142 18.75 14 18.75H10C9.58579 18.75 9.25 18.4142 9.25 18Z" fill="#252532" />
+                    </svg>
+                </span>
+            </div>
             <div class="">
                 <ul class="flex flex-wrap gap-M h-fit">
                     <li class="text-Regular border border-brand text-[#252532] px-L py-SM rounded-L h-[52px]">All</li>
@@ -58,25 +65,25 @@
 
             <div class="grid md:gap-L gap-SM md:grid-cols-2 lg:grid-cols-3 grid-cols-1">
 
-                <div class="grid grid-cols-1 gap-L">
+                <div class="grid md:grid-cols-1 grid-cols-2 md:gap-L gap-M">
                     <div class="flex-shrink-0">
                         <a href="#">
                             <img class="w-full rounded-S object-cover" src="./img/card/img.jpg" alt="">
                         </a>
                     </div>
-                    <div class="flex flex-col gap-L">
-                        <button class="h-[32px] w-[77px] py-S px-SM rounded-[6px] bg-[#619DFF5C] text-bravo text-Small flex items-center text-center justify-center">Category</button>
-                        <span class="text-H3 text-[#252532]">Blog title heading </span>
-                        <span class="text-Medium text-[#525D61]">Lorem ipsum dolor sit amet consectetur. Sit ipsum in aenean sed diam. Et pretium nec elementum enim viverra nunc risus ac facilisis.</span>
+                    <div class="flex flex-col md:gap-L sm:gap-M gap-XS">
+                        <button class="md:h-[32px] h-[24px] w-[77px] py-S px-SM rounded-[6px] bg-[#619DFF5C] text-bravo text-Small flex items-center text-center justify-center">Category</button>
+                        <span class="md:text-H3 text-Regular text-[#252532]">Blog title heading </span>
+                        <span class="md:text-Medium text-Small text-[#525D61] md:line-clamp-none sm:line-clamp-2 line-clamp-1">Lorem ipsum dolor sit amet consectetur. Sit ipsum in aenean sed diam. Et pretium nec elementum enim viverra nunc risus ac facilisis.</span>
                         <a class="" href="about#">
                             <div class="flex items-center gap-S">
-                                <span class="text-Regular text-brand">Read the article</span>
+                                <span class="md:text-Regular text-14 text-brand">Read the article</span>
                                 <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M7.97978 0.979457C8.17504 0.784193 8.49162 0.784191 8.68688 0.979452L13.3536 5.64605C13.4473 5.73982 13.5 5.867 13.5 5.99961C13.5 6.13222 13.4473 6.25939 13.3536 6.35316L8.68689 11.0198C8.49162 11.2151 8.17504 11.2151 7.97978 11.0198C7.78452 10.8246 7.78452 10.508 7.97978 10.3127L11.7929 6.49961H1C0.723858 6.49961 0.5 6.27575 0.5 5.99961C0.5 5.72347 0.723858 5.49961 1 5.49961H11.7929L7.97978 1.68656C7.78452 1.4913 7.78452 1.17472 7.97978 0.979457Z" fill="#FF6849" />
                                 </svg>
                             </div>
                         </a>
-                        <div class="flex flex-grow gap-M h-[48px] max-w-[272px]">
+                        <div class="md:flex hidden flex-grow gap-M h-[48px] max-w-[272px]">
                             <img src="./img/profile/profile.jpg" class="h-[48px] w-[48px] rounded-full">
                             <div class="flex flex-col justify-between lg:min-w-[208px] min-w-[200px]">
                                 <span class="text-Bold text-[#252532]">Jane Coper</span>
@@ -94,25 +101,25 @@
                     </div>
                 </div>
 
-                <div class="grid grid-cols-1 gap-L lg:px-SM lg:mx-[-12px] lg:border-x md:border-neutralSecondary">
+                <div class="grid md:grid-cols-1 grid-cols-2 md:gap-L gap-M lg:px-SM lg:mx-[-12px] lg:border-x md:border-neutralSecondary">
                     <div class="flex-shrink-0">
                         <a href="#">
                             <img class="w-full rounded-S object-cover" src="./img/card/img1.jpg" alt="">
                         </a>
                     </div>
-                    <div class="flex flex-col gap-L">
-                        <button class="h-[32px] w-[77px] py-S px-SM rounded-[6px] bg-[#619DFF5C] text-bravo text-Small flex items-center text-center justify-center">Category</button>
-                        <span class="text-H3 text-[#252532]">Blog title heading </span>
-                        <span class="text-Medium text-[#525D61]">Lorem ipsum dolor sit amet consectetur. Sit ipsum in aenean sed diam. Et pretium nec elementum enim viverra nunc risus ac facilisis.</span>
+                    <div class="flex flex-col md:gap-L sm:gap-M gap-XS">
+                        <button class="md:h-[32px] h-[24px] w-[77px] py-S px-SM rounded-[6px] bg-[#619DFF5C] text-bravo text-Small flex items-center text-center justify-center">Category</button>
+                        <span class="md:text-H3 text-Regular text-[#252532]">Blog title heading </span>
+                        <span class="md:text-Medium text-Small text-[#525D61] md:line-clamp-none sm:line-clamp-2 line-clamp-1">Lorem ipsum dolor sit amet consectetur. Sit ipsum in aenean sed diam. Et pretium nec elementum enim viverra nunc risus ac facilisis.</span>
                         <a class="" href="about#">
                             <div class="flex items-center gap-S">
-                                <span class="text-Regular text-brand">Read the article</span>
+                                <span class="md:text-Regular text-14 text-brand">Read the article</span>
                                 <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M7.97978 0.979457C8.17504 0.784193 8.49162 0.784191 8.68688 0.979452L13.3536 5.64605C13.4473 5.73982 13.5 5.867 13.5 5.99961C13.5 6.13222 13.4473 6.25939 13.3536 6.35316L8.68689 11.0198C8.49162 11.2151 8.17504 11.2151 7.97978 11.0198C7.78452 10.8246 7.78452 10.508 7.97978 10.3127L11.7929 6.49961H1C0.723858 6.49961 0.5 6.27575 0.5 5.99961C0.5 5.72347 0.723858 5.49961 1 5.49961H11.7929L7.97978 1.68656C7.78452 1.4913 7.78452 1.17472 7.97978 0.979457Z" fill="#FF6849" />
                                 </svg>
                             </div>
                         </a>
-                        <div class="flex flex-grow gap-M h-[48px] max-w-[272px]">
+                        <div class="md:flex hidden flex-grow gap-M h-[48px] max-w-[272px]">
                             <img src="./img/profile/profile1.jpg" class="h-[48px] w-[48px] rounded-full">
                             <div class="flex flex-col justify-between lg:min-w-[208px] min-w-[200px]">
                                 <span class="text-Bold text-[#252532]">Guy Hawkins</span>
@@ -130,25 +137,25 @@
                     </div>
                 </div>
 
-                <div class="grid grid-cols-1 gap-L">
+                <div class="grid md:grid-cols-1 grid-cols-2 md:gap-L gap-M">
                     <div class="flex-shrink-0">
                         <a href="#">
                             <img class="w-full rounded-S object-cover" src="./img/card/img2.jpg" alt="">
                         </a>
                     </div>
-                    <div class="flex flex-col gap-L">
-                        <button class="h-[32px] w-[77px] py-S px-SM rounded-[6px] bg-[#FF684940] text-onBrand text-Small flex items-center text-center justify-center">Category</button>
-                        <span class="text-H3 text-[#252532]">Blog title heading </span>
-                        <span class="text-Medium text-[#525D61]">Lorem ipsum dolor sit amet consectetur. Sit ipsum in aenean sed diam. Et pretium nec elementum enim viverra nunc risus ac facilisis.</span>
+                    <div class="flex flex-col md:gap-L sm:gap-M gap-XS">
+                        <button class="md:h-[32px] h-[24px] w-[77px] py-S px-SM rounded-[6px] bg-[#FF684940] text-onBrand text-Small flex items-center text-center justify-center">Category</button>
+                        <span class="md:text-H3 text-Regular text-[#252532]">Blog title heading </span>
+                        <span class="md:text-Medium text-Small text-[#525D61] md:line-clamp-none sm:line-clamp-2 line-clamp-1">Lorem ipsum dolor sit amet consectetur. Sit ipsum in aenean sed diam. Et pretium nec elementum enim viverra nunc risus ac facilisis.</span>
                         <a class="" href="about#">
                             <div class="flex items-center gap-S">
-                                <span class="text-Regular text-brand">Read the article</span>
+                                <span class="md:text-Regular text-14 text-brand">Read the article</span>
                                 <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M7.97978 0.979457C8.17504 0.784193 8.49162 0.784191 8.68688 0.979452L13.3536 5.64605C13.4473 5.73982 13.5 5.867 13.5 5.99961C13.5 6.13222 13.4473 6.25939 13.3536 6.35316L8.68689 11.0198C8.49162 11.2151 8.17504 11.2151 7.97978 11.0198C7.78452 10.8246 7.78452 10.508 7.97978 10.3127L11.7929 6.49961H1C0.723858 6.49961 0.5 6.27575 0.5 5.99961C0.5 5.72347 0.723858 5.49961 1 5.49961H11.7929L7.97978 1.68656C7.78452 1.4913 7.78452 1.17472 7.97978 0.979457Z" fill="#FF6849" />
                                 </svg>
                             </div>
                         </a>
-                        <div class="flex flex-grow gap-M h-[48px] max-w-[272px]">
+                        <div class="md:flex hidden flex-grow gap-M h-[48px] max-w-[272px]">
                             <img src="./img/profile/profile2.jpg" class="h-[48px] w-[48px] rounded-full">
                             <div class="flex flex-col justify-between lg:min-w-[208px] min-w-[200px]">
                                 <span class="text-Bold text-[#252532]">Jenny Wilson</span>
@@ -166,25 +173,25 @@
                     </div>
                 </div>
 
-                <div class="grid grid-cols-1 gap-L">
+                <div class="grid md:grid-cols-1 grid-cols-2 md:gap-L gap-M">
                     <div class="flex-shrink-0">
                         <a href="#">
                             <img class="w-full rounded-S object-cover" src="./img/card/img3.jpg" alt="">
                         </a>
                     </div>
-                    <div class="flex flex-col gap-L">
-                        <button class="h-[32px] w-[77px] py-S px-SM rounded-[6px] bg-[#619DFF5C] text-bravo text-Small flex items-center text-center justify-center">Category</button>
-                        <span class="text-H3 text-[#252532]">Blog title heading </span>
-                        <span class="text-Medium text-[#525D61]">Lorem ipsum dolor sit amet consectetur. Sit ipsum in aenean sed diam. Et pretium nec elementum enim viverra nunc risus ac facilisis.</span>
+                    <div class="flex flex-col md:gap-L sm:gap-M gap-XS">
+                        <button class="md:h-[32px] h-[24px] w-[77px] py-S px-SM rounded-[6px] bg-[#619DFF5C] text-bravo text-Small flex items-center text-center justify-center">Category</button>
+                        <span class="md:text-H3 text-Regular text-[#252532]">Blog title heading </span>
+                        <span class="md:text-Medium text-Small text-[#525D61] md:line-clamp-none sm:line-clamp-2 line-clamp-1">Lorem ipsum dolor sit amet consectetur. Sit ipsum in aenean sed diam. Et pretium nec elementum enim viverra nunc risus ac facilisis.</span>
                         <a class="" href="about#">
                             <div class="flex items-center gap-S">
-                                <span class="text-Regular text-brand">Read the article</span>
+                                <span class="md:text-Regular text-14 text-brand">Read the article</span>
                                 <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M7.97978 0.979457C8.17504 0.784193 8.49162 0.784191 8.68688 0.979452L13.3536 5.64605C13.4473 5.73982 13.5 5.867 13.5 5.99961C13.5 6.13222 13.4473 6.25939 13.3536 6.35316L8.68689 11.0198C8.49162 11.2151 8.17504 11.2151 7.97978 11.0198C7.78452 10.8246 7.78452 10.508 7.97978 10.3127L11.7929 6.49961H1C0.723858 6.49961 0.5 6.27575 0.5 5.99961C0.5 5.72347 0.723858 5.49961 1 5.49961H11.7929L7.97978 1.68656C7.78452 1.4913 7.78452 1.17472 7.97978 0.979457Z" fill="#FF6849" />
                                 </svg>
                             </div>
                         </a>
-                        <div class="flex flex-grow gap-M h-[48px] max-w-[272px]">
+                        <div class="md:flex hidden flex-grow gap-M h-[48px] max-w-[272px]">
                             <img src="./img/profile/profile3.jpg" class="h-[48px] w-[48px] rounded-full">
                             <div class="flex flex-col justify-between lg:min-w-[208px] min-w-[200px]">
                                 <span class="text-Bold text-[#252532]">Robert Fox</span>
@@ -202,25 +209,25 @@
                     </div>
                 </div>
 
-                <div class="grid grid-cols-1 gap-L lg:px-SM lg:mx-[-12px] lg:border-x md:border-neutralSecondary">
+                <div class="grid md:grid-cols-1 grid-cols-2 md:gap-L gap-M lg:px-SM lg:mx-[-12px] lg:border-x md:border-neutralSecondary">
                     <div class="flex-shrink-0">
                         <a href="#">
                             <img class="w-full rounded-S object-cover" src="./img/card/img4.jpg" alt="">
                         </a>
                     </div>
-                    <div class="flex flex-col gap-L">
-                        <button class="h-[32px] w-[77px] py-S px-SM rounded-[6px] bg-[#619DFF5C] text-bravo text-Small flex items-center text-center justify-center">Category</button>
-                        <span class="text-H3 text-[#252532]">Blog title heading </span>
-                        <span class="text-Medium text-[#525D61]">Lorem ipsum dolor sit amet consectetur. Sit ipsum in aenean sed diam. Et pretium nec elementum enim viverra nunc risus ac facilisis.</span>
+                    <div class="flex flex-col md:gap-L sm:gap-M gap-XS">
+                        <button class="md:h-[32px] h-[24px] w-[77px] py-S px-SM rounded-[6px] bg-[#619DFF5C] text-bravo text-Small flex items-center text-center justify-center">Category</button>
+                        <span class="md:text-H3 text-Regular text-[#252532]">Blog title heading </span>
+                        <span class="md:text-Medium text-Small text-[#525D61] md:line-clamp-none sm:line-clamp-2 line-clamp-1">Lorem ipsum dolor sit amet consectetur. Sit ipsum in aenean sed diam. Et pretium nec elementum enim viverra nunc risus ac facilisis.</span>
                         <a class="" href="about#">
                             <div class="flex items-center gap-S">
-                                <span class="text-Regular text-brand">Read the article</span>
+                                <span class="md:text-Regular text-14 text-brand">Read the article</span>
                                 <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M7.97978 0.979457C8.17504 0.784193 8.49162 0.784191 8.68688 0.979452L13.3536 5.64605C13.4473 5.73982 13.5 5.867 13.5 5.99961C13.5 6.13222 13.4473 6.25939 13.3536 6.35316L8.68689 11.0198C8.49162 11.2151 8.17504 11.2151 7.97978 11.0198C7.78452 10.8246 7.78452 10.508 7.97978 10.3127L11.7929 6.49961H1C0.723858 6.49961 0.5 6.27575 0.5 5.99961C0.5 5.72347 0.723858 5.49961 1 5.49961H11.7929L7.97978 1.68656C7.78452 1.4913 7.78452 1.17472 7.97978 0.979457Z" fill="#FF6849" />
                                 </svg>
                             </div>
                         </a>
-                        <div class="flex flex-grow gap-M h-[48px] max-w-[272px]">
+                        <div class="md:flex hidden flex-grow gap-M h-[48px] max-w-[272px]">
                             <img src="./img/profile/profile4.jpg" class="h-[48px] w-[48px] rounded-full">
                             <div class="flex flex-col justify-between lg:min-w-[208px] min-w-[200px]">
                                 <span class="text-Bold text-[#252532]">Darlene Robertson</span>
@@ -238,25 +245,25 @@
                     </div>
                 </div>
 
-                <div class="grid grid-cols-1 gap-L">
+                <div class="grid md:grid-cols-1 grid-cols-2 md:gap-L gap-M">
                     <div class="flex-shrink-0">
                         <a href="#">
                             <img class="w-full rounded-S object-cover" src="./img/card/img5.jpg" alt="">
                         </a>
                     </div>
-                    <div class="flex flex-col gap-L">
-                        <button class="h-[32px] w-[77px] py-S px-SM rounded-[6px] bg-[#A4CD805C] text-success text-Small flex items-center text-center justify-center">Category</button>
-                        <span class="text-H3 text-[#252532]">Blog title heading </span>
-                        <span class="text-Medium text-[#525D61]">Lorem ipsum dolor sit amet consectetur. Sit ipsum in aenean sed diam. Et pretium nec elementum enim viverra nunc risus ac facilisis.</span>
+                    <div class="flex flex-col md:gap-L sm:gap-M gap-XS">
+                        <button class="md:h-[32px] h-[24px] w-[77px] py-S px-SM rounded-[6px] bg-[#A4CD805C] text-success text-Small flex items-center text-center justify-center">Category</button>
+                        <span class="md:text-H3 text-Regular text-[#252532]">Blog title heading </span>
+                        <span class="md:text-Medium text-Small text-[#525D61] md:line-clamp-none sm:line-clamp-2 line-clamp-1">Lorem ipsum dolor sit amet consectetur. Sit ipsum in aenean sed diam. Et pretium nec elementum enim viverra nunc risus ac facilisis.</span>
                         <a class="" href="about#">
                             <div class="flex items-center gap-S">
-                                <span class="text-Regular text-brand">Read the article</span>
+                                <span class="md:text-Regular text-14 text-brand">Read the article</span>
                                 <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M7.97978 0.979457C8.17504 0.784193 8.49162 0.784191 8.68688 0.979452L13.3536 5.64605C13.4473 5.73982 13.5 5.867 13.5 5.99961C13.5 6.13222 13.4473 6.25939 13.3536 6.35316L8.68689 11.0198C8.49162 11.2151 8.17504 11.2151 7.97978 11.0198C7.78452 10.8246 7.78452 10.508 7.97978 10.3127L11.7929 6.49961H1C0.723858 6.49961 0.5 6.27575 0.5 5.99961C0.5 5.72347 0.723858 5.49961 1 5.49961H11.7929L7.97978 1.68656C7.78452 1.4913 7.78452 1.17472 7.97978 0.979457Z" fill="#FF6849" />
                                 </svg>
                             </div>
                         </a>
-                        <div class="flex flex-grow gap-M h-[48px] max-w-[272px]">
+                        <div class="md:flex hidden flex-grow gap-M h-[48px] max-w-[272px]">
                             <img src="./img/profile/profile5.jpg" class="h-[48px] w-[48px] rounded-full">
                             <div class="flex flex-col justify-between lg:min-w-[208px] min-w-[200px]">
                                 <span class="text-Bold text-[#252532]">Albert Flores</span>
@@ -311,25 +318,25 @@
 
             <div class="grid md:gap-L gap-SM md:grid-cols-2 lg:grid-cols-3 grid-cols-1">
 
-                <div class="grid grid-cols-1 gap-L">
+                <div class="grid md:grid-cols-1 grid-cols-2 md:gap-L gap-M">
                     <div class="flex-shrink-0">
                         <a href="#">
                             <img class="w-full rounded-S object-cover" src="./img/card/img.jpg" alt="">
                         </a>
                     </div>
-                    <div class="flex flex-col gap-L">
-                        <button class="h-[32px] w-[77px] py-S px-SM rounded-[6px] bg-[#619DFF5C] text-bravo text-Small flex items-center text-center justify-center">Category</button>
-                        <span class="text-H3 text-[#252532]">Blog title heading </span>
-                        <span class="text-Medium text-[#525D61]">Lorem ipsum dolor sit amet consectetur. Sit ipsum in aenean sed diam. Et pretium nec elementum enim viverra nunc risus ac facilisis.</span>
+                    <div class="flex flex-col md:gap-L sm:gap-M gap-XS">
+                        <button class="md:h-[32px] h-[24px] w-[77px] py-S px-SM rounded-[6px] bg-[#619DFF5C] text-bravo text-Small flex items-center text-center justify-center">Category</button>
+                        <span class="md:text-H3 text-Regular text-[#252532]">Blog title heading </span>
+                        <span class="md:text-Medium text-Small text-[#525D61] md:line-clamp-none sm:line-clamp-2 line-clamp-1">Lorem ipsum dolor sit amet consectetur. Sit ipsum in aenean sed diam. Et pretium nec elementum enim viverra nunc risus ac facilisis.</span>
                         <a class="" href="about#">
                             <div class="flex items-center gap-S">
-                                <span class="text-Regular text-brand">Read the article</span>
+                                <span class="md:text-Regular text-14 text-brand">Read the article</span>
                                 <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M7.97978 0.979457C8.17504 0.784193 8.49162 0.784191 8.68688 0.979452L13.3536 5.64605C13.4473 5.73982 13.5 5.867 13.5 5.99961C13.5 6.13222 13.4473 6.25939 13.3536 6.35316L8.68689 11.0198C8.49162 11.2151 8.17504 11.2151 7.97978 11.0198C7.78452 10.8246 7.78452 10.508 7.97978 10.3127L11.7929 6.49961H1C0.723858 6.49961 0.5 6.27575 0.5 5.99961C0.5 5.72347 0.723858 5.49961 1 5.49961H11.7929L7.97978 1.68656C7.78452 1.4913 7.78452 1.17472 7.97978 0.979457Z" fill="#FF6849" />
                                 </svg>
                             </div>
                         </a>
-                        <div class="flex flex-grow gap-M h-[48px] max-w-[272px]">
+                        <div class="md:flex hidden flex-grow gap-M h-[48px] max-w-[272px]">
                             <img src="./img/profile/profile.jpg" class="h-[48px] w-[48px] rounded-full">
                             <div class="flex flex-col justify-between lg:min-w-[208px] min-w-[200px]">
                                 <span class="text-Bold text-[#252532]">Jane Coper</span>
@@ -347,25 +354,25 @@
                     </div>
                 </div>
 
-                <div class="grid grid-cols-1 gap-L lg:px-SM lg:mx-[-12px] lg:border-x md:border-neutralSecondary">
+                <div class="grid md:grid-cols-1 grid-cols-2 md:gap-L gap-M lg:px-SM lg:mx-[-12px] lg:border-x md:border-neutralSecondary">
                     <div class="flex-shrink-0">
                         <a href="#">
                             <img class="w-full rounded-S object-cover" src="./img/card/img1.jpg" alt="">
                         </a>
                     </div>
-                    <div class="flex flex-col gap-L">
-                        <button class="h-[32px] w-[77px] py-S px-SM rounded-[6px] bg-[#619DFF5C] text-bravo text-Small flex items-center text-center justify-center">Category</button>
-                        <span class="text-H3 text-[#252532]">Blog title heading </span>
-                        <span class="text-Medium text-[#525D61]">Lorem ipsum dolor sit amet consectetur. Sit ipsum in aenean sed diam. Et pretium nec elementum enim viverra nunc risus ac facilisis.</span>
+                    <div class="flex flex-col md:gap-L sm:gap-M gap-XS">
+                        <button class="md:h-[32px] h-[24px] w-[77px] py-S px-SM rounded-[6px] bg-[#619DFF5C] text-bravo text-Small flex items-center text-center justify-center">Category</button>
+                        <span class="md:text-H3 text-Regular text-[#252532]">Blog title heading </span>
+                        <span class="md:text-Medium text-Small text-[#525D61] md:line-clamp-none sm:line-clamp-2 line-clamp-1">Lorem ipsum dolor sit amet consectetur. Sit ipsum in aenean sed diam. Et pretium nec elementum enim viverra nunc risus ac facilisis.</span>
                         <a class="" href="about#">
                             <div class="flex items-center gap-S">
-                                <span class="text-Regular text-brand">Read the article</span>
+                                <span class="md:text-Regular text-14 text-brand">Read the article</span>
                                 <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M7.97978 0.979457C8.17504 0.784193 8.49162 0.784191 8.68688 0.979452L13.3536 5.64605C13.4473 5.73982 13.5 5.867 13.5 5.99961C13.5 6.13222 13.4473 6.25939 13.3536 6.35316L8.68689 11.0198C8.49162 11.2151 8.17504 11.2151 7.97978 11.0198C7.78452 10.8246 7.78452 10.508 7.97978 10.3127L11.7929 6.49961H1C0.723858 6.49961 0.5 6.27575 0.5 5.99961C0.5 5.72347 0.723858 5.49961 1 5.49961H11.7929L7.97978 1.68656C7.78452 1.4913 7.78452 1.17472 7.97978 0.979457Z" fill="#FF6849" />
                                 </svg>
                             </div>
                         </a>
-                        <div class="flex flex-grow gap-M h-[48px] max-w-[272px]">
+                        <div class="md:flex hidden flex-grow gap-M h-[48px] max-w-[272px]">
                             <img src="./img/profile/profile1.jpg" class="h-[48px] w-[48px] rounded-full">
                             <div class="flex flex-col justify-between lg:min-w-[208px] min-w-[200px]">
                                 <span class="text-Bold text-[#252532]">Guy Hawkins</span>
@@ -383,25 +390,25 @@
                     </div>
                 </div>
 
-                <div class="grid grid-cols-1 gap-L">
+                <div class="grid md:grid-cols-1 grid-cols-2 md:gap-L gap-M">
                     <div class="flex-shrink-0">
                         <a href="#">
                             <img class="w-full rounded-S object-cover" src="./img/card/img2.jpg" alt="">
                         </a>
                     </div>
-                    <div class="flex flex-col gap-L">
-                        <button class="h-[32px] w-[77px] py-S px-SM rounded-[6px] bg-[#FF684940] text-onBrand text-Small flex items-center text-center justify-center">Category</button>
-                        <span class="text-H3 text-[#252532]">Blog title heading </span>
-                        <span class="text-Medium text-[#525D61]">Lorem ipsum dolor sit amet consectetur. Sit ipsum in aenean sed diam. Et pretium nec elementum enim viverra nunc risus ac facilisis.</span>
+                    <div class="flex flex-col md:gap-L sm:gap-M gap-XS">
+                        <button class="md:h-[32px] h-[24px] w-[77px] py-S px-SM rounded-[6px] bg-[#FF684940] text-onBrand text-Small flex items-center text-center justify-center">Category</button>
+                        <span class="md:text-H3 text-Regular text-[#252532]">Blog title heading </span>
+                        <span class="md:text-Medium text-Small text-[#525D61] md:line-clamp-none sm:line-clamp-2 line-clamp-1">Lorem ipsum dolor sit amet consectetur. Sit ipsum in aenean sed diam. Et pretium nec elementum enim viverra nunc risus ac facilisis.</span>
                         <a class="" href="about#">
                             <div class="flex items-center gap-S">
-                                <span class="text-Regular text-brand">Read the article</span>
+                                <span class="md:text-Regular text-14 text-brand">Read the article</span>
                                 <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M7.97978 0.979457C8.17504 0.784193 8.49162 0.784191 8.68688 0.979452L13.3536 5.64605C13.4473 5.73982 13.5 5.867 13.5 5.99961C13.5 6.13222 13.4473 6.25939 13.3536 6.35316L8.68689 11.0198C8.49162 11.2151 8.17504 11.2151 7.97978 11.0198C7.78452 10.8246 7.78452 10.508 7.97978 10.3127L11.7929 6.49961H1C0.723858 6.49961 0.5 6.27575 0.5 5.99961C0.5 5.72347 0.723858 5.49961 1 5.49961H11.7929L7.97978 1.68656C7.78452 1.4913 7.78452 1.17472 7.97978 0.979457Z" fill="#FF6849" />
                                 </svg>
                             </div>
                         </a>
-                        <div class="flex flex-grow gap-M h-[48px] max-w-[272px]">
+                        <div class="md:flex hidden flex-grow gap-M h-[48px] max-w-[272px]">
                             <img src="./img/profile/profile2.jpg" class="h-[48px] w-[48px] rounded-full">
                             <div class="flex flex-col justify-between lg:min-w-[208px] min-w-[200px]">
                                 <span class="text-Bold text-[#252532]">Jenny Wilson</span>
@@ -419,25 +426,25 @@
                     </div>
                 </div>
 
-                <div class="grid grid-cols-1 gap-L">
+                <div class="grid md:grid-cols-1 grid-cols-2 md:gap-L gap-M">
                     <div class="flex-shrink-0">
                         <a href="#">
                             <img class="w-full rounded-S object-cover" src="./img/card/img3.jpg" alt="">
                         </a>
                     </div>
-                    <div class="flex flex-col gap-L">
-                        <button class="h-[32px] w-[77px] py-S px-SM rounded-[6px] bg-[#619DFF5C] text-bravo text-Small flex items-center text-center justify-center">Category</button>
-                        <span class="text-H3 text-[#252532]">Blog title heading </span>
-                        <span class="text-Medium text-[#525D61]">Lorem ipsum dolor sit amet consectetur. Sit ipsum in aenean sed diam. Et pretium nec elementum enim viverra nunc risus ac facilisis.</span>
+                    <div class="flex flex-col md:gap-L sm:gap-M gap-XS">
+                        <button class="md:h-[32px] h-[24px] w-[77px] py-S px-SM rounded-[6px] bg-[#619DFF5C] text-bravo text-Small flex items-center text-center justify-center">Category</button>
+                        <span class="md:text-H3 text-Regular text-[#252532]">Blog title heading </span>
+                        <span class="md:text-Medium text-Small text-[#525D61] md:line-clamp-none sm:line-clamp-2 line-clamp-1">Lorem ipsum dolor sit amet consectetur. Sit ipsum in aenean sed diam. Et pretium nec elementum enim viverra nunc risus ac facilisis.</span>
                         <a class="" href="about#">
                             <div class="flex items-center gap-S">
-                                <span class="text-Regular text-brand">Read the article</span>
+                                <span class="md:text-Regular text-14 text-brand">Read the article</span>
                                 <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M7.97978 0.979457C8.17504 0.784193 8.49162 0.784191 8.68688 0.979452L13.3536 5.64605C13.4473 5.73982 13.5 5.867 13.5 5.99961C13.5 6.13222 13.4473 6.25939 13.3536 6.35316L8.68689 11.0198C8.49162 11.2151 8.17504 11.2151 7.97978 11.0198C7.78452 10.8246 7.78452 10.508 7.97978 10.3127L11.7929 6.49961H1C0.723858 6.49961 0.5 6.27575 0.5 5.99961C0.5 5.72347 0.723858 5.49961 1 5.49961H11.7929L7.97978 1.68656C7.78452 1.4913 7.78452 1.17472 7.97978 0.979457Z" fill="#FF6849" />
                                 </svg>
                             </div>
                         </a>
-                        <div class="flex flex-grow gap-M h-[48px] max-w-[272px]">
+                        <div class="md:flex hidden flex-grow gap-M h-[48px] max-w-[272px]">
                             <img src="./img/profile/profile3.jpg" class="h-[48px] w-[48px] rounded-full">
                             <div class="flex flex-col justify-between lg:min-w-[208px] min-w-[200px]">
                                 <span class="text-Bold text-[#252532]">Robert Fox</span>
@@ -455,25 +462,25 @@
                     </div>
                 </div>
 
-                <div class="grid grid-cols-1 gap-L lg:px-SM lg:mx-[-12px] lg:border-x md:border-neutralSecondary">
+                <div class="grid md:grid-cols-1 grid-cols-2 md:gap-L gap-M lg:px-SM lg:mx-[-12px] lg:border-x md:border-neutralSecondary">
                     <div class="flex-shrink-0">
                         <a href="#">
                             <img class="w-full rounded-S object-cover" src="./img/card/img4.jpg" alt="">
                         </a>
                     </div>
-                    <div class="flex flex-col gap-L">
-                        <button class="h-[32px] w-[77px] py-S px-SM rounded-[6px] bg-[#619DFF5C] text-bravo text-Small flex items-center text-center justify-center">Category</button>
-                        <span class="text-H3 text-[#252532]">Blog title heading </span>
-                        <span class="text-Medium text-[#525D61]">Lorem ipsum dolor sit amet consectetur. Sit ipsum in aenean sed diam. Et pretium nec elementum enim viverra nunc risus ac facilisis.</span>
+                    <div class="flex flex-col md:gap-L sm:gap-M gap-XS">
+                        <button class="md:h-[32px] h-[24px] w-[77px] py-S px-SM rounded-[6px] bg-[#619DFF5C] text-bravo text-Small flex items-center text-center justify-center">Category</button>
+                        <span class="md:text-H3 text-Regular text-[#252532]">Blog title heading </span>
+                        <span class="md:text-Medium text-Small text-[#525D61] md:line-clamp-none sm:line-clamp-2 line-clamp-1">Lorem ipsum dolor sit amet consectetur. Sit ipsum in aenean sed diam. Et pretium nec elementum enim viverra nunc risus ac facilisis.</span>
                         <a class="" href="about#">
                             <div class="flex items-center gap-S">
-                                <span class="text-Regular text-brand">Read the article</span>
+                                <span class="md:text-Regular text-14 text-brand">Read the article</span>
                                 <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M7.97978 0.979457C8.17504 0.784193 8.49162 0.784191 8.68688 0.979452L13.3536 5.64605C13.4473 5.73982 13.5 5.867 13.5 5.99961C13.5 6.13222 13.4473 6.25939 13.3536 6.35316L8.68689 11.0198C8.49162 11.2151 8.17504 11.2151 7.97978 11.0198C7.78452 10.8246 7.78452 10.508 7.97978 10.3127L11.7929 6.49961H1C0.723858 6.49961 0.5 6.27575 0.5 5.99961C0.5 5.72347 0.723858 5.49961 1 5.49961H11.7929L7.97978 1.68656C7.78452 1.4913 7.78452 1.17472 7.97978 0.979457Z" fill="#FF6849" />
                                 </svg>
                             </div>
                         </a>
-                        <div class="flex flex-grow gap-M h-[48px] max-w-[272px]">
+                        <div class="md:flex hidden flex-grow gap-M h-[48px] max-w-[272px]">
                             <img src="./img/profile/profile4.jpg" class="h-[48px] w-[48px] rounded-full">
                             <div class="flex flex-col justify-between lg:min-w-[208px] min-w-[200px]">
                                 <span class="text-Bold text-[#252532]">Darlene Robertson</span>
@@ -491,25 +498,25 @@
                     </div>
                 </div>
 
-                <div class="grid grid-cols-1 gap-L">
+                <div class="grid md:grid-cols-1 grid-cols-2 md:gap-L gap-M">
                     <div class="flex-shrink-0">
                         <a href="#">
                             <img class="w-full rounded-S object-cover" src="./img/card/img5.jpg" alt="">
                         </a>
                     </div>
-                    <div class="flex flex-col gap-L">
-                        <button class="h-[32px] w-[77px] py-S px-SM rounded-[6px] bg-[#A4CD805C] text-success text-Small flex items-center text-center justify-center">Category</button>
-                        <span class="text-H3 text-[#252532]">Blog title heading </span>
-                        <span class="text-Medium text-[#525D61]">Lorem ipsum dolor sit amet consectetur. Sit ipsum in aenean sed diam. Et pretium nec elementum enim viverra nunc risus ac facilisis.</span>
+                    <div class="flex flex-col md:gap-L sm:gap-M gap-XS">
+                        <button class="md:h-[32px] h-[24px] w-[77px] py-S px-SM rounded-[6px] bg-[#A4CD805C] text-success text-Small flex items-center text-center justify-center">Category</button>
+                        <span class="md:text-H3 text-Regular text-[#252532]">Blog title heading </span>
+                        <span class="md:text-Medium text-Small text-[#525D61] md:line-clamp-none sm:line-clamp-2 line-clamp-1">Lorem ipsum dolor sit amet consectetur. Sit ipsum in aenean sed diam. Et pretium nec elementum enim viverra nunc risus ac facilisis.</span>
                         <a class="" href="about#">
                             <div class="flex items-center gap-S">
-                                <span class="text-Regular text-brand">Read the article</span>
+                                <span class="md:text-Regular text-14 text-brand">Read the article</span>
                                 <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M7.97978 0.979457C8.17504 0.784193 8.49162 0.784191 8.68688 0.979452L13.3536 5.64605C13.4473 5.73982 13.5 5.867 13.5 5.99961C13.5 6.13222 13.4473 6.25939 13.3536 6.35316L8.68689 11.0198C8.49162 11.2151 8.17504 11.2151 7.97978 11.0198C7.78452 10.8246 7.78452 10.508 7.97978 10.3127L11.7929 6.49961H1C0.723858 6.49961 0.5 6.27575 0.5 5.99961C0.5 5.72347 0.723858 5.49961 1 5.49961H11.7929L7.97978 1.68656C7.78452 1.4913 7.78452 1.17472 7.97978 0.979457Z" fill="#FF6849" />
                                 </svg>
                             </div>
                         </a>
-                        <div class="flex flex-grow gap-M h-[48px] max-w-[272px]">
+                        <div class="md:flex hidden flex-grow gap-M h-[48px] max-w-[272px]">
                             <img src="./img/profile/profile5.jpg" class="h-[48px] w-[48px] rounded-full">
                             <div class="flex flex-col justify-between lg:min-w-[208px] min-w-[200px]">
                                 <span class="text-Bold text-[#252532]">Albert Flores</span>

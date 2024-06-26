@@ -4,7 +4,7 @@ module.exports = {
     theme: {
         extend: {
             screens: {
-                'sm': '640px',
+                'sm': '400px',
                 'md': '768px',
                 'lg': '1024px',
                 'xl': '1280px',
@@ -67,6 +67,7 @@ module.exports = {
             },
             borderRadius: {
                 DEFAULT: '0.25rem',
+                XXS: '2px',
                 XS: '4px',
                 S: '8px',
                 SM: '12px',
@@ -77,6 +78,7 @@ module.exports = {
                 XXXL: '112px'
             },
             padding: {
+                XXS: '2px',
                 XS: '4px',
                 S: '8px',
                 SM: '12px',
@@ -87,6 +89,7 @@ module.exports = {
                 XXXL: '112px'
             },
             spacing: {
+                XXS: '2px',
                 XS: '4px',
                 S: '8px',
                 SM: '12px',
@@ -98,9 +101,6 @@ module.exports = {
             },
             transitionDuration: {
                 '2000': '2000ms',
-            },
-            gap: {
-                XXl: '57px'
             }
         }
     },
