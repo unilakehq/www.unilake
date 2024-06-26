@@ -38,6 +38,9 @@ module.exports = {
                 Small: ['12px', { lineHeight: '24px', fontWeight: '400' }],
                 large: ['20px', { lineHeight: '32px', fontWeight: '700' }],
                 Bold: ['16px', { lineHeight: '18px', fontWeight: '700' }],
+                14: ['14px', { lineHeight: '24px', fontWeight: '600' }],
+                15: ['40px', { lineHeight: '44px', fontWeight: '700' }],
+                16: ['24px', { lineHeight: '32px', fontWeight: '700' }],
             },
             fontFamily: {
                 inter: 'Inter , sans-serif'
