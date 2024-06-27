@@ -1,0 +1,502 @@
+﻿@page "/article"
+@attribute [RenderStatic]
+@inject MarkdownBlog Blog
+@{
+    ViewData["Title"] = "Unilake.Www Article";
+}
+@section FlowbiteCSS {
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+}
+
+@section FlowbiteJS {
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+}
+<div class="2xl:container md:py-XXL py-[64px] px-L grid grid-cols-1 md:gap-XXL gap-XL mx-auto font-inter">
+    <span class="flex items-center gap-S text-Medium text-brand">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.02022 2.97946C7.21548 3.17472 7.21548 3.4913 7.02022 3.68656L3.20712 7.49961H14C14.2761 7.49961 14.5 7.72347 14.5 7.99961C14.5 8.27575 14.2761 8.49961 14 8.49961H3.20711L7.02022 12.3127C7.21548 12.508 7.21548 12.8246 7.02022 13.0198C6.82496 13.2151 6.50838 13.2151 6.31311 13.0198L1.64645 8.35316C1.55268 8.25939 1.5 8.13222 1.5 7.99961C1.5 7.867 1.55268 7.73982 1.64645 7.64605L6.31312 2.97945C6.50838 2.78419 6.82496 2.78419 7.02022 2.97946Z" fill="#FF6849" />
+        </svg>
+        Back
+    </span>
+    <div class="lg:hidden flex md:flex-row flex-col gap-L">
+        <div class="flex flex-col gap-L">
+            <div class="flex gap-M">
+                <span class="text-brand text-Regular">Article</span>
+                <button class="md:h-[32px] h-[24px] w-[77px] py-S px-SM rounded-[6px] bg-[#FF684940] text-onBrand text-Small flex items-center text-center justify-center">Category</button>
+            </div>
+            <h1 class="text-[48px] leading-[52px] font-[700] text-[#252532]">
+                Article title goes here
+            </h1>
+        </div>
+        <div class="flex items-end">
+            <div class="flex gap-M h-[48px] max-w-[272px] items-end">
+                <img src="./img/profile/profile3.jpg" class="h-[48px] w-[48px] rounded-full">
+                <div class="flex flex-col justify-between h-full lg:min-w-[208px] md:min-w-[200px] min-w-[180px]">
+                    <span class="text-Bold text-[#252532]">Marvin McKinney</span>
+                    <div class="flex justify-between items-end">
+                        <span class="text-Small text-textSecondary">31 Dec 2023</span>
+                        <div class="flex items-center h-full">
+                            <svg width="4" height="5" viewBox="0 0 4 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.22168 3.06641V2.70605C0.22168 2.20215 0.379883 1.78613 0.696289 1.45801C1.01855 1.12988 1.45508 0.96582 2.00586 0.96582C2.5625 0.96582 3.00195 1.12988 3.32422 1.45801C3.64648 1.78613 3.80762 2.20215 3.80762 2.70605V3.06641C3.80762 3.56445 3.64648 3.97754 3.32422 4.30566C3.00781 4.62793 2.57129 4.78906 2.01465 4.78906C1.46387 4.78906 1.02734 4.62793 0.705078 4.30566C0.382812 3.97754 0.22168 3.56445 0.22168 3.06641Z" fill="#252532" />
+                            </svg>
+                        </div>
+                        <span class="text-Small text-textSecondary">5 min read</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="grid lg:grid-cols-3 grid-cols-1 gap-[55px]">
+        <div id="accordion-collapse" data-accordion="open" class="bg-neutral px-M pb-M rounded-S h-fit">
+            <div id="accordion-collapse-heading-1">
+                <div class="flex border-b py-M justify-between items-center max-h-[72px] bg-neutral" data-accordion-target="#accordion-collapse-body-1" aria-expanded="true" aria-controls="accordion-collapse-body-1">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.5 4C0.5 2.067 2.067 0.5 4 0.5H36C37.933 0.5 39.5 2.067 39.5 4V36C39.5 37.933 37.933 39.5 36 39.5H4C2.067 39.5 0.5 37.933 0.5 36V4Z" stroke="#DDDFDA" />
+                        <path d="M24.8213 13.5713H16.7856C15.898 13.5713 15.1785 14.2908 15.1785 15.1784V28.8391C15.1785 29.7268 15.898 30.4463 16.7856 30.4463H27.232C28.1197 30.4463 28.8392 29.7268 28.8392 28.8391V17.5891L24.8213 13.5713Z" fill="#FFE9E4" />
+                        <path d="M24.0178 18.3927V13.5713H24.8214L28.8392 17.5891V18.3927H24.0178Z" fill="#F9F8F6" />
+                        <path d="M24.8213 13.5713H16.7856C15.898 13.5713 15.1785 14.2908 15.1785 15.1784V28.8391C15.1785 29.7268 15.898 30.4463 16.7856 30.4463H27.232C28.1197 30.4463 28.8392 29.7268 28.8392 28.8391V17.5891L24.8213 13.5713Z" stroke="#FF6849" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M20.8035 9.55371H12.7678C11.8802 9.55371 11.1606 10.2733 11.1606 11.1609V24.8216" stroke="#FF6849" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M24.0178 13.5713V18.3927H28.8392" stroke="#FF6849" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <span class="text-H2 text-[#252532] flex w-fit py-M">On this page</span>
+                    <svg data-accordion-icon class="transition-all duration-500" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M11.4697 8.46967C11.7626 8.17678 12.2374 8.17678 12.5303 8.46967L18.5303 14.4697C18.8232 14.7626 18.8232 15.2374 18.5303 15.5303C18.2374 15.8232 17.7626 15.8232 17.4697 15.5303L12 10.0607L6.53033 15.5303C6.23744 15.8232 5.76256 15.8232 5.46967 15.5303C5.17678 15.2374 5.17678 14.7626 5.46967 14.4697L11.4697 8.46967Z" fill="#FF6849" />
+                    </svg>
+                </div>
+            </div>
+            <div id="accordion-collapse-body-1" class="hidden" aria-labelledby="accordion-collapse-heading-1">
+                <ul class="list-unstyled gap-S visible transition-all" id="accordion-collapse-body-1" class="hidden" aria-labelledby="accordion-collapse-heading-1">
+                    <li >
+                        <span class="text-H2 text-[#525D61] flex h-[56px] py-SM px-M items-center">Tab</span>
+                    </li>
+                    <li>
+                        <span class="text-Regular text-[#525D61] flex h-[56px] py-SM px-M items-center">Tab</span>
+                    </li>
+                    <li>
+                        <span class="text-Small text-[#525D61] flex h-[56px] py-SM px-M items-center">Tab</span>
+                    </li>
+                    <li>
+                        <span class="text-H2 text-[#525D61] flex h-[56px] py-SM px-M items-center">Tab</span>
+                    </li>
+                    <li>
+                        <span class="text-Regular text-[#525D61] flex h-[56px] py-SM px-M items-center">Tab</span>
+                    </li>
+                    <li>
+                        <span class="text-H2 text-[#525D61] flex h-[56px] py-SM px-M items-center">Tab</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="lg:col-span-2 grid gap-XXL">
+            <div class="hidden lg:flex justify-between">
+                <div class="flex flex-col gap-L">
+                    <div class="flex gap-M">
+                        <span class="text-brand text-Regular">Article</span>
+                        <button class="md:h-[32px] h-[24px] w-[77px] py-S px-SM rounded-[6px] bg-[#FF684940] text-onBrand text-Small flex items-center text-center justify-center">Category</button>
+                    </div>
+                    <h1 class="text-[48px] leading-[52px] font-[700] text-[#252532]">
+                        Article title goes here
+                    </h1>
+                </div>
+                <div class="flex items-end">
+                    <div class="flex gap-M h-[48px] max-w-[272px] items-end">
+                        <img src="./img/profile/profile3.jpg" class="h-[48px] w-[48px] rounded-full">
+                        <div class="flex flex-col justify-between h-full lg:min-w-[208px] md:min-w-[200px] min-w-[180px]">
+                            <span class="text-Bold text-[#252532]">Marvin McKinney</span>
+                            <div class="flex justify-between items-end">
+                                <span class="text-Small text-textSecondary">31 Dec 2023</span>
+                                <div class="flex items-center h-full">
+                                    <svg width="4" height="5" viewBox="0 0 4 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.22168 3.06641V2.70605C0.22168 2.20215 0.379883 1.78613 0.696289 1.45801C1.01855 1.12988 1.45508 0.96582 2.00586 0.96582C2.5625 0.96582 3.00195 1.12988 3.32422 1.45801C3.64648 1.78613 3.80762 2.20215 3.80762 2.70605V3.06641C3.80762 3.56445 3.64648 3.97754 3.32422 4.30566C3.00781 4.62793 2.57129 4.78906 2.01465 4.78906C1.46387 4.78906 1.02734 4.62793 0.705078 4.30566C0.382812 3.97754 0.22168 3.56445 0.22168 3.06641Z" fill="#252532" />
+                                    </svg>
+                                </div>
+                                <span class="text-Small text-textSecondary">5 min read</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="./img/authors/Heroimage.png" class="border border-borderSecondary rounded-L object-cover">
+            <div class="flex flex-col gap-[39px]">
+                <p class="text-H4 text-[#525D61]">
+                    Lorem ipsum dolor sit amet consectetur. Sit ipsum in aenean sed diam. Et pretium nec elementum enim viverra nunc risus ac facilisis. Lorem ipsum dolor sit amet consectetur. Sit ipsum in aenean sed diam. Et pretium nec elementum enim viverra nunc risus ac facilisis.
+                </p>
+                <hr class="bg-[#DDDFDA]">
+                <div class="flex flex-col gap-L">
+                    <h1 class="text-[40px] leading-[44px] font-[700] text-[#252532]">Heading title goes here </h1>
+                    <p class="text-large font-[400]">
+                        Lorem ipsum dolor sit amet consectetur. Magna cras eu mi tincidunt eget quis vestibulum. Urna ultrices aenean elementum consequat vestibulum. In quam ultricies lacus rutrum id integer nisl. Est mi nunc urna morbi. Quis semper ultricies eget egestas dignissim non. Morbi accumsan est augue tempor tortor accumsan etiam mattis. Arcu consectetur rutrum mi volutpat.
+                        Nibh vitae mi tristique elit cum. Ultricies tincidunt mi senectus morbi donec amet nunc sed. Feugiat et consectetur aenean lacinia ac rhoncus. Et dui volutpat ullamcorper enim. Porttitor sodales in et condimentum. Tristique fringilla donec massa enim posuere. Volutpat feugiat feugiat nisl eu in lectus. Cras scelerisque nisi quis ante eget ut luctus facilisis euismod. Vel in mauris tellus arcu nunc. Leo platea gravida accumsan lorem scelerisque. Mattis et neque tincidunt nunc et condimentum lacus in eget. Ullamcorper fames interdum turpis quis. Consectetur mattis mus sed mattis mauris. Scelerisque a bibendum volutpat amet magnis. Egestas gravida sed integer porttitor feugiat.
+                        Enim urna eget sagittis nisl nullam magnis hac. Nunc lacus nulla eget egestas auctor nisl et consequat ipsum. Non cursus imperdiet aliquet nisi amet enim. Lacus massa sit convallis purus nulla tristique. Nec odio sed condimentum quam in gravida ac. Nisl vitae sit pulvinar mollis faucibus interdum dui at pellentesque. Leo sapien nibh leo sagittis cras nam felis ornare. Habitant eget ornare turpis.
+                    </p>
+                </div>
+                <div class="flex flex-col gap-L py-L pr-L pl-XXL border-s-4 border-brand">
+                    <p class="text-[#252532] text-16">“Ultricies tincidunt mi senectus morbi donec amet nunc sed. Feugiat et consectetur aenean lacinia ac rhoncus. Et dui volutpat ullamcorper enim. Porttitor sodales in et condimentum.”</p>
+                    <h1 class="text-large font-[400] text-[#525D61]">Kristin Watson</h1>
+                </div>
+                <div class="grid md:grid-cols-2 grid-cols-1 gap-L">
+                    <div class="flex flex-grow flex-col md:gap-M gap-L">
+                        <img src="./img/card/img.jpg" />
+                        <h1 class="text-Small text-[#525D61] text-right">Picture caption goes here</h1>
+                    </div>
+                    <div class="flex flex-grow flex-col md:gap-M gap-L">
+                        <img src="./img/card/img3.jpg" />
+                        <h1 class="text-Small text-[#525D61] text-right">Picture caption goes here</h1>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-L">
+                    <h1 class="text-[40px] leading-[44px] font-[700] text-[#252532]">Heading title goes here </h1>
+                    <p class="text-large font-[400]">
+                        Lorem ipsum dolor sit amet consectetur. Magna cras eu mi tincidunt eget quis vestibulum. Urna ultrices aenean elementum consequat vestibulum. In quam ultricies lacus rutrum id integer nisl. Est mi nunc urna morbi. Quis semper ultricies eget egestas dignissim non. Morbi accumsan est augue tempor tortor accumsan etiam mattis. Arcu consectetur rutrum mi volutpat.
+                        Nibh vitae mi tristique elit cum. Ultricies tincidunt mi senectus morbi donec amet nunc sed. Feugiat et consectetur aenean lacinia ac rhoncus. Et dui volutpat ullamcorper enim. Porttitor sodales in et condimentum. Tristique fringilla donec massa enim posuere. Volutpat feugiat feugiat nisl eu in lectus. Cras scelerisque nisi quis ante eget ut luctus facilisis euismod. Vel in mauris tellus arcu nunc. Leo platea gravida accumsan lorem scelerisque. Mattis et neque tincidunt nunc et condimentum lacus in eget. Ullamcorper fames interdum turpis quis. Consectetur mattis mus sed mattis mauris. Scelerisque a bibendum volutpat amet magnis. Egestas gravida sed integer porttitor feugiat.
+                        Enim urna eget sagittis nisl nullam magnis hac. Nunc lacus nulla eget egestas auctor nisl et consequat ipsum. Non cursus imperdiet aliquet nisi amet enim. Lacus massa sit convallis purus nulla tristique. Nec odio sed condimentum quam in gravida ac. Nisl vitae sit pulvinar mollis faucibus interdum dui at pellentesque. Leo sapien nibh leo sagittis cras nam felis ornare. Habitant eget ornare turpis.
+                    </p>
+                </div>
+                <div class="flex flex-col gap-L">
+                    <h1 class="text-H4 text-[#252532]">Heading title goes here </h1>
+                    <p class="text-large font-[400]">
+                        Lorem ipsum dolor sit amet consectetur. Magna cras eu mi tincidunt eget quis vestibulum. Urna ultrices aenean elementum consequat vestibulum. In quam ultricies lacus rutrum id integer nisl. Est mi nunc urna morbi. Quis semper ultricies eget egestas dignissim non. Morbi accumsan est augue tempor tortor accumsan etiam mattis. Arcu consectetur rutrum mi volutpat. Nibh vitae mi tristique elit cum. Ultricies tincidunt mi senectus morbi donec amet nunc sed. Feugiat et consectetur aenean lacinia ac rhoncus. Et dui volutpat ullamcorper enim. Porttitor sodales in et condimentum. Tristique fringilla donec massa enim posuere. Volutpat feugiat feugiat nisl eu in lectus.
+                    </p>
+                </div>
+                <div class="flex flex-grow flex-col gap-L">
+                    <img src="./img/Rectangle.jpg" />
+                    <h1 class="text-Small font-[800] text-[#525D61] text-right">Picture caption goes here</h1>
+                </div>
+                <div class="flex flex-col gap-L py-L pr-L pl-XXL border-s-4 border-brand">
+                    <p class="text-[#252532] text-16">“Ultricies tincidunt mi senectus morbi donec amet nunc sed. Feugiat et consectetur aenean lacinia ac rhoncus. Et dui volutpat ullamcorper enim. Porttitor sodales in et condimentum.”</p>
+                    <h1 class="text-large font-[400] text-[#525D61]">Kristin Watson</h1>
+                </div>
+                <div class="flex flex-col gap-L">
+                    <h1 class="text-[40px] leading-[44px] font-[700] text-[#252532]">Heading title goes here </h1>
+                    <p class="text-large font-[400]">
+                        Lorem ipsum dolor sit amet consectetur. Magna cras eu mi tincidunt eget quis vestibulum. Urna ultrices aenean elementum consequat vestibulum. In quam ultricies lacus rutrum id integer nisl. Est mi nunc urna morbi. Quis semper ultricies eget egestas dignissim non. Morbi accumsan est augue tempor tortor accumsan etiam mattis. Arcu consectetur rutrum mi volutpat.
+                        Nibh vitae mi tristique elit cum. Ultricies tincidunt mi senectus morbi donec amet nunc sed. Feugiat et consectetur aenean lacinia ac rhoncus. Et dui volutpat ullamcorper enim. Porttitor sodales in et condimentum. Tristique fringilla donec massa enim posuere. Volutpat feugiat feugiat nisl eu in lectus. Cras scelerisque nisi quis ante eget ut luctus facilisis euismod. Vel in mauris tellus arcu nunc. Leo platea gravida accumsan lorem scelerisque. Mattis et neque tincidunt nunc et condimentum lacus in eget. Ullamcorper fames interdum turpis quis. Consectetur mattis mus sed mattis mauris. Scelerisque a bibendum volutpat amet magnis. Egestas gravida sed integer porttitor feugiat.
+                        Enim urna eget sagittis nisl nullam magnis hac. Nunc lacus nulla eget egestas auctor nisl et consequat ipsum. Non cursus imperdiet aliquet nisi amet enim. Lacus massa sit convallis purus nulla tristique. Nec odio sed condimentum quam in gravida ac. Nisl vitae sit pulvinar mollis faucibus interdum dui at pellentesque. Leo sapien nibh leo sagittis cras nam felis ornare. Habitant eget ornare turpis.
+                    </p>
+                </div>
+                <div class="flex flex-col gap-L py-L pr-L pl-XXL border-s-4 border-brand">
+                    <p class="text-[#252532] text-16">“Ultricies tincidunt mi senectus morbi donec amet nunc sed. Et dui volutpat ullamcorper enim. Porttitor sodales in et condimentum.”</p>
+                    <h1 class="text-large font-[400] text-[#525D61]">Kristin Watson</h1>
+                </div>
+                <div class="flex flex-col gap-L">
+                    <h1 class="text-[40px] leading-[44px] font-[700] text-[#252532]">Heading title goes here </h1>
+                    <p class="text-large font-[400]">
+                        Lorem ipsum dolor sit amet consectetur. Magna cras eu mi tincidunt eget quis vestibulum. Urna ultrices aenean elementum consequat vestibulum. In quam ultricies lacus rutrum id integer nisl. Est mi nunc urna morbi. Quis semper ultricies eget egestas dignissim non. Morbi accumsan est augue tempor tortor accumsan etiam mattis. Arcu consectetur rutrum mi volutpat.
+                        Nibh vitae mi tristique elit cum. Ultricies tincidunt mi senectus morbi donec amet nunc sed. Feugiat et consectetur aenean lacinia ac rhoncus. Et dui volutpat ullamcorper enim. Porttitor sodales in et condimentum. Tristique fringilla donec massa enim posuere. Volutpat feugiat feugiat nisl eu in lectus. Cras scelerisque nisi quis ante eget ut luctus facilisis euismod. Vel in mauris tellus arcu nunc. Leo platea gravida accumsan lorem scelerisque. Mattis et neque tincidunt nunc et condimentum lacus in eget. Ullamcorper fames interdum turpis quis. Consectetur mattis mus sed mattis mauris. Scelerisque a bibendum volutpat amet magnis. Egestas gravida sed integer porttitor feugiat.
+                        Enim urna eget sagittis nisl nullam magnis hac. Nunc lacus nulla eget egestas auctor nisl et consequat ipsum. Non cursus imperdiet aliquet nisi amet enim. Lacus massa sit convallis purus nulla tristique. Nec odio sed condimentum quam in gravida ac. Nisl vitae sit pulvinar mollis faucibus interdum dui at pellentesque. Leo sapien nibh leo sagittis cras nam felis ornare. Habitant eget ornare turpis.
+                    </p>
+                </div>
+                <div class="flex flex-col gap-L">
+                    <h1 class="text-H4 text-[#252532]">Heading title goes here </h1>
+                    <p class="text-large font-[400]">
+                        Lorem ipsum dolor sit amet consectetur. Magna cras eu mi tincidunt eget quis vestibulum. Urna ultrices aenean elementum consequat vestibulum. In quam ultricies lacus rutrum id integer nisl. Est mi nunc urna morbi. Quis semper ultricies eget egestas dignissim non. Morbi accumsan est augue tempor tortor accumsan etiam mattis. Arcu consectetur rutrum mi volutpat. Nibh vitae mi tristique elit cum. Ultricies tincidunt mi senectus morbi donec amet nunc sed. Feugiat et consectetur aenean lacinia ac rhoncus. Et dui volutpat ullamcorper enim. Porttitor sodales in et condimentum. Tristique fringilla donec massa enim posuere. Volutpat feugiat feugiat nisl eu in lectus.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr class="bg-[#E7E7E7]" />
+    <div class="flex flex-col gap-XL">
+            <h1 class="text-Regular text-[#252532] text-right">Share this article:</h1>
+            <div class="flex flex-grow gap-M justify-end">
+                <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="45" height="45" rx="22.5" fill="#FFF6F4" />
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15 13.7422C14.1716 13.7422 13.5 14.4138 13.5 15.2422V30.2422C13.5 31.0706 14.1716 31.7422 15 31.7422H30C30.8284 31.7422 31.5 31.0706 31.5 30.2422V15.2422C31.5 14.4138 30.8284 13.7422 30 13.7422H15ZM19.0208 17.7449C19.0264 18.7012 18.3106 19.2904 17.4612 19.2862C16.6611 19.2819 15.9636 18.6449 15.9678 17.7463C15.972 16.9012 16.64 16.2219 17.5076 16.2416C18.3879 16.2613 19.0264 16.9068 19.0208 17.7449ZM22.7797 20.5039H20.2597H20.2583V29.0638H22.9217V28.8641C22.9217 28.4842 22.9214 28.1042 22.9211 27.7241C22.9203 26.7103 22.9194 25.6954 22.9246 24.6819C22.926 24.4358 22.9372 24.1799 23.0005 23.945C23.2381 23.0675 24.0271 22.5008 24.9074 22.6401C25.4727 22.7286 25.8467 23.0563 26.0042 23.5893C26.1013 23.9225 26.1449 24.2811 26.1491 24.6285C26.1605 25.6761 26.1589 26.7237 26.1573 27.7714C26.1567 28.1412 26.1561 28.5112 26.1561 28.881V29.0624H28.828V28.8571C28.828 28.4051 28.8278 27.9532 28.8275 27.5013C28.827 26.3718 28.8264 25.2423 28.8294 24.1124C28.8308 23.6019 28.776 23.0985 28.6508 22.6049C28.4638 21.8708 28.0771 21.2633 27.4485 20.8246C27.0027 20.5124 26.5133 20.3113 25.9663 20.2888C25.904 20.2862 25.8412 20.2828 25.7781 20.2794C25.4984 20.2643 25.2141 20.2489 24.9467 20.3028C24.1817 20.4561 23.5096 20.8063 23.0019 21.4236C22.9429 21.4944 22.8852 21.5663 22.7991 21.6736L22.7797 21.6979V20.5039ZM16.1816 29.0666H18.8324V20.5095H16.1816V29.0666Z" fill="#252532" />
+                </svg>
+                <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="45" height="45" rx="22.5" fill="#FFF6F4" />
+                    <path d="M32.5 22.8033C32.5 17.2467 28.0229 12.7422 22.5 12.7422C16.9771 12.7422 12.5 17.2467 12.5 22.8033C12.5 27.825 16.1568 31.9874 20.9375 32.7422V25.7116H18.3984V22.8033H20.9375V20.5867C20.9375 18.0651 22.4305 16.6723 24.7146 16.6723C25.8088 16.6723 26.9531 16.8688 26.9531 16.8688V19.3448H25.6922C24.45 19.3448 24.0625 20.1204 24.0625 20.9161V22.8033H26.8359L26.3926 25.7116H24.0625V32.7422C28.8432 31.9874 32.5 27.8252 32.5 22.8033Z" fill="#252532" />
+                </svg>
+                <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="45" height="45" rx="22.5" fill="#FFF6F4" />
+                    <path d="M32.5 22.8033C32.5 17.2467 28.0229 12.7422 22.5 12.7422C16.9771 12.7422 12.5 17.2467 12.5 22.8033C12.5 27.825 16.1568 31.9874 20.9375 32.7422V25.7116H18.3984V22.8033H20.9375V20.5867C20.9375 18.0651 22.4305 16.6723 24.7146 16.6723C25.8088 16.6723 26.9531 16.8688 26.9531 16.8688V19.3448H25.6922C24.45 19.3448 24.0625 20.1204 24.0625 20.9161V22.8033H26.8359L26.3926 25.7116H24.0625V32.7422C28.8432 31.9874 32.5 27.8252 32.5 22.8033Z" fill="#252532" />
+                </svg>
+                <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="45" height="45" rx="22.5" fill="#FFF6F4" />
+                    <path d="M32.5 22.8033C32.5 17.2467 28.0229 12.7422 22.5 12.7422C16.9771 12.7422 12.5 17.2467 12.5 22.8033C12.5 27.825 16.1568 31.9874 20.9375 32.7422V25.7116H18.3984V22.8033H20.9375V20.5867C20.9375 18.0651 22.4305 16.6723 24.7146 16.6723C25.8088 16.6723 26.9531 16.8688 26.9531 16.8688V19.3448H25.6922C24.45 19.3448 24.0625 20.1204 24.0625 20.9161V22.8033H26.8359L26.3926 25.7116H24.0625V32.7422C28.8432 31.9874 32.5 27.8252 32.5 22.8033Z" fill="#252532" />
+                </svg>
+            </div>
+        </div>
+</div>
+<div class="2xl:container md:py-XXL py-[64px] grid grid-cols-1 md:gap-XXL gap-XL mx-auto font-inter">
+    <section class="py-XXXL flex justify-center bg-neutral">
+        <div class="flex flex-col justify-center gap-XL w-fit">
+            <div class="flex flex-col gap-M justify-center">
+                <span class="text-[40px] font-[700] leading-[44px] text-[#252532] text-center">Join Our Newsletter</span>
+                <span class="text-Regular text-body text-center">Be among the first ones to receive our latest news and offers</span>
+            </div>
+            <div class="flex md:flex-row flex-col gap-M">
+                <div class="flex bg-neutral border border-[#DDDFDA] rounded-S items-center rounded-md py-S px-M md:w-[364px] h-[40px]">
+                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.41141 1.33398H10.9221C11.6502 1.33398 12.2272 1.33398 12.6923 1.37198C13.1679 1.41083 13.5703 1.49191 13.9377 1.67913C14.5336 1.98273 15.018 2.46717 15.3216 3.06301C15.5088 3.43046 15.5899 3.83288 15.6288 4.30847C15.6668 4.77355 15.6668 5.35055 15.6667 6.07864V8.256C15.6668 8.98409 15.6668 9.56108 15.6288 10.0262C15.5899 10.5018 15.5088 10.9042 15.3216 11.2716C15.018 11.8675 14.5336 12.3519 13.9377 12.6555C13.8448 12.7029 13.7496 12.7434 13.6515 12.7783C13.5134 14.0283 12.4536 15.0007 11.1667 15.0007H7.54411C6.44316 15.0007 5.58623 15.0007 4.89884 14.9445C4.20091 14.8875 3.63385 14.7701 3.12379 14.5102C2.27706 14.0788 1.58865 13.3903 1.15722 12.5436C0.897332 12.0336 0.779928 11.4665 0.722905 10.7686C0.666743 10.0812 0.666745 9.22424 0.666748 8.12328V5.16732C0.666748 4.89118 0.890606 4.66732 1.16675 4.66732C1.44289 4.66732 1.66675 4.89118 1.66675 5.16732V8.10065C1.66675 9.22901 1.66714 10.0452 1.71958 10.6871C1.77155 11.3232 1.87214 11.744 2.04823 12.0896C2.38378 12.7482 2.91921 13.2836 3.57778 13.6192C3.92337 13.7953 4.34418 13.8958 4.98027 13.9478C5.6222 14.0003 6.43839 14.0007 7.56675 14.0007H11.1667C11.8312 14.0007 12.3947 13.5686 12.5918 12.9702C12.1447 13.0007 11.5986 13.0007 10.9221 13.0007H7.4114C6.68331 13.0007 6.10632 13.0007 5.64124 12.9627C5.16564 12.9238 4.76323 12.8427 4.39578 12.6555C3.79993 12.3519 3.31549 11.8675 3.01189 11.2716C2.82467 10.9042 2.7436 10.5018 2.70474 10.0262C2.66674 9.56108 2.66674 8.98408 2.66675 8.25598V6.07865C2.66674 5.35056 2.66674 4.77356 2.70474 4.30847C2.7436 3.83288 2.82467 3.43046 3.01189 3.06301C3.31549 2.46717 3.79993 1.98273 4.39578 1.67913C4.76323 1.49191 5.16564 1.41083 5.64124 1.37198C6.10632 1.33398 6.68332 1.33398 7.41141 1.33398ZM5.72267 2.36866C5.30892 2.40246 5.05275 2.46671 4.84977 2.57014C4.44208 2.77786 4.11063 3.10932 3.9029 3.51701C3.79948 3.71999 3.73522 3.97615 3.70142 4.38991C3.66714 4.80949 3.66675 5.34566 3.66675 6.10065V8.23398C3.66675 8.98897 3.66714 9.52514 3.70142 9.94473C3.73522 10.3585 3.79948 10.6146 3.9029 10.8176C4.11063 11.2253 4.44208 11.5568 4.84977 11.7645C5.05275 11.8679 5.30892 11.9322 5.72267 11.966C6.14226 12.0003 6.67843 12.0007 7.43341 12.0007H10.9001C11.6551 12.0007 12.1912 12.0003 12.6108 11.966C13.0246 11.9322 13.2807 11.8679 13.4837 11.7645C13.8914 11.5568 14.2229 11.2253 14.4306 10.8176C14.534 10.6146 14.5983 10.3585 14.6321 9.94473C14.6664 9.52514 14.6667 8.98897 14.6667 8.23398V6.10065C14.6667 5.34566 14.6664 4.80949 14.6321 4.38991C14.5983 3.97615 14.534 3.71999 14.4306 3.51701C14.2229 3.10932 13.8914 2.77786 13.4837 2.57014C13.2807 2.46671 13.0246 2.40246 12.6108 2.36866C12.1912 2.33437 11.6551 2.33398 10.9001 2.33398H7.43342C6.67843 2.33398 6.14226 2.33437 5.72267 2.36866ZM5.44298 4.1883C5.61549 3.97267 5.93013 3.93771 6.14576 4.11022L6.81373 4.64459C7.29502 5.02962 7.63528 5.30143 7.92043 5.49716C8.20037 5.68931 8.39937 5.78808 8.58905 5.84055C8.96708 5.94513 9.36642 5.94513 9.74445 5.84055C9.93413 5.78807 10.1331 5.68931 10.4131 5.49716C10.6982 5.30143 11.0385 5.02962 11.5198 4.64459L12.1877 4.11022C12.4034 3.93771 12.718 3.97267 12.8905 4.1883C13.063 4.40393 13.0281 4.71858 12.8124 4.89109L12.1295 5.43746C11.6666 5.80779 11.2979 6.10272 10.979 6.32162C10.6514 6.54645 10.3489 6.7109 10.0111 6.80435C9.45857 6.9572 8.87493 6.9572 8.32241 6.80435C7.98461 6.7109 7.68206 6.54645 7.35452 6.32162C7.03561 6.10273 6.66695 5.8078 6.20404 5.43747L5.52107 4.89109C5.30544 4.71858 5.27048 4.40393 5.44298 4.1883Z" fill="#252532" />
+                    </svg>
+                    <input type="email" class="w-full border-none rounded-S bg-transparent px-M py-S placeholder:text-Medium placeholder:text-body" placeholder="Email">
+                </div>
+                <button class="bg-brand px-M py-s flex items-center text-Small text-neutral justify-center rounded-S md:w-[91px] h-[40px]">
+                    Subscribe
+                </button>
+            </div>
+            <span class="text-Regular text-faded text-center">You can easily unsubscribe at any time.</span>
+        </div>
+    </section>
+    <section class="py-XL px-L flex flex-col">
+        <div class="flex flex-col gap-XXL">
+            <div class="flex items-center justify-between">
+                <span class="text-[40px] leading-[48px] font-[700] text-brand">Recent articles</span>
+                <span class="md:hidden block">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2.25 6C2.25 5.58579 2.58579 5.25 3 5.25H21C21.4142 5.25 21.75 5.58579 21.75 6C21.75 6.41421 21.4142 6.75 21 6.75H3C2.58579 6.75 2.25 6.41421 2.25 6ZM5.25 12C5.25 11.5858 5.58579 11.25 6 11.25H18C18.4142 11.25 18.75 11.5858 18.75 12C18.75 12.4142 18.4142 12.75 18 12.75H6C5.58579 12.75 5.25 12.4142 5.25 12ZM9.25 18C9.25 17.5858 9.58579 17.25 10 17.25H14C14.4142 17.25 14.75 17.5858 14.75 18C14.75 18.4142 14.4142 18.75 14 18.75H10C9.58579 18.75 9.25 18.4142 9.25 18Z" fill="#252532" />
+                    </svg>
+                </span>
+            </div>
+            <div class="">
+                <ul class="md:flex hidden flex-wrap gap-M h-fit">
+                    <li class="text-Regular border border-brand text-[#252532] px-L py-SM rounded-L h-[52px]">All</li>
+                    <li class="text-Regular border border-[#DDDFDA] text-[#252532] bg-neutral px-L py-SM rounded-L h-[52px] flex gap-S items-center">
+                        <span>API</span>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.94 5.72656L8 8.7799L11.06 5.72656L12 6.66656L8 10.6666L4 6.66656L4.94 5.72656Z" fill="#070D0F" />
+                        </svg>
+                    </li>
+                    <li class="text-Regular border border-[#DDDFDA] text-[#252532] bg-neutral px-L py-SM rounded-L h-[52px]">Auth</li>
+                    <li class="text-Regular border border-[#DDDFDA] text-[#252532] bg-neutral px-L py-SM rounded-L h-[52px]">Catching / Offline-First</li>
+                    <li class="text-Regular border border-[#DDDFDA] text-[#252532] bg-neutral px-L py-SM rounded-L h-[52px]">Data Platform</li>
+                    <li class="text-Regular border border-[#DDDFDA] text-[#252532] bg-neutral px-L py-SM rounded-L h-[52px]">DevTools</li>
+                    <li class="text-Regular border border-[#DDDFDA] text-[#252532] bg-neutral px-L py-SM rounded-L h-[52px]">Forreign Data Wrapper</li>
+                    <li class="text-Regular border border-[#DDDFDA] text-[#252532] bg-neutral px-L py-SM rounded-L h-[52px]">Low-Code</li>
+                    <li class="text-Regular border border-[#DDDFDA] text-[#252532] bg-neutral px-L py-SM rounded-L h-[52px]">Messaging</li>
+                </ul>
+            </div>
+
+            <div class="grid md:gap-L gap-SM md:grid-cols-2 lg:grid-cols-3 grid-cols-1">
+
+                <div class="grid md:grid-cols-1 grid-cols-2 md:gap-L gap-M">
+                    <div class="flex-shrink-0">
+                        <a href="#">
+                            <img class="w-full rounded-S object-cover" src="./img/card/img.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="flex flex-col md:gap-L sm:gap-M gap-XS">
+                        <button class="md:h-[32px] h-[24px] w-[77px] py-S px-SM rounded-[6px] bg-[#619DFF5C] text-bravo text-Small flex items-center text-center justify-center">Category</button>
+                        <span class="md:text-H3 text-Regular text-[#252532]">Blog title heading </span>
+                        <span class="md:text-Medium text-Small text-[#525D61] md:line-clamp-none sm:line-clamp-2 line-clamp-1">Lorem ipsum dolor sit amet consectetur. Sit ipsum in aenean sed diam. Et pretium nec elementum enim viverra nunc risus ac facilisis.</span>
+                        <a class="" href="about#">
+                            <div class="flex items-center gap-S">
+                                <span class="md:text-Regular text-14 text-brand">Read the article</span>
+                                <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.97978 0.979457C8.17504 0.784193 8.49162 0.784191 8.68688 0.979452L13.3536 5.64605C13.4473 5.73982 13.5 5.867 13.5 5.99961C13.5 6.13222 13.4473 6.25939 13.3536 6.35316L8.68689 11.0198C8.49162 11.2151 8.17504 11.2151 7.97978 11.0198C7.78452 10.8246 7.78452 10.508 7.97978 10.3127L11.7929 6.49961H1C0.723858 6.49961 0.5 6.27575 0.5 5.99961C0.5 5.72347 0.723858 5.49961 1 5.49961H11.7929L7.97978 1.68656C7.78452 1.4913 7.78452 1.17472 7.97978 0.979457Z" fill="#FF6849" />
+                                </svg>
+                            </div>
+                        </a>
+                        <div class="md:flex hidden flex-grow gap-M h-[48px] max-w-[272px]">
+                            <img src="./img/profile/profile.jpg" class="h-[48px] w-[48px] rounded-full">
+                            <div class="flex flex-col justify-between lg:min-w-[208px] min-w-[200px]">
+                                <span class="text-Bold text-[#252532]">Jane Coper</span>
+                                <div class="flex justify-between items-end">
+                                    <span class="text-Small text-textSecondary">31 Dec 2023</span>
+                                    <div class="flex items-center h-full">
+                                        <svg width="4" height="5" viewBox="0 0 4 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.22168 3.06641V2.70605C0.22168 2.20215 0.379883 1.78613 0.696289 1.45801C1.01855 1.12988 1.45508 0.96582 2.00586 0.96582C2.5625 0.96582 3.00195 1.12988 3.32422 1.45801C3.64648 1.78613 3.80762 2.20215 3.80762 2.70605V3.06641C3.80762 3.56445 3.64648 3.97754 3.32422 4.30566C3.00781 4.62793 2.57129 4.78906 2.01465 4.78906C1.46387 4.78906 1.02734 4.62793 0.705078 4.30566C0.382812 3.97754 0.22168 3.56445 0.22168 3.06641Z" fill="#252532" />
+                                        </svg>
+                                    </div>
+                                    <span class="text-Small text-textSecondary">5 min read</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-1 grid-cols-2 md:gap-L gap-M lg:px-SM lg:mx-[-12px] lg:border-x md:border-neutralSecondary">
+                    <div class="flex-shrink-0">
+                        <a href="#">
+                            <img class="w-full rounded-S object-cover" src="./img/card/img1.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="flex flex-col md:gap-L sm:gap-M gap-XS">
+                        <button class="md:h-[32px] h-[24px] w-[77px] py-S px-SM rounded-[6px] bg-[#619DFF5C] text-bravo text-Small flex items-center text-center justify-center">Category</button>
+                        <span class="md:text-H3 text-Regular text-[#252532]">Blog title heading </span>
+                        <span class="md:text-Medium text-Small text-[#525D61] md:line-clamp-none sm:line-clamp-2 line-clamp-1">Lorem ipsum dolor sit amet consectetur. Sit ipsum in aenean sed diam. Et pretium nec elementum enim viverra nunc risus ac facilisis.</span>
+                        <a class="" href="about#">
+                            <div class="flex items-center gap-S">
+                                <span class="md:text-Regular text-14 text-brand">Read the article</span>
+                                <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.97978 0.979457C8.17504 0.784193 8.49162 0.784191 8.68688 0.979452L13.3536 5.64605C13.4473 5.73982 13.5 5.867 13.5 5.99961C13.5 6.13222 13.4473 6.25939 13.3536 6.35316L8.68689 11.0198C8.49162 11.2151 8.17504 11.2151 7.97978 11.0198C7.78452 10.8246 7.78452 10.508 7.97978 10.3127L11.7929 6.49961H1C0.723858 6.49961 0.5 6.27575 0.5 5.99961C0.5 5.72347 0.723858 5.49961 1 5.49961H11.7929L7.97978 1.68656C7.78452 1.4913 7.78452 1.17472 7.97978 0.979457Z" fill="#FF6849" />
+                                </svg>
+                            </div>
+                        </a>
+                        <div class="md:flex hidden flex-grow gap-M h-[48px] max-w-[272px]">
+                            <img src="./img/profile/profile1.jpg" class="h-[48px] w-[48px] rounded-full">
+                            <div class="flex flex-col justify-between lg:min-w-[208px] min-w-[200px]">
+                                <span class="text-Bold text-[#252532]">Guy Hawkins</span>
+                                <div class="flex justify-between items-end">
+                                    <span class="text-Small text-textSecondary">31 Dec 2023</span>
+                                    <div class="flex items-center h-full">
+                                        <svg width="4" height="5" viewBox="0 0 4 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.22168 3.06641V2.70605C0.22168 2.20215 0.379883 1.78613 0.696289 1.45801C1.01855 1.12988 1.45508 0.96582 2.00586 0.96582C2.5625 0.96582 3.00195 1.12988 3.32422 1.45801C3.64648 1.78613 3.80762 2.20215 3.80762 2.70605V3.06641C3.80762 3.56445 3.64648 3.97754 3.32422 4.30566C3.00781 4.62793 2.57129 4.78906 2.01465 4.78906C1.46387 4.78906 1.02734 4.62793 0.705078 4.30566C0.382812 3.97754 0.22168 3.56445 0.22168 3.06641Z" fill="#252532" />
+                                        </svg>
+                                    </div>
+                                    <span class="text-Small text-textSecondary">5 min read</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-1 grid-cols-2 md:gap-L gap-M">
+                    <div class="flex-shrink-0">
+                        <a href="#">
+                            <img class="w-full rounded-S object-cover" src="./img/card/img2.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="flex flex-col md:gap-L sm:gap-M gap-XS">
+                        <button class="md:h-[32px] h-[24px] w-[77px] py-S px-SM rounded-[6px] bg-[#FF684940] text-onBrand text-Small flex items-center text-center justify-center">Category</button>
+                        <span class="md:text-H3 text-Regular text-[#252532]">Blog title heading </span>
+                        <span class="md:text-Medium text-Small text-[#525D61] md:line-clamp-none sm:line-clamp-2 line-clamp-1">Lorem ipsum dolor sit amet consectetur. Sit ipsum in aenean sed diam. Et pretium nec elementum enim viverra nunc risus ac facilisis.</span>
+                        <a class="" href="about#">
+                            <div class="flex items-center gap-S">
+                                <span class="md:text-Regular text-14 text-brand">Read the article</span>
+                                <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.97978 0.979457C8.17504 0.784193 8.49162 0.784191 8.68688 0.979452L13.3536 5.64605C13.4473 5.73982 13.5 5.867 13.5 5.99961C13.5 6.13222 13.4473 6.25939 13.3536 6.35316L8.68689 11.0198C8.49162 11.2151 8.17504 11.2151 7.97978 11.0198C7.78452 10.8246 7.78452 10.508 7.97978 10.3127L11.7929 6.49961H1C0.723858 6.49961 0.5 6.27575 0.5 5.99961C0.5 5.72347 0.723858 5.49961 1 5.49961H11.7929L7.97978 1.68656C7.78452 1.4913 7.78452 1.17472 7.97978 0.979457Z" fill="#FF6849" />
+                                </svg>
+                            </div>
+                        </a>
+                        <div class="md:flex hidden flex-grow gap-M h-[48px] max-w-[272px]">
+                            <img src="./img/profile/profile2.jpg" class="h-[48px] w-[48px] rounded-full">
+                            <div class="flex flex-col justify-between lg:min-w-[208px] min-w-[200px]">
+                                <span class="text-Bold text-[#252532]">Jenny Wilson</span>
+                                <div class="flex justify-between items-end">
+                                    <span class="text-Small text-textSecondary">31 Dec 2023</span>
+                                    <div class="flex items-center h-full">
+                                        <svg width="4" height="5" viewBox="0 0 4 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.22168 3.06641V2.70605C0.22168 2.20215 0.379883 1.78613 0.696289 1.45801C1.01855 1.12988 1.45508 0.96582 2.00586 0.96582C2.5625 0.96582 3.00195 1.12988 3.32422 1.45801C3.64648 1.78613 3.80762 2.20215 3.80762 2.70605V3.06641C3.80762 3.56445 3.64648 3.97754 3.32422 4.30566C3.00781 4.62793 2.57129 4.78906 2.01465 4.78906C1.46387 4.78906 1.02734 4.62793 0.705078 4.30566C0.382812 3.97754 0.22168 3.56445 0.22168 3.06641Z" fill="#252532" />
+                                        </svg>
+                                    </div>
+                                    <span class="text-Small text-textSecondary">5 min read</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-1 grid-cols-2 md:gap-L gap-M">
+                    <div class="flex-shrink-0">
+                        <a href="#">
+                            <img class="w-full rounded-S object-cover" src="./img/card/img3.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="flex flex-col md:gap-L sm:gap-M gap-XS">
+                        <button class="md:h-[32px] h-[24px] w-[77px] py-S px-SM rounded-[6px] bg-[#619DFF5C] text-bravo text-Small flex items-center text-center justify-center">Category</button>
+                        <span class="md:text-H3 text-Regular text-[#252532]">Blog title heading </span>
+                        <span class="md:text-Medium text-Small text-[#525D61] md:line-clamp-none sm:line-clamp-2 line-clamp-1">Lorem ipsum dolor sit amet consectetur. Sit ipsum in aenean sed diam. Et pretium nec elementum enim viverra nunc risus ac facilisis.</span>
+                        <a class="" href="about#">
+                            <div class="flex items-center gap-S">
+                                <span class="md:text-Regular text-14 text-brand">Read the article</span>
+                                <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.97978 0.979457C8.17504 0.784193 8.49162 0.784191 8.68688 0.979452L13.3536 5.64605C13.4473 5.73982 13.5 5.867 13.5 5.99961C13.5 6.13222 13.4473 6.25939 13.3536 6.35316L8.68689 11.0198C8.49162 11.2151 8.17504 11.2151 7.97978 11.0198C7.78452 10.8246 7.78452 10.508 7.97978 10.3127L11.7929 6.49961H1C0.723858 6.49961 0.5 6.27575 0.5 5.99961C0.5 5.72347 0.723858 5.49961 1 5.49961H11.7929L7.97978 1.68656C7.78452 1.4913 7.78452 1.17472 7.97978 0.979457Z" fill="#FF6849" />
+                                </svg>
+                            </div>
+                        </a>
+                        <div class="md:flex hidden flex-grow gap-M h-[48px] max-w-[272px]">
+                            <img src="./img/profile/profile3.jpg" class="h-[48px] w-[48px] rounded-full">
+                            <div class="flex flex-col justify-between lg:min-w-[208px] min-w-[200px]">
+                                <span class="text-Bold text-[#252532]">Robert Fox</span>
+                                <div class="flex justify-between items-end">
+                                    <span class="text-Small text-textSecondary">31 Dec 2023</span>
+                                    <div class="flex items-center h-full">
+                                        <svg width="4" height="5" viewBox="0 0 4 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.22168 3.06641V2.70605C0.22168 2.20215 0.379883 1.78613 0.696289 1.45801C1.01855 1.12988 1.45508 0.96582 2.00586 0.96582C2.5625 0.96582 3.00195 1.12988 3.32422 1.45801C3.64648 1.78613 3.80762 2.20215 3.80762 2.70605V3.06641C3.80762 3.56445 3.64648 3.97754 3.32422 4.30566C3.00781 4.62793 2.57129 4.78906 2.01465 4.78906C1.46387 4.78906 1.02734 4.62793 0.705078 4.30566C0.382812 3.97754 0.22168 3.56445 0.22168 3.06641Z" fill="#252532" />
+                                        </svg>
+                                    </div>
+                                    <span class="text-Small text-textSecondary">5 min read</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-1 grid-cols-2 md:gap-L gap-M lg:px-SM lg:mx-[-12px] lg:border-x md:border-neutralSecondary">
+                    <div class="flex-shrink-0">
+                        <a href="#">
+                            <img class="w-full rounded-S object-cover" src="./img/card/img4.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="flex flex-col md:gap-L sm:gap-M gap-XS">
+                        <button class="md:h-[32px] h-[24px] w-[77px] py-S px-SM rounded-[6px] bg-[#619DFF5C] text-bravo text-Small flex items-center text-center justify-center">Category</button>
+                        <span class="md:text-H3 text-Regular text-[#252532]">Blog title heading </span>
+                        <span class="md:text-Medium text-Small text-[#525D61] md:line-clamp-none sm:line-clamp-2 line-clamp-1">Lorem ipsum dolor sit amet consectetur. Sit ipsum in aenean sed diam. Et pretium nec elementum enim viverra nunc risus ac facilisis.</span>
+                        <a class="" href="about#">
+                            <div class="flex items-center gap-S">
+                                <span class="md:text-Regular text-14 text-brand">Read the article</span>
+                                <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.97978 0.979457C8.17504 0.784193 8.49162 0.784191 8.68688 0.979452L13.3536 5.64605C13.4473 5.73982 13.5 5.867 13.5 5.99961C13.5 6.13222 13.4473 6.25939 13.3536 6.35316L8.68689 11.0198C8.49162 11.2151 8.17504 11.2151 7.97978 11.0198C7.78452 10.8246 7.78452 10.508 7.97978 10.3127L11.7929 6.49961H1C0.723858 6.49961 0.5 6.27575 0.5 5.99961C0.5 5.72347 0.723858 5.49961 1 5.49961H11.7929L7.97978 1.68656C7.78452 1.4913 7.78452 1.17472 7.97978 0.979457Z" fill="#FF6849" />
+                                </svg>
+                            </div>
+                        </a>
+                        <div class="md:flex hidden flex-grow gap-M h-[48px] max-w-[272px]">
+                            <img src="./img/profile/profile4.jpg" class="h-[48px] w-[48px] rounded-full">
+                            <div class="flex flex-col justify-between lg:min-w-[208px] min-w-[200px]">
+                                <span class="text-Bold text-[#252532]">Darlene Robertson</span>
+                                <div class="flex justify-between items-end">
+                                    <span class="text-Small text-textSecondary">31 Dec 2023</span>
+                                    <div class="flex items-center h-full">
+                                        <svg width="4" height="5" viewBox="0 0 4 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.22168 3.06641V2.70605C0.22168 2.20215 0.379883 1.78613 0.696289 1.45801C1.01855 1.12988 1.45508 0.96582 2.00586 0.96582C2.5625 0.96582 3.00195 1.12988 3.32422 1.45801C3.64648 1.78613 3.80762 2.20215 3.80762 2.70605V3.06641C3.80762 3.56445 3.64648 3.97754 3.32422 4.30566C3.00781 4.62793 2.57129 4.78906 2.01465 4.78906C1.46387 4.78906 1.02734 4.62793 0.705078 4.30566C0.382812 3.97754 0.22168 3.56445 0.22168 3.06641Z" fill="#252532" />
+                                        </svg>
+                                    </div>
+                                    <span class="text-Small text-textSecondary">5 min read</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-1 grid-cols-2 md:gap-L gap-M">
+                    <div class="flex-shrink-0">
+                        <a href="#">
+                            <img class="w-full rounded-S object-cover" src="./img/card/img5.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="flex flex-col md:gap-L sm:gap-M gap-XS">
+                        <button class="md:h-[32px] h-[24px] w-[77px] py-S px-SM rounded-[6px] bg-[#A4CD805C] text-success text-Small flex items-center text-center justify-center">Category</button>
+                        <span class="md:text-H3 text-Regular text-[#252532]">Blog title heading </span>
+                        <span class="md:text-Medium text-Small text-[#525D61] md:line-clamp-none sm:line-clamp-2 line-clamp-1">Lorem ipsum dolor sit amet consectetur. Sit ipsum in aenean sed diam. Et pretium nec elementum enim viverra nunc risus ac facilisis.</span>
+                        <a class="" href="about#">
+                            <div class="flex items-center gap-S">
+                                <span class="md:text-Regular text-14 text-brand">Read the article</span>
+                                <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.97978 0.979457C8.17504 0.784193 8.49162 0.784191 8.68688 0.979452L13.3536 5.64605C13.4473 5.73982 13.5 5.867 13.5 5.99961C13.5 6.13222 13.4473 6.25939 13.3536 6.35316L8.68689 11.0198C8.49162 11.2151 8.17504 11.2151 7.97978 11.0198C7.78452 10.8246 7.78452 10.508 7.97978 10.3127L11.7929 6.49961H1C0.723858 6.49961 0.5 6.27575 0.5 5.99961C0.5 5.72347 0.723858 5.49961 1 5.49961H11.7929L7.97978 1.68656C7.78452 1.4913 7.78452 1.17472 7.97978 0.979457Z" fill="#FF6849" />
+                                </svg>
+                            </div>
+                        </a>
+                        <div class="md:flex hidden flex-grow gap-M h-[48px] max-w-[272px]">
+                            <img src="./img/profile/profile5.jpg" class="h-[48px] w-[48px] rounded-full">
+                            <div class="flex flex-col justify-between lg:min-w-[208px] min-w-[200px]">
+                                <span class="text-Bold text-[#252532]">Albert Flores</span>
+                                <div class="flex justify-between items-end">
+                                    <span class="text-Small text-textSecondary">31 Dec 2023</span>
+                                    <div class="flex items-center h-full">
+                                        <svg width="4" height="5" viewBox="0 0 4 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.22168 3.06641V2.70605C0.22168 2.20215 0.379883 1.78613 0.696289 1.45801C1.01855 1.12988 1.45508 0.96582 2.00586 0.96582C2.5625 0.96582 3.00195 1.12988 3.32422 1.45801C3.64648 1.78613 3.80762 2.20215 3.80762 2.70605V3.06641C3.80762 3.56445 3.64648 3.97754 3.32422 4.30566C3.00781 4.62793 2.57129 4.78906 2.01465 4.78906C1.46387 4.78906 1.02734 4.62793 0.705078 4.30566C0.382812 3.97754 0.22168 3.56445 0.22168 3.06641Z" fill="#252532" />
+                                        </svg>
+                                    </div>
+                                    <span class="text-Small text-textSecondary">5 min read</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="h-[60px] flex items-end justify-end border-t border-neutralSecondary">
+                <div class="flex items-center gap-[10px]">
+                    <h1 class="text-Regular text-[#252532]">
+                        Show more
+                    </h1>
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.64645 5.64645C3.84171 5.45118 4.15829 5.45118 4.35355 5.64645L8 9.29289L11.6464 5.64645C11.8417 5.45118 12.1583 5.45118 12.3536 5.64645C12.5488 5.84171 12.5488 6.15829 12.3536 6.35355L8.35355 10.3536C8.15829 10.5488 7.84171 10.5488 7.64645 10.3536L3.64645 6.35355C3.45118 6.15829 3.45118 5.84171 3.64645 5.64645Z" fill="#252532" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
