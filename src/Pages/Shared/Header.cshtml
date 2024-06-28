@@ -24,8 +24,8 @@
                 void RenderNavLink(string href, string childContent, string? cls = null)
                 {
                     <li class="@Html.ClassNames("flex items-center",cls)">
-                        <a href="@href" class="@Html.ClassNames("flex items-center justify-start hover:underline hover:underline-offset-4",
-                                    Html.MatchesPath(href) ? "text-blue-700 dark:text-blue-300" : "")">
+                        <a href="@href" class="@Html.ClassNames("flex items-center justify-start header-link text-Regular",
+                                    Html.MatchesPath(href) ? "" : "")">
                             @Html.Raw(childContent)
                         </a>
                         @if (href == "whatsnew" || href == "videos")

@@ -24,7 +24,9 @@ module.exports = {
                 onBrand: '#E03C18',
                 success: '#6B9E32',
                 backgroundSecondary: '#F8F7F3',
-                backgroundTertiary:'#F8F8F8'
+                backgroundTertiary: '#F8F8F8',
+                info: '#005AD1',
+                backgroundPrimary:'#FCFCFC'
             },
             boxShadow: {
 

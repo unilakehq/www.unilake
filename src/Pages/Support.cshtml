@@ -4,7 +4,7 @@
 @{
     ViewData["Title"] = "Unilake.Www Support";
 }
-<div class="2xl:container px-L md:py-XXL py-XL md:gap-XXL gap-XL mx-auto grid grid-cols-1 font-inter bg-bgNeutarl">
+<div class="2xl:container px-L md:py-XXL py-XL md:gap-XXL gap-XL mx-auto grid grid-cols-1 font-inter bg-backgroundPrimary border-b border-bgNeutarl">
     <div class="flex flex-col gap-M">
         <span class="text-[48px] font-[700] leading-[52px] text-brand">Support</span>
         <div class="flex flex-col gap-S">
@@ -137,13 +137,13 @@
     </div>
 </div>
 <div class="">
-    <div class="2xl:container mx-auto px-L md:py-XXL py-XL md:gap-[64px] grid gap-XL font-inter bg-backgroundTertiary border-b">
+    <div class="2xl:container mx-auto px-L md:py-XXL py-XL md:gap-[64px] grid gap-XL font-inter bg-neutral border-b border-bgNeutarl">
         @await Html.PartialAsync("support/FAQ")
     </div>
 </div>
 
 <div class="">
-    <div class="2xl:container mx-auto px-L md:py-XXL py-XL md:gap-[64px] gap-XL font-inter  border-b">
+    <div class="2xl:container mx-auto px-L md:py-XXL py-XL md:gap-[64px] gap-XL font-inter  border-b bg-backgroundPrimary">
         @await Html.PartialAsync("support/ContactUs")
     </div>
 </div>

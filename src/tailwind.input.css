@@ -92,8 +92,34 @@ select{
 [data-carousel-slide-to][aria-current="true"] {
     background-color: #FF6849;
 }
-[data-carousel-slide-to][aria-current="false"]:hover {
-    background-color: #FF6849;
+[data-carousel-slide-to][aria-current="true"]:hover {
+    background-color: #E03C18;
 }
-
+[data-carousel-slide-to][aria-current="false"]:hover {
+    background-color: #FF684940;
+}
+.header-link {
+    color: #252532 !important;
+}
+.header-link:hover {
+    color: #FF6849 !important;
+}
+.footer-item:hover {
+    color: #FF6849 !important;
+}
+.inactive-tag:hover {
+    background-color:#DDDFDA;
+    cursor:pointer;
+}
+.active-tag{
+    cursor:pointer;
+}
+.read-article-text:hover {
+    cursor: pointer;
+    color: #E03C18;
+}
+.read-article-icon:hover {
+    cursor: pointer;
+    fill: #E03C18 !important;
+}
 @tailwind utilities;
