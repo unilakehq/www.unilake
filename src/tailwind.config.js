@@ -26,7 +26,8 @@ module.exports = {
                 backgroundSecondary: '#F8F7F3',
                 backgroundTertiary: '#F8F8F8',
                 info: '#005AD1',
-                backgroundPrimary:'#FCFCFC'
+                backgroundPrimary: '#FCFCFC',
+                bodyText:'#525D61'
             },
             boxShadow: {
 
@@ -35,7 +36,7 @@ module.exports = {
                 Medium: ['16px', { lineHeight: '19.36px', fontWeight: '500' }],
                 H5: ['18px', { lineHeight: '21.78px', fontWeight: '500' }],
                 H4: ['24px', { lineHeight: '28px', fontWeight: '700' }],
-                H3: ['32px', { lineHeight: '38.73px', fontWeight: '600' }],
+                H3: ['32px', { lineHeight: '36px', fontWeight: '700' }],
                 H2: ['20px', { lineHeight: '32px', fontWeight: '400' }],
                 Regular: ['16px', { lineHeight: '28px', fontWeight: '400' }],
                 Small: ['12px', { lineHeight: '24px', fontWeight: '400' }],
