@@ -86,5 +86,75 @@ select{
 [role=dialog].z-10 {
     z-index: 60;
 }
+[data-carousel-slide-to][aria-current="false"] {
+    background-color: #FF684940;
+}
+[data-carousel-slide-to][aria-current="true"] {
+    background-color: #FF6849;
+}
+[data-carousel-slide-to][aria-current="true"]:hover {
+    background-color: #E03C18;
+}
+[data-carousel-slide-to][aria-current="false"]:hover {
+    background-color: #FF684940;
+}
+.header-link {
+    color: #252532 !important;
+}
+.header-link:hover {
+    color: #FF6849 !important;
+}
+.footer-item:hover {
+    color: #FF6849 !important;
+}
+.inactive-tag:hover {
+    background-color:#DDDFDA;
+    cursor:pointer;
+}
+.active-tag{
+    cursor:pointer;
+}
+.read-article-icon:hover {
+    fill: #E03C18;
+}
+.back-button:hover{
+    fill: #E03C18;
+}
+.back-button{
+    cursor:pointer;
+}
+.article-accordion-closed {
+    background-color: #FCFCFC !important;
+    padding-bottom: 0px !important;
+    border-color: #DDDFDA;
+    border-width: 1px;
+}
 
+.article-accordion-open {
+    background-color: #F9F8F6 !important;
+    padding-bottom: 16px !important;
+    border-bottom-width: 1px !important;
+}
+
+.article-accordion-open > div {
+    background-color: #F9F8F6;
+    border-bottom-width: 1px !important;
+    border-color:#DDDFDA;
+}
+.active-article-tab > span {
+    border-left-width: 3px;
+    border-left-color: #677575;
+    padding-inline :32px;
+}
+.active-article-tab:hover > span {
+    border-left-width: 3px;
+    border-left-color: #252532;
+}
+.article-tab{
+    cursor:pointer;
+}
+.article-tab:hover {
+    background-color: #EFEEEB;
+    border-radius:8px;
+}
 @tailwind utilities;
