@@ -157,4 +157,25 @@ select{
     background-color: #EFEEEB;
     border-radius:8px;
 }
+.show-more:hover > h1 {
+    color: #E03C18;
+}
+.show-more:hover > svg {
+    fill: #E03C18;
+}
+.show-more-focused > h1 {
+    color: #FF6849;
+}
+.show-more-focused > svg {
+    fill: #FF6849;
+}
+.share-article:hover{
+    color: #E03C18;
+}
+.share-article-focused {
+    color: #FF6849 !important;
+}
+.share-article:hover > rect {
+    fill: #FF6849;
+}
 @tailwind utilities;
