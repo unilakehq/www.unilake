@@ -178,4 +178,52 @@ select{
 .share-article:hover > rect {
     fill: #FF6849;
 }
+.changelog-main-date::before {
+    content: '';
+    position: absolute;
+    height: 58px;
+    border-left: 6px solid #FF6849;
+}
+.changelog-date::before {
+    content: '';
+    position: absolute;
+    border-left: 6px solid #005AD1;
+}
+.changelog-date-bottom-div::before {
+    display: block;
+    content: '';
+    position: relative;
+    height: 111.5%;
+    top: -30px;
+    border-left: 6px solid #F1F1F1;
+}
+
+@media (max-width: 1024px) {
+    .change-log-card::before {
+        display: block;
+        content: '';
+        position: absolute;
+        height: 113.5%;
+        border-left: 6px solid #F1F1F1;
+        left: -26px;
+        top: -52px;
+    }
+    .changelog-date::before {
+        height: 70%;
+    }
+}
+
+@media (min-width: 1024px) { 
+    .change-log-card::before {
+        display: none;
+    }
+    .changelog-date::before {
+        height: 15%;
+    }
+}
+@media (min-width: 1280px) {
+    .changelog-date::before {
+        height: 14%;
+    }
+}
 @tailwind utilities;

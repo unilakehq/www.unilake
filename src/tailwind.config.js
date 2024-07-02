@@ -16,7 +16,6 @@ module.exports = {
                 body: '#C1C5C0',
                 neutral: '#F9F8F6',
                 brand: '#FF6849',
-                headlines: '#F9F8F6',
                 bgNeutarl: '#DDDFDA',
                 neutralSecondary: '#E7E7E7',
                 bravo: '#1A76FF',
