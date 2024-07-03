@@ -207,6 +207,24 @@ select{
     border-left: 6px solid #F1F1F1;
 }
 
+
+@media (min-width:768px){
+    .not-found-main {
+        background-image: url(/img/404/notFoundBgTablet.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position-x: right;
+        background-position-y: center;
+    }
+}
+@media (min-width: 1024px) { 
+    .change-log-card::before {
+        display: none;
+    }
+    .changelog-date::before {
+        height: 15%;
+    }
+}
 @media (max-width: 1024px) {
     .change-log-card::before {
         display: block;
@@ -221,19 +239,16 @@ select{
         height: 70%;
     }
 }
-
-@media (min-width: 1024px) { 
-    .change-log-card::before {
-        display: none;
-    }
-    .changelog-date::before {
-        height: 15%;
-    }
-}
 @media (min-width: 1280px) {
     .changelog-date::before {
         height: 14%;
     }
+    .not-found-main {
+        background-image: url(/img/404/notFoundBgDesktop.svg);
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: bottom;
+        background-size: cover;
+    }
 }
-
 @tailwind utilities;
