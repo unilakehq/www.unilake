@@ -104,6 +104,15 @@ select{
 .header-link:hover {
     color: #FF6849 !important;
 }
+.header-link-menu{
+    cursor: pointer;
+}
+.header-link-menu:hover > a {
+    color: #FF6849 !important;
+}
+.header-link-menu:hover > a > svg {
+    fill: #FF6849 !important;
+}
 .footer-item:hover {
     color: #FF6849 !important;
 }
@@ -226,4 +235,5 @@ select{
         height: 14%;
     }
 }
+
 @tailwind utilities;
