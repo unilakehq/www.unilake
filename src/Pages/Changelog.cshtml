@@ -11,14 +11,18 @@
         </div>
         <div>
             <ul class="flex flex-wrap gap-M h-fit">
-                <li class="active-tag text-Regular border border-brand text-headLines px-L py-SM rounded-L h-[52px]">All</li>
-                <li class="inactive-tag text-Regular border border-bgNeutarl text-headLines bg-neutral px-L py-SM rounded-L h-[52px]">Auth</li>
-                <li class="inactive-tag text-Regular border border-bgNeutarl text-headLines bg-neutral px-L py-SM rounded-L h-[52px]">Catching / Offline-First</li>
-                <li class="inactive-tag text-Regular border border-bgNeutarl text-headLines bg-neutral px-L py-SM rounded-L h-[52px]">Data Platform</li>
-                <li class="inactive-tag text-Regular border border-bgNeutarl text-headLines bg-neutral px-L py-SM rounded-L h-[52px]">DevTools</li>
-                <li class="inactive-tag text-Regular border border-bgNeutarl text-headLines bg-neutral px-L py-SM rounded-L h-[52px]">Forreign Data Wrapper</li>
-                <li class="inactive-tag text-Regular border border-bgNeutarl text-headLines bg-neutral px-L py-SM rounded-L h-[52px]">Low-Code</li>
-                <li class="inactive-tag text-Regular border border-bgNeutarl text-headLines bg-neutral px-L py-SM rounded-L h-[52px]">Messaging</li>
+                <li onClick="toggleTag(event)" class="active-tag">All</li>
+                <li onClick="toggleTag(event)" class="inactive-tag flex gap-S items-center">
+                        <span>Decemeber 2023</span>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.94 5.72656L8 8.7799L11.06 5.72656L12 6.66656L8 10.6666L4 6.66656L4.94 5.72656Z" fill="#070D0F" />
+                        </svg>
+                    </li>
+                <li onClick="toggleTag(event)" class="inactive-tag">Data Platform</li>
+                <li onClick="toggleTag(event)" class="inactive-tag">DevTools</li>
+                <li onClick="toggleTag(event)" class="inactive-tag">Forreign Data Wrapper</li>
+                <li onClick="toggleTag(event)" class="inactive-tag">Low-Code</li>
+                <li onClick="toggleTag(event)" class="inactive-tag">Messaging</li>
             </ul>
         </div>
         <div class="flex flex-col gap-[5px]">
@@ -182,4 +186,16 @@
         event.currentTarget.classList.toggle('show-more')
         event.currentTarget.children[1].classList.toggle('rotate-180')
     }
+    function toggleTag(event) {
+    const currentTag = event.currentTarget;
+    if (currentTag.classList.contains('active-tag')) {
+        currentTag.classList.remove('active-tag');
+        currentTag.classList.add('inactive-tag');
+    } else {
+        currentTag.classList.remove('inactive-tag');
+        currentTag.classList.add('active-tag');
+    }
+    console.log(event.currentTarget);
+    console.log(event.target.classList);
+}
 </script>

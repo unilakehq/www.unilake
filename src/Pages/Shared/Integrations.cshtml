@@ -19,27 +19,21 @@ ViewData["Title"] = "Unilake.Www Integrations";
     <div class="grid md:gap-XL gap-L">
 
         <ul class="flex flex-wrap gap-M h-fit">
-            <li
-                class="text-Medium border border-brand text-headLines dark:text-textPrimary px-L py-SM rounded-L h-[52px] flex items-center active-tag">
-                All</li>
-
-            <li
-                class="flex items-center justify-between text-Medium border border-bgNeutarl text-headLines dark:text-textPrimary px-L py-SM rounded-L h-[52px] bg-neutral inactive-tag">
+            <li onClick="toggleTag(event)" class="active-tag">All</li>
+            <li onClick="toggleTag(event)" class="flex items-center justify-between inactive-tag">
                 <span>API</span>
                 <svg class="ml-2" width="8" height="6" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0.94 0.726562L4 3.7799L7.06 0.726562L8 1.66656L4 5.66656L0 1.66656L0.94 0.726562Z"
                         fill="#070D0F" />
                 </svg>
             </li>
-
-            <li class="text-Medium border border-bgNeutarl text-headLines  dark:text-textPrimary px-L py-SM rounded-L h-[52px] flex items-center bg-neutral inactive-tag">Auth
-            </li>
-            <li class="text-Medium border border-bgNeutarl text-headLines dark:text-textPrimary px-L py-SM rounded-L h-[52px] flex items-center inactive-tag whitespace-nowrap bg-neutral">Catching / Offline-First</li>
-            <li class="text-Medium border border-bgNeutarl text-headLines dark:text-textPrimary px-L py-SM rounded-L h-[52px] flex items-center inactive-tag whitespace-nowrap bg-neutral">Data Platform</li>
-            <li class="text-Medium border border-bgNeutarl text-headLines dark:text-textPrimary px-L py-SM rounded-L h-[52px] flex items-center inactive-tag bg-neutral">DevTools</li>
-            <li class="text-Medium border border-bgNeutarl text-headLines dark:text-textPrimary px-L py-SM rounded-L h-[52px] flex items-center inactive-tag whitespace-nowrap bg-neutral">Forreign Data Wrapper</li>
-            <li class="text-Medium border border-bgNeutarl text-headLines dark:text-textPrimary px-L py-SM rounded-L h-[52px] flex items-center inactive-tag whitespace-nowrap bg-neutral">Low-Code</li>
-            <li class="text-Medium border border-bgNeutarl text-headLines dark:text-textPrimary px-L py-SM rounded-L h-[52px] flex items-center inactive-tag whitespace-nowrap bg-neutral">Messaging</li>
+            <li onClick="toggleTag(event)" class="inactive-tag">Auth</li>
+            <li onClick="toggleTag(event)" class="inactive-tag">Catching / Offline-First</li>
+            <li onClick="toggleTag(event)" class="inactive-tag">Data Platform</li>
+            <li onClick="toggleTag(event)" class="inactive-tag">DevTools</li>
+            <li onClick="toggleTag(event)" class="inactive-tag">Forreign Data Wrapper</li>
+            <li onClick="toggleTag(event)" class="inactive-tag">Low-Code</li>
+            <li onClick="toggleTag(event)" class="inactive-tag">Messaging</li>
         </ul>
 
         <div class="grid md:gap-XL gap-M">
@@ -685,5 +679,17 @@ ViewData["Title"] = "Unilake.Www Integrations";
                 content.classList.add(className);
             });
         }
+    }
+    function toggleTag(event) {
+        const currentTag = event.currentTarget;
+        if (currentTag.classList.contains('active-tag')) {
+            currentTag.classList.remove('active-tag');
+            currentTag.classList.add('inactive-tag');
+        } else {
+            currentTag.classList.remove('inactive-tag');
+            currentTag.classList.add('active-tag');
+        }
+        console.log(event.currentTarget);
+        console.log(event.target.classList);
     }
 </script>
