@@ -13,25 +13,28 @@
     <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
-    @await Html.PartialAsync("Header")
-    <div class="2xl:container not-found-main bg-neutral xl:py-XXXL lg mx-auto px-L flex md:flex-row flex-col  xl:gap-XXXL lg:gap-XXL items-center justify-center">
-        <div class="max-w-[605px] flex flex-col gap-L font-inter">
-            <div class="flex flex-col gap-SM">
-                <h1 class="md:text-[80px] md:leading-[92px] text-[64px] leading-[77.45px] font-[700] text-brand">404</h1>
-                 <div class="md:hidden block">
-                   @await Html.PartialAsync("Logos/notFoundLogo")
-                 </div>
-                <h2 class="md:text-[48px] text-[40px] md:leading-[52px] leading-[48px] font-[700] text-headLines">The page you looking for could not be found!</h2>
+    <main role="main">
+        @await Html.PartialAsync("Header")
+        <div class="2xl:container not-found-main bg-neutral md:py-XXXL py-XXL lg mx-auto px-L flex md:flex-row flex-col  xl:justify-around justify-center lg:max-xl:gap-XXL items-center ">
+            <div class="md:max-w-[605px] flex flex-col gap-L font-inter md:items-start items-center">
+                <div class="flex flex-col gap-SM md:items-start items-center">
+                    <h1 class="md:text-[80px] md:leading-[92px] text-[64px] lg:leading-[76px] leading-[77.45px] font-[700] text-brand">404</h1>
+                     <div class="md:hidden block">
+                       @await Html.PartialAsync("Logos/NotFoundPage/NotFoundLogoMobile")
+                     </div>
+                    <h2 class="md:text-[48px] lg:text-[32px] text-[40px] md:leading-[52px] lg:leading-[40px] leading-[48px] font-[700] text-headLines">The page you looking for could not be found!</h2>
+                </div>
+                <h5 class="text-Regular text-bodyText">We are sorry, but you may have mistyped the address or the page have moved!</h5>
+                <button class="py-SM px-L rounded-lg bg-brand text-14 text-neutral w-fit">Back to Homepage</button>
             </div>
-            <h5 class="text-Regular text-bodyText">We are sorry, but you may have mistyped the address or the page have moved!</h5>
-            <button class="py-SM px-L rounded-lg bg-brand text-14 text-neutral w-fit">Back to Homepage</button>
+            <div class="xl:block hidden">
+                @await Html.PartialAsync("Logos/NotFoundPage/NotFoundLogo")
+            </div>
+            <div class="md:max-xl:block hidden">
+                @await Html.PartialAsync("Logos/NotFoundPage/NotFoundLogoTablet")
+            </div>
         </div>
-        <div class="md:block hidden">
-            </div>
-              @await Html.PartialAsync("Logos/notFoundLogo")
-            </div>
-        </div>
-    </div>
-    @await Html.PartialAsync("Footer")
+        @await Html.PartialAsync("Footer")
+    </main>
 </body>
 </html>
