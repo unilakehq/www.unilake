@@ -241,6 +241,9 @@ select{
     background-repeat: no-repeat;
     background-size: cover;
 }
+.change-log-div:hover > div > h2 {
+    color: #FF6849;
+}
 @media (min-width:768px){
     .not-found-main {
         background-image: url(/img/404/notFoundBgTablet.svg);
@@ -266,16 +269,6 @@ select{
         background-position-y: bottom;
         background-size: cover;
     }
-}
-@media (min-width: 1024px) { 
-    .change-log-card::before {
-        display: none;
-    }
-    .changelog-date::before {
-        height: 15%;
-    }
-}
-@media (max-width: 1024px) {
     .change-log-card::before {
         display: block;
         content: '';
@@ -287,6 +280,14 @@ select{
     }
     .changelog-date::before {
         height: 70%;
+    }
+}
+@media (min-width: 1024px) { 
+    .change-log-card::before {
+        display: none;
+    }
+    .changelog-date::before {
+        height: 15%;
     }
 }
 @media (min-width: 1280px) {
