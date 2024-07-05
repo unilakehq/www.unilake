@@ -261,6 +261,16 @@ select{
 .bg-less-input:hover > input::placeholder {
     color: #525D61
 }
+.bg-less-logo-button:hover {
+    background-color: #EFEEEB;
+    border: 1px solid #DDDFDA;
+}
+.bg-less-logo-button:hover > h4 {
+    color: #FF6849;
+}
+.bg-less-logo-button:hover > svg {
+    fill: #FF6849;
+}
 .contact-us-input{
     cursor:pointer;
 }
