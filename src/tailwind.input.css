@@ -244,7 +244,70 @@ select{
 .change-log-div:hover > div > h2 {
     color: #FF6849;
 }
-@media (min-width:768px){
+.bg-less-button:hover {
+    background-color: #EFEEEB;
+    color: #FF6849;
+    border: 1px solid #DDDFDA;
+}
+.brand-color-button:hover {
+    background-color: #E03C18;
+}
+.bg-less-input:hover {
+    background-color:#EFEEEB;
+}
+.bg-less-input:hover > svg {
+    fill: #252532;
+}
+.bg-less-input:hover > input::placeholder {
+    color: #525D61
+}
+.contact-us-input{
+    cursor:pointer;
+}
+.contact-us-input:hover {
+    background-color: #efeeeb;
+}
+.contact-us-input > input:focus ::placeholder {
+    color: orangered;
+}
+.support-page-card:hover {
+    border: 1px solid #DDDFDA;
+    cursor: pointer;
+}
+.support-logo-button-t1:hover {
+    border: 1px solid #DDDFDA;
+    background-color: #EFEEEB;
+}
+.support-logo-button-t1:hover > svg {
+    fill: #FF6849;
+}
+.support-logo-button-t1:hover > h4 {
+    color: #FF6849;
+}
+.charly-button:hover {
+    background-color: #EFEEEB;
+    border: 1px solid #E03C18;
+}
+.charly-button:hover > svg {
+    fill: #E03C18;
+}
+.charly-button:hover > h4 {
+    color: #E03C18;
+}
+.blog-card{
+    cursor:pointer;
+}
+.blog-card:hover .blog-heading {
+    color: #FF6849;
+}
+.menu-tab:hover {
+    border: 1px solid #DDDFDA;
+}
+.blog-menu-tab:hover {
+    border: 1px solid #DDDFDA;
+    background-color: #F9F8F6;
+}
+@media (min-width:768px) {
     .not-found-main {
         background-image: url(/img/404/notFoundBgTablet.svg);
         background-repeat: no-repeat;
