@@ -1,5 +1,5 @@
 ﻿<header
-    class="2xl:container mx-auto sm:h-[91px] h-[80px] bg-[#F9F8F6] dark:bg-black px-L items-center justify-between py-L grid lg:grid-cols-4 grid-cols-2 font-inter border-b border-bgNeutarl">
+    class="2xl:container mx-auto h-fit bg-neutral dark:bg-black px-L items-center justify-between py-L grid lg:grid-cols-4 grid-cols-2 font-inter border-b border-bgNeutarl">
     <div class="col-span-1">
         <div class="cursor-pointer">
             <a class="navbar-brand flex items-center" href="./">
@@ -208,14 +208,10 @@
         </button>
     </div>
     <!-- Mobile menu, show/hide based on menu open state. -->
-    <div class="lg:hidden" id="sidebar" role="dialog" aria-modal="true">
+    <div id="mobile-menu" class="lg:hidden fixed inset-y-0 right-0 z-50 w-full overflow-y-auto transform translate-x-full transition-transform duration-300 ease-in-out">
         <!-- Background backdrop, show/hide based on slide-over state. -->
-        <div class="fixed inset-0 z-50"></div>
         <div class="bg-backgroundSecondary fixed inset-y-0 right-0 z-50 w-[375px] overflow-y-auto">
-            <div class="flex items-center justify-between h-[80px] border-b border-neutralSecondary py-M px-L">
-                <a href="#" class="-m-1.5 p-1.5">
-                    @await Html.PartialAsync("Logos/BrandLogo")
-                </a>
+            <div class="flex items-center justify-between h-[80.5px] border-b border-neutralSecondary py-M px-L">
                 <button id="close-side-bar" type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd"
@@ -380,14 +376,20 @@
 </header>
 
 <script>
-    const openMenuButton = document.getElementById('three-lines');
-    const mobileMenu = document.getElementById('sidebar');
+    const mobileMenu = document.getElementById('mobile-menu');
+    // Get the mobile menu toggle button
+    const mobileMenuToggle = document.querySelector('button[type="button"]');
     const closeMenuButton = document.getElementById('close-side-bar')
-    openMenuButton.addEventListener('click', function () {
-        mobileMenu.classList.toggle('hidden');
+    // Add a click event listener to the toggle button
+    mobileMenuToggle.addEventListener('click', () => {
+        mobileMenu.classList.toggle('translate-x-0');
+        mobileMenu.classList.toggle('translate-x-full');
+        console.log(mobileMenu.classList)
     });
     closeMenuButton.addEventListener('click', function () {
-        mobileMenu.classList.toggle('hidden');
+        mobileMenu.classList.toggle('translate-x-0');
+        mobileMenu.classList.toggle('translate-x-full');
+        console.log(mobileMenu.classList)
     })
     function toggleAccordion(accordion, event) {
         var content = accordion.parentNode.nextElementSibling;
