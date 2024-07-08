@@ -265,6 +265,11 @@ select{
 .bg-less-input:hover > input::placeholder {
     color: #525D61
 }
+.bg-less-input:hover > input {
+    color: #525D61;
+    width:100%;
+    height:100%;
+}
 .bg-less-logo-button:hover {
     background-color: #EFEEEB;
     border: 1px solid #DDDFDA;
