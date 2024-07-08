@@ -228,7 +228,6 @@ select{
     top: -30px;
     border-left: 6px solid #F1F1F1;
 }
-
 .join-our-newsletter {
     background-image: url(/img/Subscribe/SubscribeMobile.svg);
     background-repeat: no-repeat;
@@ -238,6 +237,11 @@ select{
 }
 .contact-enterprise {
     background-image: url(/img/Support/ContactEnterpriseSalesMobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.lake-analytics-f1-Section {
+    background-image: url(/img/lakeAnalytics/background/Mobile.svg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -354,6 +358,11 @@ select{
     .changelog-date::before {
         height: 70%;
     }
+    .lake-analytics-f1-Section {
+        background-image: url(/img/lakeAnalytics/background/Tablet.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 }
 @media (min-width: 1024px) { 
     .change-log-card::before {
@@ -390,6 +399,11 @@ select{
     }
     .blog-slider {
         background-image: url(/img/Slider/SliderDesktop.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .lake-analytics-f1-Section {
+        background-image: url(/img/lakeAnalytics/background/Desktop.svg);
         background-repeat: no-repeat;
         background-size: cover;
     }
