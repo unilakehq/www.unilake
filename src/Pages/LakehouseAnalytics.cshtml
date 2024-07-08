@@ -21,13 +21,13 @@
                     <h3 class="text-brand text-Regular">Lakehouse analytics</h3>
                     <button class="xl:block hidden py-XXS px-S bg-[#FF684940] text-onBrand text-Small rounded-[6px]">Badge</button>
                 </div>
-                <h1 class="text-headLines xl:text-[48px] xl:leading-[52px] md:text-[32px] md:leading-[40px] font-[700]">Billions of records analysed in milliseconds</h1>
+                <h1 class="text-headLines xl:text-[48px] xl:leading-[52px] text-[32px] leading-[40px] font-[700]">Billions of records analysed in milliseconds</h1>
             </div>
             <h4 class="text-Regular text-bodyText">Lorem ipsum dolor sit amet consectetur. Augue aliquam lacus enim luctus consectetur amet blandit. Eu eleifend ipsum quam quam nunc ligula at. </h4>
-            <div class="flex w-full gap-M">
-                <button class="bg-brand brand-color-button xl:px-L xl:py-SM px-M py-S rounded-S xl:text-14 md:text-Small md:font-[600] text-neutral">Book a Demo</button>
-                <button class="bg-neutral bg-less-logo-button border border-bgNeutarl xl:px-L xl:py-SM md:px-M md:py-S rounded-S flex items-center gap-S">
-                    <h4 class="xl:text-14 md:text-Small md:font-[600] text-headLines">
+            <div class="flex md:flex-row flex-col w-full gap-M">
+                <button class="bg-brand brand-color-button xl:px-L xl:py-SM px-M py-S rounded-S xl:text-14 text-Small md:font-[600] text-neutral">Book a Demo</button>
+                <button class="bg-neutral bg-less-logo-button border border-bgNeutarl xl:px-L xl:py-SM px-M py-S rounded-S flex justify-center items-center gap-S">
+                    <h4 class="xl:text-14 text-Small md:font-[600] text-headLines">
                         View documentation
                     </h4>
                     <svg width="16" height="17" viewBox="0 0 16 17" fill="#252532" xmlns="http://www.w3.org/2000/svg">
@@ -36,12 +36,12 @@
                 </button>
             </div>
         </div>
-        <div>
+        <div class="mx-auto">
             @await Html.PartialAsync("Logos/LakeAnalyticsPage/LakeAnalyticsLogo")
         </div>
     </section>
     <section class="px-L flex">
-        <div class="flex border-b border-neutralSecondary md:gap-XXL md:gap-XL xl:py-XXXL md:py-XXL">
+        <div class="flex md:flex-row flex-col border-b border-neutralSecondary md:gap-XXL gap-XL xl:py-XXXL md:py-XXL py-XL">
             <div class="flex flex-col gap-M rounded-L">
                 <svg class="xl:block hidden" width="104" height="104" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0.5 8C0.5 3.85786 3.85786 0.5 8 0.5H96C100.142 0.5 103.5 3.85786 103.5 8V96C103.5 100.142 100.142 103.5 96 103.5H8C3.85786 103.5 0.5 100.142 0.5 96V8Z" stroke="#E7E7E7" />
@@ -50,15 +50,15 @@
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M60.2353 55C63.3098 57.5255 66.7 60.3118 68.4981 61.8078C69.1569 62.3569 69.6098 62.7274 69.7608 62.8373C70.6255 63.5647 71.3118 64.8274 69.8432 65.7059C69.1981 66.0902 58.2314 72.3765 54.1824 74.7098C52.7549 75.5333 51.0118 75.5333 49.5843 74.7098C47.6491 73.5843 41.8294 70.2353 41.8294 70.2353C41.2118 69.8784 41.2118 69 41.8294 68.6569L59.9745 58.2667C61.1824 57.5667 61.3196 55.8922 60.2491 55H60.2353Z" fill="#F37441" />
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M55.6921 47.6295L63.0764 36.3746C63.6117 35.5648 64.6823 35.304 65.5196 35.7982L70.4196 38.6256C71.8333 39.4491 72.7254 40.959 72.7254 42.606V61.3825C72.7254 62.8374 72.0254 64.1962 70.8725 65.0609C72.1901 64.0452 71.6686 62.9197 70.7901 62.1923C70.6666 62.0962 59.8097 53.1609 56.049 50.059C55.3215 49.4688 55.1705 48.4256 55.6784 47.6433L55.6921 47.6295Z" fill="#F37441" />
                 </svg>
-                <svg class="max-xl:md:block hidden" width="66" height="65" viewBox="0 0 66 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="max-xl:block hidden" width="66" height="65" viewBox="0 0 66 65" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M1 8C1 3.85786 4.35786 0.5 8.5 0.5H57.5C61.6421 0.5 65 3.85786 65 8V57C65 61.1421 61.6421 64.5 57.5 64.5H8.5C4.35786 64.5 1 61.1421 1 57V8Z" stroke="#DDDFDA" />
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M28.1451 30.7797C26.3882 29.3366 24.4509 27.7445 23.4235 26.8896C23.047 26.5758 22.7882 26.3641 22.7019 26.3013C22.2078 25.8856 21.8157 25.1641 22.6549 24.6621C23.0235 24.4425 29.2902 20.8503 31.6039 19.517C32.4196 19.0464 33.4157 19.0464 34.2313 19.517C35.3372 20.1601 38.6627 22.0739 38.6627 22.0739C39.0157 22.2778 39.0157 22.7797 38.6627 22.9758L28.2941 28.9131C27.6039 29.3131 27.5255 30.2699 28.1372 30.7797H28.1451Z" fill="#FACCBB" />
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M30.7333 34.992L26.5137 41.4234C26.2078 41.8862 25.5961 42.0352 25.1176 41.7528L22.3176 40.1371C21.5098 39.6665 21 38.8038 21 37.8626V27.1332C21 26.3018 21.4 25.5254 22.0588 25.0312C21.3059 25.6116 21.6039 26.2548 22.1059 26.6705C22.1765 26.7254 28.3804 31.8313 30.5294 33.6038C30.9451 33.9411 31.0314 34.5371 30.7412 34.9842L30.7333 34.992Z" fill="#F37441" />
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M37.7059 34.2148C39.4628 35.658 41.4001 37.2501 42.4275 38.105C42.804 38.4188 43.0628 38.6305 43.1491 38.6933C43.6432 39.109 44.0353 39.8305 43.1961 40.3325C42.8275 40.5521 36.5608 44.1443 34.2471 45.4776C33.4314 45.9482 32.4353 45.9482 31.6197 45.4776C30.5138 44.8344 27.1883 42.9207 27.1883 42.9207C26.8353 42.7168 26.8353 42.2148 27.1883 42.0188L37.5569 36.0815C38.2471 35.6815 38.3255 34.7246 37.7138 34.2148H37.7059Z" fill="#F37441" />
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M35.1098 30.0034L39.3294 23.5721C39.6353 23.1093 40.2471 22.9603 40.7255 23.2426L43.5255 24.8583C44.3333 25.3289 44.8431 26.1917 44.8431 27.1328V37.8623C44.8431 38.6936 44.4431 39.4701 43.7843 39.9642C44.5373 39.3838 44.2392 38.7407 43.7373 38.325C43.6667 38.2701 37.4627 33.1642 35.3137 31.3917C34.898 31.0544 34.8118 30.4583 35.102 30.0113L35.1098 30.0034Z" fill="#F37441" />
                 </svg>
-                <h3 class="text-headLines xl:text-H2 md:text-Regular">StarRocks™ Engine</h3>
-                <p class="text-body xl:text-Regular md:text-Small">Every domain in UniLake is connected to StarRocks cluster of your needs. Set resource groups when assigning domains.</p>
+                <h3 class="text-headLines xl:text-H2 md:text-Regular text-H2">StarRocks™ Engine</h3>
+                <p class="text-body xl:text-Regular md:text-Small text-Regular">Every domain in UniLake is connected to StarRocks cluster of your needs. Set resource groups when assigning domains.</p>
             </div>
             <div class="flex flex-col gap-M rounded-L">
                 <svg class="xl:block hidden" width="105" height="104" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -75,7 +75,7 @@
                     <path d="M58.333 72V62C58.333 60.8954 59.2284 60 60.333 60H76.333C77.4374 60 78.333 60.8954 78.333 62V72C78.333 73.1044 77.4374 74 76.333 74H60.333C59.2284 74 58.333 73.1044 58.333 72Z" stroke="#FF6849" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                     <path d="M70.333 39.625V34C70.333 31.7909 68.5422 30 66.333 30H30.333C28.1239 30 26.333 31.7909 26.333 34V50C26.333 52.2091 28.1239 54 30.333 54H52.833" stroke="#FF6849" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
-                <svg class="max-xl:md:block hidden" width="66" height="65" viewBox="0 0 66 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="max-xl:block hidden" width="66" height="65" viewBox="0 0 66 65" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M1 8C1 3.85786 4.35786 0.5 8.5 0.5H57.5C61.6421 0.5 65 3.85786 65 8V57C65 61.1421 61.6421 64.5 57.5 64.5H8.5C4.35786 64.5 1 61.1421 1 57V8Z" stroke="#DDDFDA" />
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M20.4285 19.9277C19.1662 19.9277 18.1428 20.9511 18.1428 22.2134V31.3563C18.1428 32.6187 19.1662 33.642 20.4285 33.642H34.1629C34.4559 29.4904 37.9167 26.2134 42.1428 26.2134C42.5309 26.2134 42.9124 26.2411 43.2857 26.2945V22.2134C43.2857 20.9511 42.2624 19.9277 41 19.9277H20.4285Z" fill="#FFE9E4" />
                     <path d="M25 27.3557C24.6844 27.3557 24.4286 27.0999 24.4286 26.7843C24.4286 26.4687 24.6844 26.2129 25 26.2129" stroke="#FF6849" stroke-linecap="round" stroke-linejoin="round" />
@@ -89,8 +89,8 @@
                     <path d="M36.4286 43.9275V38.2132C36.4286 37.582 36.9403 37.0703 37.5714 37.0703H46.7143C47.3454 37.0703 47.8572 37.582 47.8572 38.2132V43.9275C47.8572 44.5585 47.3454 45.0703 46.7143 45.0703H37.5714C36.9403 45.0703 36.4286 44.5585 36.4286 43.9275Z" stroke="#FF6849" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                     <path d="M43.2857 25.4277V22.2134C43.2857 20.9511 42.2624 19.9277 41 19.9277H20.4285C19.1662 19.9277 18.1428 20.9511 18.1428 22.2134V31.3563C18.1428 32.6187 19.1662 33.642 20.4285 33.642H33.2857" stroke="#FF6849" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
-                <h3 class="text-headLines xl:text-H2 md:text-Regular">SSO+SCIM</h3>
-                <p class="text-body xl:text-Regular md:text-Small">Connect to your data using SSO (SAML or OIDC). Easily manage groups at scale using SCIM.</p>
+                <h3 class="text-headLines xl:text-H2 md:text-Regular text-H2">SSO+SCIM</h3>
+                <p class="text-body xl:text-Regular md:text-Small text-Regular">Connect to your data using SSO (SAML or OIDC). Easily manage groups at scale using SCIM.</p>
             </div>
             <div class="flex flex-col gap-M rounded-L">
                 <svg class="xl:block hidden" width="105" height="104" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -101,37 +101,37 @@
                     <path d="M42.666 34V42C42.666 44.2091 44.4569 46 46.666 46H74.666C76.8752 46 78.666 44.2091 78.666 42V34C78.666 31.7908 76.8752 30 74.666 30H46.666C44.4569 30 42.666 31.7909 42.666 34Z" stroke="#FF6849" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                     <path d="M26.666 60L34.666 52L26.666 44" stroke="#FF6849" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
-                <svg class="max-xl:md:block hidden" width="66" height="65" viewBox="0 0 66 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="max-xl:block hidden" width="66" height="65" viewBox="0 0 66 65" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M1 8C1 3.85786 4.35786 0.5 8.5 0.5H57.5C61.6421 0.5 65 3.85786 65 8V57C65 61.1421 61.6421 64.5 57.5 64.5H8.5C4.35786 64.5 1 61.1421 1 57V8Z" stroke="#DDDFDA" />
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M28.1451 30.7797C26.3882 29.3366 24.4509 27.7445 23.4235 26.8896C23.047 26.5758 22.7882 26.3641 22.7019 26.3013C22.2078 25.8856 21.8157 25.1641 22.6549 24.6621C23.0235 24.4425 29.2902 20.8503 31.6039 19.517C32.4196 19.0464 33.4157 19.0464 34.2313 19.517C35.3372 20.1601 38.6627 22.0739 38.6627 22.0739C39.0157 22.2778 39.0157 22.7797 38.6627 22.9758L28.2941 28.9131C27.6039 29.3131 27.5255 30.2699 28.1372 30.7797H28.1451Z" fill="#FACCBB" />
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M30.7333 34.992L26.5137 41.4234C26.2078 41.8862 25.5961 42.0352 25.1176 41.7528L22.3176 40.1371C21.5098 39.6665 21 38.8038 21 37.8626V27.1332C21 26.3018 21.4 25.5254 22.0588 25.0312C21.3059 25.6116 21.6039 26.2548 22.1059 26.6705C22.1765 26.7254 28.3804 31.8313 30.5294 33.6038C30.9451 33.9411 31.0314 34.5371 30.7412 34.9842L30.7333 34.992Z" fill="#F37441" />
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M37.7059 34.2148C39.4628 35.658 41.4001 37.2501 42.4275 38.105C42.804 38.4188 43.0628 38.6305 43.1491 38.6933C43.6432 39.109 44.0353 39.8305 43.1961 40.3325C42.8275 40.5521 36.5608 44.1443 34.2471 45.4776C33.4314 45.9482 32.4353 45.9482 31.6197 45.4776C30.5138 44.8344 27.1883 42.9207 27.1883 42.9207C26.8353 42.7168 26.8353 42.2148 27.1883 42.0188L37.5569 36.0815C38.2471 35.6815 38.3255 34.7246 37.7138 34.2148H37.7059Z" fill="#F37441" />
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M35.1098 30.0034L39.3294 23.5721C39.6353 23.1093 40.2471 22.9603 40.7255 23.2426L43.5255 24.8583C44.3333 25.3289 44.8431 26.1917 44.8431 27.1328V37.8623C44.8431 38.6936 44.4431 39.4701 43.7843 39.9642C44.5373 39.3838 44.2392 38.7407 43.7373 38.325C43.6667 38.2701 37.4627 33.1642 35.3137 31.3917C34.898 31.0544 34.8118 30.4583 35.102 30.0113L35.1098 30.0034Z" fill="#F37441" />
                 </svg>
-                <h3 class="text-headLines xl:text-H2 md:text-Regular">Realtime Endpoint</h3>
-                <p class="text-body xl:text-Regular md:text-Small">Push data to UniLake and analyze in realtime with sub-second latency. Stay up to date. </p>
+                <h3 class="text-headLines xl:text-H2 md:text-Regular text-H2">Realtime Endpoint</h3>
+                <p class="text-body xl:text-Regular md:text-Small text-Regular">Push data to UniLake and analyze in realtime with sub-second latency. Stay up to date. </p>
             </div>
         </div>
     </section>
-    <section class="xl:py-XXXL md:py-XXL px-L flex xl:gap-XXXL md:gap-XXL items-center">
+    <section class="xl:py-XXXL md:py-XXL py-XL px-L flex md:flex-row flex-col xl:gap-XXXL gap-XXL items-center">
         <div class="fit">
             @await Html.PartialAsync("Logos/LakeAnalyticsPage/Illustration_Unparalleled_Performance")
         </div>
         <div class="flex flex-col gap-M h-fit">
-            <h1 class="xl:text-15 md:text-H3 md:leading-[40px] text-headLines">Unparalleled Performance</h1>
-            <h4 class="xl:text-Regular md:text-Small text-textSecodary">
+            <h1 class="xl:text-15 text-H3 leading-[40px] text-headLines">Unparalleled Performance</h1>
+            <h4 class="xl:text-Regular md:text-Small text-Regular text-textSecodary">
                 Make use of a next-gen, high performance analytical data lakehouse engine that enables real-time, multi-dimensional, and highly concurrent data analysis. At the core of UniLake's query engine you'll find StarRocks™ an open source,
                 high performance analytical database. 
             </h4>
         </div>
     </section>
-    <section class="xl:py-XXXL md:py-XXL px-L flex xl:gap-XXXL md:gap-XXL items-center" style="background: linear-gradient(99.17deg, #F4F3EB 7.24%, #F8F8F8 86.39%);">
+    <section class="xl:py-XXXL md:py-XXL py-XL px-L flex md:flex-row flex-col-reverse xl:gap-XXXL gap-XXL items-center" style="background: linear-gradient(99.17deg, #F4F3EB 7.24%, #F8F8F8 86.39%);">
         <div class="flex flex-col gap-M h-fit">
-            <h1 class="xl:text-15 md:text-H3 md:leading-[40px] text-headLines">
+            <h1 class="xl:text-15 text-H3 leading-[40px] text-headLines">
                 Analyze data
                 in real-time
             </h1>
-            <h4 class="xl:text-Regular md:text-Small text-bodyText">
+            <h4 class="xl:text-Regular md:text-Small text-Regular text-bodyText">
                 Analyze your data in real-time and gain the edge in making business
                 decisions at the right time. From fraud detection, supply chain analysis and
                 operational analytics, stream your data into UniLake and analyse with sub-second performance. 
@@ -141,7 +141,7 @@
             @await Html.PartialAsync("Logos/LakeAnalyticsPage/Illustration_Analyze_Data_Real-time")
         </div>
     </section>
-    <section class="xl:py-XXXL md:py-XXL px-L flex xl:gap-XXXL md:gap-XXL items-center">
+    <section class="xl:py-XXXL md:py-XXL py-XL px-L flex md:flex-row flex-col xl:gap-XXXL gap-XXL items-center">
         <div class="h-fit">
             @await Html.PartialAsync("Logos/LakeAnalyticsPage/Illustration_Data_Products_Code")
         </div>
@@ -149,20 +149,20 @@
             <button class="py-S px-SM bg-[#619DFF5C] rounded-[6px] text-Small text-bravo w-fit flex items-center">
                 Coming Soon
             </button>
-            <h1 class="xl:text-15 md:text-H3 md:leading-[40px] text-headLines">
+            <h1 class="xl:text-15 text-H3 leading-[40px] text-headLines">
                 Data Products as Code
             </h1>
-            <h4 class="xl:text-Regular md:text-Small text-bodyText">
+            <h4 class="xl:text-Regular md:text-Small text-Regular text-bodyText">
                 Develop your data products on UniLake to allow for an integrated data integration, tranformation, security and documentation experience. UniLake's data product as code semantics allow for universal development of data products, maintained in git. 
             </h4>
         </div>
     </section>
-    <section class="xl:py-XXXL md:py-XXL px-L flex xl:gap-XXXL md:gap-XXL items-center" style="background: linear-gradient(99.17deg, #F4F3EB 7.24%, #F8F8F8 86.39%);">
+    <section class="xl:py-XXXL md:py-XXL py-XL px-L flex md:flex-row flex-col-reverse xl:gap-XXXL gap-XXL items-center" style="background: linear-gradient(99.17deg, #F4F3EB 7.24%, #F8F8F8 86.39%);">
         <div class="flex flex-col gap-M h-fit">
-            <h1 class="xl:text-15 md:text-H3 md:leading-[40px] text-headLines">
+            <h1 class="xl:text-15 text-H3 leading-[40px] text-headLines">
                 Unified format
             </h1>
-            <h4 class="xl:text-Regular md:text-Small text-bodyText">
+            <h4 class="xl:text-Regular md:text-Small text-Regular text-bodyText">
                 Access different file formats from a single unified platform. Whether your data is stored in Iceberg, Delta or Hudi format, UniLake allows you to query and combine your data in a single interface. 
             </h4>
         </div>
@@ -170,13 +170,13 @@
             @await Html.PartialAsync("Logos/LakeAnalyticsPage/Illustration_Unified_Format")
         </div>
     </section>
-    <section class="xl:py-XXXL md:py-XXL px-L flex xl:gap-XXXL md:gap-XL items-center w-fit">
+    <section class="xl:py-XXXL md:py-XXL py-XL px-L flex md:flex-row flex-col xl:gap-XXXL md:gap-XL items-center w-fit">
         <div class="flex flex-col gap-XL max-xl:md:py-XL max-xl:md:py-L">
             <div>
                 @await Html.PartialAsync("Logos/LakeAnalyticsPage/Illustration_Integrated_IDE")
             </div>
             <div class="flex flex-col xl:gap-L gap-M">
-                <h2 class="text-headLines md:text-H3">Integrated IDE</h2>
+                <h2 class="text-headLines text-H3 leading-[40px]">Integrated IDE</h2>
                <p class="text-Regular text-textBody">Develop your data products using an integrated and optimized development environment. No need to setup a local IDE, start coding using a cloud driven machine.</p>
             </div>
         </div>
@@ -184,14 +184,14 @@
             <div>
                 @await Html.PartialAsync("Logos/LakeAnalyticsPage/Illustration_Multiple_Endpoints")
             </div>
-            <div class="flex flex-col xl:gap-L ga-M">
-                <h2 class="text-headLines md:text-H3">Multiple Endpoints</h2>
+            <div class="flex flex-col xl:gap-L gap-M">
+                <h2 class="text-headLines text-H3 leading-[40px]">Multiple Endpoints</h2>
                 <p class="text-Regular text-textBody">Make use of different connection types, supporting SQL, S3 and rest API to access and query your data in an ecosystem of your choice. Governance and security is applied universally to any of these endpoints.</p>
             </div>
         </div>
     </section>
     <section class="px-L flex">
-        <div class="flex border-t border-neutralSecondary md:gap-XXL md:gap-XL xl:py-XXXL md:py-XXL">
+        <div class="flex md:flex-row flex-col border-t border-neutralSecondary md:gap-XXL md:gap-XL gap-XL xl:py-XXXL md:py-XXL py-XL">
             <div class="flex flex-col gap-M rounded-L">
                 <svg class="xl:block hidden" width="104" height="105" viewBox="0 0 104 105" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0.500244 8.77246C0.500244 4.63032 3.85811 1.27246 8.00024 1.27246H96.0002C100.142 1.27246 103.5 4.63033 103.5 8.77246V96.7725C103.5 100.915 100.142 104.272 96.0002 104.272H8.00024C3.85811 104.272 0.500244 100.915 0.500244 96.7725V8.77246Z" stroke="#E7E7E7" />
@@ -200,15 +200,15 @@
                     <path d="M64.2496 70.2726L56.8686 77.1475V56.5225" stroke="#FF6849" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                     <path d="M65.1252 62.6092H66.1771C68.6877 62.5942 71.1057 61.6591 72.9729 59.981C74.8404 58.3029 76.0276 55.9983 76.31 53.5036C76.5924 51.0088 75.9504 48.4972 74.5051 46.4441C73.0599 44.3911 70.9122 42.9393 68.4684 42.3636C68.2996 42.3132 68.1489 42.2156 68.0337 42.0823C67.9182 41.949 67.844 41.7855 67.8185 41.6112C67.5166 38.3004 66.0886 35.1933 63.7726 32.8079C61.4571 30.4225 58.3936 28.9031 55.0932 28.5031C51.7928 28.1031 48.4551 28.8465 45.6365 30.6095C42.818 32.3726 40.689 35.0486 39.6047 38.1913C39.5329 38.3379 39.4207 38.4608 39.2813 38.5457C39.1419 38.6305 38.9812 38.6737 38.8181 38.6701C37.2462 38.7757 35.7105 39.1898 34.2987 39.8888C32.8869 40.5878 31.6266 41.5581 30.5897 42.7442C28.4957 45.1396 27.4391 48.2688 27.6522 51.4433C27.8654 54.6178 29.3309 57.5777 31.7263 59.6717C31.8804 59.8064 32.0375 59.9368 32.1974 60.0628" stroke="#FF6849" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
-                <svg class="max-xl:md:block hidden" width="66" height="66" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="max-xl:block hidden" width="66" height="66" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M1 8.26758C1 4.12544 4.35786 0.767578 8.5 0.767578H57.5C61.6421 0.767578 65 4.12544 65 8.26758V57.2676C65 61.4097 61.6421 64.7676 57.5 64.7676H8.5C4.35786 64.7676 1 61.4097 1 57.2676V8.26758Z" stroke="#DDDFDA" />
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M42.162 26.6598C42.2278 26.7359 42.3139 26.7917 42.4103 26.8205C43.8068 27.1495 45.0341 27.9791 45.8599 29.1522C46.6858 30.3254 47.0526 31.7606 46.8913 33.1862C46.7299 34.6117 46.0515 35.9287 44.9843 36.8876C43.9174 37.8465 42.5357 38.3808 41.1011 38.3894H39.5318V34.9113C39.5318 32.8402 37.853 31.1613 35.7819 31.1613C34.6784 31.1613 33.6863 31.6379 33.0001 32.3965C32.649 32.0079 32.2139 31.69 31.7146 31.4727C30.346 30.8772 28.7545 31.1499 27.6624 32.1672L23.4445 36.0958C23.0145 36.4963 22.6997 36.9742 22.5017 37.488C22.1177 37.2665 21.7535 37.0068 21.4149 36.7108C20.046 35.5143 19.2086 33.8229 19.0868 32.0089C18.965 30.1949 19.5688 28.4068 20.7654 27.038C21.3579 26.3602 22.0781 25.8058 22.8848 25.4063C23.6916 25.0069 24.5691 24.7702 25.4673 24.7099C25.5605 24.712 25.6524 24.6873 25.732 24.6388C25.8117 24.5903 25.8758 24.5201 25.9168 24.4363C26.5364 22.6405 27.753 21.1114 29.3636 20.1039C30.9742 19.0965 32.8815 18.6716 34.7674 18.9002C36.6533 19.1288 38.4039 19.997 39.7271 21.3601C41.0505 22.7232 41.8665 24.4987 42.039 26.3905C42.0536 26.4902 42.096 26.5836 42.162 26.6598Z" fill="#FFE9E4" />
                     <path d="M26.0004 38.8407L30.2182 34.9121V46.6978" stroke="#FF6849" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                     <path d="M39.9996 42.7693L35.7819 46.6978V34.9121" stroke="#FF6849" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                     <path d="M40.5 38.3894H41.1011C42.5357 38.3808 43.9174 37.8465 44.9843 36.8876C46.0515 35.9287 46.7299 34.6117 46.8913 33.1862C47.0526 31.7606 46.6858 30.3254 45.8599 29.1522C45.0341 27.9791 43.8068 27.1495 42.4103 26.8205C42.3139 26.7917 42.2278 26.7359 42.162 26.6598C42.096 26.5836 42.0536 26.4902 42.039 26.3905C41.8665 24.4987 41.0505 22.7232 39.7271 21.3601C38.4039 19.997 36.6533 19.1288 34.7674 18.9002C32.8815 18.6716 30.9742 19.0965 29.3636 20.1039C27.753 21.1114 26.5364 22.6405 25.9168 24.4363C25.8758 24.5201 25.8117 24.5903 25.732 24.6388C25.6524 24.6873 25.5605 24.712 25.4673 24.7099C24.5691 24.7702 23.6916 25.0069 22.8848 25.4063C22.0781 25.8058 21.3579 26.3602 20.7654 27.038C19.5688 28.4068 18.965 30.1949 19.0868 32.0089C19.2086 33.8229 20.046 35.5143 21.4149 36.7108C21.5029 36.7878 21.5927 36.8623 21.6841 36.9343" stroke="#FF6849" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
-                <h1 class="text-headLines xl:text-H2 md:text-Regular">Cross Clouds</h1>
-                <p class="text-body xl:text-Regular md:text-Small">UnilLake is cloud native and can run on any cloud. It supports S3, Azure and Google as storage backends for connecting your data.</p>
+                <h1 class="text-headLines xl:text-H2 md:text-Regular text-H2">Cross Clouds</h1>
+                <p class="text-body xl:text-Regular md:text-Small text-Regular">UnilLake is cloud native and can run on any cloud. It supports S3, Azure and Google as storage backends for connecting your data.</p>
             </div>
             <div class="flex flex-col gap-M rounded-L">
                 <svg class="xl:block hidden" width="105" height="105" viewBox="0 0 105 105" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -235,7 +235,7 @@
                     <path d="M32.0139 55.5429V48.1539H39.4029V55.5429H32.0139Z" fill="#FFE9E4" />
                     <path d="M32.0139 55.5429V48.1539H39.4029V55.5429H32.0139Z" stroke="#FF6849" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
-                <svg class="max-xl:md:block hidden" width="66" height="66" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="max-xl:block hidden" width="66" height="66" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M1 8.26758C1 4.12544 4.35786 0.767578 8.5 0.767578H57.5C61.6421 0.767578 65 4.12544 65 8.26758V57.2676C65 61.4097 61.6421 64.7676 57.5 64.7676H8.5C4.35786 64.7676 1 61.4097 1 57.2676V8.26758Z" stroke="#DDDFDA" />
                     <path d="M41.4443 37.5172V33.2949H45.6666V37.5172H41.4443Z" fill="#FFE9E4" />
                     <path d="M41.4443 37.5172V33.2949H45.6666V37.5172H41.4443Z" stroke="#FF6849" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -259,8 +259,8 @@
                     <path d="M21.3889 34.3492V30.127H25.6112V34.3492H21.3889Z" fill="#FFE9E4" />
                     <path d="M21.3889 34.3492V30.127H25.6112V34.3492H21.3889Z" stroke="#FF6849" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
-                <h1 class="text-headLines xl:text-H2 md:text-Regular">Batch and Streaming</h1>
-                <p class="text-body xl:text-Regular md:text-Small">Whether you want to analyze your data in batches or use micro-batch streaming to ingest your data, we support both. Add your local sources with ease.</p>
+                <h1 class="text-headLines xl:text-H2 md:text-Regular text-H2">Batch and Streaming</h1>
+                <p class="text-body xl:text-Regular md:text-Small text-Regular">Whether you want to analyze your data in batches or use micro-batch streaming to ingest your data, we support both. Add your local sources with ease.</p>
             </div>
             <div class="flex flex-col gap-M rounded-L">
                 <svg class="xl:block hidden" width="105" height="105" viewBox="0 0 105 105" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -272,7 +272,7 @@
                     <path d="M66.7725 49.751V38.6678H55.6892" stroke="#FF6849" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                     <path d="M66.7724 38.6664L59.7194 45.7193L52.6664 52.7723" stroke="#FF6849" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
-                <svg class="max-xl:md:block hidden" width="66" height="66" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="max-xl:block hidden" width="66" height="66" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M1 8.26758C1 4.12544 4.35786 0.767578 8.5 0.767578H57.5C61.6421 0.767578 65 4.12544 65 8.26758V57.2676C65 61.4097 61.6421 64.7676 57.5 64.7676H8.5C4.35786 64.7676 1 61.4097 1 57.2676V8.26758Z" stroke="#DDDFDA" />
                     <path d="M24.9395 25.2833V35.6469C24.9395 38.5087 25.9706 40.8287 27.2425 40.8287H43.3636C44.6355 40.8287 45.6666 38.5087 45.6666 35.6469V25.2833C45.6666 22.4215 44.6355 20.1016 43.3636 20.1016H27.2425C25.9706 20.1016 24.9395 22.4216 24.9395 25.2833Z" fill="#FFE9E4" />
                     <path d="M24.9395 25.2833V35.6469C24.9395 38.5087 25.9706 40.8287 27.2425 40.8287H43.3636C44.6355 40.8287 45.6666 38.5087 45.6666 35.6469V25.2833C45.6666 22.4215 44.6355 20.1016 43.3636 20.1016H27.2425C25.9706 20.1016 24.9395 22.4216 24.9395 25.2833Z" stroke="#FF6849" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -281,8 +281,8 @@
                     <path d="M41.0608 31.041V24.7077H34.7275" stroke="#FF6849" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                     <path d="M41.0606 24.707L37.0303 28.7373L33 32.7676" stroke="#FF6849" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
-                <h1 class="text-headLines xl:text-H2 md:text-Regular">Elastic Compute</h1>
-                <p class="text-body xl:text-Regular md:text-Small">Need more compute? Scale your deployment to meet your needs. Compute is assigned dynamically, so no compute will stay idle.</p>
+                <h1 class="text-headLines xl:text-H2 md:text-Regular text-H2">Elastic Compute</h1>
+                <p class="text-body xl:text-Regular md:text-Small text-Regular">Need more compute? Scale your deployment to meet your needs. Compute is assigned dynamically, so no compute will stay idle.</p>
             </div>
         </div>
     </section>
