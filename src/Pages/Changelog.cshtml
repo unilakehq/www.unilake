@@ -156,15 +156,13 @@
         event.currentTarget.children[1].classList.toggle('rotate-180')
     }
     function toggleTag(event) {
-    const currentTag = event.currentTarget;
-    if (currentTag.classList.contains('active-tag')) {
-        currentTag.classList.remove('active-tag');
-        currentTag.classList.add('inactive-tag');
-    } else {
-        currentTag.classList.remove('inactive-tag');
-        currentTag.classList.add('active-tag');
+      const currentTag = event.currentTarget;
+      if (currentTag.classList.contains('active-tag')) {
+          currentTag.classList.remove('active-tag');
+          currentTag.classList.add('inactive-tag');
+      } else {
+          currentTag.classList.remove('inactive-tag');
+          currentTag.classList.add('active-tag');
+      }
     }
-    console.log(event.currentTarget);
-    console.log(event.target.classList);
-}
 </script>

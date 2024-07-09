@@ -238,7 +238,7 @@
         </div>
     </section>
     
-    <section class="py-XXXL flex flex-col gap-XL bg-backgroundSecondary border-b border-neutralSecondary blog-slider">
+    <section class="xl:py-XXXL py-XXL gap-XL flex flex-col bg-backgroundSecondary border-b border-neutralSecondary blog-slider">
         <span class="text-brand px-L text-[40px] leading-[44px] font-[700]">Featured articles</span>
         @await Html.PartialAsync("BlogSlider")
     </section>
@@ -248,14 +248,14 @@
             <span class="text-[40px] leading-[48px] font-[700] text-brand">Most popular articles</span>
             <div>
                 <ul class="flex flex-wrap gap-M h-fit">
-                    <li class="active-tag text-Regular border border-brand text-headLines px-L py-SM rounded-L h-[52px]">All</li>
-                    <li class="inactive-tag text-Regular border border-bgNeutarl text-headLines bg-neutral px-L py-SM rounded-L h-[52px]">Auth</li>
-                    <li class="inactive-tag text-Regular border border-bgNeutarl text-headLines bg-neutral px-L py-SM rounded-L h-[52px]">Catching / Offline-First</li>
-                    <li class="inactive-tag text-Regular border border-bgNeutarl text-headLines bg-neutral px-L py-SM rounded-L h-[52px]">Data Platform</li>
-                    <li class="inactive-tag text-Regular border border-bgNeutarl text-headLines bg-neutral px-L py-SM rounded-L h-[52px]">DevTools</li>
-                    <li class="inactive-tag text-Regular border border-bgNeutarl text-headLines bg-neutral px-L py-SM rounded-L h-[52px]">Forreign Data Wrapper</li>
-                    <li class="inactive-tag text-Regular border border-bgNeutarl text-headLines bg-neutral px-L py-SM rounded-L h-[52px]">Low-Code</li>
-                    <li class="inactive-tag text-Regular border border-bgNeutarl text-headLines bg-neutral px-L py-SM rounded-L h-[52px]">Messaging</li>
+                    <li onClick="toggleTag(event)" class="active-tag">All</li>
+                    <li onClick="toggleTag(event)" class="inactive-tag">Auth</li>
+                    <li onClick="toggleTag(event)" class="inactive-tag">Catching / Offline-First</li>
+                    <li onClick="toggleTag(event)" class="inactive-tag">Data Platform</li>
+                    <li onClick="toggleTag(event)" class="inactive-tag">DevTools</li>
+                    <li onClick="toggleTag(event)" class="inactive-tag">Forreign Data Wrapper</li>
+                    <li onClick="toggleTag(event)" class="inactive-tag">Low-Code</li>
+                    <li onClick="toggleTag(event)" class="inactive-tag">Messaging</li>
                 </ul>
             </div>
 
@@ -478,7 +478,5 @@
             currentTag.classList.remove('inactive-tag');
             currentTag.classList.add('active-tag');
         }
-        console.log(event.currentTarget);
-        console.log(event.target.classList);
     }
 </script>

@@ -402,6 +402,23 @@ select{
         background-repeat: no-repeat;
         background-size: cover;
     }
+    .middle-slider::before,
+    .middle-slider::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        height: 100%;
+    }
+
+    .middle-slider::before {
+        left: 0;
+        border-left: 1px solid #DDDFDA;
+    }
+
+    .middle-slider::after {
+        right: 0;
+        border-right: 1px solid #DDDFDA;
+    }
 }
 
 @media (min-width: 1024px) {
