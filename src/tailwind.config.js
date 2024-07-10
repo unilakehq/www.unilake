@@ -31,8 +31,7 @@ module.exports = {
                 bodyText: '#525D61',
                 headLines: '#252532',
                 backgroundFaded: '#EFEEEB',
-                textPrimary: '#070D0F',
-                textSecodary:'#4A494D'
+                textPrimary: '#070D0F'
             },
             boxShadow: {
 
