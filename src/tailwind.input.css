@@ -117,6 +117,7 @@ select{
     fill: #FF6849 !important;
 }
 .footer-item:hover {
+    cursor:pointer;
     color: #FF6849 !important;
 }
 .inactive-tag:hover {
