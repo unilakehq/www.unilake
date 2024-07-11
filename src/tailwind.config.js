@@ -18,7 +18,7 @@ module.exports = {
                 body: '#C1C5C0',
                 neutral: '#F9F8F6',
                 brand: '#FF6849',
-                bgNeutarl: '#DDDFDA',
+                brNeutral: '#DDDFDA',
                 neutralSecondary: '#E7E7E7',
                 bravo: '#1A76FF',
                 textSecondary:'#4A494D',
