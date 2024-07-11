@@ -4,15 +4,13 @@
 @{
     ViewData["Title"] = "Unilake.Www Support";
 }
-<div class="2xl:container px-L md:py-XXL py-XL md:gap-XXL gap-XL mx-auto grid grid-cols-1 font-inter bg-backgroundPrimary border-b border-brNeutral">
+<div class="2xl:container px-L md:py-XXXL md:gap-XXL py-XXL gap-XL mx-auto grid grid-cols-1 font-inter bg-backgroundPrimary border-b border-brNeutral">
     <div class="flex flex-col gap-M">
-        <span class="text-[48px] font-[700] leading-[52px] text-brand">Support</span>
+        <span class="xl:text-headline2 md:text-15 md:leading-[48px] text-headline3 text-brand">Support</span>
         <div class="flex flex-col gap-S">
-            <span class="text-Regular text-bodyText">
+            <p class="text-Regular text-bodyText">
                 Lorem ipsum dolor sit amet consectetur. Augue aliquam lacus enim luctus
-                consectetur amet blandit.
-            </span>
-            <span class="text-Regular text-bodyText">Eu eleifend ipsum quam quam nunc ligula at.</span>
+                consectetur amet blandit. Eu eleifend ipsum quam quam nunc ligula at.</p>
         </div>
     </div>
     
@@ -112,7 +110,7 @@
                         Join our GitHub discussions or our Zulip server to browse for help and best practices.
                     </span>
                 </div>
-                <div class="grid lg:grid-cols-2 grid-cols-1 xl:gap-L gap-M lg:w-fit w-full">
+                <div class="flex lg:flex-row flex-col xl:gap-L gap-M lg:w-fit w-full">
                     <button class="border border-brand charly-button xl:px-L xl:py-SM md:px-M md:py-S px-L py-SM rounded-S flex gap-S items-center justify-center lg:w-fit w-full xl:h-[48px] lg:h-[40px] h-[48px]">
                         <svg width="12" height="13" viewBox="0 0 12 13" fill="#FF6849" xmlns="http://www.w3.org/2000/svg">
                             <g id="Group">
@@ -132,13 +130,13 @@
     </div>
 </div>
 <div class="">
-    <div class="2xl:container mx-auto px-L md:py-XXL py-XL md:gap-[64px] grid gap-XL font-inter bg-neutral border-b border-brNeutral">
+    <div class="2xl:container grid mx-auto px-L md:py-XXXL md:gap-XXL py-XXL gap-XL font-inter bg-neutral border-b border-brNeutral">
         @await Html.PartialAsync("support/FAQ")
     </div>
 </div>
 
 <div class="">
-    <div class="2xl:container mx-auto px-L md:py-XXL py-XL grid grid-cols-1 md:gap-[64px] gap-XL font-inter  border-b bg-backgroundPrimary">
+    <div class="2xl:container grid mx-auto px-L md:py-XXXL md:gap-XXL py-XL gap-XL grid-cols-1 border-b bg-backgroundPrimary">
         @await Html.PartialAsync("support/ContactUs")
     </div>
 </div>

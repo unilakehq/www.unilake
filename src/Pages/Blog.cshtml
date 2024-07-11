@@ -5,14 +5,14 @@
     ViewData["Title"] = "Unilake.Www Blog";
 }
 
-<div class="2xl:container mx-auto font-inter">
+<div class="2xl:container mx-auto">
     @await Html.PartialAsync("Subscribe")
     <section class="md:py-XXXL py-XXL px-L flex flex-col gap-M bg-backgroundPrimary">
-        <h1 class="xl:text-[48px] xl:leading-[52px] xl:font-[700] md:text-[40px] md:leading-[48px] md:font-[700] text-H3 leading-[40px] text-brand">Blog</h1>
+        <h1 class="xl:text-headline2 md:text-15 md:leading-[48px] text-headline3 text-brand">Blog</h1>
         <h3 class="xl:text-H3 md:text-large text-headLines">Describe what your blog is about</h3>
         <p class="md:block hidden text-Regular text-bodyText">Lorem ipsum dolor sit amet consectetur. Augue aliquam lacus enim luctus consectetur amet blandit. Eu eleifend ipsum quam quam nunc ligula at. </p>
         <div class="md:hidden block">
-                 <ul class="flex overflow-y-auto gap-M h-fit">
+                 <ul class="flex overflow-x-auto gap-M h-fit tag-list">
                    <li onClick="toggleTag(event)" class="active-tag">All</li>
                    <li onClick="toggleTag(event)" class="inactive-tag">Auth</li>
                    <li onClick="toggleTag(event)" class="inactive-tag">Catching / Offline-First</li>
@@ -25,10 +25,10 @@
             </div>
     </section>
 
-    <section class="py-XL px-L flex flex-col">
+    <section class="md:py-XXXL py-XXL px-L flex flex-col">
         <div class="flex flex-col md:gap-XXL gap-XL">
             <div class="flex items-center justify-between">
-                <h2 class="md:text-[40px] md:leading-[48px] md:font-[700] text-H3 leading-[24px] text-brand">Recent articles</h2>
+                <h2 class="xl:headline2 md:text-15 md:leading-[48px] text-H3 leading-[24px] text-brand">Recent articles</h2>
                 <span class="">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M2.25 6C2.25 5.58579 2.58579 5.25 3 5.25H21C21.4142 5.25 21.75 5.58579 21.75 6C21.75 6.41421 21.4142 6.75 21 6.75H3C2.58579 6.75 2.25 6.41421 2.25 6ZM5.25 12C5.25 11.5858 5.58579 11.25 6 11.25H18C18.4142 11.25 18.75 11.5858 18.75 12C18.75 12.4142 18.4142 12.75 18 12.75H6C5.58579 12.75 5.25 12.4142 5.25 12ZM9.25 18C9.25 17.5858 9.58579 17.25 10 17.25H14C14.4142 17.25 14.75 17.5858 14.75 18C14.75 18.4142 14.4142 18.75 14 18.75H10C9.58579 18.75 9.25 18.4142 9.25 18Z" fill="#252532" />
@@ -36,7 +36,7 @@
                 </span>
             </div>
             <div class="md:block hidden">
-                 <ul class="flex flex-wrap gap-M h-fit">
+                 <ul class="flex overflow-x-auto gap-M h-fit tag-list">
                    <li onClick="toggleTag(event)" class="active-tag">All</li>
                    <li onClick="toggleTag(event)" class="inactive-tag">Auth</li>
                    <li onClick="toggleTag(event)" class="inactive-tag">Catching / Offline-First</li>
@@ -47,7 +47,6 @@
                    <li onClick="toggleTag(event)" class="inactive-tag">Messaging</li>
                  </ul>
             </div>
-
             <div class="grid md:gap-L gap-SM md:grid-cols-2 lg:grid-cols-3 grid-cols-1">
 
                 <div class="flex md:flex-col flex-row md:gap-L gap-M blog-card">
@@ -58,7 +57,7 @@
                     </div>
                     <div class="flex flex-col md:gap-L max-md:justify-between">
                         <button class="md:py-S md:px-SM py-XXS px-S rounded-[6px] bg-[#619DFF5C] text-bravo text-Small text-center w-fit">Category</button>
-                        <h1 class="md:text-H3 text-Regular text-headLines blog-heading">Blog title heading </h1>
+                        <h1 class="md:text-H3 text-Regular text-headLines blog-heading">Blog title heading</h1>
                         <h5 class="md:text-Regular text-Small text-bodyText md:line-clamp-none line-clamp-2">Lorem ipsum dolor sit amet consectetur. Sit ipsum in aenean sed diam. Et pretium nec elementum enim viverra nunc risus ac facilisis.</h5>
                         <a class="" href="about#">
                             @await Html.PartialAsync("Logos/ReadArticleLogo")
@@ -258,8 +257,8 @@
     <section class="md:py-XXXL py-XXL px-L flex flex-col">
         <div class="flex flex-col md:gap-XXL gap-XL">
             <div class="flex items-center justify-between">
-                <h1 class="md:text-[40px] md:leading-[48px] md:font-[700] text-H3 leading-[24px] text-brand md:block hidden">Most popular articles</h1>
-                <h1 class="md:text-[40px] md:leading-[48px] md:font-[700] text-H3 leading-[24px] text-brand md:hidden block" >Most popular</h1>
+                <h1 class="xl:headline2 md:text-15 md:leading-[48px] text-H3 leading-[24px] text-brand md:block hidden">Most popular articles</h1>
+                <h1 class="xl:headline2 md:text-15 md:leading-[48px] text-H3 leading-[24px] text-brand md:hidden block" >Most popular</h1>
                 <span class="">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M2.25 6C2.25 5.58579 2.58579 5.25 3 5.25H21C21.4142 5.25 21.75 5.58579 21.75 6C21.75 6.41421 21.4142 6.75 21 6.75H3C2.58579 6.75 2.25 6.41421 2.25 6ZM5.25 12C5.25 11.5858 5.58579 11.25 6 11.25H18C18.4142 11.25 18.75 11.5858 18.75 12C18.75 12.4142 18.4142 12.75 18 12.75H6C5.58579 12.75 5.25 12.4142 5.25 12ZM9.25 18C9.25 17.5858 9.58579 17.25 10 17.25H14C14.4142 17.25 14.75 17.5858 14.75 18C14.75 18.4142 14.4142 18.75 14 18.75H10C9.58579 18.75 9.25 18.4142 9.25 18Z" fill="#252532" />
@@ -267,7 +266,7 @@
                 </span>
             </div>
             <div class="md:block hidden">
-                <ul class="flex flex-wrap gap-M h-fit">
+                <ul class="flex overflow-x-auto gap-M h-fit tag-list">
                     <li onClick="toggleTag(event)" class="active-tag">All</li>
                     <li onClick="toggleTag(event)" class="inactive-tag">Auth</li>
                     <li onClick="toggleTag(event)" class="inactive-tag">Catching / Offline-First</li>
