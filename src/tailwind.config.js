@@ -49,6 +49,8 @@ module.exports = {
                 14: ['14px', { lineHeight: '24px', fontWeight: '600' }],
                 15: ['40px', { lineHeight: '44px', fontWeight: '700' }],
                 16: ['24px', { lineHeight: '32px', fontWeight: '700' }],
+                headline3: ['32px', { lineHeight: '40px', fontWeight: '700' }],
+                headline2: ['48px', { lineHeight: '52px', fontWeight: '700' }]
             },
             fontFamily: {
                 inter: 'Inter , sans-serif'

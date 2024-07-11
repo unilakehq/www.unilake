@@ -89,6 +89,19 @@ select{
 * {
     font-family: Inter, sans-serif;
 }
+.tag-list::-webkit-scrollbar {
+    height: 4px;
+    background-color: #f1f1f1;
+}
+
+.tag-list::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 4px;
+}
+
+.tag-list::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
 [data-carousel-slide-to][aria-current="false"] {
     background-color: #FF684940;
 }

@@ -1,9 +1,9 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace www.unilake.Pages
+namespace www.unilake.Pages.Products
 {
-    public class LakehouseAnalyticsModel : PageModel
+    public class DataManagementModel : PageModel
     {
         public void OnGet()
         {
