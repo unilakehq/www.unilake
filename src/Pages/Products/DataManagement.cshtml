@@ -5,8 +5,8 @@
 ViewData["Title"] = "Unilake.Www Data Management";
 }
 
-<div class="2xl:container mx-auto font-inter bg-backgroundPrimary">
-    <section class="mx-auto justify-center md:py-XXXL py-L px-L xl:gap-XXXL md:gap-XXL gap-L xl:bg-neutral bg-backgroundSecondary flex md:flex-row flex-col section-one">
+<div class="2xl:container font-inter bg-backgroundPrimary">
+    <section class="md:justify-between max-md:items-center md:py-XXXL py-L px-L xl:gap-XXXL md:gap-XXL gap-L xl:bg-neutral bg-backgroundSecondary flex md:flex-row flex-col section-one">
         <div class="flex flex-col gap-L xl:max-w-[605px] md:max-w-[395px]">
             <svg class="xl:block hidden" width="88" height="89" viewBox="0 0 88 89" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
@@ -44,11 +44,11 @@ ViewData["Title"] = "Unilake.Www Data Management";
                 </button>
             </div>
         </div>
-        <div class="">
+        <div class="w-fit">
             @await Html.PartialAsync("Logos/DataManagement/2D")
         </div>
     </section>
-    <section class="mx-auto px-L flex">
+    <section class="px-L flex">
         <div class="flex md:flex-row flex-col border-b border-neutralSecondary md:justify-between md:gap-XXL gap-XL xl:py-XXXL md:py-XXL py-XL w-full">
             <div class="flex flex-col gap-M rounded-L">
                 <svg class="xl:block hidden" width="104" height="104" viewBox="0 0 104 104" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -142,18 +142,22 @@ ViewData["Title"] = "Unilake.Www Data Management";
                  </svg>
                 <svg class="max-xl:block hidden" width="66" height="65" viewBox="0 0 66 65" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M1 8C1 3.85786 4.35786 0.5 8.5 0.5H57.5C61.6421 0.5 65 3.85786 65 8V57C65 61.1421 61.6421 64.5 57.5 64.5H8.5C4.35786 64.5 1 61.1421 1 57V8Z" stroke="#DDDFDA" />
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M28.1452 30.7797C26.3883 29.3366 24.4511 27.7445 23.4236 26.8896C23.0471 26.5758 22.7883 26.3641 22.702 26.3013C22.2079 25.8856 21.8158 25.1641 22.655 24.6621C23.0236 24.4425 29.2903 20.8503 31.604 19.517C32.4197 19.0464 33.4158 19.0464 34.2315 19.517C35.3373 20.1601 38.6628 22.0739 38.6628 22.0739C39.0158 22.2778 39.0158 22.7797 38.6628 22.9758L28.2942 28.9131C27.604 29.3131 27.5256 30.2699 28.1373 30.7797H28.1452Z" fill="#FACCBB" />
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M30.7333 34.992L26.5137 41.4234C26.2078 41.8862 25.5961 42.0352 25.1176 41.7528L22.3176 40.1371C21.5098 39.6665 21 38.8038 21 37.8626V27.1332C21 26.3018 21.4 25.5254 22.0588 25.0312C21.3059 25.6116 21.6039 26.2548 22.1059 26.6705C22.1765 26.7254 28.3804 31.8313 30.5294 33.6038C30.9451 33.9411 31.0314 34.5371 30.7412 34.9842L30.7333 34.992Z" fill="#F37441" />
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M37.7059 34.2148C39.4628 35.658 41.4001 37.2501 42.4275 38.105C42.804 38.4188 43.0628 38.6305 43.1491 38.6933C43.6432 39.109 44.0353 39.8305 43.1961 40.3325C42.8275 40.5521 36.5608 44.1443 34.2471 45.4776C33.4314 45.9482 32.4353 45.9482 31.6197 45.4776C30.5138 44.8344 27.1883 42.9207 27.1883 42.9207C26.8353 42.7168 26.8353 42.2148 27.1883 42.0188L37.5569 36.0815C38.2471 35.6815 38.3255 34.7246 37.7138 34.2148H37.7059Z" fill="#F37441" />
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M35.1098 30.0034L39.3294 23.5721C39.6353 23.1093 40.2471 22.9603 40.7255 23.2426L43.5255 24.8583C44.3333 25.3289 44.8431 26.1917 44.8431 27.1328V37.8623C44.8431 38.6936 44.4431 39.4701 43.7843 39.9642C44.5373 39.3838 44.2392 38.7407 43.7373 38.325C43.6667 38.2701 37.4627 33.1642 35.3137 31.3917C34.898 31.0544 34.8118 30.4583 35.102 30.0113L35.1098 30.0034Z" fill="#F37441" />
+                    <path d="M25 37.8346V27.168" stroke="#FF6849" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M39.6667 27.168V28.168C39.6667 29.2288 39.2252 30.2462 38.4393 30.9964C37.6534 31.7465 36.5876 32.168 35.4762 32.168H28.1429C27.3093 32.168 26.5099 32.484 25.9205 33.0466C25.3311 33.6092 25 34.3723 25 35.168" stroke="#FF6849" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M21 26.168V20.168C21 19.6157 21.4477 19.168 22 19.168H28C28.5523 19.168 29 19.6157 29 20.168V26.168C29 26.7202 28.5523 27.168 28 27.168H22C21.4477 27.168 21 26.7202 21 26.168Z" fill="#FFE9E4" />
+                    <path d="M35.6667 26.168V20.168C35.6667 19.6157 36.1144 19.168 36.6667 19.168H42.6667C43.2189 19.168 43.6667 19.6157 43.6667 20.168V26.168C43.6667 26.7202 43.2189 27.168 42.6667 27.168H36.6667C36.1144 27.168 35.6667 26.7202 35.6667 26.168Z" fill="#FFE9E4" />
+                    <path d="M21 44.8359V38.8359C21 38.2837 21.4477 37.8359 22 37.8359H28C28.5523 37.8359 29 38.2837 29 38.8359V44.8359C29 45.3881 28.5523 45.8359 28 45.8359H22C21.4477 45.8359 21 45.3881 21 44.8359Z" fill="#FFE9E4" />
+                    <path d="M21 26.168V20.168C21 19.6157 21.4477 19.168 22 19.168H28C28.5523 19.168 29 19.6157 29 20.168V26.168C29 26.7202 28.5523 27.168 28 27.168H22C21.4477 27.168 21 26.7202 21 26.168Z" stroke="#FF6849" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M35.6667 26.168V20.168C35.6667 19.6157 36.1144 19.168 36.6667 19.168H42.6667C43.2189 19.168 43.6667 19.6157 43.6667 20.168V26.168C43.6667 26.7202 43.2189 27.168 42.6667 27.168H36.6667C36.1144 27.168 35.6667 26.7202 35.6667 26.168Z" stroke="#FF6849" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M21 44.8359V38.8359C21 38.2837 21.4477 37.8359 22 37.8359H28C28.5523 37.8359 29 38.2837 29 38.8359V44.8359C29 45.3881 28.5523 45.8359 28 45.8359H22C21.4477 45.8359 21 45.3881 21 44.8359Z" stroke="#FF6849" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
                 <h3 class="text-headLines xl:text-H2 md:text-Regular text-H2">Git</h3>
                 <p class="text-bodyText xl:text-Regular md:text-Small text-Regular xl:max-w-[438px] md:max-w-[245px]">Use either the webinterface or code to adjus technical and business metadata. All changes are tracked and accounted for.</p>
             </div>
         </div>
     </section>
-    <section class="mx-auto justify-center xl:py-XXXL md:py-XXL py-XL px-L flex md:flex-row flex-col xl:gap-XXXL gap-XXL items-center">
-        <div class="fit">
+    <section class="md:justify-between max-md:items-center xl:py-XXXL md:py-XXL py-XL px-L flex md:flex-row flex-col xl:gap-XXXL gap-XXL items-center">
+        <div class="w-fit">
             @await Html.PartialAsync("Logos/DataManagement/Illustration_Easily_Find")
         </div>
         <div class="flex flex-col gap-M h-fit xl:max-w-[605px] md:max-w-[395px]">
@@ -163,7 +167,7 @@ ViewData["Title"] = "Unilake.Www Data Management";
             </h4>
         </div>
     </section>
-    <section class="mx-auto justify-center xl:py-XXXL md:py-XXL py-XL px-L flex md:flex-row flex-col-reverse xl:gap-XXXL gap-XXL items-center" style="background: linear-gradient(99.17deg, #F4F3EB 7.24%, #F8F8F8 86.39%);">
+    <section class="md:justify-between max-md:items-center xl:py-XXXL md:py-XXL py-XL px-L flex md:flex-row flex-col-reverse xl:gap-XXXL gap-XXL items-center" style="background: linear-gradient(99.17deg, #F4F3EB 7.24%, #F8F8F8 86.39%);">
         <div class="flex flex-col gap-M h-fit xl:max-w-[605px] md:max-w-[395px]">
             <h1 class="xl:text-15 text-H3 leading-[40px] text-headLines">
                 Data Domains
@@ -173,12 +177,12 @@ ViewData["Title"] = "Unilake.Www Data Management";
                 domains and how they are connected and use between the domains. 
             </h4>
         </div>
-        <div class="fit">
+        <div class="w-fit h-fit">
             @await Html.PartialAsync("Logos/DataManagement/Illustration_Data_Domains")
         </div>
     </section>
-    <section class="mx-auto justify-center xl:py-XXXL md:py-XXL py-XL px-L flex md:flex-row flex-col xl:gap-XXXL gap-XXL items-center">
-        <div class="h-fit">
+    <section class="md:justify-between max-md:items-center xl:py-XXXL md:py-XXL py-XL px-L flex md:flex-row flex-col xl:gap-XXXL gap-XXL items-center">
+        <div class="w-fit h-fit">
             @await Html.PartialAsync("Logos/DataManagement/Illustration_End-to-End")
         </div>
         <div class="flex flex-col gap-M h-fit xl:max-w-[605px] md:max-w-[395px]">
@@ -195,7 +199,7 @@ ViewData["Title"] = "Unilake.Www Data Management";
             </h4>
         </div>
     </section>
-    <section class="mx-auto px-L flex">
+    <section class="px-L flex">
         <div class="flex md:flex-row flex-col border-t border-neutralSecondary md:justify-between md:gap-XXL gap-XL gap-XL xl:py-XXXL md:py-XXL py-XL w-full">
             <div class="flex flex-col gap-M rounded-L">
                 <svg class="xl:block hidden" width="104" height="104" viewBox="0 0 104 104" fill="none" xmlns="http://www.w3.org/2000/svg">

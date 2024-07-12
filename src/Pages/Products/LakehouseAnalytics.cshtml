@@ -6,7 +6,7 @@
 }
 
 <div class="2xl:container mx-auto font-inter bg-backgroundPrimary">
-    <section class="mx-auto justify-center md:py-XXXL py-L px-L xl:gap-XXXL md:gap-XXL gap-L xl:bg-neutral bg-backgroundSecondary flex md:flex-row flex-col section-one">
+    <section class="mx-auto md:justify-between max-md:items-center md:py-XXXL py-L px-L xl:gap-XXXL md:gap-XXL gap-L xl:bg-neutral bg-backgroundSecondary flex md:flex-row flex-col section-one">
         <div class="flex flex-col gap-L xl:max-w-[605px] md:max-w-[395px]">
             <svg class="xl:block hidden" width="88" height="89" viewBox="0 0 88 89" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0.5 12.5C0.5 6.14873 5.64873 1 12 1H76C82.3513 1 87.5 6.14873 87.5 12.5V76.5C87.5 82.8513 82.3513 88 76 88H12C5.64873 88 0.5 82.8513 0.5 76.5V12.5Z" stroke="#E7E7E7"/>
@@ -36,7 +36,7 @@
                 </button>
             </div>
         </div>
-        <div class="">
+        <div class="w-fit">
             @await Html.PartialAsync("Logos/LakeAnalyticsPage/LakeAnalyticsLogo")
         </div>
     </section>
@@ -103,18 +103,20 @@
                 </svg>
                 <svg class="max-xl:block hidden" width="66" height="65" viewBox="0 0 66 65" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M1 8C1 3.85786 4.35786 0.5 8.5 0.5H57.5C61.6421 0.5 65 3.85786 65 8V57C65 61.1421 61.6421 64.5 57.5 64.5H8.5C4.35786 64.5 1 61.1421 1 57V8Z" stroke="#DDDFDA" />
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M28.1451 30.7797C26.3882 29.3366 24.4509 27.7445 23.4235 26.8896C23.047 26.5758 22.7882 26.3641 22.7019 26.3013C22.2078 25.8856 21.8157 25.1641 22.6549 24.6621C23.0235 24.4425 29.2902 20.8503 31.6039 19.517C32.4196 19.0464 33.4157 19.0464 34.2313 19.517C35.3372 20.1601 38.6627 22.0739 38.6627 22.0739C39.0157 22.2778 39.0157 22.7797 38.6627 22.9758L28.2941 28.9131C27.6039 29.3131 27.5255 30.2699 28.1372 30.7797H28.1451Z" fill="#FACCBB" />
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M30.7333 34.992L26.5137 41.4234C26.2078 41.8862 25.5961 42.0352 25.1176 41.7528L22.3176 40.1371C21.5098 39.6665 21 38.8038 21 37.8626V27.1332C21 26.3018 21.4 25.5254 22.0588 25.0312C21.3059 25.6116 21.6039 26.2548 22.1059 26.6705C22.1765 26.7254 28.3804 31.8313 30.5294 33.6038C30.9451 33.9411 31.0314 34.5371 30.7412 34.9842L30.7333 34.992Z" fill="#F37441" />
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M37.7059 34.2148C39.4628 35.658 41.4001 37.2501 42.4275 38.105C42.804 38.4188 43.0628 38.6305 43.1491 38.6933C43.6432 39.109 44.0353 39.8305 43.1961 40.3325C42.8275 40.5521 36.5608 44.1443 34.2471 45.4776C33.4314 45.9482 32.4353 45.9482 31.6197 45.4776C30.5138 44.8344 27.1883 42.9207 27.1883 42.9207C26.8353 42.7168 26.8353 42.2148 27.1883 42.0188L37.5569 36.0815C38.2471 35.6815 38.3255 34.7246 37.7138 34.2148H37.7059Z" fill="#F37441" />
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M35.1098 30.0034L39.3294 23.5721C39.6353 23.1093 40.2471 22.9603 40.7255 23.2426L43.5255 24.8583C44.3333 25.3289 44.8431 26.1917 44.8431 27.1328V37.8623C44.8431 38.6936 44.4431 39.4701 43.7843 39.9642C44.5373 39.3838 44.2392 38.7407 43.7373 38.325C43.6667 38.2701 37.4627 33.1642 35.3137 31.3917C34.898 31.0544 34.8118 30.4583 35.102 30.0113L35.1098 30.0034Z" fill="#F37441" />
+                    <path d="M27.2856 38.2154V42.7868C27.2856 44.0492 28.309 45.0725 29.5714 45.0725H45.5714C46.8338 45.0725 47.8571 44.0492 47.8571 42.7868V38.2154C47.8571 36.953 46.8338 35.9297 45.5714 35.9297H29.5714C28.309 35.9297 27.2856 36.953 27.2856 38.2154Z" fill="#FFE9E4" />
+                    <path d="M27.2856 22.2154V26.7868C27.2856 28.0492 28.309 29.0725 29.5714 29.0725H45.5714C46.8338 29.0725 47.8571 28.0492 47.8571 26.7868V22.2154C47.8571 20.953 46.8338 19.9297 45.5714 19.9297H29.5714C28.309 19.9297 27.2856 20.953 27.2856 22.2154Z" fill="#FFE9E4" />
+                    <path d="M27.2856 38.2154V42.7868C27.2856 44.0492 28.309 45.0725 29.5714 45.0725H45.5714C46.8338 45.0725 47.8571 44.0492 47.8571 42.7868V38.2154C47.8571 36.953 46.8338 35.9297 45.5714 35.9297H29.5714C28.309 35.9297 27.2856 36.953 27.2856 38.2154Z" stroke="#FF6849" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M27.2856 22.2154V26.7868C27.2856 28.0492 28.309 29.0725 29.5714 29.0725H45.5714C46.8338 29.0725 47.8571 28.0492 47.8571 26.7868V22.2154C47.8571 20.953 46.8338 19.9297 45.5714 19.9297H29.5714C28.309 19.9297 27.2856 20.953 27.2856 22.2154Z" stroke="#FF6849" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M18.1428 37.0725L22.7143 32.5011L18.1428 27.9297" stroke="#FF6849" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
+
                 <h3 class="text-headLines xl:text-H2 md:text-Regular text-H2">Realtime Endpoint</h3>
                 <p class="text-bodyText xl:text-Regular md:text-Small text-Regular xl:max-w-[438px] md:max-w-[245px]">Push data to UniLake and analyze in realtime with sub-second latency. Stay up to date. </p>
             </div>
         </div>
     </section>
-    <section class="mx-auto justify-center xl:py-XXXL md:py-XXL py-XL px-L flex md:flex-row flex-col xl:gap-XXXL gap-XXL items-center">
-        <div class="fit">
+    <section class="mx-auto md:justify-between max-md:items-center xl:py-XXXL md:py-XXL py-XL px-L flex md:flex-row flex-col xl:gap-XXXL gap-XXL items-center">
+        <div class="w-fit">
             @await Html.PartialAsync("Logos/LakeAnalyticsPage/Illustration_Unparalleled_Performance")
         </div>
         <div class="flex flex-col gap-M h-fit xl:max-w-[605px] md:max-w-[395px]">
@@ -125,7 +127,7 @@
             </h4>
         </div>
     </section>
-    <section class="mx-auto justify-center xl:py-XXXL md:py-XXL py-XL px-L flex md:flex-row flex-col-reverse xl:gap-XXXL gap-XXL items-center" style="background: linear-gradient(99.17deg, #F4F3EB 7.24%, #F8F8F8 86.39%);">
+    <section class="mx-auto md:justify-between max-md:items-center xl:py-XXXL md:py-XXL py-XL px-L flex md:flex-row flex-col-reverse xl:gap-XXXL gap-XXL items-center" style="background: linear-gradient(99.17deg, #F4F3EB 7.24%, #F8F8F8 86.39%);">
         <div class="flex flex-col gap-M h-fit xl:max-w-[605px] md:max-w-[395px]">
             <h1 class="xl:text-15 text-H3 leading-[40px] text-headLines">
                 Analyze data
@@ -137,12 +139,12 @@
                 operational analytics, stream your data into UniLake and analyse with sub-second performance. 
             </h4>
         </div>
-        <div class="fit">
+        <div class="w-fit">
             @await Html.PartialAsync("Logos/LakeAnalyticsPage/Illustration_Analyze_Data_Real-time")
         </div>
     </section>
-    <section class="mx-auto justify-center xl:py-XXXL md:py-XXL py-XL px-L flex md:flex-row flex-col xl:gap-XXXL gap-XXL items-center">
-        <div class="h-fit">
+    <section class="mx-auto md:justify-between max-md:items-center xl:py-XXXL md:py-XXL py-XL px-L flex md:flex-row flex-col xl:gap-XXXL gap-XXL items-center">
+        <div class="w-fit h-fit">
             @await Html.PartialAsync("Logos/LakeAnalyticsPage/Illustration_Data_Products_Code")
         </div>
         <div class="flex flex-col gap-M h-fit xl:max-w-[605px] md:max-w-[395px]">
@@ -157,7 +159,7 @@
             </h4>
         </div>
     </section>
-    <section class="mx-auto justify-center xl:py-XXXL md:py-XXL py-XL px-L flex md:flex-row flex-col-reverse xl:gap-XXXL gap-XXL items-center" style="background: linear-gradient(99.17deg, #F4F3EB 7.24%, #F8F8F8 86.39%);">
+    <section class="mx-auto md:justify-between max-md:items-center xl:py-XXXL md:py-XXL py-XL px-L flex md:flex-row flex-col-reverse xl:gap-XXXL gap-XXL items-center" style="background: linear-gradient(99.17deg, #F4F3EB 7.24%, #F8F8F8 86.39%);">
         <div class="flex flex-col gap-M h-fit xl:max-w-[605px] md:max-w-[395px]">
             <h1 class="xl:text-15 text-H3 leading-[40px] text-headLines">
                 Unified format
@@ -166,11 +168,11 @@
                 Access different file formats from a single unified platform. Whether your data is stored in Iceberg, Delta or Hudi format, UniLake allows you to query and combine your data in a single interface. 
             </h4>
         </div>
-        <div class="fit">
+        <div class="w-fit">
             @await Html.PartialAsync("Logos/LakeAnalyticsPage/Illustration_Unified_Format")
         </div>
     </section>
-    <section class="mx-auto justify-center xl:py-XXXL md:py-XXL py-XL px-L flex md:flex-row flex-col xl:gap-XXXL md:gap-XL w-fit">
+    <section class="md:justify-between max-md:items-center xl:py-XXXL md:py-XXL py-XL px-L flex md:flex-row flex-col xl:gap-XXXL md:gap-XL">
         <div class="flex flex-col items-center gap-XL max-xl:md:py-XL max-md:py-L">
             <div class="flex justify-center max-md:w-full max-md:h-full">
                 @await Html.PartialAsync("Logos/LakeAnalyticsPage/Illustration_Integrated_IDE")

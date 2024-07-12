@@ -6,7 +6,7 @@
 }
 
 <div class="2xl:container mx-auto bg-backgroundPrimary">
-    <section class="flex md:flex-row flex-col justify-center xl:gap-XXXL md:gap-XXL gap-L md:py-XXXL py-L section-one px-L xl:bg-neutral bg-backgroundSecondary">
+    <section class="flex md:flex-row flex-col md:justify-between max-md:items-center xl:gap-XXXL md:gap-XXL gap-L md:py-XXXL py-L section-one px-L xl:bg-neutral bg-backgroundSecondary">
         <div class="flex flex-col gap-L xl:max-w-[605px] md:max-w-[395px]">
             <svg class="xl:block hidden" width="88" height="89" viewBox="0 0 88 89" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0.5 12.5C0.5 6.14873 5.64873 1 12 1H76C82.3513 1 87.5 6.14873 87.5 12.5V76.5C87.5 82.8513 82.3513 88 76 88H12C5.64873 88 0.5 82.8513 0.5 76.5V12.5Z" stroke="#E7E7E7" />
@@ -40,7 +40,7 @@
                 </button>
             </div>
         </div>
-        <div class="m-auto">
+        <div class="wit">
             <img class="xl:block hidden" src="~/img/DataLake/Desktop/Illustration_Datalake_hero.svg" alt="not found">
             <img class="xl:hidden block" src="~/img/DataLake/Tablet/Illustration_Datalake_hero.svg" alt="not found">
         </div>
@@ -102,17 +102,31 @@
                 </svg>
                 <svg class="xl:hidden block" width="66" height="65" viewBox="0 0 66 65" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M1 8C1 3.85786 4.35786 0.5 8.5 0.5H57.5C61.6421 0.5 65 3.85786 65 8V57C65 61.1421 61.6421 64.5 57.5 64.5H8.5C4.35786 64.5 1 61.1421 1 57V8Z" stroke="#DDDFDA" />
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M28.1452 30.7797C26.3883 29.3366 24.4511 27.7445 23.4236 26.8896C23.0471 26.5758 22.7883 26.3641 22.702 26.3013C22.2079 25.8856 21.8158 25.1641 22.655 24.6621C23.0236 24.4425 29.2903 20.8503 31.604 19.517C32.4197 19.0464 33.4158 19.0464 34.2315 19.517C35.3373 20.1601 38.6628 22.0739 38.6628 22.0739C39.0158 22.2778 39.0158 22.7797 38.6628 22.9758L28.2942 28.9131C27.604 29.3131 27.5256 30.2699 28.1373 30.7797H28.1452Z" fill="#FACCBB" />
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M30.7333 34.992L26.5137 41.4234C26.2078 41.8862 25.5961 42.0352 25.1176 41.7528L22.3176 40.1371C21.5098 39.6665 21 38.8038 21 37.8626V27.1332C21 26.3018 21.4 25.5254 22.0588 25.0312C21.3059 25.6116 21.6039 26.2548 22.1059 26.6705C22.1765 26.7254 28.3804 31.8313 30.5294 33.6038C30.9451 33.9411 31.0314 34.5371 30.7412 34.9842L30.7333 34.992Z" fill="#F37441" />
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M37.7057 34.2148C39.4626 35.658 41.3998 37.2501 42.4273 38.105C42.8037 38.4188 43.0626 38.6305 43.1488 38.6933C43.6429 39.109 44.0351 39.8305 43.1959 40.3325C42.8273 40.5521 36.5606 44.1443 34.2469 45.4776C33.4312 45.9482 32.4351 45.9482 31.6194 45.4776C30.5135 44.8344 27.188 42.9207 27.188 42.9207C26.8351 42.7168 26.8351 42.2148 27.188 42.0188L37.5567 36.0815C38.2469 35.6815 38.3253 34.7246 37.7135 34.2148H37.7057Z" fill="#F37441" />
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M35.11 30.0034L39.3297 23.5721C39.6355 23.1093 40.2473 22.9603 40.7257 23.2426L43.5257 24.8583C44.3336 25.3289 44.8434 26.1917 44.8434 27.1328V37.8623C44.8434 38.6936 44.4434 39.4701 43.7846 39.9642C44.5375 39.3838 44.2395 38.7407 43.7375 38.325C43.6669 38.2701 37.463 33.1642 35.314 31.3917C34.8983 31.0544 34.812 30.4583 35.1022 30.0113L35.11 30.0034Z" fill="#F37441" />
+                    <g clip-path="url(#clip0_3941_19487)">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M42.7728 25.9858C42.843 26.067 42.9349 26.1265 43.0377 26.1572C44.5273 26.5081 45.8363 27.3931 46.7173 28.6444C47.5982 29.8958 47.9895 31.4267 47.8174 32.9473C47.6453 34.4679 46.9216 35.8726 45.7833 36.8954C45.1742 37.4429 44.4688 37.8606 43.7102 38.132C43.7497 37.9284 43.7771 37.7217 43.792 37.5132C43.8645 36.488 43.6279 35.4648 43.1131 34.5758L42.6638 33.7893L42.6526 33.7702C42.1424 32.8886 41.3815 32.1785 40.4667 31.7303C39.706 31.3575 38.8668 31.1795 38.0244 31.2094C37.6382 30.4743 37.078 29.8411 36.3891 29.367C35.5366 28.7804 34.5268 28.4648 33.492 28.4618H32.5428L32.531 28.4618C31.4961 28.4649 30.4863 28.7804 29.6338 29.367C28.9447 29.8413 28.3843 30.4749 27.998 31.2103C27.1486 31.1765 26.3012 31.354 25.5333 31.7303C24.6185 32.1785 23.8577 32.8886 23.3474 33.7702L22.8871 34.5758C22.3722 35.4648 22.1356 36.488 22.2081 37.5132C22.2141 37.5976 22.2222 37.6817 22.2322 37.7653C21.6632 37.4859 21.1281 37.1314 20.6425 36.7069C19.1825 35.4306 18.2892 33.6265 18.1593 31.6915C18.0294 29.7566 18.6734 27.8493 19.9498 26.3892C20.5818 25.6662 21.35 25.0748 22.2105 24.6488C23.071 24.2227 24.0071 23.9703 24.9652 23.9059C25.0646 23.9081 25.1626 23.8818 25.2475 23.8301C25.3325 23.7784 25.4008 23.7035 25.4446 23.6141C26.1055 21.6986 27.4032 20.0675 29.1211 18.9929C30.8391 17.9183 32.8736 17.4651 34.8852 17.7089C36.8969 17.9528 38.7642 18.8789 40.1755 20.3328C41.5872 21.7867 42.4576 23.6806 42.6416 25.6986C42.6571 25.8049 42.7024 25.9045 42.7728 25.9858Z" fill="#FFE9E4" />
+                        <path d="M44.8361 37.5973C45.1712 37.395 45.4885 37.1604 45.7833 36.8954C46.9216 35.8726 47.6453 34.4679 47.8174 32.9473C47.9895 31.4267 47.5982 29.8958 46.7173 28.6444C45.8363 27.3931 44.5273 26.5081 43.0377 26.1572C42.9349 26.1265 42.843 26.067 42.7728 25.9858C42.7024 25.9045 42.6571 25.8049 42.6416 25.6986C42.4576 23.6806 41.5872 21.7867 40.1755 20.3328C38.7642 18.8789 36.8969 17.9528 34.8852 17.7089C32.8736 17.4651 30.8391 17.9183 29.1211 18.9929C27.4032 20.0675 26.1055 21.6986 25.4446 23.6141C25.4008 23.7035 25.3325 23.7784 25.2475 23.8301C25.1626 23.8818 25.0646 23.9081 24.9652 23.9059C24.0071 23.9703 23.071 24.2227 22.2105 24.6488C21.35 25.0748 20.5818 25.6662 19.9498 26.3892C18.6734 27.8493 18.0294 29.7566 18.1593 31.6915C18.2892 33.6265 19.1825 35.4306 20.6425 36.7069C20.872 36.9075 21.1124 37.0924 21.3623 37.2612" stroke="#FF6849" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M34.5824 41.2031L30.7143 41.2031L30.7143 45.0713L34.5824 45.0713L34.5824 41.2031Z" fill="#FFE9E4" />
+                        <path d="M34.5824 41.2031L30.7143 41.2031L30.7143 45.0713L34.5824 45.0713L34.5824 41.2031Z" stroke="#FF6849" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M32.6484 32.5L32.6484 41.2033" stroke="#FF6849" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M43.7253 43.4883L39.8571 43.4883L39.8571 47.3564L43.7253 47.3564L43.7253 43.4883Z" fill="#FFE9E4" />
+                        <path d="M43.7253 43.4883L39.8571 43.4883L39.8571 47.3564L43.7253 47.3564L43.7253 43.4883Z" stroke="#FF6849" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M39.8571 34.7852L39.8571 39.3566L41.7913 43.4885" stroke="#FF6849" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M21.5716 43.4883L25.4397 43.4883L25.4397 47.3564L21.5716 47.3564L21.5716 43.4883Z" fill="#FFE9E4" />
+                        <path d="M21.5716 43.4883L25.4397 43.4883L25.4397 47.3564L21.5716 47.3564L21.5716 43.4883Z" stroke="#FF6849" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M25.4398 34.7852L25.4398 39.3566L23.5056 43.4885" stroke="#FF6849" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_3941_19487">
+                            <rect width="32" height="32" fill="white" transform="translate(17 16.5)" />
+                        </clipPath>
+                    </defs>
                 </svg>
                 <h3 class="text-headLines xl:text-H2 md:text-Regular text-H2">Hybrid Cloud</h3>
                 <p class="text-bodyText xl:text-Regular md:text-Small text-Regular xl:max-w-[438px] md:max-w-[245px]">Using UniLakes cloud platform gives access to advanced capalibities such as connecting multiple data lakes and combining an on-prem deployment with your UniLake cloud solution.</p>
             </div>
         </div>
     </section>
-    <section class="flex md:flex-row flex-col justify-around xl:py-XXXL md:py-XXL py-XL px-L xl:gap-XXXL gap-XXL items-center">
+    <section class="flex md:flex-row flex-col md:justify-between max-md:items-center xl:py-XXXL md:py-XXL py-XL px-L xl:gap-XXXL gap-XXL items-center">
         <div class="w-fit">
             <img class="xl:block hidden" src="~/img/DataLake/Desktop/Illustration_Unified_Data_Lake.svg" alt="not found">
             <img class="xl:hidden block" src="~/img/DataLake/Tablet/Illustration_Unified_Data_Lake.svg" alt="not found">
@@ -122,7 +136,7 @@
             <p class="xl:text-Regular md:text-Small text-Regular text-bodyText">Whether you store your data in the cloud or locally, UniLake provides a unified data access layer for your data. Use the self-hosted option to connect to local data and scale-out or combine data from different cloud environments by leveraging the unified data lake pending to be offered as a cloud solution.</p>
         </div>
     </section>
-    <section class="flex md:flex-row flex-col-reverse justify-around xl:py-XXXL md:py-XXL py-XL px-L xl:gap-XXXL gap-XXL items-center bg-backgroundTertiary">
+    <section class="flex md:flex-row flex-col-reverse md:justify-between max-md:items-center xl:py-XXXL md:py-XXL py-XL px-L xl:gap-XXXL gap-XXL items-center bg-backgroundTertiary">
         <div class="flex flex-col gap-M h-fit xl:max-w-[605px] md:max-w-[395px]">
             <h2 class="xl:text-15 text-H3 leading-[40px] text-headLines">Single Point of Entry</h2>
             <p class="xl:text-Regular md:text-Small text-Regular text-bodyText">Wherever your data lives on the planet, using the UniLake cloud offering you can connect to your data from a single endpoint. Your data can be stored at AWS, Google Cloud, Azure and locally. Connecting to your data can be done using a single point of entry, no need to move data between clouds yourself, the hosted UniLake has you covered.</p>
@@ -132,7 +146,7 @@
             <img class="xl:hidden block" src="~/img/DataLake/Tablet/Illustration_Single_Point_Entry.svg" alt="not found">
         </div>
     </section>
-    <section class="flex md:flex-row flex-col justify-around xl:py-XXXL md:py-XXL py-XL px-L xl:gap-XXXL md:gap-XL">
+    <section class="flex md:flex-row flex-col md:justify-between max-md:items-center xl:py-XXXL md:py-XXL py-XL px-L xl:gap-XXXL md:gap-XL">
         <div class="flex flex-col items-center gap-XL">
             <div class="flex justify-center">
                 <img class="xl:block hidden" src="~/img/DataLake/Desktop/Illustration_Zero_Copy_Principle.svg" alt="not found">
