@@ -379,6 +379,32 @@ select{
     left: -26px;
     top: -52px;
 }
+.linear-gradient-governance {
+    background: linear-gradient(99.17deg, #F8F7F3 7.24%, #F8F8F8 86.39%);
+}
+@media (min-width: 1024px) {
+    .lg\:linear-gradient-governance {
+        background: linear-gradient(99.17deg, #F8F7F3 7.24%, #F8F8F8 86.39%);
+    }
+}
+@media not all and (min-width: 1024px) {
+    .max-lg\:linear-gradient-governance {
+        background: linear-gradient(99.17deg, #F8F7F3 7.24%, #F8F8F8 86.39%);
+    }
+}
+@media not all and (min-width: 768px) {
+    .max-md\:linear-gradient-governance {
+        background: linear-gradient(99.17deg, #F8F7F3 7.24%, #F8F8F8 86.39%);
+    }
+}
+
+@media not all and (min-width: 1024px) {
+    @media (min-width: 768px) {
+        .max-lg\:md\:linear-gradient-governance {
+            padding: 10px;
+        }
+    }
+}
 
 @media (min-width:768px) {
     .not-found-main {
