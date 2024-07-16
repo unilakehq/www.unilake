@@ -5,9 +5,10 @@
     ViewData["Title"] = "Unilake.Www Lakehouse-analytics";
 }
 
-<div class="2xl:container mx-auto font-inter bg-backgroundPrimary">
-    <section class="mx-auto md:justify-between max-md:items-center md:py-XXXL py-L px-L xl:gap-XXXL md:gap-XXL gap-L xl:bg-neutral bg-backgroundSecondary flex md:flex-row flex-col section-one">
-        <div class="flex flex-col gap-L xl:max-w-[605px] md:max-w-[395px]">
+<div class="mx-auto font-inter bg-backgroundPrimary">
+    <section class="xl:bg-neutral bg-backgroundSecondary section-one">
+        <div class="lg:max-w-8xl md:max-w-[800px] w-full px-L mx-auto md:justify-between max-md:items-center md:py-XXXL py-L xl:gap-XXXL md:gap-XXL gap-L flex md:flex-row flex-col">
+           <div class="flex flex-col gap-L xl:max-w-[605px] md:max-w-[395px]">
             <svg class="xl:block hidden" width="88" height="89" viewBox="0 0 88 89" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0.5 12.5C0.5 6.14873 5.64873 1 12 1H76C82.3513 1 87.5 6.14873 87.5 12.5V76.5C87.5 82.8513 82.3513 88 76 88H12C5.64873 88 0.5 82.8513 0.5 76.5V12.5Z" stroke="#E7E7E7"/>
                 <path d="M38.7622 60.2147V28.7861H28.2861V60.2147" fill="#FFE9E4"/>
@@ -36,11 +37,12 @@
                 </button>
             </div>
         </div>
-        <div class="w-fit">
+           <div class="w-fit h-fit">
             @await Html.PartialAsync("Logos/LakeAnalyticsPage/LakeAnalyticsLogo")
         </div>
+        </div>
     </section>
-    <section class="mx-auto px-L flex">
+    <section class="lg:max-w-8xl md:max-w-[800px] w-full px-L mx-auto flex">
         <div class="flex md:flex-row flex-col border-b border-neutralSecondary md:justify-between md:gap-XXL gap-XL xl:py-XXXL md:py-XXL py-XL w-full">
             <div class="flex flex-col gap-M rounded-L">
                 <svg class="xl:block hidden" width="104" height="104" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -115,8 +117,8 @@
             </div>
         </div>
     </section>
-    <section class="mx-auto md:justify-between max-md:items-center xl:py-XXXL md:py-XXL py-XL px-L flex md:flex-row flex-col xl:gap-XXXL gap-XXL items-center">
-        <div class="w-fit">
+    <section class="lg:max-w-8xl md:max-w-[800px] w-full px-L mx-auto md:justify-between max-md:items-center xl:py-XXXL md:py-XXL py-XL flex md:flex-row flex-col xl:gap-XXXL gap-XXL items-center">
+        <div class="w-fit h-fit">
             @await Html.PartialAsync("Logos/LakeAnalyticsPage/Illustration_Unparalleled_Performance")
         </div>
         <div class="flex flex-col gap-M h-fit xl:max-w-[605px] md:max-w-[395px]">
@@ -127,8 +129,9 @@
             </h4>
         </div>
     </section>
-    <section class="mx-auto md:justify-between max-md:items-center xl:py-XXXL md:py-XXL py-XL px-L flex md:flex-row flex-col-reverse xl:gap-XXXL gap-XXL items-center" style="background: linear-gradient(99.17deg, #F4F3EB 7.24%, #F8F8F8 86.39%);">
-        <div class="flex flex-col gap-M h-fit xl:max-w-[605px] md:max-w-[395px]">
+    <section class="" style="background: linear-gradient(99.17deg, #F4F3EB 7.24%, #F8F8F8 86.39%);">
+        <div class="lg:max-w-8xl md:max-w-[800px] w-full px-L mx-auto md:justify-between max-md:items-center xl:py-XXXL md:py-XXL py-XL flex md:flex-row flex-col-reverse xl:gap-XXXL gap-XXL items-center">
+            <div class="flex flex-col gap-M h-fit xl:max-w-[605px] md:max-w-[395px]">
             <h1 class="xl:text-15 text-H3 leading-[40px] text-headLines">
                 Analyze data
                 in real-time
@@ -139,16 +142,17 @@
                 operational analytics, stream your data into UniLake and analyse with sub-second performance. 
             </h4>
         </div>
-        <div class="w-fit">
+            <div class="w-fit h-fit">
             @await Html.PartialAsync("Logos/LakeAnalyticsPage/Illustration_Analyze_Data_Real-time")
         </div>
+        </div>
     </section>
-    <section class="mx-auto md:justify-between max-md:items-center xl:py-XXXL md:py-XXL py-XL px-L flex md:flex-row flex-col xl:gap-XXXL gap-XXL items-center">
+    <section class="lg:max-w-8xl md:max-w-[800px] w-full px-L mx-auto md:justify-between max-md:items-center xl:py-XXXL md:py-XXL py-XL flex md:flex-row flex-col xl:gap-XXXL gap-XXL items-center">
         <div class="w-fit h-fit">
             @await Html.PartialAsync("Logos/LakeAnalyticsPage/Illustration_Data_Products_Code")
         </div>
         <div class="flex flex-col gap-M h-fit xl:max-w-[605px] md:max-w-[395px]">
-            <button class="py-S px-SM bg-[#619DFF5C] rounded-[6px] text-Small text-bravo w-fit flex items-center">
+            <button class="py-S px-SM bg-[#619DFF5C] rounded-[6px] text-Small text-bravo w-fit h-fit flex items-center">
                 Coming Soon
             </button>
             <h1 class="xl:text-15 text-H3 leading-[40px] text-headLines">
@@ -159,20 +163,22 @@
             </h4>
         </div>
     </section>
-    <section class="mx-auto md:justify-between max-md:items-center xl:py-XXXL md:py-XXL py-XL px-L flex md:flex-row flex-col-reverse xl:gap-XXXL gap-XXL items-center" style="background: linear-gradient(99.17deg, #F4F3EB 7.24%, #F8F8F8 86.39%);">
-        <div class="flex flex-col gap-M h-fit xl:max-w-[605px] md:max-w-[395px]">
-            <h1 class="xl:text-15 text-H3 leading-[40px] text-headLines">
-                Unified format
-            </h1>
-            <h4 class="xl:text-Regular md:text-Small text-Regular text-bodyText">
-                Access different file formats from a single unified platform. Whether your data is stored in Iceberg, Delta or Hudi format, UniLake allows you to query and combine your data in a single interface. 
-            </h4>
-        </div>
-        <div class="w-fit">
-            @await Html.PartialAsync("Logos/LakeAnalyticsPage/Illustration_Unified_Format")
+    <section class="" style="background: linear-gradient(99.17deg, #F4F3EB 7.24%, #F8F8F8 86.39%);">
+        <div class="lg:max-w-8xl md:max-w-[800px] w-full px-L mx-auto md:justify-between max-md:items-center xl:py-XXXL md:py-XXL py-XL flex md:flex-row flex-col-reverse xl:gap-XXXL gap-XXL items-center">
+            <div class="flex flex-col gap-M h-fit xl:max-w-[605px] md:max-w-[395px]">
+                <h1 class="xl:text-15 text-H3 leading-[40px] text-headLines">
+                    Unified format
+                </h1>
+                <h4 class="xl:text-Regular md:text-Small text-Regular text-bodyText">
+                    Access different file formats from a single unified platform. Whether your data is stored in Iceberg, Delta or Hudi format, UniLake allows you to query and combine your data in a single interface. 
+                </h4>
+            </div>
+            <div class="w-fit h-fit">
+                @await Html.PartialAsync("Logos/LakeAnalyticsPage/Illustration_Unified_Format")
+            </div>
         </div>
     </section>
-    <section class="md:justify-between max-md:items-center xl:py-XXXL md:py-XXL py-XL px-L flex md:flex-row flex-col xl:gap-XXXL md:gap-XL">
+    <section class="lg:max-w-8xl md:max-w-[800px] w-full px-L mx-auto md:justify-between max-md:items-center xl:py-XXXL md:py-XXL py-XL flex md:flex-row flex-col xl:gap-XXXL md:gap-XL">
         <div class="flex flex-col items-center gap-XL max-xl:md:py-XL max-md:py-L">
             <div class="flex justify-center max-md:w-full max-md:h-full">
                 @await Html.PartialAsync("Logos/LakeAnalyticsPage/Illustration_Integrated_IDE")
@@ -192,7 +198,7 @@
             </div>
         </div>
     </section>
-    <section class="mx-auto px-L flex">
+    <section class="lg:max-w-8xl md:max-w-[800px] w-full px-L mx-auto flex">
         <div class="flex md:flex-row flex-col border-t border-neutralSecondary md:justify-between md:gap-XXL gap-XL xl:py-XXXL md:py-XXL py-XL w-full">
             <div class="flex flex-col gap-M rounded-L">
                 <svg class="xl:block hidden" width="104" height="105" viewBox="0 0 104 105" fill="none" xmlns="http://www.w3.org/2000/svg">

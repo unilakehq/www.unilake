@@ -4,7 +4,17 @@ module.exports = {
     theme: {
         extend: {
             container: {
-                center: true
+                center: true,
+                padding: {
+                    DEFAULT: '24px',
+                    'sm': '24px',
+                    'smd': '24px',
+                    'md': '64px',
+                    'ml': '80px',
+                    'lg': '112px',
+                    'xl': '60px',
+                    '2xl': '240px',
+                }
             },
             screens: {
                 'sm': '400px',
@@ -60,8 +70,10 @@ module.exports = {
             },
             width: {
                 full: '100%',
-                ArrowForward: '10.67px',
-                Tag: '73px',
+                
+            },
+            maxWidth: {
+                '8xl': '1440px',
             },
             height: {
                 Tag: '27px',
@@ -116,6 +128,43 @@ module.exports = {
             }
         }
     },
-    plugins: [],
+    plugins: [
+        function ({ addComponents }) {
+            addComponents({
+                '.container': {
+                    maxWidth: '100%',
+                    padding:'24px',
+                    '@screen smd': {
+                        maxWidth: '400px',
+                        padding: '24px'
+                    },
+                    '@screen md': {
+                        maxWidth: '600px',
+                        padding: '76px'
+                    },
+                    '@screen ml': {
+                        maxWidth: '768px',
+                        padding: '90px'
+                    },
+                    '@screen lg': {
+                        maxWidth: '900px',
+                        padding: '102px'
+                    },
+                    '@screen xl': {
+                        maxWidth: '1024px',
+                        padding: '128px'
+                    },
+                    '@screen 2xl': {
+                        maxWidth: '1280px',
+                        padding: '144px'
+                    },
+                    '@screen 3xl': {
+                        maxWidth: '1440px',
+                        padding:'240px'
+                    },
+                }
+            })
+        }
+    ],
 }
 

@@ -5,9 +5,9 @@
     ViewData["Title"] = "Unilake.Www Blog";
 }
 
-<div class="2xl:container mx-auto">
+<div class="mx-auto">
     @await Html.PartialAsync("Subscribe")
-    <section class="md:py-XXXL py-XXL px-L flex flex-col gap-M bg-backgroundPrimary">
+    <section class="lg:max-w-8xl md:max-w-[800px] w-full px-L mx-auto md:py-XXXL py-XXL flex flex-col gap-M">
         <h1 class="xl:text-headline2 md:text-15 md:leading-[48px] text-headline3 text-brand">Blog</h1>
         <h3 class="xl:text-H3 md:text-large text-headLines">Describe what your blog is about</h3>
         <p class="md:block hidden text-Regular text-bodyText">Lorem ipsum dolor sit amet consectetur. Augue aliquam lacus enim luctus consectetur amet blandit. Eu eleifend ipsum quam quam nunc ligula at. </p>
@@ -25,7 +25,7 @@
             </div>
     </section>
 
-    <section class="md:py-XXXL py-XXL px-L flex flex-col">
+    <section class="lg:max-w-8xl md:max-w-[800px] w-full px-L mx-auto md:py-XXXL py-XXL flex flex-col">
         <div class="flex flex-col md:gap-XXL gap-XL">
             <div class="flex items-center justify-between">
                 <h2 class="xl:headline2 md:text-15 md:leading-[48px] text-H3 leading-[24px] text-brand">Recent articles</h2>
@@ -249,12 +249,14 @@
         </div>
     </section>
     
-    <section class="xl:py-XXXL py-XXL gap-XL flex flex-col bg-backgroundSecondary border-b border-neutralSecondary blog-slider">
-        <span class="text-brand px-L xl:text-[40px] xl:leading-[44px] xl:font-[700] md:text-H3 md:leading-[40px]">Featured articles</span>
-        @await Html.PartialAsync("BlogSlider")
+    <section class="bg-backgroundSecondary border-b border-neutralSecondary blog-slider">
+        <div class="lg:max-w-8xl md:max-w-[800px] w-full px-L mx-auto xl:py-XXXL py-XXL gap-XL flex flex-col">
+            <span class="text-brand px-L xl:text-[40px] xl:leading-[44px] xl:font-[700] md:text-H3 md:leading-[40px]">Featured articles</span>
+            @await Html.PartialAsync("BlogSlider")
+        </div>
     </section>
 
-    <section class="md:py-XXXL py-XXL px-L flex flex-col">
+    <section class="lg:max-w-8xl md:max-w-[800px] w-full px-L mx-auto md:py-XXXL py-XXL flex flex-col">
         <div class="flex flex-col md:gap-XXL gap-XL">
             <div class="flex items-center justify-between">
                 <h1 class="xl:headline2 md:text-15 md:leading-[48px] text-H3 leading-[24px] text-brand md:block hidden">Most popular articles</h1>

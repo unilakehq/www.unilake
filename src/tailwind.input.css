@@ -238,6 +238,7 @@ select{
     content: '';
     position: absolute;
     border-left: 6px solid #005AD1;
+    height:70%;
 }
 .changelog-date-bottom-div::before {
     display: block;
@@ -369,6 +370,15 @@ select{
     border: 1px solid #DDDFDA;
     background-color: #F9F8F6;
 }
+.change-log-card::before {
+    display: block;
+    content: '';
+    position: absolute;
+    height: 113.5%;
+    border-left: 6px solid #F1F1F1;
+    left: -26px;
+    top: -52px;
+}
 
 @media (min-width:768px) {
     .not-found-main {
@@ -483,9 +493,35 @@ select{
     }
 
     .section-one {
-        background-image: url(/img/Section1/background/Desktop.svg);
+        background-image: url(/img/Section1/background/Desktop1.svg);
         background-repeat: no-repeat;
         background-size: cover;
     }
 }
+
+/*@media (min-width: 1400px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 1320px;
+    }
+}
+@media (min-width: 1200px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl {
+        max-width: 1140px;
+    }
+}
+@media (min-width: 992px) {
+    .container, .container-lg, .container-md, .container-sm {
+        max-width: 960px;
+    }
+}
+@media (min-width: 768px) {
+    .container, .container-md, .container-sm {
+        max-width: 720px;
+    }
+}
+@media (min-width: 576px) {
+    .container, .container-sm {
+        max-width: 540px;
+    }
+}*/
 @tailwind utilities;
