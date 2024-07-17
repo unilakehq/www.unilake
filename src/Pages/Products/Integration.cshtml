@@ -1,8 +1,10 @@
-﻿@page "/Products/AI/ML"
+﻿@page "/Products/Integration"
 @attribute [RenderStatic]
-@model www.unilake.Pages.Products.AiMlModel
+@model www.unilake.Pages.Products.IntegrationModel
 @{
-    ViewData["Title"] = "Unilake.Www Ai Ml";
+}
+@{
+    ViewData["Title"] = "Unilake.Www Integration";
 }
 <div class="bg-backgroundPrimary">
     <section class="section-one xl:bg-neutral bg-backgroundSecondary">
@@ -10,22 +12,21 @@
             <div class="flex flex-col gap-L xl:max-w-[605px] md:max-w-[395px]">
                 <svg class="lg:block hidden" width="88" height="89" viewBox="0 0 88 89" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0.5 12.5C0.5 6.14873 5.64873 1 12 1H76C82.3513 1 87.5 6.14873 87.5 12.5V76.5C87.5 82.8513 82.3513 88 76 88H12C5.64873 88 0.5 82.8513 0.5 76.5V12.5Z" stroke="#E7E7E7" />
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M44.547 40.9149C45.9864 41.1695 47.1943 42.3011 47.5292 43.8569L47.585 44.116C48.8411 49.9508 57.1425 50.0035 58.4523 44.1631L58.52 43.861C58.5776 43.6048 58.6585 43.3602 58.76 43.1291V59.164C58.76 60.6434 57.5609 61.8426 56.0815 61.8426H29.2958C27.8164 61.8426 26.6172 60.6434 26.6172 59.164V40.4141H42.9788C43.4467 40.6414 43.9695 40.8127 44.547 40.9149Z" fill="#F9F8F6" />
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M42.9788 40.4136C39.896 38.9159 39.1916 34.9867 40.8657 32.3779H29.2958C27.8164 32.3779 26.6172 33.5772 26.6172 35.0565V40.4136H42.9788Z" fill="#FFE9E4" />
-                    <path d="M39.9827 32.4463H29.2684C28.558 32.4463 27.8767 32.7285 27.3744 33.2308C26.8721 33.7332 26.5898 34.4144 26.5898 35.1249V59.232C26.5898 59.9424 26.8721 60.6238 27.3744 61.126C27.8767 61.6283 28.558 61.9106 29.2684 61.9106H56.0541C57.5335 61.9106 58.7327 60.7114 58.7327 59.232V44.4999" stroke="#FF6849" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                    <path d="M26.5898 40.4814H41.9916" stroke="#FF6849" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                    <path d="M34.6621 55.109L38.68 51.0911L34.6621 47.0732" stroke="#FF6849" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                    <path d="M42.6992 55.1084H46.7171" stroke="#FF6849" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                    <path d="M45.3641 36.2987C44.4385 36.135 44.4385 34.7838 45.3641 34.6201C48.7174 34.0269 51.3844 31.4297 52.1123 28.0488L52.1681 27.7897C52.3684 26.8594 53.6707 26.8537 53.8791 27.782L53.9469 28.0841C54.7014 31.449 57.3693 34.0243 60.7132 34.6158C61.6435 34.7804 61.6435 36.1384 60.7132 36.303C57.3693 36.8946 54.7014 39.4698 53.9469 42.8347L53.8791 43.1367C53.6707 44.0651 52.3684 44.0594 52.1681 43.1291L52.1123 42.87C51.3844 39.4891 48.7174 36.8919 45.3641 36.2987Z" fill="#F9F8F6" />
-                    <path d="M45.3641 36.2987C44.4385 36.135 44.4385 34.7838 45.3641 34.6201C48.7174 34.0269 51.3844 31.4297 52.1123 28.0488L52.1681 27.7897C52.3684 26.8594 53.6707 26.8537 53.8791 27.782L53.9469 28.0841C54.7014 31.449 57.3693 34.0243 60.7132 34.6158C61.6435 34.7804 61.6435 36.1384 60.7132 36.303C57.3693 36.8946 54.7014 39.4698 53.9469 42.8347L53.8791 43.1367C53.6707 44.0651 52.3684 44.0594 52.1681 43.1291L52.1123 42.87C51.3844 39.4891 48.7174 36.8919 45.3641 36.2987Z" stroke="#FF6849" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M27.9277 60.5716L31.9456 56.5537" stroke="#FF6849" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M60.0706 28.4287L56.0527 32.4466" stroke="#FF6849" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M45.3384 53.8754L42.6599 56.554C39.7012 59.5127 34.9042 59.5127 31.9456 56.554C28.9869 53.5952 28.9869 48.7984 31.9456 45.8397L34.6241 43.1611L45.3384 53.8754Z" stroke="#FF6849" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M53.3744 45.8394L56.053 43.1608C59.0118 40.2022 59.0118 35.4052 56.053 32.4465C53.0943 29.4879 48.2974 29.4879 45.3387 32.4465L42.6602 35.1251L53.3744 45.8394Z" stroke="#FF6849" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M37.3027 45.8391L41.3206 41.8213" stroke="#FF6849" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M42.6602 51.1966L46.678 47.1787" stroke="#FF6849" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
+
                 <div class="flex flex-col gap-SM">
                     <div class="flex gap-M items-center">
-                        <h4 class="text-Regular text-brand">AI/ML</h4>
-                        <button class="xl:py-XXS xl:px-S py-S px-SM bg-[#619DFF5C] text-info rounded-[6px] text-Small">On Roadmap</button>
+                        <h4 class="text-Regular text-brand">Integration</h4>
+                        <button class="xl:block hidden xl:py-XXS xl:px-S py-S px-SM bg-[#FF684940] text-onBrand rounded-[6px] text-Small">Badge</button>
                     </div>
                     <h1 class="xl:text-headline2 text-headline3 text-headLines">
-                        Get your AI/ML initiatives started in a click with an integrated solution
+                        Store and analyze any data from any source
                     </h1>
                 </div>
                 <p class="text-Regular text-bodyText">Lorem ipsum dolor sit amet consectetur. Augue aliquam lacus enim luctus consectetur amet blandit. Eu eleifend ipsum quam quam nunc ligula at. </p>
@@ -42,8 +43,8 @@
                 </div>
             </div>
             <div class="w-fit h-fit">
-                <img class="xl:block hidden" src="~/img/AiMl/Desktop/ML_Hero.svg" alt="not found">
-                <img class="xl:hidden block" src="~/img/AiMl/Tablet/ML_Hero.svg" alt="not found">
+                <img class="xl:block hidden" src="~/img/Integration/Desktop/Illustration_Integration_HeroV1.svg" alt="not found">
+                <img class="xl:hidden block" src="~/img/Integration/Tablet/Illustration_Integration_Hero.svg" alt="not found">
             </div>
         </div>
     </section>
@@ -166,156 +167,3 @@
             </div>
         </div>
     </section>
-    <section class="bg-[#ffffff]">
-        <div class="lg:max-w-8xl md:max-w-[800px] w-full px-L mx-auto flex md:flex-row flex-col md:justify-between max-md:items-center xl:py-XXXL md:py-XXL py-XL xl:gap-XXXL gap-XXL items-center">
-            <div class="w-fit">
-                <img class="xl:block hidden" src="~/img/AiMl/Desktop/Illustration_Unified_Compute.svg" alt="not found">
-                <img class="xl:hidden block" src="~/img/AiMl/Tablet/Illustration_Unified_Compute.svg" alt="not found">
-            </div>
-            <div class="flex flex-col gap-M h-fit xl:max-w-[605px] md:max-w-[395px]">
-                <h2 class="xl:text-15 text-H3 leading-[40px] text-headLines">Unified Compute</h2>
-                <p class="xl:text-Regular md:text-Small text-Regular text-bodyText">Embedded into UniLake is the use of fugue a unified interface for connecting different compute architectures without code rewrites or optimizations. Start small by iterating over a smaller dataset locally and move to a distributed compute architecture when you are confident that your experiment covers the costs of distributed compute. All functionalities locally and distributed adhere to the same security policies for data access and use as in any other use case, be assured that the data you make available is only used in the specific scenarios you allow it to be used. Select the best distributed compute environment for your workloads, or seamlessly switch workloads to become more competitive or save costs. Make use of a cloud hosted solution or re-use your existing compute by utilizing a locally hosted compute cluster, the choices are endless.</p>
-            </div>
-        </div>
-    </section>
-    <section style="background: linear-gradient(99.17deg, #F8F7F3 7.24%, #F8F8F8 86.39%)">
-        <div class="lg:max-w-8xl md:max-w-[800px] w-full px-L mx-auto flex md:flex-row flex-col-reverse md:justify-between max-md:items-center xl:py-XXXL md:py-XXL py-XL xl:gap-XXXL gap-XXL items-center">
-            <div class="flex flex-col gap-M h-fit xl:max-w-[605px] md:max-w-[395px]">
-                <h2 class="xl:text-15 text-H3 leading-[40px] text-headLines">Integrated IDE</h2>
-                <p class="xl:text-Regular md:text-Small text-Regular text-bodyText">
-                    Simplify building your next data and AI project through a fully managed
-                    and integrated development environment. Specify the performance you need to develop your models and spin-up a development environment in seconds. Get autocompletion, intellisense out of the box. In need of debugging? Make use of the cloud based IDE to debug your code or run unit-tests on your project in a
-                    familiar environment.
-                </p>
-            </div>
-            <div class="w-fit">
-                <img class="xl:block hidden" src="~/img/AiMl/Desktop/Illustration_Integrated_IDE.svg" alt="not found">
-                <img class="xl:hidden block" src="~/img/AiMl/Tablet/Illustration_Integrated_IDE.svg" alt="not found">
-            </div>
-        </div>
-    </section>
-    <section class="bg-[#ffffff]">
-        <div class="lg:max-w-8xl md:max-w-[800px] w-full px-L mx-auto flex md:flex-row flex-col md:justify-between max-md:items-center xl:py-XXXL md:py-XXL py-XL xl:gap-XXXL gap-XXL items-center">
-            <div class="w-fit">
-                <img class="xl:block hidden" src="~/img/AiMl/Desktop/ML.svg" alt="not found">
-                <img class="xl:hidden block" src="~/img/AiMl/Tablet/ML.svg" alt="not found">
-            </div>
-            <div class="flex flex-col gap-M h-fit xl:max-w-[605px] md:max-w-[395px]">
-                <h2 class="xl:text-15 text-H3 leading-[40px] text-headLines">(AI/ML) Batteries included</h2>
-                <p class="xl:text-Regular md:text-Small text-Regular text-bodyText">
-                    Use one of the preconfigured ML-optimized and ready to use development runtimes to get you going, powered by a distribution of the most popular ML frameworks (including PyTorch, fast.ai, Tensorflow, scikit-learn).
-                    Missing packages or features in one of the existing images? Expand or create your own image for development. All environments are git enabled, allowing engineers to following Git workflows, enabling data teams to leverage automated CI/CD workflows and code portability.
-                </p>
-            </div>
-        </div>
-    </section>
-    <section class="bg-backgroundPrimary">
-        <div class="lg:max-w-8xl md:max-w-[800px] w-full px-L mx-auto flex">
-            <div class="flex md:flex-row flex-col border-t border-neutralSecondary md:justify-between md:gap-XXL gap-XL xl:py-XXXL md:py-XXL py-XL w-full">
-                <div class="flex flex-col gap-M rounded-L">
-                    <svg class="xl:block hidden" width="104" height="104" viewBox="0 0 104 104" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0.5 8C0.5 3.85786 3.85786 0.5 8 0.5H96C100.142 0.5 103.5 3.85786 103.5 8V96C103.5 100.142 100.142 103.5 96 103.5H8C3.85786 103.5 0.5 100.142 0.5 96V8Z" stroke="#E7E7E7" />
-                        <path d="M63.9364 33.2441H36.6544C34.771 33.2441 33.2441 34.771 33.2441 36.6544V67.3467C33.2441 69.2302 34.771 70.757 36.6544 70.757H63.9364C65.8199 70.757 67.3467 69.2302 67.3467 67.3467V36.6544C67.3467 34.771 65.8199 33.2441 63.9364 33.2441Z" fill="#FFE9E4" />
-                        <path d="M63.9364 33.2441H36.6544C34.771 33.2441 33.2441 34.771 33.2441 36.6544V67.3467C33.2441 69.2302 34.771 70.757 36.6544 70.757H63.9364C65.8199 70.757 67.3467 69.2302 67.3467 67.3467V36.6544C67.3467 34.771 65.8199 33.2441 63.9364 33.2441Z" stroke="#FF6849" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        <path d="M29.834 41.7695H36.6545" stroke="#FF6849" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        <path d="M29.834 52H36.6545" stroke="#FF6849" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        <path d="M29.834 62.2305H36.6545" stroke="#FF6849" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        <path d="M45.1797 43.4746H55.4105" stroke="#FF6849" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        <path d="M74.168 38.3594V43.4748" stroke="#FF6849" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        <path d="M74.168 50.2949V55.4103" stroke="#FF6849" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                    <svg class="xl:hidden block" width="66" height="65" viewBox="0 0 66 65" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 8C1 3.85786 4.35786 0.5 8.5 0.5H57.5C61.6421 0.5 65 3.85786 65 8V57C65 61.1421 61.6421 64.5 57.5 64.5H8.5C4.35786 64.5 1 61.1421 1 57V8Z" stroke="#DDDFDA" />
-                        <path d="M39.8207 21.7812H24.2309C23.1547 21.7812 22.2822 22.6537 22.2822 23.73V41.2684C22.2822 42.3447 23.1547 43.2171 24.2309 43.2171H39.8207C40.897 43.2171 41.7694 42.3447 41.7694 41.2684V23.73C41.7694 22.6537 40.897 21.7812 39.8207 21.7812Z" fill="#FFE9E4" />
-                        <path d="M39.8207 21.7812H24.2309C23.1547 21.7812 22.2822 22.6537 22.2822 23.73V41.2684C22.2822 42.3447 23.1547 43.2171 24.2309 43.2171H39.8207C40.897 43.2171 41.7694 42.3447 41.7694 41.2684V23.73C41.7694 22.6537 40.897 21.7812 39.8207 21.7812Z" stroke="#FF6849" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        <path d="M20.3335 26.6523H24.2309" stroke="#FF6849" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        <path d="M20.3335 32.5H24.2309" stroke="#FF6849" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        <path d="M20.3335 38.3457H24.2309" stroke="#FF6849" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        <path d="M29.1025 27.627H34.9487" stroke="#FF6849" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        <path d="M45.667 24.7051V27.6282" stroke="#FF6849" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        <path d="M45.667 31.5254V34.4485" stroke="#FF6849" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-
-                    <h3 class="text-headLines xl:text-H2 md:text-Regular text-H2">Notebooks</h3>
-                    <p class="text-bodyText xl:text-Regular md:text-Small text-Regular xl:max-w-[438px] md:max-w-[245px]">Whether you are applying new AI/ML workloads, need to ingest data or analyze petabytes of structured data, any workload will do.</p>
-                </div>
-                <div class="flex flex-col gap-M rounded-L">
-                    <svg class="xl:block hidden" width="105" height="104" viewBox="0 0 105 104" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0.832031 8C0.832031 3.85786 4.1899 0.5 8.33203 0.5H96.332C100.474 0.5 103.832 3.85786 103.832 8V96C103.832 100.142 100.474 103.5 96.332 103.5H8.33203C4.1899 103.5 0.832031 100.142 0.832031 96V8Z" stroke="#E7E7E7" />
-                        <path d="M38.2266 38.9021V57.0384C38.2266 62.0465 40.031 66.1065 42.2568 66.1065H70.4688C72.6947 66.1065 74.4991 62.0465 74.4991 57.0384V38.9021C74.4991 33.8939 72.6947 29.834 70.4688 29.834H42.2568C40.031 29.834 38.2266 33.894 38.2266 38.9021Z" fill="#FFE9E4" />
-                        <path d="M38.2266 38.9021V57.0384C38.2266 62.0465 40.031 66.1065 42.2568 66.1065H70.4688C72.6947 66.1065 74.4991 62.0465 74.4991 57.0384V38.9021C74.4991 33.8939 72.6947 29.834 70.4688 29.834H42.2568C40.031 29.834 38.2266 33.894 38.2266 38.9021Z" stroke="#FF6849" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        <path d="M30.166 62.0772V70.1377C30.166 72.3636 30.968 74.168 31.9573 74.168H44.4959C45.4852 74.168 46.2871 72.3636 46.2871 70.1377V62.0772C46.2871 59.8513 45.4852 58.0469 44.4959 58.0469H31.9573C30.968 58.0469 30.166 59.8513 30.166 62.0772Z" fill="#FFE9E4" />
-                        <path d="M30.166 62.0772V70.1377C30.166 72.3636 30.968 74.168 31.9573 74.168H44.4959C45.4852 74.168 46.2871 72.3636 46.2871 70.1377V62.0772C46.2871 59.8513 45.4852 58.0469 44.4959 58.0469H31.9573C30.968 58.0469 30.166 59.8513 30.166 62.0772Z" stroke="#FF6849" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        <path d="M66.4387 48.9785V37.8953H55.3555" stroke="#FF6849" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        <path d="M66.438 37.894L59.385 44.947L52.332 52" stroke="#FF6849" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                    <svg class="xl:hidden block" width="66" height="65" viewBox="0 0 66 65" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 8C1 3.85786 4.35786 0.5 8.5 0.5H57.5C61.6421 0.5 65 3.85786 65 8V57C65 61.1421 61.6421 64.5 57.5 64.5H8.5C4.35786 64.5 1 61.1421 1 57V8Z" stroke="#DDDFDA" />
-                        <path d="M24.9395 25.0158V35.3793C24.9395 38.2411 25.9706 40.5611 27.2425 40.5611H43.3636C44.6355 40.5611 45.6666 38.2411 45.6666 35.3793V25.0158C45.6666 22.1539 44.6355 19.834 43.3636 19.834H27.2425C25.9706 19.834 24.9395 22.154 24.9395 25.0158Z" fill="#FFE9E4" />
-                        <path d="M24.9395 25.0158V35.3793C24.9395 38.2411 25.9706 40.5611 27.2425 40.5611H43.3636C44.6355 40.5611 45.6666 38.2411 45.6666 35.3793V25.0158C45.6666 22.1539 44.6355 19.834 43.3636 19.834H27.2425C25.9706 19.834 24.9395 22.154 24.9395 25.0158Z" stroke="#FF6849" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        <path d="M20.3335 38.2581V42.8641C20.3335 44.1361 20.7918 45.1671 21.3571 45.1671H28.522C29.0873 45.1671 29.5456 44.1361 29.5456 42.8641V38.2581C29.5456 36.9862 29.0873 35.9551 28.522 35.9551H21.3571C20.7918 35.9551 20.3335 36.9862 20.3335 38.2581Z" fill="#FFE9E4" />
-                        <path d="M20.3335 38.2581V42.8641C20.3335 44.1361 20.7918 45.1671 21.3571 45.1671H28.522C29.0873 45.1671 29.5456 44.1361 29.5456 42.8641V38.2581C29.5456 36.9862 29.0873 35.9551 28.522 35.9551H21.3571C20.7918 35.9551 20.3335 36.9862 20.3335 38.2581Z" stroke="#FF6849" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        <path d="M41.0608 30.7734V24.4401H34.7275" stroke="#FF6849" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        <path d="M41.0606 24.4394L37.0303 28.4697L33 32.5" stroke="#FF6849" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-
-                    <h3 class="text-headLines xl:text-H2 md:text-Regular text-H2">Scalability</h3>
-                    <p class="text-bodyText xl:text-Regular md:text-Small text-Regular xl:max-w-[438px] md:max-w-[245px]">Data stored in the UniLake cloud platform is encrypted at rest using 512 bit encryption.</p>
-                </div>
-                <div class="flex flex-col gap-M rounded-L">
-                    <svg class="xl:block hidden" width="105" height="104" viewBox="0 0 105 104" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1.16602 8C1.16602 3.85786 4.52388 0.5 8.66602 0.5H96.666C100.808 0.5 104.166 3.85786 104.166 8V96C104.166 100.142 100.808 103.5 96.666 103.5H8.66602C4.52388 103.5 1.16602 100.142 1.16602 96V8Z" stroke="#E7E7E7" />
-                        <path d="M52.6661 40.0646C55.4912 40.0646 57.7814 37.7744 57.7814 34.9493C57.7814 32.1242 55.4912 29.834 52.6661 29.834C49.841 29.834 47.5508 32.1242 47.5508 34.9493C47.5508 37.7744 49.841 40.0646 52.6661 40.0646Z" fill="#FFE9E4" />
-                        <path d="M35.6153 57.1154C38.4404 57.1154 40.7306 54.8251 40.7306 52C40.7306 49.175 38.4404 46.8848 35.6153 46.8848C32.7902 46.8848 30.5 49.175 30.5 52C30.5 54.8251 32.7902 57.1154 35.6153 57.1154Z" fill="#FFE9E4" />
-                        <path d="M69.7188 57.1154C72.5439 57.1154 74.834 54.8251 74.834 52C74.834 49.175 72.5439 46.8848 69.7188 46.8848C66.8937 46.8848 64.6035 49.175 64.6035 52C64.6035 54.8251 66.8937 57.1154 69.7188 57.1154Z" fill="#FFE9E4" />
-                        <path d="M52.6661 74.166C55.4912 74.166 57.7814 71.8759 57.7814 69.0508C57.7814 66.2257 55.4912 63.9355 52.6661 63.9355C49.841 63.9355 47.5508 66.2257 47.5508 69.0508C47.5508 71.8759 49.841 74.166 52.6661 74.166Z" fill="#FFE9E4" />
-                        <path d="M69.7188 74.166C72.5439 74.166 74.834 71.8759 74.834 69.0508C74.834 66.2257 72.5439 63.9355 69.7188 63.9355C66.8937 63.9355 64.6035 66.2257 64.6035 69.0508C64.6035 71.8759 66.8937 74.166 69.7188 74.166Z" fill="#FFE9E4" />
-                        <path d="M35.6153 40.0646C38.4404 40.0646 40.7306 37.7744 40.7306 34.9493C40.7306 32.1242 38.4404 29.834 35.6153 29.834C32.7902 29.834 30.5 32.1242 30.5 34.9493C30.5 37.7744 32.7902 40.0646 35.6153 40.0646Z" fill="#F9F8F6" />
-                        <path d="M52.6661 40.0646C55.4912 40.0646 57.7814 37.7744 57.7814 34.9493C57.7814 32.1242 55.4912 29.834 52.6661 29.834C49.841 29.834 47.5508 32.1242 47.5508 34.9493C47.5508 37.7744 49.841 40.0646 52.6661 40.0646Z" stroke="#FF6849" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        <path d="M69.7188 40.0646C72.5439 40.0646 74.834 37.7744 74.834 34.9493C74.834 32.1242 72.5439 29.834 69.7188 29.834C66.8937 29.834 64.6035 32.1242 64.6035 34.9493C64.6035 37.7744 66.8937 40.0646 69.7188 40.0646Z" fill="#F9F8F6" />
-                        <path d="M35.6153 57.1154C38.4404 57.1154 40.7306 54.8251 40.7306 52C40.7306 49.175 38.4404 46.8848 35.6153 46.8848C32.7902 46.8848 30.5 49.175 30.5 52C30.5 54.8251 32.7902 57.1154 35.6153 57.1154Z" stroke="#FF6849" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        <path d="M52.6661 57.1154C55.4912 57.1154 57.7814 54.8251 57.7814 52C57.7814 49.175 55.4912 46.8848 52.6661 46.8848C49.841 46.8848 47.5508 49.175 47.5508 52C47.5508 54.8251 49.841 57.1154 52.6661 57.1154Z" fill="#F9F8F6" />
-                        <path d="M69.7188 57.1154C72.5439 57.1154 74.834 54.8251 74.834 52C74.834 49.175 72.5439 46.8848 69.7188 46.8848C66.8937 46.8848 64.6035 49.175 64.6035 52C64.6035 54.8251 66.8937 57.1154 69.7188 57.1154Z" stroke="#FF6849" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        <path d="M35.6153 74.166C38.4404 74.166 40.7306 71.8759 40.7306 69.0508C40.7306 66.2257 38.4404 63.9355 35.6153 63.9355C32.7902 63.9355 30.5 66.2257 30.5 69.0508C30.5 71.8759 32.7902 74.166 35.6153 74.166Z" fill="#F9F8F6" />
-                        <path d="M35.6153 40.0646C38.4404 40.0646 40.7306 37.7744 40.7306 34.9493C40.7306 32.1242 38.4404 29.834 35.6153 29.834C32.7902 29.834 30.5 32.1242 30.5 34.9493C30.5 37.7744 32.7902 40.0646 35.6153 40.0646Z" stroke="#FF6849" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        <path d="M69.7188 40.0646C72.5439 40.0646 74.834 37.7744 74.834 34.9493C74.834 32.1242 72.5439 29.834 69.7188 29.834C66.8937 29.834 64.6035 32.1242 64.6035 34.9493C64.6035 37.7744 66.8937 40.0646 69.7188 40.0646Z" stroke="#FF6849" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        <path d="M52.6661 57.1154C55.4912 57.1154 57.7814 54.8251 57.7814 52C57.7814 49.175 55.4912 46.8848 52.6661 46.8848C49.841 46.8848 47.5508 49.175 47.5508 52C47.5508 54.8251 49.841 57.1154 52.6661 57.1154Z" stroke="#FF6849" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        <path d="M35.6153 74.166C38.4404 74.166 40.7306 71.8759 40.7306 69.0508C40.7306 66.2257 38.4404 63.9355 35.6153 63.9355C32.7902 63.9355 30.5 66.2257 30.5 69.0508C30.5 71.8759 32.7902 74.166 35.6153 74.166Z" stroke="#FF6849" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        <path d="M52.6661 74.166C55.4912 74.166 57.7814 71.8759 57.7814 69.0508C57.7814 66.2257 55.4912 63.9355 52.6661 63.9355C49.841 63.9355 47.5508 66.2257 47.5508 69.0508C47.5508 71.8759 49.841 74.166 52.6661 74.166Z" stroke="#FF6849" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        <path d="M69.7188 74.166C72.5439 74.166 74.834 71.8759 74.834 69.0508C74.834 66.2257 72.5439 63.9355 69.7188 63.9355C66.8937 63.9355 64.6035 66.2257 64.6035 69.0508C64.6035 71.8759 66.8937 74.166 69.7188 74.166Z" stroke="#FF6849" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        <path d="M39.2305 38.5645L49.0518 48.3858" stroke="#FF6849" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        <path d="M39.2305 65.4367L49.0518 55.6152" stroke="#FF6849" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        <path d="M56.2812 48.3858L66.1027 38.5645" stroke="#FF6849" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                    <svg class="xl:hidden block" width="66" height="65" viewBox="0 0 66 65" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 8C1 3.85786 4.35786 0.5 8.5 0.5H57.5C61.6421 0.5 65 3.85786 65 8V57C65 61.1421 61.6421 64.5 57.5 64.5H8.5C4.35786 64.5 1 61.1421 1 57V8Z" stroke="#DDDFDA" />
-                        <path d="M32.9997 25.68C34.614 25.68 35.9227 24.3714 35.9227 22.757C35.9227 21.1427 34.614 19.834 32.9997 19.834C31.3854 19.834 30.0767 21.1427 30.0767 22.757C30.0767 24.3714 31.3854 25.68 32.9997 25.68Z" fill="#FFE9E4" />
-                        <path d="M23.2565 35.4242C24.8709 35.4242 26.1796 34.1155 26.1796 32.5011C26.1796 30.8868 24.8709 29.5781 23.2565 29.5781C21.6422 29.5781 20.3335 30.8868 20.3335 32.5011C20.3335 34.1155 21.6422 35.4242 23.2565 35.4242Z" fill="#FFE9E4" />
-                        <path d="M42.7438 35.4242C44.3581 35.4242 45.6668 34.1155 45.6668 32.5011C45.6668 30.8868 44.3581 29.5781 42.7438 29.5781C41.1295 29.5781 39.8208 30.8868 39.8208 32.5011C39.8208 34.1155 41.1295 35.4242 42.7438 35.4242Z" fill="#FFE9E4" />
-                        <path d="M32.9997 45.1663C34.614 45.1663 35.9227 43.8576 35.9227 42.2433C35.9227 40.629 34.614 39.3203 32.9997 39.3203C31.3854 39.3203 30.0767 40.629 30.0767 42.2433C30.0767 43.8576 31.3854 45.1663 32.9997 45.1663Z" fill="#FFE9E4" />
-                        <path d="M42.7438 45.1663C44.3581 45.1663 45.6668 43.8576 45.6668 42.2433C45.6668 40.629 44.3581 39.3203 42.7438 39.3203C41.1295 39.3203 39.8208 40.629 39.8208 42.2433C39.8208 43.8576 41.1295 45.1663 42.7438 45.1663Z" fill="#FFE9E4" />
-                        <path d="M23.2565 25.68C24.8709 25.68 26.1796 24.3714 26.1796 22.757C26.1796 21.1427 24.8709 19.834 23.2565 19.834C21.6422 19.834 20.3335 21.1427 20.3335 22.757C20.3335 24.3714 21.6422 25.68 23.2565 25.68Z" fill="#F9F8F6" />
-                        <path d="M32.9997 25.68C34.614 25.68 35.9227 24.3714 35.9227 22.757C35.9227 21.1427 34.614 19.834 32.9997 19.834C31.3854 19.834 30.0767 21.1427 30.0767 22.757C30.0767 24.3714 31.3854 25.68 32.9997 25.68Z" stroke="#FF6849" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        <path d="M42.7438 25.68C44.3581 25.68 45.6668 24.3714 45.6668 22.757C45.6668 21.1427 44.3581 19.834 42.7438 19.834C41.1295 19.834 39.8208 21.1427 39.8208 22.757C39.8208 24.3714 41.1295 25.68 42.7438 25.68Z" fill="#F9F8F6" />
-                        <path d="M23.2565 35.4242C24.8709 35.4242 26.1796 34.1155 26.1796 32.5011C26.1796 30.8868 24.8709 29.5781 23.2565 29.5781C21.6422 29.5781 20.3335 30.8868 20.3335 32.5011C20.3335 34.1155 21.6422 35.4242 23.2565 35.4242Z" stroke="#FF6849" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        <path d="M32.9997 35.4242C34.614 35.4242 35.9227 34.1155 35.9227 32.5011C35.9227 30.8868 34.614 29.5781 32.9997 29.5781C31.3854 29.5781 30.0767 30.8868 30.0767 32.5011C30.0767 34.1155 31.3854 35.4242 32.9997 35.4242Z" fill="#F9F8F6" />
-                        <path d="M42.7438 35.4242C44.3581 35.4242 45.6668 34.1155 45.6668 32.5011C45.6668 30.8868 44.3581 29.5781 42.7438 29.5781C41.1295 29.5781 39.8208 30.8868 39.8208 32.5011C39.8208 34.1155 41.1295 35.4242 42.7438 35.4242Z" stroke="#FF6849" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        <path d="M23.2565 45.1663C24.8709 45.1663 26.1796 43.8576 26.1796 42.2433C26.1796 40.629 24.8709 39.3203 23.2565 39.3203C21.6422 39.3203 20.3335 40.629 20.3335 42.2433C20.3335 43.8576 21.6422 45.1663 23.2565 45.1663Z" fill="#F9F8F6" />
-                        <path d="M23.2565 25.68C24.8709 25.68 26.1796 24.3714 26.1796 22.757C26.1796 21.1427 24.8709 19.834 23.2565 19.834C21.6422 19.834 20.3335 21.1427 20.3335 22.757C20.3335 24.3714 21.6422 25.68 23.2565 25.68Z" stroke="#FF6849" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        <path d="M42.7438 25.68C44.3581 25.68 45.6668 24.3714 45.6668 22.757C45.6668 21.1427 44.3581 19.834 42.7438 19.834C41.1295 19.834 39.8208 21.1427 39.8208 22.757C39.8208 24.3714 41.1295 25.68 42.7438 25.68Z" stroke="#FF6849" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        <path d="M32.9997 35.4242C34.614 35.4242 35.9227 34.1155 35.9227 32.5011C35.9227 30.8868 34.614 29.5781 32.9997 29.5781C31.3854 29.5781 30.0767 30.8868 30.0767 32.5011C30.0767 34.1155 31.3854 35.4242 32.9997 35.4242Z" stroke="#FF6849" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        <path d="M23.2565 45.1663C24.8709 45.1663 26.1796 43.8576 26.1796 42.2433C26.1796 40.629 24.8709 39.3203 23.2565 39.3203C21.6422 39.3203 20.3335 40.629 20.3335 42.2433C20.3335 43.8576 21.6422 45.1663 23.2565 45.1663Z" stroke="#FF6849" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        <path d="M32.9997 45.1663C34.614 45.1663 35.9227 43.8576 35.9227 42.2433C35.9227 40.629 34.614 39.3203 32.9997 39.3203C31.3854 39.3203 30.0767 40.629 30.0767 42.2433C30.0767 43.8576 31.3854 45.1663 32.9997 45.1663Z" stroke="#FF6849" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        <path d="M42.7438 45.1663C44.3581 45.1663 45.6668 43.8576 45.6668 42.2433C45.6668 40.629 44.3581 39.3203 42.7438 39.3203C41.1295 39.3203 39.8208 40.629 39.8208 42.2433C39.8208 43.8576 41.1295 45.1663 42.7438 45.1663Z" stroke="#FF6849" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        <path d="M25.3228 24.8223L30.935 30.4345" stroke="#FF6849" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        <path d="M25.3228 40.1787L30.935 34.5664" stroke="#FF6849" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        <path d="M35.0654 30.4345L40.6777 24.8223" stroke="#FF6849" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-
-                    <h3 class="text-headLines xl:text-H2 md:text-Regular text-H2">ML Machines</h3>
-                    <p class="text-bodyText xl:text-Regular md:text-Small text-Regular xl:max-w-[438px] md:max-w-[245px]">Choose between using a platform managed key for encryption or connect your own KMS. Key-rotation is supported on-demand.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-</div>
