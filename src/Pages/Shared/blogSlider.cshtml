@@ -116,6 +116,7 @@
 <script>
     const slides = document.querySelectorAll(".slide");
     const innerSlides = document.querySelectorAll(".inner-slide");
+    const indicators = document.querySelectorAll("[data-carousel-slide-to]");
     var counter = 0;
     var sliderInterval;
     var isIncrementing = false;
@@ -128,7 +129,9 @@
         slides.forEach((slide) => {
             slide.style.transform = `translateX(-${counter * 100}%)`;
         });
+        updateIndicators();
     };
+
     const startSlider = () => {
         sliderInterval = setInterval(() => {
             if (counter === 0) {
@@ -144,8 +147,8 @@
                 counter--;
             }
             slideImage();
-        }, 3000)
-    }
+        }, 4000)
+    };
 
     const pauseSlider = () => {
         clearInterval(sliderInterval);
@@ -155,6 +158,21 @@
         startSlider();
     };
 
+    const updateIndicators = () => {
+        indicators.forEach((indicator, index) => {
+            indicator.ariaCurrent = index === counter ? "true" : "false";
+        });
+    };
+
+    indicators.forEach((indicator) => {
+        indicator.addEventListener("click", (event) => {
+            pauseSlider();
+            counter = parseInt(event.target.getAttribute("data-carousel-slide-to"));
+            slideImage();
+            resumeSlider();
+        });
+    });
+
     innerSlides.forEach((slide) => {
         slide.addEventListener("mouseenter", pauseSlider);
         slide.addEventListener("mouseleave", resumeSlider);
@@ -163,4 +181,3 @@
     window.onload = startSlider;
 
 </script>
- 
