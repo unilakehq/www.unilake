@@ -321,6 +321,9 @@ select{
 .contact-us-input > input:focus ::placeholder {
     color: orangered;
 }
+input::placeholder {
+    font-family: Inter, sans-serif;
+}
 
 .support-page-card:hover {
     border: 1px solid #DDDFDA;
@@ -377,6 +380,9 @@ select{
     border-left: 6px solid #F1F1F1;
     left: -26px;
     top: -52px;
+}
+.linear-gradient-4{
+    background: linear-gradient(99.17deg, #F8F7F3 7.24%, #F8F8F8 86.39%);
 }
 .linear-gradient-governance {
     background: linear-gradient(99.17deg, #F8F7F3 7.24%, #F8F8F8 86.39%);

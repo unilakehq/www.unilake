@@ -4,7 +4,7 @@
 @{
     ViewData["Title"] = "Unilake.Www Support";
 }
-<div class="bg-backgroundPrimary border-b border-brNeutral">
+<div class="bg-white border-b border-brNeutral">
     <div class="lg:max-w-8xl md:max-w-[800px] w-full px-L mx-auto md:py-XXXL md:gap-XXL py-XXL gap-XL grid grid-cols-1">
         <div class="flex flex-col gap-M">
             <span class="xl:text-headline2 md:text-15 md:leading-[48px] text-headline3 text-brand">Support</span>
@@ -136,11 +136,10 @@
         @await Html.PartialAsync("support/FAQ")
     </div>
 </div>
-
-<div class="bg-backgroundPrimary">
+@await Html.PartialAsync("support/ContactEnterpriseSales")
+<div class="bg-white">
     <div class="lg:max-w-8xl md:max-w-[800px] w-full px-L mx-auto grid md:py-XXXL md:gap-XXL py-XL gap-XL grid-cols-1">
         @await Html.PartialAsync("support/ContactUs")
     </div>
 </div>
-@await Html.PartialAsync("support/ContactEnterpriseSales")
 
