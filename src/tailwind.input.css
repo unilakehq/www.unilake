@@ -486,16 +486,6 @@ input::placeholder {
     .changelog-date::before {
         height: 19%;
     }
-}
-
-@media (min-width: 1280px) {
-    .changelog-date::before {
-        height: 17%;
-    }
-    .changelog-date-bottom-div::before{
-        height:86.5%;
-    }
-
     .not-found-main {
         background-image: url(/img/404/notFoundBgDesktop.svg);
         background-repeat: no-repeat;
@@ -531,6 +521,17 @@ input::placeholder {
         background-repeat: no-repeat;
         background-size: cover;
     }
+}
+
+@media (min-width: 1280px) {
+    .changelog-date::before {
+        height: 17%;
+    }
+    .changelog-date-bottom-div::before{
+        height:86.5%;
+    }
+
+    
 }
 
 @media (min-width: 1400px) {
