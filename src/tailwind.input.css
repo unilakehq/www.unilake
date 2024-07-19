@@ -174,7 +174,7 @@ select{
     cursor:pointer;
 }
 .article-accordion-closed {
-    background-color: #FCFCFC !important;
+    background-color: #FFFFFF !important;
     padding-bottom: 0px !important;
     border-color: #DDDFDA;
     border-width: 1px;
