@@ -265,6 +265,12 @@ select{
     background-repeat: no-repeat;
     background-size: cover;
 }
+.not-found-main {
+    background-image: url(/img/404/notFoundBgMobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 
 .change-log-div:hover > div > h2 {
     color: #FF6849;
