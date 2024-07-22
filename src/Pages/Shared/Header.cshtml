@@ -15,9 +15,9 @@
                                 d="M5.83447 6.22668L8.89447 9.28002L11.9545 6.22668L12.8945 7.16668L8.89447 11.1667L4.89447 7.16668L5.83447 6.22668Z" />
                         </svg>
                     </a>
-                    <div id="products-dropdown" class="z-10 hidden rounded-lg shadow">
+                    <div id="products-dropdown" class="z-10 hidden rounded-lg shadow rounded-[8px]">
                         <div class="flex">
-                            <div class="grid grid-cols-1 h-auto items-center p-XL max-w-[346px] bg-neutral"
+                            <div class="grid grid-cols-1 h-auto items-center p-XL max-w-[346px] bg-neutral rounded-s-[8px]"
                                 aria-labelledby="dropdownDefaultButton">
                                 <a href="Products/Lakehouse-analytics"
                                     class="flex items-center gap-SM rounded-S w-full py-M px-L menu-tab rounded-S max-h-[88px]">
@@ -83,7 +83,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="bg-neutral p-XL">
+                            <div class="bg-neutral p-XL rounded-e-[8px]">
                                 <div class="flex flex-col gap-XL">
                                     <h1 class="text-large font-[700] text-headLines">Cross Clouds</h1>
                                     @await Html.PartialAsync("Logos/ProductMenu/DesktopMenuMap")
@@ -115,9 +115,9 @@
                                 d="M5.83447 6.22668L8.89447 9.28002L11.9545 6.22668L12.8945 7.16668L8.89447 11.1667L4.89447 7.16668L5.83447 6.22668Z" />
                         </svg>
                     </a>
-                    <div id="developers-dropdown" class="z-10 hidden rounded-lg shadow">
+                    <div id="developers-dropdown" class="z-10 hidden rounded-lg shadow rounded-[8px]">
                         <div class="flex">
-                            <div class="flex flex-col gap-L p-XL w-[346px] bg-neutral">
+                            <div class="flex flex-col gap-L p-XL w-[346px] bg-neutral rounded-s-[8px]">
                                 <div class="flex flex-col gap-M">
                                     <h1 class="text-H5 font-[400]">Developers</h1>
                                     <div>
@@ -163,7 +163,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="z-10 bg-backgroundFaded shadow w-[464px]">
+                            <div class="z-10 bg-backgroundFaded shadow w-[464px] rounded-e-[8px]">
                                 <div class="flex flex-col gap-L p-XL">
                                     <h1 class="text-H5 font-[400]">Blog</h1>
                                     <div class="flex flex-col">
@@ -234,9 +234,9 @@
         </div>
         <!-- Mobile menu, show/hide based on menu open state. -->
         <div id="mobile-menu"
-            class="lg:hidden fixed inset-y-0 right-0 z-50 w-full overflow-y-auto transform translate-x-full transition-transform duration-300 ease-in-out">
+             class="lg:hidden fixed inset-y-0 right-0 z-50 w-full overflow-y-auto transform translate-x-full transition-transform duration-700 ease-in-out">
             <!-- Background backdrop, show/hide based on slide-over state. -->
-            <div class="bg-neutral fixed inset-y-0 right-0 z-50 w-[375px] overflow-y-auto">
+            <div class="bg-neutral fixed inset-y-0 right-0 z-50 max-w-[375px] overflow-y-auto">
                 <div class="flex items-center justify-between border-b border-brNeutral py-[22px] px-L">
                     <svg class="cursor-pointer" id="close-side-bar" width="36" height="36" viewBox="0 0 36 36" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
@@ -351,22 +351,22 @@
                                     </span>
                                 </a>
                                 <div class="grid grid-cols-1 invisible h-auto items-center max-h-0 max-w-[346px]">
-                                    <div class="flex gap-SM rounded-S py-M px-L max-h-[72px]">
+                                    <div class="flex gap-SM rounded-S py-M max-h-[72px]">
                                         @await Html.PartialAsync("Logos/DeveloperMenu/Documentation")
                                         <span
                                             class="flex items-center text-[#070D0F] text-Regular leading-[19.36px]">Documentation</span>
                                     </div>
-                                    <a href="Integrations" class="flex gap-SM rounded-S py-M px-L max-h-[72px]">
+                                    <a href="Integrations" class="flex gap-SM rounded-S py-M max-h-[72px]">
                                         @await Html.PartialAsync("Logos/DeveloperMenu/Integrations")
                                         <span
                                             class="flex items-center text-[#070D0F] text-Regular leading-[19.36px]">Integrations</span>
                                     </a>
-                                    <a href="Changelog" class="flex gap-SM rounded-S py-M px-L max-h-[72px]">
+                                    <a href="Changelog" class="flex gap-SM rounded-S py-M max-h-[72px]">
                                         @await Html.PartialAsync("Logos/DeveloperMenu/Changelog")
                                         <span
                                             class="flex items-center text-[#070D0F] text-Regular leading-[19.36px]">Changelog</span>
                                     </a>
-                                    <div class="flex gap-SM rounded-S py-M px-L max-h-[72px]">
+                                    <div class="flex gap-SM rounded-S py-M max-h-[72px]">
                                         @await Html.PartialAsync("Logos/DeveloperMenu/Community")
                                         <span
                                             class="flex items-center text-[#070D0F] text-Regular leading-[19.36px]">Community</span>
@@ -409,24 +409,37 @@
         </div>
     </div>
 </header>
+<div id="overlay" class="invisible transition-transform duration-500 ease-in-out"></div>
 
 <script>
     const mobileMenu = document.getElementById('mobile-menu');
-    // Get the mobile menu toggle button
+    const overlay = document.getElementById('overlay');
     const mobileMenuToggle = document.querySelector('button[type="button"]');
-    const closeMenuButton = document.getElementById('close-side-bar')
-    // Add a click event listener to the toggle button
+    const closeMenuButton = document.getElementById('close-side-bar');
+    const dropdowns = document.querySelectorAll('#dropdownDefaultButton');
     mobileMenuToggle.addEventListener('click', () => {
         mobileMenu.classList.toggle('translate-x-0');
         mobileMenu.classList.toggle('translate-x-full');
-        console.log(mobileMenu.classList)
+         toggleOverlay();
     });
     closeMenuButton.addEventListener('click', function () {
         mobileMenu.classList.toggle('translate-x-0');
         mobileMenu.classList.toggle('translate-x-full');
+        toggleOverlay();
     })
+    dropdowns.forEach(dropdown => {
+       dropdown.addEventListener('click', function () {
+         toggleOverlay();           
+       });
+    });
+    overlay.addEventListener('click',function () {
+        toggleOverlay();           
+    })
+    function toggleOverlay(){
+        overlay.classList.toggle("invisible");
+    }
+    
     function toggleSidebarMenu(accordion, event) {
-        console.log(accordion,event)
         var content = accordion.parentNode.nextElementSibling;
         var icon = event.currentTarget.children[0]
         if (content.classList.contains('invisible') || content.classList.contains('max-h-0')) {
