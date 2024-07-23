@@ -74,7 +74,8 @@ module.exports = {
                 
             },
             maxWidth: {
-                '8xl': '1440px',
+                '8xl': '1488px',
+                '5xl': '848px',
             },
             height: {
                 Tag: '27px',
