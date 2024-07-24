@@ -7,7 +7,7 @@
             <ul class="flex gap-XL items-center">
                 <li class="flex items-center header-link-menu">
                     <a class="flex items-center justify-start text-Regular" id="dropdownDefaultButton"
-                        data-dropdown-toggle="products-dropdown">
+                       data-dropdown-toggle="products-dropdown" tabindex="0">
                         Products
                         <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"
                             fill="#252532">
@@ -107,7 +107,7 @@
                 </li>
                 <li class="flex items-center header-link-menu">
                     <a class="flex items-center justify-start text-Regular" id="dropdownDefaultButton"
-                        data-dropdown-toggle="developers-dropdown">
+                       data-dropdown-toggle="developers-dropdown" tabindex="1">
                         Developers
                         <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"
                             fill="#252532">
@@ -410,58 +410,88 @@
     </div>
 </header>
 <div id="overlay" class="invisible transition-transform duration-500 ease-in-out"></div>
+<div id="sidebar-overlay" class="invisible transition-transform duration-500 ease-in-out lg:hidden"></div>
 
 <script>
-    const mobileMenu = document.getElementById('mobile-menu');
-    const overlay = document.getElementById('overlay');
-    const mobileMenuToggle = document.querySelector('button[type="button"]');
-    const closeMenuButton = document.getElementById('close-side-bar');
-    const dropdowns = document.querySelectorAll('#dropdownDefaultButton');
-    mobileMenuToggle.addEventListener('click', () => {
-        mobileMenu.classList.toggle('translate-x-0');
-        mobileMenu.classList.toggle('translate-x-full');
-         toggleOverlay();
-    });
-    closeMenuButton.addEventListener('click', function () {
-        mobileMenu.classList.toggle('translate-x-0');
-        mobileMenu.classList.toggle('translate-x-full');
-        toggleOverlay();
-    })
-    dropdowns.forEach(dropdown => {
-       dropdown.addEventListener('click', function () {
-         toggleOverlay();           
-       });
-    });
-    overlay.addEventListener('click',function () {
-        toggleOverlay();           
-    })
-    function toggleOverlay(){
-        overlay.classList.toggle("invisible");
-    }
-    
-    function toggleSidebarMenu(accordion, event) {
-        var content = accordion.parentNode.nextElementSibling;
-        var icon = event.currentTarget.children[0]
-        if (content.classList.contains('invisible') || content.classList.contains('max-h-0')) {
-            icon.classList.add('-rotate-180');
-            const classesToAdd = ['max-h-full', 'mt-S', 'md:mt-L'];
-            const classesToRemove = ['invisible', 'max-h-0'];
-            classesToRemove.forEach(className => {
-                content.classList.remove(className);
+    document.addEventListener('DOMContentLoaded', function () {
+        const mobileMenu = document.getElementById('mobile-menu');
+        const overlay = document.getElementById('overlay');
+        const header = document.querySelector('header');
+        const sidebarOverlay = document.getElementById('sidebar-overlay');
+        const mobileMenuToggle = document.querySelector('button[type="button"]');
+        const closeMenuButton = document.getElementById('close-side-bar');
+        const dropdowns = document.querySelectorAll('#dropdownDefaultButton');
+
+        mobileMenuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('translate-x-0');
+            mobileMenu.classList.toggle('translate-x-full');
+            displaySidbarOverlay();
+        });
+
+        closeMenuButton.addEventListener('click', function () {
+            mobileMenu.classList.toggle('translate-x-0');
+            mobileMenu.classList.toggle('translate-x-full');
+            hideSidbarOverlay();
+        });
+
+        dropdowns.forEach(dropdown => {
+            dropdown.addEventListener('focus', function (event) {
+                if (event.target.parentNode.children[1].classList.contains('hidden')) {
+                    displayOverlay()
+                } else {
+                    hideOverlay()
+                }
             });
-            classesToAdd.forEach(className => {
-                content.classList.add(className);
+            dropdown.addEventListener('blur', function (event) {
+                overlay.classList.toggle("invisible");
             });
-        } else {
-            icon.classList.remove('-rotate-180');
-            const classesToAdd = ['invisible', 'max-h-0'];
-            const classesToRemove = ['max-h-full', 'mt-S', 'md:mt-L'];
-            classesToRemove.forEach(className => {
-                content.classList.remove(className);
-            });
-            classesToAdd.forEach(className => {
-                content.classList.add(className);
-            });
+        });
+
+        function displayOverlay() {
+            overlay.classList.add("block");
+            overlay.classList.remove("invisible");
         }
-    }
+
+        function hideOverlay() {
+            overlay.classList.remove("block");
+            overlay.classList.add("invisible");
+        }
+
+        function displaySidbarOverlay() {
+            sidebarOverlay.classList.add("block");
+            sidebarOverlay.classList.remove("invisible");
+        }
+
+        function hideSidbarOverlay() {
+            sidebarOverlay.classList.remove("block");
+            sidebarOverlay.classList.add("invisible");
+        }
+
+        window.toggleSidebarMenu = function (accordion, event) {
+            var content = accordion.parentNode.nextElementSibling;
+            var icon = event.currentTarget.children[0];
+            if (content.classList.contains('invisible') || content.classList.contains('max-h-0')) {
+                icon.classList.add('-rotate-180');
+                const classesToAdd = ['max-h-full', 'mt-S', 'md:mt-L'];
+                const classesToRemove = ['invisible', 'max-h-0'];
+                classesToRemove.forEach(className => {
+                    content.classList.remove(className);
+                });
+                classesToAdd.forEach(className => {
+                    content.classList.add(className);
+                });
+            } else {
+                icon.classList.remove('-rotate-180');
+                const classesToAdd = ['invisible', 'max-h-0'];
+                const classesToRemove = ['max-h-full', 'mt-S', 'md:mt-L'];
+                classesToRemove.forEach(className => {
+                    content.classList.remove(className);
+                });
+                classesToAdd.forEach(className => {
+                    content.classList.add(className);
+                });
+            }
+        }
+    });
+
 </script>

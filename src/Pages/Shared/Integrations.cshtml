@@ -2,7 +2,7 @@
 @attribute [RenderStatic]
 @model www.unilake.Pages.Shared.IntegrationsModel
 @{
-ViewData["Title"] = "Unilake.Www Integrations";
+    ViewData["Title"] = "Unilake.Www Integrations";
 }
 <div class="bg-white">
     <div class="lg:max-w-8xl md:max-w-5xl w-full px-L mx-auto grid grid-cols-1 md:py-XXXL md:gap-XXL py-XXL gap-XL">
@@ -36,10 +36,9 @@ ViewData["Title"] = "Unilake.Www Integrations";
 
             <div class="grid md:gap-XL gap-L">
                 <div class="grid md:p-L p-M bg-neutral md:rounded-S rounded-S">
-                    <div class="flex justify-between items-center">
+                    <div class="flex justify-between items-center" onClick="showIntegrationCard(this,event)">
                         <span class="md:text-large text-headLines text-Regular leading-[18px] font-[700]">API</span>
-                        <span class="transition-all duration-500 cursor-pointer"
-                              onClick="showIntegrationCard(this,event)">
+                        <span class="transition-all duration-500 cursor-pointer">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -49,7 +48,7 @@ ViewData["Title"] = "Unilake.Www Integrations";
                         </span>
                     </div>
                     <div class="grid gap-L xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 grid-cols-1 xl:px-XL invisible h-auto items-center opacity-0 transition-all max-h-0 opacity-100">
-                        
+
                         <img class="h-full w-full lg:block hidden"
                              src="~/img/Integrations/Desktop/Integration Card.svg">
                         <img class="h-full w-full lg:block hidden"
@@ -80,10 +79,9 @@ ViewData["Title"] = "Unilake.Www Integrations";
                     </div>
                 </div>
                 <div class="grid md:p-L p-M bg-neutral md:rounded-S rounded-S">
-                    <div class="flex justify-between items-center">
+                    <div class="flex justify-between items-center" onClick="showIntegrationCard(this,event)">
                         <span class="md:text-large text-headLines text-Regular leading-[18px] font-[700]">Auth</span>
-                        <span class="transition-all duration-500 cursor-pointer"
-                              onClick="showIntegrationCard(this,event)">
+                        <span class="transition-all duration-500 cursor-pointer">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -93,7 +91,7 @@ ViewData["Title"] = "Unilake.Www Integrations";
                         </span>
                     </div>
                     <div class="grid gap-L xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 grid-cols-1 xl:px-XL invisible h-auto items-center opacity-0 transition-all max-h-0 opacity-100">
-                        
+
                         <img class="h-full w-full lg:block hidden"
                              src="~/img/Integrations/Desktop/Integration Card.svg">
                         <img class="h-full w-full lg:block hidden"
@@ -123,13 +121,12 @@ ViewData["Title"] = "Unilake.Www Integrations";
                     </div>
                 </div>
                 <div class="grid md:p-L p-M bg-neutral md:rounded-S rounded-S">
-                    <div class="flex justify-between items-center">
+                    <div class="flex justify-between items-center" onClick="showIntegrationCard(this,event)">
                         <span class="md:text-large text-headLines text-Regular leading-[18px] font-[700]">
                             Catching /
                             Offline-First
                         </span>
-                        <span class="transition-all duration-500 cursor-pointer"
-                              onClick="showIntegrationCard(this,event)">
+                        <span class="transition-all duration-500 cursor-pointer">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -139,7 +136,7 @@ ViewData["Title"] = "Unilake.Www Integrations";
                         </span>
                     </div>
                     <div class="grid gap-L xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 grid-cols-1 xl:px-XL invisible h-auto items-center opacity-0 transition-all max-h-0 opacity-100">
-                        
+
                         <img class="h-full w-full lg:block hidden"
                              src="~/img/Integrations/Desktop/Integration Card.svg">
                         <img class="h-full w-full lg:block hidden"
@@ -169,13 +166,12 @@ ViewData["Title"] = "Unilake.Www Integrations";
                     </div>
                 </div>
                 <div class="grid md:p-L p-M bg-neutral md:rounded-S rounded-S">
-                    <div class="flex justify-between items-center">
+                    <div class="flex justify-between items-center" onClick="showIntegrationCard(this,event)">
                         <span class="md:text-large text-headLines text-Regular leading-[18px] font-[700]">
                             Data
                             Platform
                         </span>
-                        <span class="transition-all duration-500 cursor-pointer"
-                              onClick="showIntegrationCard(this,event)">
+                        <span class="transition-all duration-500 cursor-pointer">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -185,7 +181,7 @@ ViewData["Title"] = "Unilake.Www Integrations";
                         </span>
                     </div>
                     <div class="grid gap-L xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 grid-cols-1 xl:px-XL invisible h-auto items-center opacity-0 transition-all max-h-0 opacity-100">
-                        
+
                         <img class="h-full w-full lg:block hidden"
                              src="~/img/Integrations/Desktop/Integration Card.svg">
                         <img class="h-full w-full lg:block hidden"
@@ -215,10 +211,9 @@ ViewData["Title"] = "Unilake.Www Integrations";
                     </div>
                 </div>
                 <div class="grid md:p-L p-M bg-neutral md:rounded-S rounded-S">
-                    <div class="flex justify-between items-center">
+                    <div class="flex justify-between items-center" onClick="showIntegrationCard(this,event)">
                         <span class="md:text-large text-headLines text-Regular leading-[18px] font-[700]">DevTools</span>
-                        <span class="transition-all duration-500 cursor-pointer"
-                              onClick="showIntegrationCard(this,event)">
+                        <span class="transition-all duration-500 cursor-pointer">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -228,7 +223,7 @@ ViewData["Title"] = "Unilake.Www Integrations";
                         </span>
                     </div>
                     <div class="grid gap-L xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 grid-cols-1 xl:px-XL invisible h-auto items-center opacity-0 transition-all max-h-0 opacity-100">
-                        
+
                         <img class="h-full w-full lg:block hidden"
                              src="~/img/Integrations/Desktop/Integration Card.svg">
                         <img class="h-full w-full lg:block hidden"
@@ -266,8 +261,8 @@ ViewData["Title"] = "Unilake.Www Integrations";
 <script>
 
     function showIntegrationCard(accordion, event) {
-        var content = accordion.parentNode.nextElementSibling;
-        var icon = event.currentTarget.children[0]
+        var content = accordion.parentNode.children[1];
+        var icon = event.currentTarget.children[1]
         if (content.classList.contains('invisible') || content.classList.contains('max-h-0')) {
             icon.classList.add('-rotate-180');
             const classesToAdd = ['max-h-full', 'mt-M', 'md:mt-L', 'duration-1000'];
