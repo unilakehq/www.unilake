@@ -178,12 +178,14 @@ select{
     padding-bottom: 0px !important;
     border-color: #DDDFDA;
     border-width: 1px;
+    z-index:0;
 }
 
 .article-accordion-open {
     background-color: #F9F8F6 !important;
     padding-bottom: 16px !important;
-    border-bottom-width: 1px !important;
+    /*border-bottom-width: 1px !important;*/
+    z-index:0;
 }
 
 .article-accordion-open > div {
@@ -404,7 +406,7 @@ input::placeholder {
     right: 0;
     bottom: 0;
     background-color: rgba(0,0,0,0.5);  
-    z-index: 2;  
+    z-index: 1;  
     cursor: pointer; 
 }
 
@@ -416,6 +418,11 @@ input::placeholder {
 #overlay.hide {
     opacity: 0; 
     visibility: hidden;
+}
+header {
+    position:sticky;
+    top:0px;
+    z-index:2;
 }
 @media (min-width: 1024px) {
     .lg\:linear-gradient-governance {
