@@ -11,8 +11,8 @@
 
 <div>
     <ul class="list-unstyled cursor-pointer">
-        <li class="flex flex-col gap-L border-b border-brNeutral p-L items-center hover:bg-[#EFEEEB]">
-           <div class="flex justify-between w-full" onclick="toggleFAQ(this)">
+        <li class="flex flex-col gap-L border-b border-brNeutral p-L items-center hover:bg-[#EFEEEB]" onclick="toggleFAQ(this)">
+           <div class="flex justify-between w-full">
              <span class="text-H4 text-headLines">Question</span>
                <span class="text-brand flex items-center cursor-pointer" tabindex="1">
                    <svg class="accordion-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -27,8 +27,8 @@
         </li>
     </ul>
     <ul class="list-unstyled cursor-pointer">
-        <li class="flex flex-col gap-L border-b border-brNeutral p-L items-center hover:bg-[#EFEEEB]">
-           <div class="flex justify-between w-full" onclick="toggleFAQ(this)">
+        <li class="flex flex-col gap-L border-b border-brNeutral p-L items-center hover:bg-[#EFEEEB]" onclick="toggleFAQ(this)">
+           <div class="flex justify-between w-full">
              <span class="text-H4 text-headLines">Question</span>
                <span class="text-brand flex items-center cursor-pointer" tabindex="1">
                    <svg class="accordion-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -43,8 +43,8 @@
         </li>
     </ul>
     <ul class="list-unstyled cursor-pointer">
-        <li class="flex flex-col gap-L border-b border-brNeutral p-L items-center hover:bg-[#EFEEEB]">
-           <div class="flex justify-between w-full" onclick="toggleFAQ(this)">
+        <li class="flex flex-col gap-L border-b border-brNeutral p-L items-center hover:bg-[#EFEEEB]" onclick="toggleFAQ(this)">
+           <div class="flex justify-between w-full">
              <span class="text-H4 text-headLines">Question</span>
                <span class="text-brand flex items-center cursor-pointer" tabindex="1">
                    <svg class="accordion-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -59,8 +59,8 @@
         </li>
     </ul>
     <ul class="list-unstyled cursor-pointer">
-        <li class="flex flex-col gap-L border-b border-brNeutral p-L items-center hover:bg-[#EFEEEB]">
-           <div class="flex justify-between w-full" onclick="toggleFAQ(this)">
+        <li class="flex flex-col gap-L border-b border-brNeutral p-L items-center hover:bg-[#EFEEEB]" onclick="toggleFAQ(this)">
+           <div class="flex justify-between w-full">
              <span class="text-H4 text-headLines">Question</span>
                <span class="text-brand flex items-center cursor-pointer" tabindex="1">
                    <svg class="accordion-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -75,8 +75,8 @@
         </li>
     </ul>
     <ul class="list-unstyled cursor-pointer">
-        <li class="flex flex-col gap-L border-b border-brNeutral p-L items-center hover:bg-[#EFEEEB]">
-           <div class="flex justify-between w-full" onclick="toggleFAQ(this)">
+        <li class="flex flex-col gap-L border-b border-brNeutral p-L items-center hover:bg-[#EFEEEB]" onclick="toggleFAQ(this)">
+           <div class="flex justify-between w-full">
              <span class="text-H4 text-headLines">Question</span>
                <span class="text-brand flex items-center cursor-pointer" tabindex="1">
                    <svg class="accordion-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -91,8 +91,8 @@
         </li>
     </ul>
     <ul class="list-unstyled cursor-pointer">
-        <li class="flex flex-col gap-L border-b border-brNeutral p-L items-center hover:bg-[#EFEEEB]">
-            <div class="flex justify-between w-full" onclick="toggleFAQ(this)">
+        <li class="flex flex-col gap-L border-b border-brNeutral p-L items-center hover:bg-[#EFEEEB]" onclick="toggleFAQ(this)">
+            <div class="flex justify-between w-full">
                 <span class="text-H4 text-headLines">Question</span>
                 <span class="text-brand flex items-center cursor-pointer" tabindex="1">
                     <svg class="accordion-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -110,7 +110,7 @@
 
 <script>
     function toggleFAQ(accordion) {
-        var content = accordion.parentNode.children[1];
+        var content = accordion.children[1];
         if (content.style.display === "none" || content.style.display === "") {
             content.style.display = "block";
             accordion.querySelector('.accordion-icon').classList.add('rotate-45');

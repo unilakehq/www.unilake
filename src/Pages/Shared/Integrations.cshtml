@@ -35,8 +35,8 @@
             </ul>
 
             <div class="grid md:gap-XL gap-L">
-                <div class="grid md:p-L p-M bg-neutral rounded-S cursor-pointer">
-                    <div class="flex justify-between items-center" onClick="showIntegrationCard(this,event)">
+                <div class="grid md:p-L p-M bg-neutral rounded-S cursor-pointer" onClick="showIntegrationCard(this,event)">
+                    <div class="flex justify-between items-center">
                         <span class="md:text-large text-headLines text-Regular leading-[18px] font-[700]">API</span>
                         <span class="transition-all duration-500 cursor-pointer">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -78,8 +78,8 @@
 
                     </div>
                 </div>
-                <div class="grid md:p-L p-M bg-neutral rounded-S cursor-pointer">
-                    <div class="flex justify-between items-center" onClick="showIntegrationCard(this,event)">
+                <div class="grid md:p-L p-M bg-neutral rounded-S cursor-pointer" onClick="showIntegrationCard(this,event)">
+                    <div class="flex justify-between items-center">
                         <span class="md:text-large text-headLines text-Regular leading-[18px] font-[700]">Auth</span>
                         <span class="transition-all duration-500 cursor-pointer">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -120,8 +120,8 @@
                         <img class="h-full w-full md:hidden block" src="~/img/Integrations/Mobile/Mobile-5.svg">
                     </div>
                 </div>
-                <div class="grid md:p-L p-M bg-neutral rounded-S cursor-pointer">
-                    <div class="flex justify-between items-center" onClick="showIntegrationCard(this,event)">
+                <div class="grid md:p-L p-M bg-neutral rounded-S cursor-pointer" onClick="showIntegrationCard(this,event)">
+                    <div class="flex justify-between items-center">
                         <span class="md:text-large text-headLines text-Regular leading-[18px] font-[700]">
                             Catching /
                             Offline-First
@@ -165,8 +165,8 @@
                         <img class="h-full w-full md:hidden block" src="~/img/Integrations/Mobile/Mobile-5.svg">
                     </div>
                 </div>
-                <div class="grid md:p-L p-M bg-neutral rounded-S cursor-pointer">
-                    <div class="flex justify-between items-center" onClick="showIntegrationCard(this,event)">
+                <div class="grid md:p-L p-M bg-neutral rounded-S cursor-pointer" onClick="showIntegrationCard(this,event)">
+                    <div class="flex justify-between items-center">
                         <span class="md:text-large text-headLines text-Regular leading-[18px] font-[700]">
                             Data
                             Platform
@@ -210,8 +210,8 @@
                         <img class="h-full w-full md:hidden block" src="~/img/Integrations/Mobile/Mobile-5.svg">
                     </div>
                 </div>
-                <div class="grid md:p-L p-M bg-neutral rounded-S cursor-pointer">
-                    <div class="flex justify-between items-center" onClick="showIntegrationCard(this,event)">
+                <div class="grid md:p-L p-M bg-neutral rounded-S cursor-pointer" onClick="showIntegrationCard(this,event)">
+                    <div class="flex justify-between items-center">
                         <span class="md:text-large text-headLines text-Regular leading-[18px] font-[700]">DevTools</span>
                         <span class="transition-all duration-500 cursor-pointer">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -261,8 +261,8 @@
 <script>
 
     function showIntegrationCard(accordion, event) {
-        var content = accordion.parentNode.children[1];
-        var icon = event.currentTarget.children[1]
+        var content = accordion.children[1];
+        var icon = event.currentTarget.children[0].children[1];
         if (content.classList.contains('invisible') || content.classList.contains('max-h-0')) {
             icon.classList.add('-rotate-180');
             const classesToAdd = ['max-h-full', 'mt-M', 'md:mt-L', 'duration-1000'];
