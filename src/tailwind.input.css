@@ -90,18 +90,27 @@ select{
     font-family: Inter, sans-serif;
 }
 .tag-list::-webkit-scrollbar {
-    height: 4px;
-    background-color: #f1f1f1;
+    height: 2px;
 }
 
 .tag-list::-webkit-scrollbar-thumb {
-    background-color: #888;
-    border-radius: 4px;
+    background-color: #c1c1c1;
+    opacity:30%;
 }
 
-.tag-list::-webkit-scrollbar-thumb:hover {
-    background-color: #555;
+.dropdown-content::-webkit-scrollbar {
+    width: 4px;
+    background-color: #f9f8f6;
 }
+
+.dropdown-content::-webkit-scrollbar-thumb {
+    background-color: #c1c1c1;
+    opacity: 30%;
+}
+.dropdown-2::-webkit-scrollbar {
+    background-color: #efeeeb !important;
+}
+
 [data-carousel-slide-to][aria-current="false"] {
     background-color: #FF684940;
 }
@@ -397,6 +406,31 @@ input::placeholder {
 .linear-gradient-governance {
     background: linear-gradient(99.17deg, #F8F7F3 7.24%, #F8F8F8 86.39%);
 }
+
+header {
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+    transition: opacity 0.3s ease-in-out;
+}
+.hidden-header {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.hidden-overlay {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.dropdown-content {
+    max-height: auto;
+    overflow-y: auto;
+    position: absolute;
+    background: white;
+    z-index: 10;
+}
+
 #overlay, #sidebar-overlay {
     position: fixed;
     width: 100%;
@@ -409,22 +443,11 @@ input::placeholder {
     z-index: 1;
     cursor: pointer;
 }
-
-#overlay.show {
-    display: block;  
-    opacity: 1; 
+@media not all and (min-height: 850px) {
+    .dropdown-content {
+        max-height: 80vh;
+    }
 }
-
-#overlay.hide {
-    opacity: 0; 
-    visibility: hidden;
-}
-header {
-    position:sticky;
-    top:0px;
-    z-index:2;
-}
-
 @media (min-width: 1024px) {
     .lg\:linear-gradient-governance {
         background: linear-gradient(99.17deg, #F8F7F3 7.24%, #F8F8F8 86.39%);

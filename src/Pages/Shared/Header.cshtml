@@ -1,4 +1,4 @@
-﻿<header class="bg-neutral border-b border-brNeutral">
+﻿<header id="main-header" class="bg-neutral border-b border-brNeutral">
     <div class="lg:max-w-8xl md:max-w-5xl w-full px-L mx-auto flex items-center justify-between py-L mx-auto h-fit">
         <a class="cursor-pointer navbar-brand flex items-center" href="./">
             @await Html.PartialAsync("Logos/BrandLogo")
@@ -15,7 +15,7 @@
                                 d="M5.83447 6.22668L8.89447 9.28002L11.9545 6.22668L12.8945 7.16668L8.89447 11.1667L4.89447 7.16668L5.83447 6.22668Z" />
                         </svg>
                     </a>
-                    <div id="products-dropdown" class="z-10 hidden rounded-lg shadow rounded-[8px]">
+                    <div id="products-dropdown" class="dropdown-content z-10 hidden rounded-lg shadow rounded-[8px]">
                         <div class="flex">
                             <div class="grid grid-cols-1 h-auto items-center p-XL max-w-[346px] bg-neutral rounded-s-[8px]"
                                 aria-labelledby="dropdownDefaultButton">
@@ -115,7 +115,7 @@
                                 d="M5.83447 6.22668L8.89447 9.28002L11.9545 6.22668L12.8945 7.16668L8.89447 11.1667L4.89447 7.16668L5.83447 6.22668Z" />
                         </svg>
                     </a>
-                    <div id="developers-dropdown" class="z-10 hidden rounded-lg shadow rounded-[8px]">
+                    <div id="developers-dropdown" class="dropdown-content dropdown-2 z-10 hidden rounded-lg shadow rounded-[8px]">
                         <div class="flex">
                             <div class="flex flex-col gap-L p-XL w-[346px] bg-neutral rounded-s-[8px]">
                                 <div class="flex flex-col gap-M">
@@ -416,12 +416,24 @@
     document.addEventListener('DOMContentLoaded', function () {
         const mobileMenu = document.getElementById('mobile-menu');
         const overlay = document.getElementById('overlay');
-        const header = document.querySelector('header');
         const sidebarOverlay = document.getElementById('sidebar-overlay');
         const mobileMenuToggle = document.querySelector('button[type="button"]');
         const closeMenuButton = document.getElementById('close-side-bar');
         const dropdowns = document.querySelectorAll('#dropdownDefaultButton');
 
+        let lastScrollTop = 0;
+        const header = document.getElementById("main-header");
+        window.addEventListener("scroll", function () {
+            const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+            if (currentScroll > lastScrollTop) {
+                header.classList.add("hidden-header");
+                overlay.classList.add("hidden-overlay");
+            } else {
+                header.classList.remove("hidden-header");
+                overlay.classList.remove("hidden-overlay");
+            }
+            lastScrollTop = currentScroll <= 96 ? 96 : currentScroll;
+        }, false);
         mobileMenuToggle.addEventListener('click', () => {
             mobileMenu.classList.toggle('translate-x-0');
             mobileMenu.classList.toggle('translate-x-full');
@@ -436,16 +448,13 @@
 
         dropdowns.forEach(dropdown => {
             dropdown.addEventListener('focus', function (event) {
-                if (event.target.parentNode.children[1].classList.contains('hidden')) {
-                    displayOverlay()
-                } else {
-                    hideOverlay()
-                }
+                displayOverlay()
             });
             dropdown.addEventListener('blur', function (event) {
                 overlay.classList.toggle("invisible");
             });
         });
+
 
         function displayOverlay() {
             overlay.classList.add("block");
