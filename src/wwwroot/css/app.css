@@ -2578,6 +2578,10 @@ header {
   max-width: 800px;
 }
 
+.max-w-full {
+  max-width: 100%;
+}
+
 .max-w-lg {
   max-width: 32rem;
 }
@@ -4014,6 +4018,10 @@ header {
   padding-top: 16px;
 }
 
+.pt-XXL {
+  padding-top: 64px;
+}
+
 .pt-\[7\%\] {
   padding-top: 7%;
 }
@@ -4276,6 +4284,10 @@ header {
   line-height: 24px;
 }
 
+.leading-\[28px\] {
+  line-height: 28px;
+}
+
 .leading-\[32px\] {
   line-height: 32px;
 }
@@ -4292,8 +4304,16 @@ header {
   line-height: 76px;
 }
 
+.leading-none {
+  line-height: 1;
+}
+
 .leading-tight {
   line-height: 1.25;
+}
+
+.tracking-\[-3\%\] {
+  letter-spacing: -3%;
 }
 
 .tracking-tight {
@@ -5176,6 +5196,11 @@ header {
 .hover\:text-blue-800:hover {
   --tw-text-opacity: 1;
   color: rgb(30 64 175 / var(--tw-text-opacity, 1));
+}
+
+.hover\:text-brand:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 104 73 / var(--tw-text-opacity, 1));
 }
 
 .hover\:text-cyan-800:hover {
@@ -6439,6 +6464,10 @@ header {
     margin-right: 16px;
   }
 
+  .md\:-mt-24 {
+    margin-top: -6rem;
+  }
+
   .md\:-mt-px {
     margin-top: -1px;
   }
@@ -6681,6 +6710,11 @@ header {
     padding-bottom: 112px;
   }
 
+  .md\:px-XXXL {
+    padding-left: 112px;
+    padding-right: 112px;
+  }
+
   .md\:pr-XL {
     padding-right: 32px;
   }
@@ -6847,12 +6881,20 @@ header {
     margin-top: -32px;
   }
 
+  .lg\:mb-8 {
+    margin-bottom: 2rem;
+  }
+
   .lg\:ml-0 {
     margin-left: 0px;
   }
 
   .lg\:ml-24 {
     margin-left: 6rem;
+  }
+
+  .lg\:mr-10 {
+    margin-right: 2.5rem;
   }
 
   .lg\:mt-20 {
@@ -7146,6 +7188,10 @@ header {
     margin-left: 12rem;
   }
 
+  .xl\:mt-0 {
+    margin-top: 0px;
+  }
+
   .xl\:block {
     display: block;
   }
@@ -7254,6 +7300,10 @@ header {
     gap: 112px;
   }
 
+  .xl\:overflow-visible {
+    overflow: visible;
+  }
+
   .xl\:bg-neutral {
     --tw-bg-opacity: 1;
     background-color: rgb(249 248 246 / var(--tw-bg-opacity, 1));
@@ -7306,6 +7356,11 @@ header {
     font-weight: 700;
   }
 
+  .xl\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
   .xl\:text-H2 {
     font-size: 20px;
     line-height: 32px;
@@ -7354,5 +7409,9 @@ header {
 
   .\32xl\:max-w-screen-xl {
     max-width: 1280px;
+  }
+
+  .\32xl\:flex-1 {
+    flex: 1 1 0%;
   }
 }

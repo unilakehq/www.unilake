@@ -4,7 +4,48 @@
 @{
     ViewData["Title"] = "Home page";
 }
+<main>
+    @* HERO SECTION *@
+    <section class="max-w-full mx-auto overflow-hidden xl:overflow-visible bg-headLines font-inter">
+        <div
+            class="flex flex-col items-center justify-between w-full mx-auto lg:max-w-8xl md:max-w-5xl px-M xl:flex-row pt-XXL h-fit">
+            <div class="flex-1 lg:mr-10">
+                <h1 class="max-w-3xl mb-4 text-4xl font-bold tracking-[-3%] leading-none xl:text-5xl text-neutral">
+                    Unified data lake analytics for your data and AI ambitions</h1>
+                <p class="max-w-3xl mb-6 text-base text-body leading-[28px] lg:mb-8">
+                    Accelerate your data ambitions with a fully integrated and unified data analytics and AI platform on
+                    any
+                    data lake (Azure, AWS, GCP, S3, Kubernetes). Use public cloud, private cloud or a hybrid setup.
+                    Unilake,
+                    the fully integrated, open source data lake analytics platform at scale</p>
 
-<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-20 pb-16 text-center lg:pt-32">
-    <h1 class="text-5xl underline">Hello Unilake!</h1>
-</div>
+                @* BUTTONS *@
+                <div class="flex flex-col w-full md:flex-row gap-M md:w-fit">
+                    <button
+                        class="flex items-center justify-center w-full gap-S md:px-L md:py-SM px-M py-S bg-brand rounded-S md:w-fit brand-color-button">
+                        <h5 class="text-neutral md:text-14 text-Small font-[600]">Book demo</h5>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                            <path
+                                d="M6.22668 11.9545L9.28002 8.89447L6.22668 5.83447L7.16668 4.89447L11.1667 8.89447L7.16668 12.8945L6.22668 11.9545Z"
+                                fill="#E6EFF4" />
+                        </svg>
+                    </button>
+                    <button
+                        class="text-center flex justify-center items-center gap-S md:px-L md:py-SM px-M py-S text-neutral md:text-14 text-Small hover:text-brand font-[600] border border-[#3F4952] rounded-S md:w-fit w-full bg-less-button">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8.00065 1.33301C4.31732 1.33301 1.33399 4.31634 1.33399 7.99967C1.33318 9.39911 1.77305 10.7633 2.59119 11.8986C3.40933 13.034 4.56421 13.8829 5.89199 14.325C6.22532 14.383 6.35065 14.183 6.35065 14.0077C6.35065 13.8497 6.34199 13.325 6.34199 12.7663C4.66732 13.075 4.23399 12.3583 4.10065 11.983C4.02532 11.791 3.70065 11.1997 3.41732 11.041C3.18399 10.9163 2.85065 10.6077 3.40865 10.5997C3.93399 10.591 4.30865 11.083 4.43399 11.283C5.03399 12.291 5.99199 12.0077 6.37532 11.833C6.43399 11.3997 6.60865 11.1083 6.80065 10.9417C5.31732 10.775 3.76732 10.1997 3.76732 7.64967C3.76732 6.92434 4.02532 6.32501 4.45065 5.85834C4.38399 5.69167 4.15065 5.00834 4.51732 4.09167C4.51732 4.09167 5.07532 3.91634 6.35065 4.77434C6.89339 4.62394 7.45413 4.54835 8.01732 4.54967C8.58399 4.54967 9.15065 4.62434 9.68399 4.77434C10.9593 3.90767 11.5173 4.09167 11.5173 4.09167C11.884 5.00834 11.6507 5.69167 11.584 5.85834C12.0087 6.32501 12.2673 6.91634 12.2673 7.64967C12.2673 10.2083 10.7093 10.775 9.22599 10.9417C9.46732 11.1497 9.67599 11.5497 9.67599 12.175C9.67599 13.0663 9.66732 13.783 9.66732 14.0083C9.66732 14.183 9.79265 14.391 10.126 14.3243C11.4492 13.8774 12.599 13.0268 13.4135 11.8923C14.2281 10.7577 14.6663 9.39634 14.6667 7.99967C14.6667 4.31634 11.6833 1.33301 7.99999 1.33301"
+                                fill="currentColor" />
+                        </svg>
+                        <h5 class="md:text-14 text-Small font-[600]">Checkout Platform</h5>
+                    </button>
+                </div>
+            </div>
+            <div class="-mt-8 2xl:flex-1 md:-mt-24 xl:mt-0">
+                <!-- Hero Image -->
+                <img src="./img/landing/glowing-hero.png" alt="Application Query Result">
+            </div>
+        </div>
+    </section>
+
+</main>
