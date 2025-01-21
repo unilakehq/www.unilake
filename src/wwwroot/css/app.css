@@ -6443,6 +6443,10 @@ header {
     align-items: center;
   }
 
+  .sm\:justify-between {
+    justify-content: space-between;
+  }
+
   .sm\:space-x-L > :not([hidden]) ~ :not([hidden]) {
     --tw-space-x-reverse: 0;
     margin-right: calc(24px * var(--tw-space-x-reverse));
@@ -7366,6 +7370,10 @@ header {
     width: 56px;
   }
 
+  .xl\:min-w-\[250px\] {
+    min-width: 250px;
+  }
+
   .xl\:max-w-3xl {
     max-width: 48rem;
   }
@@ -7546,6 +7554,10 @@ header {
     min-width: 342px;
   }
 
+  .\32xl\:min-w-\[300px\] {
+    min-width: 300px;
+  }
+
   .\32xl\:max-w-screen-xl {
     max-width: 1280px;
   }
@@ -7564,6 +7576,48 @@ header {
   }
 
   .\32xl\:text-H3 {
+    font-size: 32px;
+    line-height: 36px;
+    font-weight: 700;
+  }
+}
+
+@media (min-width: 1920px) {
+  .\33xl\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .\33xl\:block {
+    display: block;
+  }
+
+  .\33xl\:hidden {
+    display: none;
+  }
+
+  .\33xl\:w-\[562px\] {
+    width: 562px;
+  }
+
+  .\33xl\:min-w-\[342px\] {
+    min-width: 342px;
+  }
+
+  .\33xl\:max-w-8xl {
+    max-width: 1488px;
+  }
+
+  .\33xl\:flex-1 {
+    flex: 1 1 0%;
+  }
+
+  .\33xl\:py-XXXL {
+    padding-top: 112px;
+    padding-bottom: 112px;
+  }
+
+  .\33xl\:text-H3 {
     font-size: 32px;
     line-height: 36px;
     font-weight: 700;
