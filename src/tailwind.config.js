@@ -1,172 +1,174 @@
 module.exports = {
-    content: ["./**/*.{html,js,mjs,md,cshtml,razor,cs}", "./Pages/**/*.{cshtml,razor}"],
-    darkMode: 'class',
-    theme: {
-        extend: {
-            container: {
-                center: true,
-                padding: {
-                    DEFAULT: '24px',
-                    'sm': '24px',
-                    'smd': '24px',
-                    'md': '64px',
-                    'ml': '80px',
-                    'lg': '112px',
-                    'xl': '60px',
-                    '2xl': '240px',
-                }
-            },
-            screens: {
-                'sm': '400px',
-                'smd': '600px',
-                'md': '768px',
-                'ml': '900px',
-                'lg': '1024px',
-                'xl': '1280px',
-                '2xl': '1440px',
-                '3xl': '1920px'
-            },
-            colors: {
-                faded: '#677575',
-                body: '#C1C5C0',
-                neutral: '#F9F8F6',
-                brand: '#FF6849',
-                brNeutral: '#DDDFDA',
-                neutralSecondary: '#E7E7E7',
-                bravo: '#1A76FF',
-                textSecondary:'#4A494D',
-                onBrand: '#E03C18',
-                success: '#6B9E32',
-                backgroundSecondary: '#F8F7F3',
-                backgroundTertiary: '#F8F8F8',
-                info: '#005AD1',
-                backgroundPrimary: '#FCFCFC',
-                bodyText: '#525D61',
-                headLines: '#252532',
-                backgroundFaded: '#EFEEEB',
-                textPrimary: '#070D0F',
-                white:'#FFFFFF'
-            },
-            boxShadow: {
-
-            },
-            fontSize: {
-                Medium: ['16px', { lineHeight: '19.36px', fontWeight: '500' }],
-                H5: ['18px', { lineHeight: '21.78px', fontWeight: '500' }],
-                H4: ['24px', { lineHeight: '28px', fontWeight: '700' }],
-                H3: ['32px', { lineHeight: '36px', fontWeight: '700' }],
-                H2: ['20px', { lineHeight: '32px', fontWeight: '400' }],
-                Regular: ['16px', { lineHeight: '28px', fontWeight: '400' }],
-                Small: ['12px', { lineHeight: '24px', fontWeight: '400' }],
-                large: ['20px', { lineHeight: '32px', fontWeight: '700' }],
-                Bold: ['16px', { lineHeight: '18px', fontWeight: '700' }],
-                14: ['14px', { lineHeight: '24px', fontWeight: '600' }],
-                15: ['40px', { lineHeight: '44px', fontWeight: '700' }],
-                16: ['24px', { lineHeight: '32px', fontWeight: '700' }],
-                headline3: ['32px', { lineHeight: '40px', fontWeight: '700' }],
-                headline2: ['48px', { lineHeight: '52px', fontWeight: '700' }]
-            },
-            fontFamily: {
-                inter: 'Inter , sans-serif'
-            },
-            width: {
-                full: '100%',
-                
-            },
-            maxWidth: {
-                '8xl': '1488px',
-                '5xl': '848px',
-            },
-            height: {
-                Tag: '27px',
-                ArrowForward: '10.67px'
-            },
-            top: {
-                ArrowForward: '2.67px'
-            },
-            left: {
-                ArrowForward: '2.67px'
-            },
-            borderWidth: {
-                DEFAULT: '1px',
-                Tag: '1px'
-            },
-            borderRadius: {
-                DEFAULT: '0.25rem',
-                XXS: '2px',
-                XS: '4px',
-                S: '8px',
-                SM: '12px',
-                M: '16px',
-                L: '24px',
-                XL: '32px',
-                XXL: '64px',
-                XXXL: '112px'
-            },
-            padding: {
-                XXS: '2px',
-                XS: '4px',
-                S: '8px',
-                SM: '12px',
-                M: '16px',
-                L: '24px',
-                XL: '32px',
-                XXL: '64px',
-                XXXL: '112px'
-            },
-            spacing: {
-                XXS: '2px',
-                XS: '4px',
-                S: '8px',
-                SM: '12px',
-                M: '16px',
-                L: '24px',
-                XL: '32px',
-                XXL: '64px',
-                XXXL: '112px',
-            },
-            transitionDuration: {
-                '2000': '2000ms',
-            }
-        }
+  content: [
+    './**/*.{html,js,mjs,md,cshtml,razor,cs}',
+    './Pages/**/*.{cshtml,razor}',
+  ],
+  darkMode: 'class',
+  theme: {
+    extend: {
+      container: {
+        center: true,
+        padding: {
+          DEFAULT: '24px',
+          sm: '24px',
+          smd: '24px',
+          md: '64px',
+          ml: '80px',
+          lg: '112px',
+          xl: '60px',
+          '2xl': '240px',
+        },
+      },
+      screens: {
+        sm: '400px',
+        smd: '600px',
+        md: '768px',
+        ml: '900px',
+        lg: '1024px',
+        xl: '1280px',
+        '2xl': '1440px',
+        '3xl': '1920px',
+      },
+      colors: {
+        faded: '#677575',
+        body: '#C1C5C0',
+        neutral: '#F9F8F6',
+        brand: '#FF6849',
+        brNeutral: '#DDDFDA',
+        neutralSecondary: '#E7E7E7',
+        bravo: '#1A76FF',
+        textSecondary: '#4A494D',
+        onBrand: '#E03C18',
+        success: '#6B9E32',
+        backgroundSecondary: '#F8F7F3',
+        backgroundTertiary: '#F8F8F8',
+        info: '#005AD1',
+        backgroundPrimary: '#FCFCFC',
+        bodyText: '#525D61',
+        headLines: '#252532',
+        backgroundFaded: '#EFEEEB',
+        textPrimary: '#070D0F',
+        white: '#FFFFFF',
+      },
+      boxShadow: {},
+      fontFamily: {
+        inter: ['Inter', 'sans-serif'],
+      },
+      fontSize: {
+        Medium: ['16px', { lineHeight: '19.36px', fontWeight: '500' }],
+        H5: ['18px', { lineHeight: '21.78px', fontWeight: '500' }],
+        H4: ['24px', { lineHeight: '28px', fontWeight: '700' }],
+        H3: ['32px', { lineHeight: '36px', fontWeight: '700' }],
+        H2: ['20px', { lineHeight: '32px', fontWeight: '400' }],
+        Regular: ['16px', { lineHeight: '28px', fontWeight: '400' }],
+        Small: ['12px', { lineHeight: '24px', fontWeight: '400' }],
+        large: ['20px', { lineHeight: '32px', fontWeight: '700' }],
+        Bold: ['16px', { lineHeight: '18px', fontWeight: '700' }],
+        14: ['14px', { lineHeight: '24px', fontWeight: '600' }],
+        15: ['40px', { lineHeight: '44px', fontWeight: '700' }],
+        16: ['24px', { lineHeight: '32px', fontWeight: '700' }],
+        headline3: ['32px', { lineHeight: '40px', fontWeight: '700' }],
+        headline2: ['48px', { lineHeight: '52px', fontWeight: '700' }],
+      },
+      fontFamily: {
+        inter: 'Inter , sans-serif',
+      },
+      width: {
+        full: '100%',
+      },
+      maxWidth: {
+        '8xl': '1488px',
+        '5xl': '848px',
+      },
+      height: {
+        Tag: '27px',
+        ArrowForward: '10.67px',
+      },
+      top: {
+        ArrowForward: '2.67px',
+      },
+      left: {
+        ArrowForward: '2.67px',
+      },
+      borderWidth: {
+        DEFAULT: '1px',
+        Tag: '1px',
+      },
+      borderRadius: {
+        DEFAULT: '0.25rem',
+        XXS: '2px',
+        XS: '4px',
+        S: '8px',
+        SM: '12px',
+        M: '16px',
+        L: '24px',
+        XL: '32px',
+        XXL: '64px',
+        XXXL: '112px',
+      },
+      padding: {
+        XXS: '2px',
+        XS: '4px',
+        S: '8px',
+        SM: '12px',
+        M: '16px',
+        L: '24px',
+        XL: '32px',
+        XXL: '64px',
+        XXXL: '112px',
+      },
+      spacing: {
+        XXS: '2px',
+        XS: '4px',
+        S: '8px',
+        SM: '12px',
+        M: '16px',
+        L: '24px',
+        XL: '32px',
+        XXL: '64px',
+        XXXL: '112px',
+      },
+      transitionDuration: {
+        2000: '2000ms',
+      },
     },
-    plugins: [
-        function ({ addComponents }) {
-            addComponents({
-                '.container': {
-                    maxWidth: '100%',
-                    padding:'24px',
-                    '@screen smd': {
-                        maxWidth: '400px',
-                        padding: '24px'
-                    },
-                    '@screen md': {
-                        maxWidth: '600px',
-                        padding: '76px'
-                    },
-                    '@screen ml': {
-                        maxWidth: '768px',
-                        padding: '90px'
-                    },
-                    '@screen lg': {
-                        maxWidth: '900px',
-                        padding: '102px'
-                    },
-                    '@screen xl': {
-                        maxWidth: '1024px',
-                        padding: '128px'
-                    },
-                    '@screen 2xl': {
-                        maxWidth: '1280px',
-                        padding: '144px'
-                    },
-                    '@screen 3xl': {
-                        maxWidth: '1440px',
-                        padding:'240px'
-                    },
-                }
-            })
-        }
-    ],
+  },
+  plugins: [
+    function ({ addComponents }) {
+      addComponents({
+        '.container': {
+          maxWidth: '100%',
+          padding: '24px',
+          '@screen smd': {
+            maxWidth: '400px',
+            padding: '24px',
+          },
+          '@screen md': {
+            maxWidth: '600px',
+            padding: '76px',
+          },
+          '@screen ml': {
+            maxWidth: '768px',
+            padding: '90px',
+          },
+          '@screen lg': {
+            maxWidth: '900px',
+            padding: '102px',
+          },
+          '@screen xl': {
+            maxWidth: '1024px',
+            padding: '128px',
+          },
+          '@screen 2xl': {
+            maxWidth: '1280px',
+            padding: '144px',
+          },
+          '@screen 3xl': {
+            maxWidth: '1440px',
+            padding: '240px',
+          },
+        },
+      })
+    },
+  ],
 }
-
