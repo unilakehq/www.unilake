@@ -2578,6 +2578,10 @@ header {
   width: 100vw;
 }
 
+.w-\[70\%\]{
+  width: 70%;
+}
+
 .min-w-0{
   min-width: 0px;
 }
@@ -6928,6 +6932,10 @@ header {
     padding-right: 32px;
   }
 
+  .md\:pr-40{
+    padding-right: 10rem;
+  }
+
   .md\:text-left{
     text-align: left;
   }
@@ -7227,6 +7235,18 @@ header {
 
   .lg\:grid-cols-\[3fr\2c 1fr\2c 3fr\]{
     grid-template-columns: 3fr 1fr 3fr;
+  }
+
+  .lg\:grid-cols-\[2fr\2c 1fr\2c 2fr\]{
+    grid-template-columns: 2fr 1fr 2fr;
+  }
+
+  .lg\:grid-cols-\[2fr\2c 1fr\2c 3fr\]{
+    grid-template-columns: 2fr 1fr 3fr;
+  }
+
+  .lg\:grid-cols-\[3fr\2c 1fr\2c 2fr\]{
+    grid-template-columns: 3fr 1fr 2fr;
   }
 
   .lg\:grid-rows-\[auto_1fr\]{
@@ -7640,6 +7660,23 @@ header {
 }
 
 @media (min-width: 1440px){
+  .\32xl\:mx-0{
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .\32xl\:ml-auto{
+    margin-left: auto;
+  }
+
+  .\32xl\:mr-0{
+    margin-right: 0px;
+  }
+
+  .\32xl\:-mr-10{
+    margin-right: -2.5rem;
+  }
+
   .\32xl\:block{
     display: block;
   }
@@ -7662,6 +7699,14 @@ header {
 
   .\32xl\:flex-1{
     flex: 1 1 0%;
+  }
+
+  .\32xl\:pl-0{
+    padding-left: 0px;
+  }
+
+  .\32xl\:pr-40{
+    padding-right: 10rem;
   }
 }
 
