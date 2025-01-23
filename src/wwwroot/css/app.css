@@ -4982,6 +4982,10 @@ header {
   transition-duration: 75ms;
 }
 
+.duration-0{
+  transition-duration: 0s;
+}
+
 .ease-in{
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
