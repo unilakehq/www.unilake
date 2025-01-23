@@ -1,10 +1,10 @@
-﻿<header id="main-header" class="bg-neutral border-b border-brNeutral">
-    <div class="lg:max-w-8xl md:max-w-5xl w-full px-L mx-auto flex items-center justify-between py-L mx-auto h-fit">
-        <a class="cursor-pointer navbar-brand flex items-center" href="./">
+﻿<header id="main-header" class="border-b bg-neutral border-brNeutral">
+    <div class="flex items-center justify-between w-full mx-auto lg:max-w-8xl md:max-w-5xl px-L py-L h-fit">
+        <a class="flex items-center cursor-pointer navbar-brand" href="./">
             @await Html.PartialAsync("Logos/BrandLogo")
         </a>
-        <nav class="lg:flex hidden items-center justify-center mx-auto">
-            <ul class="flex gap-XL items-center">
+        <nav class="items-center justify-center hidden mx-auto lg:flex">
+            <ul class="flex items-center gap-XL">
                 <li class="flex items-center header-link-menu">
                     <a class="flex items-center justify-start text-Regular" id="dropdownDefaultButton"
                         data-dropdown-toggle="products-dropdown" tabindex="0">
@@ -22,26 +22,26 @@
                                 <a href="Products/Lakehouse-analytics"
                                     class="flex items-center gap-SM rounded-S w-full py-M px-L menu-tab rounded-S max-h-[88px]">
                                     @await Html.PartialAsync("Logos/ProductMenu/LakehouseAnalytics")
-                                    <div class="flex flex-col gap-XS items-center">
-                                        <span class="text-headLines w-full text-Regular">Lakehouse Analytics</span>
-                                        <span class="text-bodyText w-full text-Small">Real time OLAP</span>
+                                    <div class="flex flex-col items-center gap-XS">
+                                        <span class="w-full text-headLines text-Regular">Lakehouse Analytics</span>
+                                        <span class="w-full text-bodyText text-Small">Real time OLAP</span>
                                     </div>
                                 </a>
                                 <a href="Products/Data-Management"
                                     class="flex items-center gap-SM rounded-S w-full py-M px-L menu-tab rounded-S max-h-[88px]">
                                     @await Html.PartialAsync("Logos/ProductMenu/DataManagement")
-                                    <div class="flex flex-col gap-XS items-center">
-                                        <span class="text-headLines w-full text-Regular">Data Management</span>
-                                        <span class="text-bodyText w-full text-Small">Complete data security
+                                    <div class="flex flex-col items-center gap-XS">
+                                        <span class="w-full text-headLines text-Regular">Data Management</span>
+                                        <span class="w-full text-bodyText text-Small">Complete data security
                                             suite</span>
                                     </div>
                                 </a>
                                 <a href="Products/Datalake"
                                     class="flex items-center gap-SM rounded-S w-full py-M px-L menu-tab rounded-S max-h-[88px]">
                                     @await Html.PartialAsync("Logos/ProductMenu/Datalake")
-                                    <div class="flex flex-col gap-XS items-center">
-                                        <span class="text-headLines w-full text-Regular">Datalake</span>
-                                        <span class="text-bodyText w-full text-Small">
+                                    <div class="flex flex-col items-center gap-XS">
+                                        <span class="w-full text-headLines text-Regular">Datalake</span>
+                                        <span class="w-full text-bodyText text-Small">
                                             Unified datalake for distributed
                                             teams
                                         </span>
@@ -50,9 +50,9 @@
                                 <a href="Products/Governance"
                                     class="flex items-center gap-SM rounded-S w-full py-M px-L menu-tab rounded-S max-h-[88px]">
                                     @await Html.PartialAsync("Logos/ProductMenu/Governance")
-                                    <div class="flex flex-col gap-XS items-center">
-                                        <span class="text-headLines w-full text-Regular">Governance</span>
-                                        <span class="text-bodyText w-full text-Small">
+                                    <div class="flex flex-col items-center gap-XS">
+                                        <span class="w-full text-headLines text-Regular">Governance</span>
+                                        <span class="w-full text-bodyText text-Small">
                                             Birds eye view of all your data
                                             assets
                                         </span>
@@ -61,27 +61,27 @@
                                 <a href="/Products/AI/ML"
                                     class="flex items-center gap-SM rounded-S w-full py-M px-L menu-tab rounded-S max-h-[88px]">
                                     @await Html.PartialAsync("Logos/ProductMenu/AiML")
-                                    <div class="flex flex-col gap-XS items-center">
-                                        <span class="text-headLines w-full text-Regular">AI/ML</span>
-                                        <span class="text-bodyText w-full text-Small">Launch AI/ML initiatives
+                                    <div class="flex flex-col items-center gap-XS">
+                                        <span class="w-full text-headLines text-Regular">AI/ML</span>
+                                        <span class="w-full text-bodyText text-Small">Launch AI/ML initiatives
                                             instantly</span>
                                     </div>
                                 </a>
                                 <a href="/Products/Integration"
                                     class="flex items-center gap-SM rounded-S w-full py-M px-L menu-tab rounded-S max-h-[88px]">
                                     @await Html.PartialAsync("Logos/ProductMenu/Integration")
-                                    <div class="flex flex-col gap-XS items-center">
-                                        <span class="text-headLines w-full text-Regular">Integration</span>
-                                        <span class="text-bodyText w-full text-Small">Access data from over 300
+                                    <div class="flex flex-col items-center gap-XS">
+                                        <span class="w-full text-headLines text-Regular">Integration</span>
+                                        <span class="w-full text-bodyText text-Small">Access data from over 300
                                             sources</span>
                                     </div>
                                 </a>
                                 <a href="Products/Data-Sovereignty"
                                     class="flex items-center gap-SM rounded-S w-full py-M px-L menu-tab rounded-S max-h-[88px]">
                                     @await Html.PartialAsync("Logos/ProductMenu/DataSovereignty")
-                                    <div class="flex flex-col gap-XS items-center">
-                                        <span class="text-headLines w-full text-Regular">Data Sovereignty</span>
-                                        <span class="text-bodyText w-full text-Small">Access data from over 300
+                                    <div class="flex flex-col items-center gap-XS">
+                                        <span class="w-full text-headLines text-Regular">Data Sovereignty</span>
+                                        <span class="w-full text-bodyText text-Small">Access data from over 300
                                             sources</span>
                                     </div>
                                 </a>
@@ -212,9 +212,9 @@
                 </li>
             </ul>
         </nav>
-        <div class="lg:block hidden">
-            <div class="col-span-1 justify-end flex items-center gap-L">
-                <button class="bg-brand brand-color-button px-L py-SM rounded-S flex gap-S items-center">
+        <div class="hidden lg:block">
+            <div class="flex items-center justify-end col-span-1 gap-L">
+                <button class="flex items-center bg-brand brand-color-button px-L py-SM rounded-S gap-S">
                     <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M7.00065 0.333008C3.31732 0.333008 0.333985 3.31634 0.333985 6.99967C0.333183 8.39911 0.773051 9.76327 1.59119 10.8986C2.40933 12.034 3.56421 12.8829 4.89199 13.325C5.22532 13.383 5.35065 13.183 5.35065 13.0077C5.35065 12.8497 5.34199 12.325 5.34199 11.7663C3.66732 12.075 3.23399 11.3583 3.10065 10.983C3.02532 10.791 2.70065 10.1997 2.41732 10.041C2.18399 9.91634 1.85065 9.60767 2.40865 9.59967C2.93399 9.59101 3.30865 10.083 3.43399 10.283C4.03399 11.291 4.99199 11.0077 5.37532 10.833C5.43399 10.3997 5.60865 10.1083 5.80065 9.94168C4.31732 9.77501 2.76732 9.19967 2.76732 6.64967C2.76732 5.92434 3.02532 5.32501 3.45065 4.85834C3.38399 4.69167 3.15065 4.00834 3.51732 3.09167C3.51732 3.09167 4.07532 2.91634 5.35065 3.77434C5.89339 3.62394 6.45413 3.54835 7.01732 3.54967C7.58399 3.54967 8.15065 3.62434 8.68399 3.77434C9.95932 2.90767 10.5173 3.09167 10.5173 3.09167C10.884 4.00834 10.6507 4.69167 10.584 4.85834C11.0087 5.32501 11.2673 5.91634 11.2673 6.64967C11.2673 9.20834 9.70932 9.77501 8.22599 9.94168C8.46732 10.1497 8.67599 10.5497 8.67599 11.175C8.67599 12.0663 8.66732 12.783 8.66732 13.0083C8.66732 13.183 8.79265 13.391 9.12599 13.3243C10.4492 12.8774 11.599 12.0268 12.4135 10.8923C13.2281 9.75774 13.6663 8.39634 13.6667 6.99967C13.6667 3.31634 10.6833 0.333008 6.99999 0.333008"
@@ -226,7 +226,7 @@
                 </button>
             </div>
         </div>
-        <div class="flex lg:hidden justify-end">
+        <div class="flex justify-end lg:hidden">
             <button id="three-lines" type="button"
                 class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
                 <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -238,7 +238,7 @@
         </div>
         <!-- Mobile menu, show/hide based on menu open state. -->
         <div id="mobile-menu"
-            class="lg:hidden fixed inset-y-0 right-0 z-50 w-full overflow-y-auto transform translate-x-full transition-transform duration-700 ease-in-out">
+            class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto transition-transform duration-700 ease-in-out transform translate-x-full lg:hidden">
             <!-- Background backdrop, show/hide based on slide-over state. -->
             <div class="bg-neutral fixed inset-y-0 right-0 z-50 max-w-[375px] overflow-y-auto">
                 <div class="flex items-center justify-between border-b border-brNeutral py-[22px] px-L">
@@ -252,10 +252,11 @@
                 <div class="flow-root">
                     <div class="py-M">
                         <div class="">
-                            <div class="grid rounded-S cursor-pointer py-M px-L">
-                                <a class="flex justify-between items-center max-h-[60px]">
+                            <div class="grid cursor-pointer rounded-S py-M px-L">
+                                <a class="flex justify-between items-center max-h-[60px]"
+                                    onclick="toggleSidebarMenu(this,event)">
                                     <span class="text-Regular text-headLines">Products</span>
-                                    <span class="" onclick="toggleSidebarMenu(this,event)">
+                                    <span class="">
                                         <svg class="accordion-icon" width="24" height="24" viewBox="0 0 24 24"
                                             fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -268,26 +269,26 @@
                                     <a href="Products/Lakehouse-analytics"
                                         class="flex items-center gap-SM rounded-S py-M max-h-[88px]">
                                         @await Html.PartialAsync("Logos/ProductMenu/LakehouseAnalytics")
-                                        <div class="flex flex-col gap-XS items-center">
-                                            <span class="text-headLines w-full text-Regular">Lakehouse Analytics</span>
-                                            <span class="text-bodyText w-full text-Small">Real time OLAP</span>
+                                        <div class="flex flex-col items-center gap-XS">
+                                            <span class="w-full text-headLines text-Regular">Lakehouse Analytics</span>
+                                            <span class="w-full text-bodyText text-Small">Real time OLAP</span>
                                         </div>
                                     </a>
                                     <a href="Products/Data-Management"
                                         class="flex items-center gap-SM rounded-S py-M max-h-[88px]">
                                         @await Html.PartialAsync("Logos/ProductMenu/DataManagement")
-                                        <div href="Products/Data-Management" class="flex flex-col gap-XS items-center">
-                                            <span class="text-headLines w-full text-Regular">Data Management</span>
-                                            <span class="text-bodyText w-full text-Small">Complete data security
+                                        <div href="Products/Data-Management" class="flex flex-col items-center gap-XS">
+                                            <span class="w-full text-headLines text-Regular">Data Management</span>
+                                            <span class="w-full text-bodyText text-Small">Complete data security
                                                 suite</span>
                                         </div>
                                     </a>
                                     <a href="Products/Datalake"
                                         class="flex items-center gap-SM rounded-S py-M max-h-[88px]">
                                         @await Html.PartialAsync("Logos/ProductMenu/Datalake")
-                                        <div class="flex flex-col gap-XS items-center">
-                                            <span class="text-headLines w-full text-Regular">Datalake</span>
-                                            <span class="text-bodyText w-full text-Small">Unified datalake for
+                                        <div class="flex flex-col items-center gap-XS">
+                                            <span class="w-full text-headLines text-Regular">Datalake</span>
+                                            <span class="w-full text-bodyText text-Small">Unified datalake for
                                                 distributed
                                                 teams</span>
                                         </div>
@@ -295,9 +296,9 @@
                                     <a href="Products/Governance"
                                         class="flex items-center gap-SM rounded-S py-M max-h-[88px]">
                                         @await Html.PartialAsync("Logos/ProductMenu/Governance")
-                                        <div class="flex flex-col gap-XS items-center">
-                                            <span class="text-headLines w-full text-Regular">Governance</span>
-                                            <span class="text-bodyText w-full text-Small">Birds eye view of all your
+                                        <div class="flex flex-col items-center gap-XS">
+                                            <span class="w-full text-headLines text-Regular">Governance</span>
+                                            <span class="w-full text-bodyText text-Small">Birds eye view of all your
                                                 data
                                                 assets</span>
                                         </div>
@@ -305,27 +306,27 @@
                                     <a href="/Products/AI/ML"
                                         class="flex items-center gap-SM rounded-S py-M max-h-[88px]">
                                         @await Html.PartialAsync("Logos/ProductMenu/AiML")
-                                        <div class="flex flex-col gap-XS items-center">
-                                            <span class="text-headLines w-full text-Regular">AI/ML</span>
-                                            <span class="text-bodyText w-full text-Small">Launch AI/ML initiatives
+                                        <div class="flex flex-col items-center gap-XS">
+                                            <span class="w-full text-headLines text-Regular">AI/ML</span>
+                                            <span class="w-full text-bodyText text-Small">Launch AI/ML initiatives
                                                 instantly</span>
                                         </div>
                                     </a>
                                     <a href="/Products/Integration"
                                         class="flex items-center gap-SM rounded-S py-M max-h-[88px]">
                                         @await Html.PartialAsync("Logos/ProductMenu/Integration")
-                                        <div class="flex flex-col gap-XS items-center">
-                                            <span class="text-headLines w-full text-Regular">Integration</span>
-                                            <span class="text-bodyText w-full text-Small">Access data from over 300
+                                        <div class="flex flex-col items-center gap-XS">
+                                            <span class="w-full text-headLines text-Regular">Integration</span>
+                                            <span class="w-full text-bodyText text-Small">Access data from over 300
                                                 sources</span>
                                         </div>
                                     </a>
                                     <a href="Products/Data-Sovereignty"
                                         class="flex items-center gap-SM rounded-S py-M max-h-[88px]">
                                         @await Html.PartialAsync("Logos/ProductMenu/DataSovereignty")
-                                        <div class="flex flex-col gap-XS items-center">
-                                            <span class="text-headLines w-full text-Regular">Data Sovereignty</span>
-                                            <span class="text-bodyText w-full text-Small">Access data from over 300
+                                        <div class="flex flex-col items-center gap-XS">
+                                            <span class="w-full text-headLines text-Regular">Data Sovereignty</span>
+                                            <span class="w-full text-bodyText text-Small">Access data from over 300
                                                 sources</span>
                                         </div>
                                     </a>
@@ -346,10 +347,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="grid rounded-S cursor-pointer py-M px-L">
-                                <a class="flex justify-between items-center max-h-[60px]">
+                            <div class="grid cursor-pointer rounded-S py-M px-L">
+                                <a class="flex justify-between items-center max-h-[60px]"
+                                    onclick="toggleSidebarMenu(this,event)">
                                     <span class="text-Regular text-headLines">Developers</span>
-                                    <span class="" onclick="toggleSidebarMenu(this,event)">
+                                    <span class="">
                                         <svg class="accordion-icon" width="24" height="24" viewBox="0 0 24 24"
                                             fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -381,17 +383,17 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="grid rounded-S cursor-pointer py-M px-L">
+                            <div class="grid cursor-pointer rounded-S py-M px-L">
                                 <a class="flex justify-between items-center max-h-[60px]">
                                     <span class="text-Regular text-headLines">Pricing</span>
                                 </a>
                             </div>
-                            <div class="grid rounded-S cursor-pointer py-M px-L">
+                            <div class="grid cursor-pointer rounded-S py-M px-L">
                                 <a class="flex justify-between items-center max-h-[60px]">
                                     <span class="text-Regular text-headLines">Documents</span>
                                 </a>
                             </div>
-                            <div class="grid rounded-S cursor-pointer py-M px-L">
+                            <div class="grid cursor-pointer rounded-S py-M px-L">
                                 <a href="Blog" class="flex justify-between items-center max-h-[60px]">
                                     <span class="text-Regular text-headLines">Blog</span>
                                 </a>
@@ -485,8 +487,9 @@
         }
 
         window.toggleSidebarMenu = function (accordion, event) {
-            var content = accordion.parentNode.nextElementSibling;
-            var icon = event.currentTarget.children[0];
+            event.preventDefault();
+            var content = accordion.nextElementSibling;
+            var icon = accordion.querySelector('.accordion-icon');
             if (content.classList.contains('invisible') || content.classList.contains('max-h-0')) {
                 icon.classList.add('-rotate-180');
                 const classesToAdd = ['max-h-full', 'mt-S', 'md:mt-L'];
