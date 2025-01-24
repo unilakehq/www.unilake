@@ -2397,10 +2397,6 @@ header {
   min-height: 600px;
 }
 
-.min-h-\[calc\(100vh-96px\)\]{
-  min-height: calc(100vh - 96px);
-}
-
 .min-h-full{
   min-height: 100%;
 }
@@ -4718,6 +4714,11 @@ header {
   color: rgb(15 23 42 / var(--tw-text-opacity, 1));
 }
 
+.text-subtitle{
+  --tw-text-opacity: 1;
+  color: rgb(26 118 255 / var(--tw-text-opacity, 1));
+}
+
 .text-success{
   --tw-text-opacity: 1;
   color: rgb(107 158 50 / var(--tw-text-opacity, 1));
@@ -6492,10 +6493,6 @@ header {
     flex-direction: column;
   }
 
-  .sm\:flex-nowrap{
-    flex-wrap: nowrap;
-  }
-
   .sm\:items-start{
     align-items: flex-start;
   }
@@ -6504,18 +6501,8 @@ header {
     align-items: center;
   }
 
-  .sm\:space-x-L > :not([hidden]) ~ :not([hidden]){
-    --tw-space-x-reverse: 0;
-    margin-right: calc(24px * var(--tw-space-x-reverse));
-    margin-left: calc(24px * calc(1 - var(--tw-space-x-reverse)));
-  }
-
   .sm\:rounded{
     border-radius: 0.25rem;
-  }
-
-  .sm\:rounded-2xl{
-    border-radius: 1rem;
   }
 
   .sm\:rounded-XL{
@@ -6575,11 +6562,6 @@ header {
   .sm\:py-32{
     padding-top: 8rem;
     padding-bottom: 8rem;
-  }
-
-  .sm\:py-XL{
-    padding-top: 32px;
-    padding-bottom: 32px;
   }
 
   .sm\:py-XXL{
@@ -6652,18 +6634,9 @@ header {
     margin: 0px;
   }
 
-  .md\:m-XXXL{
-    margin: 112px;
-  }
-
   .md\:mx-M{
     margin-left: 16px;
     margin-right: 16px;
-  }
-
-  .md\:mx-XXXL{
-    margin-left: 112px;
-    margin-right: 112px;
   }
 
   .md\:-mt-24{
@@ -6806,10 +6779,6 @@ header {
     max-width: 36rem;
   }
 
-  .md\:max-w-4xl{
-    max-width: 56rem;
-  }
-
   .md\:grid-cols-1{
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
@@ -6891,10 +6860,6 @@ header {
     padding: 24px;
   }
 
-  .md\:p-XXXL{
-    padding: 112px;
-  }
-
   .md\:px-4{
     padding-left: 1rem;
     padding-right: 1rem;
@@ -6949,14 +6914,6 @@ header {
     padding-right: 32px;
   }
 
-  .md\:pt-XXL{
-    padding-top: 64px;
-  }
-
-  .md\:pt-XXXL{
-    padding-top: 112px;
-  }
-
   .md\:text-left{
     text-align: left;
   }
@@ -6971,6 +6928,11 @@ header {
     font-size: 40px;
     line-height: 44px;
     font-weight: 700;
+  }
+
+  .md\:text-5xl{
+    font-size: 3rem;
+    line-height: 1;
   }
 
   .md\:text-6xl{
@@ -7015,11 +6977,6 @@ header {
     font-size: 20px;
     line-height: 32px;
     font-weight: 700;
-  }
-
-  .md\:text-5xl{
-    font-size: 3rem;
-    line-height: 1;
   }
 
   .md\:leading-\[48px\]{
@@ -7142,10 +7099,6 @@ header {
     margin-left: 6rem;
   }
 
-  .lg\:mr-10{
-    margin-right: 2.5rem;
-  }
-
   .lg\:mt-0{
     margin-top: 0px;
   }
@@ -7235,20 +7188,16 @@ header {
     max-width: 605px;
   }
 
+  .lg\:max-w-\[85\%\]{
+    max-width: 85%;
+  }
+
   .lg\:max-w-none{
     max-width: none;
   }
 
   .lg\:max-w-screen-md{
     max-width: 768px;
-  }
-
-  .lg\:max-w-\[85\%\]{
-    max-width: 85%;
-  }
-
-  .lg\:max-w-6xl{
-    max-width: 72rem;
   }
 
   .lg\:shrink-0{
@@ -7469,10 +7418,6 @@ header {
     margin-top: 0px;
   }
 
-  .xl\:-mt-24{
-    margin-top: -6rem;
-  }
-
   .xl\:block{
     display: block;
   }
@@ -7625,10 +7570,6 @@ header {
     padding-bottom: 112px;
   }
 
-  .xl\:pt-XXL{
-    padding-top: 64px;
-  }
-
   .xl\:text-14{
     font-size: 14px;
     line-height: 24px;
@@ -7639,11 +7580,6 @@ header {
     font-size: 40px;
     line-height: 44px;
     font-weight: 700;
-  }
-
-  .xl\:text-5xl{
-    font-size: 3rem;
-    line-height: 1;
   }
 
   .xl\:text-H2{
@@ -7702,10 +7638,6 @@ header {
     margin-right: 0px;
   }
 
-  .\32xl\:mt-0{
-    margin-top: 0px;
-  }
-
   .\32xl\:block{
     display: block;
   }
@@ -7726,37 +7658,20 @@ header {
     width: 562px;
   }
 
-  .\32xl\:max-w-screen-xl{
-    max-width: 1280px;
-  }
-
-  .\32xl\:max-w-3xl{
-    max-width: 48rem;
+  .\32xl\:max-w-7xl{
+    max-width: 80rem;
   }
 
   .\32xl\:max-w-full{
     max-width: 100%;
   }
 
-  .\32xl\:max-w-7xl{
-    max-width: 80rem;
-  }
-
-  .\32xl\:flex-1{
-    flex: 1 1 0%;
-  }
-
-  .\32xl\:py-0{
-    padding-top: 0px;
-    padding-bottom: 0px;
+  .\32xl\:max-w-screen-xl{
+    max-width: 1280px;
   }
 
   .\32xl\:pl-0{
     padding-left: 0px;
-  }
-
-  .\32xl\:pr-40{
-    padding-right: 10rem;
   }
 
   .\32xl\:pl-5{
@@ -7766,10 +7681,8 @@ header {
   .\32xl\:pr-10{
     padding-right: 2.5rem;
   }
-}
 
-@media (min-width: 1920px){
-  .\33xl\:m-60{
-    margin: 15rem;
+  .\32xl\:pr-40{
+    padding-right: 10rem;
   }
 }

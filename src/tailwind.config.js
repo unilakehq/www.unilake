@@ -49,6 +49,7 @@ module.exports = {
         backgroundFaded: '#EFEEEB',
         textPrimary: '#070D0F',
         white: '#FFFFFF',
+        subtitle: '#1A76FF',
       },
       boxShadow: {},
       fontFamily: {
