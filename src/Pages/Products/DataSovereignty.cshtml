@@ -1,0 +1,102 @@
+﻿@page "/Products/Data-Sovereignty"
+@attribute [RenderStatic]
+@model www.unilake.Pages.Products.DataSovereigntyModel
+@{
+    ViewData["Title"] = "Unilake.Www Data Sovereignty";
+}
+<div class="bg-white">
+    <section class="section-one bg-neutral">
+        <div class="lg:max-w-8xl md:max-w-5xl w-full px-L mx-auto flex md:flex-row flex-col md:justify-between items-center xl:gap-XXXL md:gap-XXL gap-L md:py-XXXL py-L">
+            <div class="flex flex-col gap-L xl:max-w-[605px] md:max-w-[395px]">
+                <img class="lg:block hidden h-[88px] w-[88px]" src="~/img/DataSovereignty/section1Desktop.svg" alt="Alternate Text" />
+                <img class="max-lg:md:block hidden h-[64px] w-[64px]" src="~/img/DataSovereignty/section1Tablet.svg" alt="Alternate Text" />
+                <img class="max-md:block hidden h-[54px] w-[54px]" src="~/img/DataSovereignty/section1Mobile.svg" alt="Alternate Text" />
+
+                <div class="flex flex-col gap-SM">
+                    <div class="flex gap-M items-center">
+                        <h4 class="text-Regular text-brand">Data Sovereignty</h4>
+                        <button class="xl:py-XXS xl:px-S py-S px-SM bg-[#FF684940] text-onBrand rounded-[6px] text-Small">
+                            On Roadmap
+                        </button>
+                    </div>
+                    <h1 class="xl:text-headline2 text-headline3 text-headLines">
+                        Cloud independent data platform, host your data at your terms
+                    </h1>
+                </div>
+                <p class="text-Regular text-bodyText">Lorem ipsum dolor sit amet consectetur. Augue aliquam lacus enim luctus consectetur amet blandit. Eu eleifend ipsum quam quam nunc ligula at. </p>
+                <div class="flex md:flex-row flex-col gap-M">
+                    <button class="bg-brand xl:py-SM xl:px-L py-S px-M xl:text-14 text-small text-neutral rounded-S brand-color-button">Book a Demo</button>
+                    <button class="flex gap-S items-center justify-center bg-neutral xl:py-SM xl:px-L py-S px-M border border-brNeutral bg-neutral rounded-S bg-less-input">
+                        <h4 class="xl:text-14 text-small text-headLines">
+                            View documentation
+                        </h4>
+                        <svg width="16" height="17" viewBox="0 0 16 17" fill="#252532" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M6.31344 4.14645C6.5087 3.95118 6.82528 3.95118 7.02055 4.14645L11.0205 8.14645C11.2158 8.34171 11.2158 8.65829 11.0205 8.85355L7.02055 12.8536C6.82528 13.0488 6.5087 13.0488 6.31344 12.8536C6.11818 12.6583 6.11818 12.3417 6.31344 12.1464L9.95989 8.5L6.31344 4.85355C6.11818 4.65829 6.11818 4.34171 6.31344 4.14645Z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="w-fit h-fit">
+                <img class="xl:block hidden" src="~/img/DataSovereignty/Desktop/Illustration_Data Sovereignty_Hero.svg" alt="not found">
+                <img class="xl:hidden block" src="~/img/DataSovereignty/Tablet/Illustration_Data Sovereignty_Hero.svg" alt="not found">
+            </div>
+        </div>
+    </section>
+    <section class="bg-white">
+        <div class="lg:max-w-8xl md:max-w-5xl w-full px-L mx-auto flex md:flex-row flex-col md:justify-between max-md:items-center xl:py-XXXL md:py-XXL py-XL xl:gap-XXXL gap-XXL items-center">
+            <div class="w-fit">
+                <img class="xl:block hidden" src="~/img/DataSovereignty/Desktop/Ilustration_Open_Source.svg" alt="not found">
+                <img class="xl:hidden block" src="~/img/DataSovereignty/Tablet/Illustration_Open_Source.svg" alt="not found">
+            </div>
+            <div class="flex flex-col gap-M h-fit xl:max-w-[605px] md:max-w-[395px]">
+                <h2 class="xl:text-15 text-H3 leading-[40px] text-headLines">Open Source</h2>
+                <p class="xl:text-Regular md:text-Small text-Regular text-bodyText">
+                    UniLake is open source allowing full transparency and extensibility for your data platform needs. Our source code is available and accesible on GitHub so anyone can read, inspect and review it to verify that our actions match with our words. We welcome feedback and have a public roadmap. If  you are happy to manage your own infrastructure, you can self-host UniLake too!
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="linear-gradient-4">
+        <div class="lg:max-w-8xl md:max-w-5xl w-full px-L mx-auto flex md:flex-row flex-col-reverse md:justify-between max-md:items-center xl:py-XXXL md:py-XXL py-XL xl:gap-XXXL gap-XXL items-center">
+            <div class="flex flex-col gap-M h-fit xl:max-w-[618px] md:max-w-[395px]">
+                <h2 class="xl:text-15 text-H3 leading-[40px] text-headLines">Shield from Foreign Regulations</h2>
+                <p class="xl:text-Regular md:text-Small text-Regular text-bodyText">
+                    Choosing a cloud provider can become more challenging as new regulatory frameworks for data are putting more and more pressure on companies to comply with local rules and regulations. UniLake, a European company, makes sure that its cloud offering is fully hosted, managed and compliant with European regulations allowing European businesses and its customers data to be safe from non-eu regulations and interference.
+                </p>
+            </div>
+            <div class="w-fit">
+                <img class="xl:block hidden" src="~/img/DataSovereignty/Desktop/Illustration_Shield_Foreign_Regulations.svg" alt="not found">
+                <img class="xl:hidden block" src="~/img/DataSovereignty/Tablet/Illustration_Shield_Foreign_Regulations.svg" alt="not found">
+            </div>
+        </div>
+    </section>
+    <section class="bg-white">
+        <div class="lg:max-w-8xl md:max-w-5xl w-full px-L mx-auto flex md:flex-row flex-col md:justify-between max-md:items-center xl:py-XXXL md:py-XXL py-XL xl:gap-XXXL gap-XXL items-center">
+            <div class="w-fit">
+                <img class="xl:block hidden" src="~/img/DataSovereignty/Desktop/Illustration_Geo-Fencing_Enabled.svg" alt="not found">
+                <img class="xl:hidden block" src="~/img/DataSovereignty/Tablet/Illustration_Geo-Fencing_Enabled.svg" alt="not found">
+            </div>
+            <div class="flex flex-col gap-M h-fit xl:max-w-[605px] md:max-w-[395px]">
+                <h2 class="xl:text-15 text-H3 leading-[40px] text-headLines">Geo-Fencing Enabled</h2>
+                <p class="xl:text-Regular md:text-Small text-Regular text-bodyText">
+                    Using UniLakes security layer allows you to specify policies on your data,
+                    setting boundaries where your data is allowed to be used. Connect your own data lake and make use of UniLake's integrated network to seamlessly move data between private and public cloud environments. No matter where the data lives, data policies are always applied and globally adhered to.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="linear-gradient-4">
+        <div class="lg:max-w-8xl md:max-w-5xl w-full px-L mx-auto flex md:flex-row flex-col-reverse md:justify-between max-md:items-center xl:py-XXXL md:py-XXL py-XL xl:gap-XXXL gap-XXL items-center">
+            <div class="flex flex-col gap-M h-fit xl:max-w-[605px] md:max-w-[395px]">
+                <h2 class="xl:text-15 text-H3 leading-[40px] text-headLines">Hybrid Cloud</h2>
+                <p class="xl:text-Regular md:text-Small text-Regular text-bodyText">
+                    Start small on commodity hardware or run UniLake on a private cloud solution to separate highly sensitive data from public cloud environments. Run a second cloud instance and move data between private and public clouds as data is being analyzed. Policies put on data usage will make sure that only data that is allowed to be used in the cloud can be accessed. 
+                </p>
+            </div>
+            <div class="w-fit">
+                <img class="xl:block hidden" src="~/img/DataSovereignty/Desktop/Illustration_Hybrid_Cloud.svg" alt="not found">
+                <img class="xl:hidden block" src="~/img/DataSovereignty/Tablet/Illustration_Hybrid_Cloud.svg" alt="not found">
+            </div>
+        </div>
+    </section>
+</div>

@@ -1,0 +1,309 @@
+﻿@page "/Integrations"
+@attribute [RenderStatic]
+@model www.unilake.Pages.Shared.IntegrationsModel
+@{
+    ViewData["Title"] = "Unilake.Www Integrations";
+}
+<div class="bg-white">
+    <div class="grid w-full grid-cols-1 mx-auto lg:max-w-8xl md:max-w-5xl px-L md:py-XXXL md:gap-XXL py-XXL gap-XL">
+        <div class="flex flex-col gap-M max-w-[800px]">
+            <h1 class="xl:text-headline2 md:text-15 md:leading-[48px] text-headline3 text-brand">Integrations</h1>
+            <p class="text-Regular text-bodyText">
+                Lorem ipsum dolor sit amet consectetur. Augue aliquam lacus enim luctus
+                consectetur amet blandit. Eu eleifend ipsum quam quam nunc ligula at.
+            </p>
+        </div>
+        <div class="grid xl:gap-XXL md:gap-XL gap-L">
+
+            <ul class="flex overflow-x-auto gap-M h-fit tag-list">
+                <li onClick="toggleTag(event)" class="active-tag">All</li>
+                <li onClick="toggleTag(event)" class="flex items-center justify-between inactive-tag">
+                    <span>API</span>
+                    <svg class="ml-2" width="8" height="6" viewBox="0 0 8 6" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.94 0.726562L4 3.7799L7.06 0.726562L8 1.66656L4 5.66656L0 1.66656L0.94 0.726562Z"
+                            fill="#070D0F" />
+                    </svg>
+                </li>
+                <li onClick="toggleTag(event)" class="inactive-tag">Auth</li>
+                <li onClick="toggleTag(event)" class="inactive-tag">Catching / Offline-First</li>
+                <li onClick="toggleTag(event)" class="inactive-tag">Data Platform</li>
+                <li onClick="toggleTag(event)" class="inactive-tag">DevTools</li>
+                <li onClick="toggleTag(event)" class="inactive-tag">Forreign Data Wrapper</li>
+                <li onClick="toggleTag(event)" class="inactive-tag">Low-Code</li>
+                <li onClick="toggleTag(event)" class="inactive-tag">Messaging</li>
+            </ul>
+
+            <div class="grid md:gap-XL gap-L">
+                <div class="grid cursor-pointer md:p-L p-M bg-neutral rounded-S"
+                    onClick="showIntegrationCard(this,event)">
+                    <div class="flex items-center justify-between">
+                        <span class="md:text-large text-headLines text-Regular leading-[18px] font-[700]">API</span>
+                        <span class="transition-all cursor-pointer">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M5.46967 8.46967C5.76256 8.17678 6.23744 8.17678 6.53033 8.46967L12 13.9393L17.4697 8.46967C17.7626 8.17678 18.2374 8.17678 18.5303 8.46967C18.8232 8.76256 18.8232 9.23744 18.5303 9.53033L12.5303 15.5303C12.2374 15.8232 11.7626 15.8232 11.4697 15.5303L5.46967 9.53033C5.17678 9.23744 5.17678 8.76256 5.46967 8.46967Z"
+                                    fill="#FF6849" />
+                            </svg>
+                        </span>
+                    </div>
+                    <div
+                        class="grid items-center invisible h-auto grid-cols-1 transition-all opacity-0 opacity-100 gap-L xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 xl:px-XL max-h-0">
+
+                        <img class="hidden w-full h-full lg:block"
+                            src="~/img/Integrations/Desktop/Integration Card.svg">
+                        <img class="hidden w-full h-full lg:block"
+                            src="~/img/Integrations/Desktop/Integration Card-1.svg">
+                        <img class="hidden w-full h-full lg:block"
+                            src="~/img/Integrations/Desktop/Integration Card-2.svg">
+                        <img class="hidden w-full h-full lg:block"
+                            src="~/img/Integrations/Desktop/Integration Card-3.svg">
+                        <img class="hidden w-full h-full lg:block"
+                            src="~/img/Integrations/Desktop/Integration Card-4.svg">
+                        <img class="hidden w-full h-full lg:block"
+                            src="~/img/Integrations/Desktop/Integration Card-5.svg">
+
+                        <img class="hidden w-full h-full max-lg:md:block" src="~/img/Integrations/Tablet/Tablet.svg">
+                        <img class="hidden w-full h-full max-lg:md:block" src="~/img/Integrations/Tablet/Tablet-1.svg">
+                        <img class="hidden w-full h-full max-lg:md:block" src="~/img/Integrations/Tablet/Tablet-2.svg">
+                        <img class="hidden w-full h-full max-lg:md:block" src="~/img/Integrations/Tablet/Tablet-3.svg">
+                        <img class="hidden w-full h-full max-lg:md:block" src="~/img/Integrations/Tablet/Tablet-4.svg">
+                        <img class="hidden w-full h-full max-lg:md:block" src="~/img/Integrations/Tablet/Tablet-5.svg">
+
+                        <img class="block w-full h-full md:hidden" src="~/img/Integrations/Mobile/Mobile.svg">
+                        <img class="block w-full h-full md:hidden" src="~/img/Integrations/Mobile/Mobile-1.svg">
+                        <img class="block w-full h-full md:hidden" src="~/img/Integrations/Mobile/Mobile-2.svg">
+                        <img class="block w-full h-full md:hidden" src="~/img/Integrations/Mobile/Mobile-3.svg">
+                        <img class="block w-full h-full md:hidden" src="~/img/Integrations/Mobile/Mobile-4.svg">
+                        <img class="block w-full h-full md:hidden" src="~/img/Integrations/Mobile/Mobile-5.svg">
+
+                    </div>
+                </div>
+                <div class="grid cursor-pointer md:p-L p-M bg-neutral rounded-S"
+                    onClick="showIntegrationCard(this,event)">
+                    <div class="flex items-center justify-between">
+                        <span class="md:text-large text-headLines text-Regular leading-[18px] font-[700]">Auth</span>
+                        <span class="transition-all cursor-pointer">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M5.46967 8.46967C5.76256 8.17678 6.23744 8.17678 6.53033 8.46967L12 13.9393L17.4697 8.46967C17.7626 8.17678 18.2374 8.17678 18.5303 8.46967C18.8232 8.76256 18.8232 9.23744 18.5303 9.53033L12.5303 15.5303C12.2374 15.8232 11.7626 15.8232 11.4697 15.5303L5.46967 9.53033C5.17678 9.23744 5.17678 8.76256 5.46967 8.46967Z"
+                                    fill="#FF6849" />
+                            </svg>
+                        </span>
+                    </div>
+                    <div
+                        class="grid items-center invisible h-auto grid-cols-1 transition-all opacity-0 opacity-100 gap-L xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 xl:px-XL max-h-0">
+
+                        <img class="hidden w-full h-full lg:block"
+                            src="~/img/Integrations/Desktop/Integration Card.svg">
+                        <img class="hidden w-full h-full lg:block"
+                            src="~/img/Integrations/Desktop/Integration Card-1.svg">
+                        <img class="hidden w-full h-full lg:block"
+                            src="~/img/Integrations/Desktop/Integration Card-2.svg">
+                        <img class="hidden w-full h-full lg:block"
+                            src="~/img/Integrations/Desktop/Integration Card-3.svg">
+                        <img class="hidden w-full h-full lg:block"
+                            src="~/img/Integrations/Desktop/Integration Card-4.svg">
+                        <img class="hidden w-full h-full lg:block"
+                            src="~/img/Integrations/Desktop/Integration Card-5.svg">
+
+                        <img class="hidden w-full h-full max-lg:md:block" src="~/img/Integrations/Tablet/Tablet.svg">
+                        <img class="hidden w-full h-full max-lg:md:block" src="~/img/Integrations/Tablet/Tablet-1.svg">
+                        <img class="hidden w-full h-full max-lg:md:block" src="~/img/Integrations/Tablet/Tablet-2.svg">
+                        <img class="hidden w-full h-full max-lg:md:block" src="~/img/Integrations/Tablet/Tablet-3.svg">
+                        <img class="hidden w-full h-full max-lg:md:block" src="~/img/Integrations/Tablet/Tablet-4.svg">
+                        <img class="hidden w-full h-full max-lg:md:block" src="~/img/Integrations/Tablet/Tablet-5.svg">
+
+                        <img class="block w-full h-full md:hidden" src="~/img/Integrations/Mobile/Mobile.svg">
+                        <img class="block w-full h-full md:hidden" src="~/img/Integrations/Mobile/Mobile-1.svg">
+                        <img class="block w-full h-full md:hidden" src="~/img/Integrations/Mobile/Mobile-2.svg">
+                        <img class="block w-full h-full md:hidden" src="~/img/Integrations/Mobile/Mobile-3.svg">
+                        <img class="block w-full h-full md:hidden" src="~/img/Integrations/Mobile/Mobile-4.svg">
+                        <img class="block w-full h-full md:hidden" src="~/img/Integrations/Mobile/Mobile-5.svg">
+                    </div>
+                </div>
+                <div class="grid cursor-pointer md:p-L p-M bg-neutral rounded-S"
+                    onClick="showIntegrationCard(this,event)">
+                    <div class="flex items-center justify-between">
+                        <span class="md:text-large text-headLines text-Regular leading-[18px] font-[700]">
+                            Catching /
+                            Offline-First
+                        </span>
+                        <span class="transition-all cursor-pointer">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M5.46967 8.46967C5.76256 8.17678 6.23744 8.17678 6.53033 8.46967L12 13.9393L17.4697 8.46967C17.7626 8.17678 18.2374 8.17678 18.5303 8.46967C18.8232 8.76256 18.8232 9.23744 18.5303 9.53033L12.5303 15.5303C12.2374 15.8232 11.7626 15.8232 11.4697 15.5303L5.46967 9.53033C5.17678 9.23744 5.17678 8.76256 5.46967 8.46967Z"
+                                    fill="#FF6849" />
+                            </svg>
+                        </span>
+                    </div>
+                    <div
+                        class="grid items-center invisible h-auto grid-cols-1 transition-all opacity-0 opacity-100 gap-L xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 xl:px-XL max-h-0">
+
+                        <img class="hidden w-full h-full lg:block"
+                            src="~/img/Integrations/Desktop/Integration Card.svg">
+                        <img class="hidden w-full h-full lg:block"
+                            src="~/img/Integrations/Desktop/Integration Card-1.svg">
+                        <img class="hidden w-full h-full lg:block"
+                            src="~/img/Integrations/Desktop/Integration Card-2.svg">
+                        <img class="hidden w-full h-full lg:block"
+                            src="~/img/Integrations/Desktop/Integration Card-3.svg">
+                        <img class="hidden w-full h-full lg:block"
+                            src="~/img/Integrations/Desktop/Integration Card-4.svg">
+                        <img class="hidden w-full h-full lg:block"
+                            src="~/img/Integrations/Desktop/Integration Card-5.svg">
+
+                        <img class="hidden w-full h-full max-lg:md:block" src="~/img/Integrations/Tablet/Tablet.svg">
+                        <img class="hidden w-full h-full max-lg:md:block" src="~/img/Integrations/Tablet/Tablet-1.svg">
+                        <img class="hidden w-full h-full max-lg:md:block" src="~/img/Integrations/Tablet/Tablet-2.svg">
+                        <img class="hidden w-full h-full max-lg:md:block" src="~/img/Integrations/Tablet/Tablet-3.svg">
+                        <img class="hidden w-full h-full max-lg:md:block" src="~/img/Integrations/Tablet/Tablet-4.svg">
+                        <img class="hidden w-full h-full max-lg:md:block" src="~/img/Integrations/Tablet/Tablet-5.svg">
+
+                        <img class="block w-full h-full md:hidden" src="~/img/Integrations/Mobile/Mobile.svg">
+                        <img class="block w-full h-full md:hidden" src="~/img/Integrations/Mobile/Mobile-1.svg">
+                        <img class="block w-full h-full md:hidden" src="~/img/Integrations/Mobile/Mobile-2.svg">
+                        <img class="block w-full h-full md:hidden" src="~/img/Integrations/Mobile/Mobile-3.svg">
+                        <img class="block w-full h-full md:hidden" src="~/img/Integrations/Mobile/Mobile-4.svg">
+                        <img class="block w-full h-full md:hidden" src="~/img/Integrations/Mobile/Mobile-5.svg">
+                    </div>
+                </div>
+                <div class="grid cursor-pointer md:p-L p-M bg-neutral rounded-S"
+                    onClick="showIntegrationCard(this,event)">
+                    <div class="flex items-center justify-between">
+                        <span class="md:text-large text-headLines text-Regular leading-[18px] font-[700]">
+                            Data
+                            Platform
+                        </span>
+                        <span class="transition-all cursor-pointer">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M5.46967 8.46967C5.76256 8.17678 6.23744 8.17678 6.53033 8.46967L12 13.9393L17.4697 8.46967C17.7626 8.17678 18.2374 8.17678 18.5303 8.46967C18.8232 8.76256 18.8232 9.23744 18.5303 9.53033L12.5303 15.5303C12.2374 15.8232 11.7626 15.8232 11.4697 15.5303L5.46967 9.53033C5.17678 9.23744 5.17678 8.76256 5.46967 8.46967Z"
+                                    fill="#FF6849" />
+                            </svg>
+                        </span>
+                    </div>
+                    <div
+                        class="grid items-center invisible h-auto grid-cols-1 transition-all opacity-0 opacity-100 gap-L xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 xl:px-XL max-h-0">
+
+                        <img class="hidden w-full h-full lg:block"
+                            src="~/img/Integrations/Desktop/Integration Card.svg">
+                        <img class="hidden w-full h-full lg:block"
+                            src="~/img/Integrations/Desktop/Integration Card-1.svg">
+                        <img class="hidden w-full h-full lg:block"
+                            src="~/img/Integrations/Desktop/Integration Card-2.svg">
+                        <img class="hidden w-full h-full lg:block"
+                            src="~/img/Integrations/Desktop/Integration Card-3.svg">
+                        <img class="hidden w-full h-full lg:block"
+                            src="~/img/Integrations/Desktop/Integration Card-4.svg">
+                        <img class="hidden w-full h-full lg:block"
+                            src="~/img/Integrations/Desktop/Integration Card-5.svg">
+
+                        <img class="hidden w-full h-full max-lg:md:block" src="~/img/Integrations/Tablet/Tablet.svg">
+                        <img class="hidden w-full h-full max-lg:md:block" src="~/img/Integrations/Tablet/Tablet-1.svg">
+                        <img class="hidden w-full h-full max-lg:md:block" src="~/img/Integrations/Tablet/Tablet-2.svg">
+                        <img class="hidden w-full h-full max-lg:md:block" src="~/img/Integrations/Tablet/Tablet-3.svg">
+                        <img class="hidden w-full h-full max-lg:md:block" src="~/img/Integrations/Tablet/Tablet-4.svg">
+                        <img class="hidden w-full h-full max-lg:md:block" src="~/img/Integrations/Tablet/Tablet-5.svg">
+
+                        <img class="block w-full h-full md:hidden" src="~/img/Integrations/Mobile/Mobile.svg">
+                        <img class="block w-full h-full md:hidden" src="~/img/Integrations/Mobile/Mobile-1.svg">
+                        <img class="block w-full h-full md:hidden" src="~/img/Integrations/Mobile/Mobile-2.svg">
+                        <img class="block w-full h-full md:hidden" src="~/img/Integrations/Mobile/Mobile-3.svg">
+                        <img class="block w-full h-full md:hidden" src="~/img/Integrations/Mobile/Mobile-4.svg">
+                        <img class="block w-full h-full md:hidden" src="~/img/Integrations/Mobile/Mobile-5.svg">
+                    </div>
+                </div>
+                <div class="grid cursor-pointer md:p-L p-M bg-neutral rounded-S"
+                    onClick="showIntegrationCard(this,event)">
+                    <div class="flex items-center justify-between">
+                        <span
+                            class="md:text-large text-headLines text-Regular leading-[18px] font-[700]">DevTools</span>
+                        <span class="transition-all cursor-pointer">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M5.46967 8.46967C5.76256 8.17678 6.23744 8.17678 6.53033 8.46967L12 13.9393L17.4697 8.46967C17.7626 8.17678 18.2374 8.17678 18.5303 8.46967C18.8232 8.76256 18.8232 9.23744 18.5303 9.53033L12.5303 15.5303C12.2374 15.8232 11.7626 15.8232 11.4697 15.5303L5.46967 9.53033C5.17678 9.23744 5.17678 8.76256 5.46967 8.46967Z"
+                                    fill="#FF6849" />
+                            </svg>
+                        </span>
+                    </div>
+                    <div
+                        class="grid items-center invisible h-auto grid-cols-1 transition-all opacity-0 opacity-100 gap-L xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 xl:px-XL max-h-0">
+
+                        <img class="hidden w-full h-full lg:block"
+                            src="~/img/Integrations/Desktop/Integration Card.svg">
+                        <img class="hidden w-full h-full lg:block"
+                            src="~/img/Integrations/Desktop/Integration Card-1.svg">
+                        <img class="hidden w-full h-full lg:block"
+                            src="~/img/Integrations/Desktop/Integration Card-2.svg">
+                        <img class="hidden w-full h-full lg:block"
+                            src="~/img/Integrations/Desktop/Integration Card-3.svg">
+                        <img class="hidden w-full h-full lg:block"
+                            src="~/img/Integrations/Desktop/Integration Card-4.svg">
+                        <img class="hidden w-full h-full lg:block"
+                            src="~/img/Integrations/Desktop/Integration Card-5.svg">
+
+                        <img class="hidden w-full h-full max-lg:md:block" src="~/img/Integrations/Tablet/Tablet.svg">
+                        <img class="hidden w-full h-full max-lg:md:block" src="~/img/Integrations/Tablet/Tablet-1.svg">
+                        <img class="hidden w-full h-full max-lg:md:block" src="~/img/Integrations/Tablet/Tablet-2.svg">
+                        <img class="hidden w-full h-full max-lg:md:block" src="~/img/Integrations/Tablet/Tablet-3.svg">
+                        <img class="hidden w-full h-full max-lg:md:block" src="~/img/Integrations/Tablet/Tablet-4.svg">
+                        <img class="hidden w-full h-full max-lg:md:block" src="~/img/Integrations/Tablet/Tablet-5.svg">
+
+                        <img class="block w-full h-full md:hidden" src="~/img/Integrations/Mobile/Mobile.svg">
+                        <img class="block w-full h-full md:hidden" src="~/img/Integrations/Mobile/Mobile-1.svg">
+                        <img class="block w-full h-full md:hidden" src="~/img/Integrations/Mobile/Mobile-2.svg">
+                        <img class="block w-full h-full md:hidden" src="~/img/Integrations/Mobile/Mobile-3.svg">
+                        <img class="block w-full h-full md:hidden" src="~/img/Integrations/Mobile/Mobile-4.svg">
+                        <img class="block w-full h-full md:hidden" src="~/img/Integrations/Mobile/Mobile-5.svg">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script>
+
+    function showIntegrationCard(accordion, event) {
+        var content = accordion.children[1];
+        var icon = event.currentTarget.children[0].children[1];
+        if (content.classList.contains('invisible') || content.classList.contains('max-h-0')) {
+            icon.classList.add('-rotate-180');
+            const classesToAdd = ['max-h-full', 'mt-M', 'md:mt-L',];
+            const classesToRemove = ['invisible', 'max-h-0'];
+            classesToRemove.forEach(className => {
+                content.classList.remove(className);
+            });
+            classesToAdd.forEach(className => {
+                content.classList.add(className);
+            });
+        } else {
+            icon.classList.remove('-rotate-180');
+            const classesToAdd = ['invisible', 'max-h-0'];
+            const classesToRemove = ['max-h-full', 'mt-M', 'md:mt-L',];
+            classesToRemove.forEach(className => {
+                content.classList.remove(className);
+            });
+            classesToAdd.forEach(className => {
+                content.classList.add(className);
+            });
+        }
+    }
+    function toggleTag(event) {
+        const currentTag = event.currentTarget;
+        if (currentTag.classList.contains('active-tag')) {
+            currentTag.classList.remove('active-tag');
+            currentTag.classList.add('inactive-tag');
+        } else {
+            currentTag.classList.remove('inactive-tag');
+            currentTag.classList.add('active-tag');
+        }
+    }
+</script>

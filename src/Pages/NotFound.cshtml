@@ -13,29 +13,31 @@
     <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
-@await Html.PartialAsync("Header")
-
-<div class="">
-    <main role="main" class="h-screen px-4 text-black bg-white text-center flex flex-col items-center justify-center">
-        <div class="-mt-48 flex items-center">
-            <h1 class="inline-block border-gray-300 border-r m-0 mr-5 py-2 pr-4 text-2xl font-medium">404</h1>
-            <div class="inline-block text-left">
-                <h2 class="text-sm font-normal">This page does not exist.</h2>
+    <main role="main">
+        @await Html.PartialAsync("Header")
+        <section class="bg-neutral not-found-main">
+            <div class="lg:max-w-8xl md:max-w-5xl w-full px-L mx-auto md:py-XXXL py-XXL lg mx-auto px-L flex md:flex-row flex-col md:justify-between justify-center items-center ">
+                <div class="flex flex-col gap-L font-inter md:items-start items-center lg:max-w-[605px] md:max-w-[410px]">
+                    <div class="flex flex-col gap-SM md:items-start items-center">
+                        <h1 class="lg:font-[80px] lg:leading-[80px] font-[700] text-[64px] leading-[76px] text-brand">404</h1>
+                        <div class="md:hidden block">
+                            @await Html.PartialAsync("Logos/NotFoundPage/NotFoundLogoMobile")
+                        </div>
+                        <h2 class="lg:text-headline2 text-headline3 text-headLines max-md:text-center">The page you looking for could not be found!</h2>
+                    </div>
+                    <h5 class="text-Regular text-bodyText max-md:text-center">We are sorry, but you may have mistyped the address or the page have moved!</h5>
+                    <a href="/" type="button" class="py-SM px-L rounded-lg bg-brand text-14 text-neutral w-fit brand-color-button">Back to Homepage</a>
+                </div>
+                <div class="xl:block hidden">
+                    @await Html.PartialAsync("Logos/NotFoundPage/NotFoundLogo")
+                </div>
+                <div class="md:max-xl:block hidden">
+                    @await Html.PartialAsync("Logos/NotFoundPage/NotFoundLogoTablet")
+                </div>
             </div>
-        </div>
-        <div class="mt-2">
-            <button onclick="history.back()"
-                    class="inline-flex justify-center py-1 px-2 shadow rounded text-sm hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
-                <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                    <path fill="currentColor" d="M10.05 16.94v-4h8.92l.03-2.01h-8.95V6.94l-5 5Z"/>
-                </svg>
-                back
-            </button>
-        </div>
+        </section>
+        @await Html.PartialAsync("Footer")
     </main>
-</div>
-
-@await Html.PartialAsync("Footer")
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
 </body>
 </html>

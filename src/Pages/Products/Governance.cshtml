@@ -1,0 +1,173 @@
+﻿@page "/Products/Governance"
+@attribute [RenderStatic]
+@model www.unilake.Pages.Products.GovernanceModel
+@{
+    ViewData["Title"] = "Unilake.Www Governance";
+}
+<div class="bg-white">
+    <section class="xl:bg-neutral bg-neutral section-one">
+        <div class="lg:max-w-8xl md:max-w-5xl w-full px-L mx-auto flex md:flex-row flex-col md:justify-between items-center xl:gap-XXXL md:gap-XXL gap-L md:py-XXXL py-L">
+            <div class="flex flex-col gap-L xl:max-w-[605px] md:max-w-[395px]">
+                <img class="lg:block hidden h-[88px] w-[88px]" src="~/img/Governance/section1Desktop.svg" alt="Alternate Text" />
+                <img class="max-lg:md:block hidden h-[64px] w-[64px]" src="~/img/Governance/section1Tablet.svg" alt="Alternate Text" />
+                <img class="max-md:block hidden h-[54px] w-[54px]" src="~/img/Governance/section1Mobile.svg" alt="Alternate Text" />
+                <div class="flex flex-col gap-SM">
+                    <div class="flex gap-M items-center">
+                        <h4 class="text-Regular text-brand">Governance</h4>
+                        <button class="xl:block hidden xl:py-XXS xl:px-S py-S px-SM bg-[#FF684940] text-onBrand rounded-[6px] text-Small">Badge</button>
+                    </div>
+                    <h1 class="xl:text-headline2 text-headline3 text-headLines">
+                        Unified data governance for data and AI workloads
+                    </h1>
+                </div>
+                <p class="text-Regular text-bodyText">Lorem ipsum dolor sit amet consectetur. Augue aliquam lacus enim luctus consectetur amet blandit. Eu eleifend ipsum quam quam nunc ligula at. </p>
+                <div class="flex md:flex-row flex-col gap-M">
+                    <button class="bg-brand xl:py-SM xl:px-L py-S px-M xl:text-14 text-small text-neutral rounded-S brand-color-button">Book a Demo</button>
+                    <button class="flex gap-S items-center justify-center bg-neutral xl:py-SM xl:px-L py-S px-M border border-brNeutral bg-neutral rounded-S bg-less-input">
+                        <h4 class="xl:text-14 text-small text-headLines">
+                            View documentation
+                        </h4>
+                        <svg width="16" height="17" viewBox="0 0 16 17" fill="#252532" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M6.31344 4.14645C6.5087 3.95118 6.82528 3.95118 7.02055 4.14645L11.0205 8.14645C11.2158 8.34171 11.2158 8.65829 11.0205 8.85355L7.02055 12.8536C6.82528 13.0488 6.5087 13.0488 6.31344 12.8536C6.11818 12.6583 6.11818 12.3417 6.31344 12.1464L9.95989 8.5L6.31344 4.85355C6.11818 4.65829 6.11818 4.34171 6.31344 4.14645Z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="w-fit h-fit">
+                <img class="xl:block hidden" src="~/img/Governance/Desktop/Illustration_Governance_Hero.svg" alt="not found">
+                <img class="xl:hidden block" src="~/img/Governance/Tablet/Illustration_Governance_Hero.svg" alt="not found">
+            </div>
+        </div>
+    </section>
+    <section class="bg-white">
+        <div class="lg:max-w-8xl md:max-w-5xl w-full px-L mx-auto flex md:flex-row flex-col md:justify-between max-md:items-center xl:py-XXXL md:py-XXL py-XL xl:gap-XXXL gap-XXL items-center">
+            <div class="w-fit">
+                <img class="xl:block hidden" src="~/img/Governance/Desktop/Illustration_Unified_Data_Security.svg" alt="not found">
+                <img class="xl:hidden block" src="~/img/Governance/Tablet/Illustration_Unified_Data_Security.svg" alt="not found">
+            </div>
+            <div class="flex flex-col gap-M h-fit xl:max-w-[605px] md:max-w-[395px]">
+                <h2 class="xl:text-15 text-H3 leading-[40px] text-headLines">Unified Data Security</h2>
+                <p class="xl:text-Regular md:text-Small text-Regular text-bodyText">Regardless of how you access your data (rest, SQL or via S3), or where you are accessing your data (AWS, Azure, GCP or Locally) UniLake adheres to the same set of security policies as set on the platform. This allows you to scale your security rules to any corner of the organisation without the overhead of different usage patterns.</p>
+            </div>
+        </div>
+    </section>
+    <section class="linear-gradient-governance">
+        <div class="lg:max-w-8xl md:max-w-5xl w-full px-L mx-auto flex md:flex-row flex-col-reverse md:justify-between max-md:items-center xl:py-XXXL md:py-XXL py-XL xl:gap-XXXL gap-XXL items-center">
+            <div class="flex flex-col gap-M h-fit xl:max-w-[605px] md:max-w-[395px]">
+                <h2 class="xl:text-15 text-H3 leading-[40px] text-headLines">Unified Catalog</h2>
+                <p class="xl:text-Regular md:text-Small text-Regular text-bodyText">Data stored in UniLake is cataloged and accessible via a single metastore, so you can query and combine data from different domains and different storage systems allowing you to leverage existing investments in your data estate.</p>
+            </div>
+            <div class="w-fit">
+                <img class="xl:block hidden" src="~/img/Governance/Desktop/Illustration_Unified_Catalog.svg" alt="not found">
+                <img class="xl:hidden block" src="~/img/Governance/Tablet/Illustration_Unified_Catalog.svg" alt="not found">
+            </div>
+        </div>
+    </section>
+    <section class="bg-white">
+        <div class="bg-white lg:max-w-8xl lg:px-L mx-auto flex flex-col lg:py-XXXL md:py-XXL xl:gap-XXXL gap-XXL items-center">
+            <h2 class="xl:text-15 text-headline3 md:block hidden">Data acces at scale</h2>
+            <div class="max-lg:bg-white w-full">
+                <div class="max-lg:max-w-[800px] w-full px-L mx-auto lg:py-XXXL lg:px-XXL md:py-XXL md:gap-XXL grid grid-cols-1 lg:border max-lg:md:border-y border-brNeutral lg:rounded-L">
+                    <div class="max-md:border-t max-md:border-brNeutral grid md:grid-cols-3 grid-cols-1 xl:gap-XXL gap-XL max-md:py-XL">
+                        <div class="flex lg:flex-row flex-col items-start lg:gap-L gap-M">
+                            <img class="xl:block hidden" src="~/img/Governance/Section4/Desktop/Frame 3171.svg" />
+                            <img class="xl:hidden block" src="~/img/Governance/Section4/Tablet/Frame 3171.svg" />
+                            <div class="flex flex-col gap-S">
+                                <h3 class="text-large text-headLines">Global and Local policies</h3>
+                                <p class="text-Regular text-bodyText">Policies can be managed globally as well as locally (on domain level). Unless exceptions apply, global policies overule local policies, allowing data governance teams to enforce company wide data access policies.</p>
+                            </div>
+                        </div>
+                        <div class="flex lg:flex-row flex-col items-start lg:gap-L gap-M">
+                            <img class="xl:block hidden" src="~/img/Governance/Section4/Desktop/Frame 3171-1.svg" />
+                            <img class="xl:hidden block" src="~/img/Governance/Section4/Tablet/Frame 3171-1.svg" />
+                            <div class="flex flex-col gap-S">
+                                <h3 class="text-large text-headLines">Attribute Based (ABAC)</h3>
+                                <p class="text-Regular text-bodyText">Set data attributes to provide context to data and build an inventory of your most sensitive data. Attributes can be specified manually or automatically in case no attributes are set, leaving no data untouched.</p>
+                            </div>
+                        </div>
+                        <div class="flex lg:flex-row flex-col items-start lg:gap-L gap-M">
+                            <img class="xl:block hidden" src="~/img/Governance/Section4/Desktop/Frame 3171-2.svg" />
+                            <img class="xl:hidden block" src="~/img/Governance/Section4/Tablet/Frame 3171-2.svg" />
+                            <div class="flex flex-col gap-S">
+                                <h3 class="text-large text-headLines">Policies as Code</h3>
+                                <p class="text-Regular text-bodyText">Either use the webinterface manage your data access policies or make use of the powerful scripting language to come up with new policies, covering numerous edge cases and create policies specific your industry and compliance needs.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="max-md:border-b max-md:border-brNeutral grid md:grid-cols-3 grid-cols-1 xl:gap-XXL gap-XL max-md:py-XL">
+                        <div class="flex lg:flex-row flex-col items-start lg:gap-L gap-M">
+                            <img class="xl:block hidden" src="~/img/Governance/Section4/Desktop/Frame 3171-3.svg" />
+                            <img class="xl:hidden block" src="~/img/Governance/Section4/Tablet/Frame 3171-3.svg" />
+                            <div class="flex flex-col gap-S">
+                                <button class="py-S px-SM bg-[#619DFF5C] text-bravo rounded-[6px] text-Small w-fit">On Roadmap</button>
+                                <h3 class="text-large text-headLines">Self-Service Data Access</h3>
+                                <p class="text-Regular text-bodyText">Simplify data access by using the embedded integration with the data catalog of UniLake so users can find and request data access in minutes instead of weeks.</p>
+                            </div>
+                        </div>
+                        <div class="flex lg:flex-row flex-col items-start lg:gap-L gap-M">
+                            <img class="xl:block hidden" src="~/img/Governance/Section4/Desktop/Frame 3171-4.svg" />
+                            <img class="xl:hidden block" src="~/img/Governance/Section4/Tablet/Frame 3171-4.svg" />
+                            <div class="flex flex-col gap-S">
+                                <h3 class="text-large text-headLines">Context Aware Security</h3>
+                                <p class="text-Regular text-bodyText">Combine access attributes (time, location, user specifics) to set rules on what data can be access in what context.</p>
+                            </div>
+                        </div>
+                        <div class="flex lg:flex-row flex-col items-start lg:gap-L gap-M">
+                            <img class="xl:block hidden" src="~/img/Governance/Section4/Desktop/Frame 3171-5.svg" />
+                            <img class="xl:hidden block" src="~/img/Governance/Section4/Tablet/Frame 3171-5.svg" />
+                            <div class="flex flex-col gap-S">
+                                <button class="py-S px-SM bg-[#619DFF5C] text-bravo rounded-[6px] text-Small w-fit">On Roadmap</button>
+                                <h3 class="text-large text-headLines">Just in Time Access</h3>
+                                <p class="text-Regular text-bodyText">Provide frictionless, just-in-time access to data to limit the time and context in which data can be used for a specific use case. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="lg:linear-gradient-governance max-md:linear-gradient-governance">
+        <div class="lg:max-w-8xl md:max-w-5xl w-full px-L mx-auto flex md:flex-row flex-col-reverse md:justify-between max-md:items-center xl:py-XXXL md:py-XXL py-XL xl:gap-XXXL gap-XXL items-center">
+            <div class="flex flex-col gap-M h-fit xl:max-w-[605px] md:max-w-[395px]">
+                <h2 class="xl:text-15 text-H3 leading-[40px] text-headLines">SSO/SCIM for all Access</h2>
+                <p class="xl:text-Regular md:text-Small text-Regular text-bodyText">UniLake only supports SSO authentication for security reasons. Use any SAML 2.0 or OpenID identity provider such as Microsoft Entra ID, KeyCloak, Okta, Auth0, OneLogin, JumpCloud and many more to allow your users to authenticate and make use of your data platform. In order to accelerate the onboarding of data teams, SCIM is supported as well.</p>
+            </div>
+            <div class="w-fit">
+                <img class="xl:block hidden" src="~/img/Governance/Desktop/SCIM.svg" alt="not found">
+                <img class="xl:hidden block" src="~/img/Governance/Tablet/SCIM.svg" alt="not found">
+            </div>
+        </div>
+    </section>
+    <section class="max-lg:md:linear-gradient-governance">
+        <div class="lg:max-w-8xl md:max-w-5xl w-full px-L mx-auto md:justify-between max-md:items-center xl:py-XXXL md:py-XXL py-XL flex md:flex-row flex-col xl:gap-XXXL gap-XXL items-center">
+            <div class="w-fit h-fit">
+                <img class="xl:block hidden" src="~/img/Governance/Desktop/Illustration_Audit_Logs.svg" alt="not found">
+                <img class="xl:hidden block" src="~/img/Governance/Tablet/Illustration_Audit_Logs.svg" alt="not found">
+            </div>
+            <div class="flex flex-col gap-M h-fit xl:max-w-[605px] md:max-w-[395px]">
+                <button class="py-S px-SM bg-[#619DFF5C] rounded-[6px] text-Small text-bravo w-fit flex items-center">
+                    On Roadmap
+                </button>
+                <h1 class="xl:text-15 text-H3 leading-[40px] text-headLines">
+                    Audit Logs
+                </h1>
+                <h4 class="xl:text-Regular md:text-Small text-Regular text-bodyText">
+                    Actions performed on the UniLake platform are logged in an immutable, exportable, time synced and searchable audit logging environment. Easily browse and export audit loggings to see which actions have taken place
+                    on the platform and which data is accessed when, by who and from where.
+                </h4>
+            </div>
+        </div>
+    </section>
+    <section class="lg:linear-gradient-governance max-md:linear-gradient-governance">
+        <div class="lg:max-w-8xl md:max-w-5xl w-full px-L mx-auto flex md:flex-row flex-col-reverse md:justify-between max-md:items-center xl:py-XXXL md:py-XXL py-XL xl:gap-XXXL gap-XXL items-center">
+            <div class="flex flex-col gap-M h-fit xl:max-w-[605px] md:max-w-[395px]">
+                <h2 class="xl:text-15 text-H3 leading-[40px] text-headLines">Customer Managed Keys</h2>
+                <p class="xl:text-Regular md:text-Small text-Regular text-bodyText">Whenever a connection is made to a data source sensitive information on how to authenticate is needed. In order to protect this sensitive information, you can connect your own Key Management System and use those details to connect to your sources. In case you don't manage your secrets yourself, UniLake comes with a built-in solution.</p>
+            </div>
+            <div class="w-fit">
+                <img class="xl:block hidden" src="~/img/Governance/Desktop/Illustration_Customer_Managed_Keys.svg" alt="not found">
+                <img class="xl:hidden block" src="~/img/Governance/Tablet/Illustration_Customer_Managed_Keys.svg" alt="not found">
+            </div>
+        </div>
+    </section>
+</div>
