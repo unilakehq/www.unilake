@@ -4759,6 +4759,11 @@ header {
   color: rgb(39 39 42 / var(--tw-text-opacity, 1));
 }
 
+.text-\[black\]{
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity, 1));
+}
+
 .placeholder-body::-moz-placeholder{
   --tw-placeholder-opacity: 1;
   color: rgb(193 197 192 / var(--tw-placeholder-opacity, 1));
