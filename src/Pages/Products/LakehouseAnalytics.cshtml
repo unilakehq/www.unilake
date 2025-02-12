@@ -2,7 +2,7 @@
 @attribute [RenderStatic]
 @model www.unilake.Pages.Products.LakehouseAnalyticsModel
 @{
-    ViewData["Title"] = "Unilake.Www Lakehouse Analytics";
+    ViewData["Title"] = "Lakehouse Analytics | Unilake";
 }
 
 <div class="mx-auto font-inter bg-white">
@@ -15,21 +15,20 @@
             <div class="flex flex-col gap-SM">
                 <div class="flex md:gap-M gap-SM">
                     <h3 class="text-brand text-Regular">Lakehouse analytics</h3>
-                    <button class="xl:block hidden py-XXS px-S bg-[#FF684940] text-onBrand text-Small rounded-[6px]">Badge</button>
                 </div>
                 <h1 class="text-headLines xl:text-headline2 text-headline3">Billions of records analysed in milliseconds</h1>
             </div>
-            <h4 class="text-Regular text-bodyText">Lorem ipsum dolor sit amet consectetur. Augue aliquam lacus enim luctus consectetur amet blandit. Eu eleifend ipsum quam quam nunc ligula at. </h4>
+            <h4 class="text-Regular text-bodyText">Spin up a virtual or isolated warehouse and analyse your data lake using StarRocks™ query engine</h4>
             <div class="flex md:flex-row flex-col w-full gap-M">
-                <button class="bg-brand brand-color-button xl:px-L xl:py-SM px-M py-S rounded-S xl:text-14 text-Small font-[600] text-neutral">Book a Demo</button>
-                <button class="bg-neutral bg-less-logo-button border border-brNeutral xl:px-L xl:py-SM px-M py-S rounded-S flex justify-center items-center gap-S">
+                <a href="https://cal.com/mrhamburg" class="bg-brand brand-color-button xl:px-L xl:py-SM px-M py-S rounded-S xl:text-14 text-Small font-[600] text-neutral">Book a Demo</a>
+                <a href="https://docs.unilake.com" class="bg-neutral bg-less-logo-button border border-brNeutral xl:px-L xl:py-SM px-M py-S rounded-S flex justify-center items-center gap-S">
                     <h4 class="xl:text-14 text-Small font-[600] text-headLines">
                         View documentation
                     </h4>
                     <svg width="16" height="17" viewBox="0 0 16 17" fill="#252532" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M6.31344 4.14645C6.5087 3.95118 6.82528 3.95118 7.02055 4.14645L11.0205 8.14645C11.2158 8.34171 11.2158 8.65829 11.0205 8.85355L7.02055 12.8536C6.82528 13.0488 6.5087 13.0488 6.31344 12.8536C6.11818 12.6583 6.11818 12.3417 6.31344 12.1464L9.95989 8.5L6.31344 4.85355C6.11818 4.65829 6.11818 4.34171 6.31344 4.14645Z" />
                     </svg>
-                </button>
+                </a>
             </div>
         </div>
            <div class="w-fit h-fit">
@@ -52,10 +51,10 @@
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M28.1451 30.7797C26.3882 29.3366 24.4509 27.7445 23.4235 26.8896C23.047 26.5758 22.7882 26.3641 22.7019 26.3013C22.2078 25.8856 21.8157 25.1641 22.6549 24.6621C23.0235 24.4425 29.2902 20.8503 31.6039 19.517C32.4196 19.0464 33.4157 19.0464 34.2313 19.517C35.3372 20.1601 38.6627 22.0739 38.6627 22.0739C39.0157 22.2778 39.0157 22.7797 38.6627 22.9758L28.2941 28.9131C27.6039 29.3131 27.5255 30.2699 28.1372 30.7797H28.1451Z" fill="#FACCBB" />
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M30.7333 34.992L26.5137 41.4234C26.2078 41.8862 25.5961 42.0352 25.1176 41.7528L22.3176 40.1371C21.5098 39.6665 21 38.8038 21 37.8626V27.1332C21 26.3018 21.4 25.5254 22.0588 25.0312C21.3059 25.6116 21.6039 26.2548 22.1059 26.6705C22.1765 26.7254 28.3804 31.8313 30.5294 33.6038C30.9451 33.9411 31.0314 34.5371 30.7412 34.9842L30.7333 34.992Z" fill="#F37441" />
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M37.7059 34.2148C39.4628 35.658 41.4001 37.2501 42.4275 38.105C42.804 38.4188 43.0628 38.6305 43.1491 38.6933C43.6432 39.109 44.0353 39.8305 43.1961 40.3325C42.8275 40.5521 36.5608 44.1443 34.2471 45.4776C33.4314 45.9482 32.4353 45.9482 31.6197 45.4776C30.5138 44.8344 27.1883 42.9207 27.1883 42.9207C26.8353 42.7168 26.8353 42.2148 27.1883 42.0188L37.5569 36.0815C38.2471 35.6815 38.3255 34.7246 37.7138 34.2148H37.7059Z" fill="#F37441" />
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M35.1098 30.0034L39.3294 23.5721C39.6353 23.1093 40.2471 22.9603 40.7255 23.2426L43.5255 24.8583C44.3333 25.3289 44.8431 26.1917 44.8431 27.1328V37.8623C44.8431 38.6936 44.4431 39.4701 43.7843 39.9642C44.5373 39.3838 44.2392 38.7407 43.7373 38.325C43.6667 38.2701 37.4627 33.1642 35.3137 31.3917C34.898 31.0544 34.8118 30.4583 35.102 30.0113L35.1098 30.0034Z" fill="#F37441" />
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.1098 30.0034L39.3294 23.5721C39.6353 23.1093 40.2471 22.9603 40.7255 23.2426L43.5255 24.8583C44.3333 25.3289 44.8431 26.1917 44.8431 27.1328V37.8623C44.8431 38.6936 44.4431 39.4701 43.7843 39.9642C44.5373 39.3838 44.2392 38.7407 43.7373 38.325C43.6667 38.2701 37.4627 33.1642 35.3137 31.3917C34.898 31.0544 34.8118 30.4583 35.102 30.0113L35.1098 30.0034Z" fill="#F37441" />
                 </svg>
-                <h3 class="text-headLines xl:text-H2 md:text-Regular text-H2">StarRocks™ Engine</h3>
-                <p class="text-bodyText xl:text-Regular md:text-Small text-Regular xl:max-w-[438px] md:max-w-[245px]">Every domain in UniLake is connected to StarRocks cluster of your needs. Set resource groups when assigning domains.</p>
+                <h3 class="text-headLines xl:text-H2 md:text-Regular text-H2">StarRocks™ Engine</h3>
+                <p class="text-bodyText xl:text-Regular md:text-Small text-Regular xl:max-w-[438px] md:max-w-[245px]">Every workspace has its own StarRocks™ environment, either by using virtual warehouses or separate clusters. Get the performance you need.</p>
             </div>
             <div class="flex flex-col gap-M rounded-L">
                 <svg class="xl:block hidden" width="105" height="104" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -106,8 +105,8 @@
                     <path d="M27.2856 22.2154V26.7868C27.2856 28.0492 28.309 29.0725 29.5714 29.0725H45.5714C46.8338 29.0725 47.8571 28.0492 47.8571 26.7868V22.2154C47.8571 20.953 46.8338 19.9297 45.5714 19.9297H29.5714C28.309 19.9297 27.2856 20.953 27.2856 22.2154Z" stroke="#FF6849" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                     <path d="M18.1428 37.0725L22.7143 32.5011L18.1428 27.9297" stroke="#FF6849" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
-                <h3 class="text-headLines xl:text-H2 md:text-Regular text-H2">Realtime Endpoint</h3>
-                <p class="text-bodyText xl:text-Regular md:text-Small text-Regular xl:max-w-[438px] md:max-w-[245px]">Push data to UniLake and analyze in realtime with sub-second latency. Stay up to date. </p>
+                <h3 class="text-headLines xl:text-H2 md:text-Regular text-H2">Realtime Analytics</h3>
+                <p class="text-bodyText xl:text-Regular md:text-Small text-Regular xl:max-w-[438px] md:max-w-[245px]">Stream your data into your lakehouse and apply analytics and AI/ML workloads with minimum latency</p>
             </div>
         </div>
     </section>
@@ -149,9 +148,6 @@
                 @await Html.PartialAsync("Logos/LakeAnalyticsPage/Illustration_Data_Products_Code")
             </div>
             <div class="flex flex-col gap-M h-fit xl:max-w-[605px] md:max-w-[395px]">
-                <button class="py-S px-SM bg-[#619DFF5C] rounded-[6px] text-Small text-bravo w-fit h-fit flex items-center">
-                    Coming Soon
-                </button>
                 <h1 class="xl:text-15 text-H3 leading-[40px] text-headLines">
                     Data Products as Code
                 </h1>
@@ -168,7 +164,7 @@
                     Unified format
                 </h1>
                 <h4 class="xl:text-Regular md:text-Small text-Regular text-bodyText">
-                    Access different file formats from a single unified platform. Whether your data is stored in Iceberg, Delta or Hudi format, UniLake allows you to query and combine your data in a single interface. 
+                    Access different file formats from a single unified platform. Whether your data is stored in Iceberg, Delta, Hudi, Kudu or Paimon format, UniLake allows you to query and combine your data in a single interface. 
                 </h4>
             </div>
             <div class="w-fit h-fit">
@@ -193,7 +189,7 @@
                 </div>
                 <div class="flex flex-col xl:gap-L gap-M xl:max-w-[664px] md:max-w-[600px]">
                     <h2 class="text-headLines text-H3 leading-[40px]">Multiple Endpoints</h2>
-                    <p class="text-Regular text-bodyText">Make use of different connection types, supporting SQL, S3 and rest API to access and query your data in an ecosystem of your choice. Governance and security is applied universally to any of these endpoints.</p>
+                    <p class="text-Regular text-bodyText">Make use of different connection types, supporting SQL, Object Storage and rest API to access and query your data in an ecosystem of your choice. Governance and security is applied universally to any of these endpoints.</p>
                 </div>
             </div>
         </div>

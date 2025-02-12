@@ -2405,6 +2405,10 @@ header {
   min-height: 100vh;
 }
 
+.min-h-\[194px\]{
+  min-height: 194px;
+}
+
 .w-0{
   width: 0px;
 }
@@ -2596,6 +2600,10 @@ header {
 
 .min-w-full{
   min-width: 100%;
+}
+
+.min-w-\[300px\]{
+  min-width: 300px;
 }
 
 .max-w-2xl{
@@ -6727,6 +6735,10 @@ header {
     min-height: 390px;
   }
 
+  .md\:min-h-\[194px\]{
+    min-height: 194px;
+  }
+
   .md\:w-\[292px\]{
     width: 292px;
   }
@@ -6754,6 +6766,10 @@ header {
 
   .md\:min-w-\[200px\]{
     min-width: 200px;
+  }
+
+  .md\:min-w-\[300px\]{
+    min-width: 300px;
   }
 
   .md\:max-w-5xl{

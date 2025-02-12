@@ -2,7 +2,7 @@
 @attribute [RenderStatic]
 @inject MarkdownBlog Blog
 @{
-    ViewData["Title"] = "Unilake.Www Support";
+    ViewData["Title"] = "Support | Unilake";
 }
 <div class="bg-white border-b border-brNeutral">
     <div class="lg:max-w-8xl md:max-w-5xl w-full px-L mx-auto md:py-XXXL md:gap-XXL py-XXL gap-XL grid grid-cols-1">
@@ -10,8 +10,7 @@
             <h1 class="xl:text-headline2 md:text-15 md:leading-[48px] text-headline3 text-brand">Support</h1>
             <div class="flex flex-col gap-S">
                 <p class="text-Regular text-bodyText">
-                    Lorem ipsum dolor sit amet consectetur. Augue aliquam lacus enim luctus
-                    consectetur amet blandit. Eu eleifend ipsum quam quam nunc ligula at.
+                    Depending on your needs, Unilake offers various options for gaining support
                 </p>
             </div>
         </div>
@@ -80,8 +79,7 @@
                     <div class="gap-S flex flex-col h-full">
                         <span class="text-[20px] leading-[32px] font-[400] text-headLines">Feature Requests</span>
                         <span class="xl:text-Regular md:text-Small text-Regular text-bodyText dark:bg-black dark:text-neutral h-[84px]">
-                            Want
-                            to suggest a new feature? Share it with us and the community.
+                            Want to suggest a new feature? Share it with us and the community.
                         </span>
                     </div>
                     <a href="https://github.com/unilakehq/unilake/issues/new?template=feature-request.md" class="bg-neutral support-logo-button-t1 border border-brNeutral xl:px-L xl:py-SM md:px-M md:py-S px-L py-SM rounded-S flex gap-S flex items-center justify-center lg:w-fit w-full xl:h-[48px] lg:h-[40px] h-[48px]">
@@ -106,7 +104,7 @@
                 </div>
                 <div class="grid gap-M pt-M">
                     <div class="gap-S flex flex-col h-full">
-                        <span class="text-[20px] leading-[32px] font-[400] text-headLines">Issues</span>
+                        <span class="text-[20px] leading-[32px] font-[400] text-headLines">Community</span>
                         <span class="xl:text-Regular md:text-Small text-Regular text-bodyText dark:bg-black dark:text-neutral h-[84px]">
                             Join our GitHub discussions or our Zulip server to browse for help and best practices.
                         </span>
@@ -134,12 +132,6 @@
 <div class="bg-neutral border-b border-brNeutral">
     <div class="lg:max-w-8xl md:max-w-5xl w-full px-L mx-auto grid md:py-XXXL md:gap-XXL py-XXL gap-XL font-inter">
         @await Html.PartialAsync("support/FAQ")
-    </div>
-</div>
-@await Html.PartialAsync("support/ContactEnterpriseSales")
-<div class="bg-white">
-    <div class="lg:max-w-8xl md:max-w-5xl w-full px-L mx-auto grid md:py-XXXL md:gap-XXL py-XL gap-XL grid-cols-1">
-        @await Html.PartialAsync("support/ContactUs")
     </div>
 </div>
 

@@ -2,7 +2,7 @@
 @attribute [RenderStatic]
 @model www.unilake.Pages.Products.DataManagementModel
 @{
-ViewData["Title"] = "Unilake.Www Data Management";
+    ViewData["Title"] = "Data Management | Unilake";
 }
 
 <div class="bg-white">
@@ -15,26 +15,24 @@ ViewData["Title"] = "Unilake.Www Data Management";
                 <div class="flex flex-col gap-SM">
                     <div class="flex md:gap-M gap-SM">
                         <h3 class="text-brand text-Regular">Data Management</h3>
-                        <button class="xl:block hidden py-XXS px-S bg-[#FF684940] text-onBrand text-Small rounded-[6px]">Badge</button>
                     </div>
                     <h1 class="text-headLines xl:text-headline2 text-headline3 textfont-[700]">
                         Elevate your data quality, visibility,reliability and access
                     </h1>
                 </div>
                 <h4 class="text-Regular text-bodyText">
-                    Lorem ipsum dolor sit amet consectetur. Augue aliquam lacus enim
-                    luctus consectetur amet blandit. Eu eleifend ipsum quam quam nunc ligula at.
+                    Utilize Unilake's advanced data management tools to ensure data quality, visibility, reliability, and access for your organization
                 </h4>
                 <div class="flex md:flex-row flex-col w-full gap-M">
-                    <button class="bg-brand brand-color-button xl:px-L xl:py-SM px-M py-S rounded-S xl:text-14 text-Small font-[600] text-neutral">Book a Demo</button>
-                    <button class="bg-neutral bg-less-logo-button border border-brNeutral xl:px-L xl:py-SM px-M py-S rounded-S flex justify-center items-center gap-S">
+                    <a href="https://cal.com/mrhamburg" class="bg-brand brand-color-button xl:px-L xl:py-SM px-M py-S rounded-S xl:text-14 text-Small font-[600] text-neutral">Book a Demo</a>
+                    <a href="https://docs.unilake.com" class="bg-neutral bg-less-logo-button border border-brNeutral xl:px-L xl:py-SM px-M py-S rounded-S flex justify-center items-center gap-S">
                         <h4 class="xl:text-14 text-Small font-[600] text-headLines">
                             View documentation
                         </h4>
                         <svg width="16" height="17" viewBox="0 0 16 17" fill="#252532" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M6.31344 4.14645C6.5087 3.95118 6.82528 3.95118 7.02055 4.14645L11.0205 8.14645C11.2158 8.34171 11.2158 8.65829 11.0205 8.85355L7.02055 12.8536C6.82528 13.0488 6.5087 13.0488 6.31344 12.8536C6.11818 12.6583 6.11818 12.3417 6.31344 12.1464L9.95989 8.5L6.31344 4.85355C6.11818 4.65829 6.11818 4.34171 6.31344 4.14645Z" />
                         </svg>
-                    </button>
+                    </a>
                 </div>
             </div>
             <div class="w-fit h-fit">
@@ -170,8 +168,8 @@ ViewData["Title"] = "Unilake.Www Data Management";
                     Data Domains
                 </h1>
                 <h4 class="xl:text-Regular md:text-Small text-Regular text-bodyText">
-                    At the heart of the UniLake is the concept of working in domains, so called data domains. As data can be scattered in different domains and even different clouds, within UniLake you are given one overview of all the data in different 
-                    domains and how they are connected and use between the domains. 
+                    At the heart of UniLake is the concept of working in domains, so called data domains. As data can be scattered in different domains and even different clouds, within UniLake you are given one overview of all the data in different 
+                    domains and how they are connected and used between the domains. 
                 </h4>
             </div>
             <div class="w-fit h-fit">
@@ -184,14 +182,11 @@ ViewData["Title"] = "Unilake.Www Data Management";
             @await Html.PartialAsync("Logos/DataManagement/Illustration_End-to-End")
         </div>
         <div class="flex flex-col gap-M h-fit xl:max-w-[605px] md:max-w-[395px]">
-            <button class="py-S px-SM bg-[#619DFF5C] rounded-[6px] text-Small text-bravo w-fit flex items-center">
-                On Roadmap
-            </button>
             <h1 class="xl:text-15 text-H3 leading-[40px] text-headLines">
                 End-to-End Data Lineage
             </h1>
             <h4 class="xl:text-Regular md:text-Small text-Regular text-bodyText">
-                The moment data is made available inside of the UniLake, data lineage is 
+                The moment data is made available inside of UniLake, data lineage is 
                 registered. Making use of SQLMesh as its transformation engine, any transformations done on the data is tracked and lineage is stored. This allows for an end-to-end overview of all sources and data flows within your data
                 estate. Whether this is within a single domain or crossing multiple domains. 
             </h4>
@@ -218,11 +213,8 @@ ViewData["Title"] = "Unilake.Www Data Management";
                     <path d="M42.643 30.3574C42.643 32.8664 37.3663 34.9003 30.8572 34.9003C24.3482 34.9003 19.0715 32.8664 19.0715 30.3574" stroke="#FF6849" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                     <path d="M19.0715 23.1152V37.6009C19.0715 39.9566 23.6872 41.877 29.6837 42.1183" stroke="#FF6849" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
-                <button class="py-S px-SM bg-[#619DFF5C] rounded-[6px] text-Small text-bravo w-fit flex items-center">
-                    On Roadmap
-                </button>
                 <h1 class="text-headLines xl:text-H2 md:text-Regular text-H2">Data Quality Checks</h1>
-                <p class="text-bodyText xl:text-Regular md:text-Small text-Regular xl:max-w-[438px] md:max-w-[245px]">Write tests to check if the data quality of a data product is correct. Notify any downstream users of your data in case data quality is below a certain threshold.</p>
+                <p class="text-bodyText xl:text-Regular md:text-Small text-Regular xl:max-w-[438px] md:max-w-[245px]">Write tests to check if the data quality of a data product is correct. Notify any downstream users in case data quality is below a certain threshold.</p>
             </div>
             <div class="flex flex-col gap-M rounded-L">
                 <svg class="xl:block hidden" width="105" height="104" viewBox="0 0 105 104" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -253,9 +245,6 @@ ViewData["Title"] = "Unilake.Www Data Management";
                     <path d="M39.4297 43.4832C39.5778 43.4832 39.6978 43.3632 39.6978 43.2153C39.6978 43.0673 39.5778 42.9473 39.4297 42.9473" stroke="#FF6849" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                     <path d="M42.6431 28.7509V23.1152" stroke="#FF6849" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
-                <button class="py-S px-SM bg-[#619DFF5C] rounded-[6px] text-Small text-bravo w-fit flex items-center">
-                    On Roadmap
-                </button>
                 <h1 class="text-headLines xl:text-H2 md:text-Regular text-H2">Shift Left Warnings</h1>
                 <p class="text-bodyText xl:text-Regular md:text-Small text-Regular xl:max-w-[438px] md:max-w-[245px]">Whenever you make changes to your data, you are given an overview of the impact this change has to any downstream users.</p>
             </div>
@@ -278,9 +267,6 @@ ViewData["Title"] = "Unilake.Www Data Management";
                     <path d="M29.7856 36.2511C30.0815 36.2511 30.3214 36.0113 30.3214 35.7154C30.3214 35.4195 30.0815 35.1797 29.7856 35.1797" stroke="#FF6849" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                     <path d="M25.5001 46.4297L19.0715 40.0011L27.643 31.4297H34.0715V37.8583L25.5001 46.4297Z" stroke="#FF6849" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
-                <button class="py-S px-SM bg-[#619DFF5C] rounded-[6px] text-Small text-bravo w-fit flex items-center">
-                    On Roadmap
-                </button>
                 <h1 class="text-headLines xl:text-H2 md:text-Regular text-H2">Automated Data Classification</h1>
                 <p class="text-bodyText xl:text-Regular md:text-Small text-Regular xl:max-w-[438px] md:max-w-[245px]">Let UniLake auto classify your datasets so that no data is kept unclassified, to prevent unauthorized data access on newly introduced data products. </p>
             </div>

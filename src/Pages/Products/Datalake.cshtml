@@ -2,7 +2,7 @@
 @attribute [RenderStatic]
 @model www.unilake.Pages.Products.DatalakeModel
 @{
-    ViewData["Title"] = "Unilake.Www Data Management";
+    ViewData["Title"] = "Data Lake | Unilake";
 }
 
 <div class="bg-white">
@@ -14,24 +14,25 @@
                 <img class="max-md:block hidden h-[54px] w-[54px]" src="~/img/DataLake/section1Mobile.svg" alt="Alternate Text" />
                 <div class="flex flex-col gap-SM">
                     <div class="flex gap-M items-center">
-                        <h4 class="text-Regular text-brand">Datalake</h4>
-                        <button class="xl:py-XXS xl:px-S py-S px-SM bg-[#619DFF5C] text-bravo rounded-[6px] text-Small">Cloud Only</button>
+                        <h4 class="text-Regular text-brand">Data Lake</h4>
                     </div>
                     <h1 class="xl:text-headline2 text-headline3 text-headLines">
                         The unified data lake for all your data, anywhere!
                     </h1>
                 </div>
-                <p class="text-Regular text-bodyText">Lorem ipsum dolor sit amet consectetur. Augue aliquam lacus enim luctus consectetur amet blandit. Eu eleifend ipsum quam quam nunc ligula at. </p>
+                <p class="text-Regular text-bodyText">
+                    Utilize Unilake's fully integrated data lake solution that provides a seamless and cost-effective way to manage, analyze, and secure your vast amounts of data.
+                </p>
                 <div class="flex md:flex-row flex-col gap-M">
-                    <button class="bg-brand xl:py-SM xl:px-L py-S px-M xl:text-14 text-small text-neutral rounded-S brand-color-button">Book a Demo</button>
-                    <button class="flex gap-S items-center justify-center bg-neutral xl:py-SM xl:px-L py-S px-M border border-brNeutral bg-neutral rounded-S bg-less-input">
+                    <a href="https://cal.com/mrhamburg" class="bg-brand xl:py-SM xl:px-L py-S px-M xl:text-14 text-small text-neutral rounded-S brand-color-button">Book a Demo</a>
+                    <a href="https://docs.unilake.com" class="flex gap-S items-center justify-center bg-neutral xl:py-SM xl:px-L py-S px-M border border-brNeutral bg-neutral rounded-S bg-less-input">
                         <h4 class="xl:text-14 text-small text-headLines">
                             View documentation
                         </h4>
                         <svg width="16" height="17" viewBox="0 0 16 17" fill="#252532" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M6.31344 4.14645C6.5087 3.95118 6.82528 3.95118 7.02055 4.14645L11.0205 8.14645C11.2158 8.34171 11.2158 8.65829 11.0205 8.85355L7.02055 12.8536C6.82528 13.0488 6.5087 13.0488 6.31344 12.8536C6.11818 12.6583 6.11818 12.3417 6.31344 12.1464L9.95989 8.5L6.31344 4.85355C6.11818 4.65829 6.11818 4.34171 6.31344 4.14645Z" />
                         </svg>
-                    </button>
+                    </a>
                 </div>
             </div>
             <div class="w-fit h-fit">
@@ -130,15 +131,15 @@
             </div>
             <div class="flex flex-col gap-M h-fit xl:max-w-[605px] md:max-w-[395px]">
                 <h2 class="xl:text-15 text-H3 leading-[40px] text-headLines">Unified Data Lake</h2>
-                <p class="xl:text-Regular md:text-Small text-Regular text-bodyText">Whether you store your data in the cloud or locally, UniLake provides a unified data access layer for your data. Use the self-hosted option to connect to local data and scale-out or combine data from different cloud environments by leveraging the unified data lake pending to be offered as a cloud solution.</p>
+                <p class="xl:text-Regular md:text-Small text-Regular text-bodyText">Whether you store your data in the cloud or locally, UniLake provides a unified data access layer for your data. Use the self-hosted option to connect to local data and scale-out or combine data from different cloud environments.</p>
             </div>
         </div>
     </section>
-    <section class="linear-gradient-4">
+    <section class="linear-gradient-4 hidden">
         <div class="lg:max-w-8xl md:max-w-5xl w-full px-L mx-auto flex md:flex-row flex-col-reverse md:justify-between max-md:items-center xl:py-XXXL md:py-XXL py-XL xl:gap-XXXL gap-XXL items-center">
             <div class="flex flex-col gap-M h-fit xl:max-w-[605px] md:max-w-[395px]">
                 <h2 class="xl:text-15 text-H3 leading-[40px] text-headLines">Single Point of Entry</h2>
-                <p class="xl:text-Regular md:text-Small text-Regular text-bodyText">Wherever your data lives on the planet, using the UniLake cloud offering you can connect to your data from a single endpoint. Your data can be stored at AWS, Google Cloud, Azure and locally. Connecting to your data can be done using a single point of entry, no need to move data between clouds yourself, the hosted UniLake has you covered.</p>
+                <p class="xl:text-Regular md:text-Small text-Regular text-bodyText">Wherever your data lives, using Unilake you can connect to your data from a single endpoint. Your data can be stored at AWS, Google Cloud, Azure and locally. Connecting to your data can be done using a single point of entry, no need to move data between clouds yourself, UniLake has you covered.</p>
             </div>
             <div class="w-fit">
                 <img class="xl:block hidden" src="~/img/DataLake/Desktop/Illustration_Single_Point_Entry.svg" alt="not found">
@@ -146,7 +147,7 @@
             </div>
         </div>
     </section>
-    <section class="bg-white">
+    <section class="bg-white hidden">
         <div class="lg:max-w-8xl md:max-w-5xl w-full px-L mx-auto flex md:flex-row flex-col md:justify-between max-md:items-center xl:py-XXXL md:py-XXL py-XL xl:gap-XXXL md:gap-XL">
             <div class="flex flex-col items-center gap-XL">
                 <div class="flex justify-center">
@@ -155,7 +156,7 @@
                 </div>
                 <div class="flex flex-col xl:gap-L gap-M xl:max-w-[664px] md:max-w-[600px]">
                     <h2 class="text-headLines text-H3 leading-[40px]">Zero Copy principle</h2>
-                    <p class="text-Regular text-bodyText">No need to copy data between domains, or even cloud vendors. Using the UniLake hosted solution you connect your existing data lake and UniLake seamlessly makes this data available. Combine data from different clouds without needing to copy over the data in advance, its ready in an instant.</p>
+                    <p class="text-Regular text-bodyText">No need to copy data between domains, or even cloud vendors. Using UniLake you connect your existing data lake and UniLake seamlessly makes this data available. Combine data from different clouds without needing to copy over the data in advance, its ready in an instant.</p>
                 </div>
             </div>
             <div class="flex flex-col items-center gap-XL">
@@ -227,8 +228,8 @@
                     <path d="M27.7622 36.69V31.4519C27.7622 30.8733 28.2312 30.4043 28.8098 30.4043H37.1908C37.7694 30.4043 38.2384 30.8733 38.2384 31.4519V36.69C38.2384 37.2686 37.7694 37.7376 37.1908 37.7376H28.8098C28.2312 37.7376 27.7622 37.2686 27.7622 36.69Z" stroke="#FF6849" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                     <path d="M29.3335 30.4049V27.7858C29.3335 25.7608 30.9751 24.1191 33.0002 24.1191C35.0252 24.1191 36.6668 25.7608 36.6668 27.7858V30.4049" stroke="#FF6849" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
-                <h3 class="text-headLines xl:text-H2 md:text-Regular text-H2">Encryption at Rest</h3>
-                <p class="text-bodyText xl:text-Regular md:text-Small text-Regular xl:max-w-[438px] md:max-w-[245px]">Data stored in the UniLake cloud platform is encrypted at rest using 512 bit encryption.</p>
+                <h3 class="text-headLines xl:text-H2 md:text-Regular text-H2">Governed and secured</h3>
+                <p class="text-bodyText xl:text-Regular md:text-Small text-Regular xl:max-w-[438px] md:max-w-[245px]">Data stored and used in Unilake is governed and managed by all policies set, independent of endpoint type being used.</p>
             </div>
             <div class="flex flex-col gap-M rounded-L">
                 <svg class="xl:block hidden" width="105" height="105" viewBox="0 0 105 105" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -252,7 +253,7 @@
                     <path d="M34.5493 32.0918L36.946 34.4885" stroke="#FF6849" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
                 <h3 class="text-headLines xl:text-H2 md:text-Regular text-H2">Bring your own KMS</h3>
-                <p class="text-bodyText xl:text-Regular md:text-Small text-Regular xl:max-w-[438px] md:max-w-[245px]">Choose between using a platform managed key for encryption or connect your own KMS. Key-rotation is supported on-demand.</p>
+                <p class="text-bodyText xl:text-Regular md:text-Small text-Regular xl:max-w-[438px] md:max-w-[245px]">Choose between using a platform managed key for encryption or connect your own KMS.</p>
             </div>
         </div>
     </section>
