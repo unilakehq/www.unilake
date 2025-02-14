@@ -2405,10 +2405,6 @@ header {
   min-height: 100vh;
 }
 
-.min-h-\[194px\]{
-  min-height: 194px;
-}
-
 .w-0{
   width: 0px;
 }
@@ -2586,10 +2582,6 @@ header {
   min-width: 0px;
 }
 
-.min-w-\[152px\]{
-  min-width: 152px;
-}
-
 .min-w-\[180px\]{
   min-width: 180px;
 }
@@ -2600,10 +2592,6 @@ header {
 
 .min-w-full{
   min-width: 100%;
-}
-
-.min-w-\[300px\]{
-  min-width: 300px;
 }
 
 .max-w-2xl{
@@ -4767,11 +4755,6 @@ header {
   color: rgb(39 39 42 / var(--tw-text-opacity, 1));
 }
 
-.text-\[black\]{
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity, 1));
-}
-
 .placeholder-body::-moz-placeholder{
   --tw-placeholder-opacity: 1;
   color: rgb(193 197 192 / var(--tw-placeholder-opacity, 1));
@@ -4969,10 +4952,6 @@ header {
 
 .duration-100{
   transition-duration: 100ms;
-}
-
-.duration-1000{
-  transition-duration: 1000ms;
 }
 
 .duration-150{
@@ -6731,12 +6710,12 @@ header {
     height: 84px;
   }
 
-  .md\:min-h-\[390px\]{
-    min-height: 390px;
-  }
-
   .md\:min-h-\[194px\]{
     min-height: 194px;
+  }
+
+  .md\:min-h-\[390px\]{
+    min-height: 390px;
   }
 
   .md\:w-\[292px\]{
@@ -6802,6 +6781,10 @@ header {
 
   .md\:max-w-xl{
     max-width: 36rem;
+  }
+
+  .md\:max-w-4xl{
+    max-width: 56rem;
   }
 
   .md\:grid-cols-1{
