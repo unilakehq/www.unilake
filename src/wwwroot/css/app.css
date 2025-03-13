@@ -1999,6 +1999,11 @@ header {
   margin-bottom: 16px;
 }
 
+.mx-5{
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+}
+
 .-mb-px{
   margin-bottom: -1px;
 }
@@ -2693,6 +2698,10 @@ header {
 
 .min-w-0{
   min-width: 0px;
+}
+
+.min-w-\[152px\]{
+  min-width: 152px;
 }
 
 .min-w-\[180px\]{
@@ -6484,6 +6493,11 @@ header {
     margin-right: 1rem;
   }
 
+  .sm\:mx-5{
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+  }
+
   .sm\:mx-auto{
     margin-left: auto;
     margin-right: auto;
@@ -6623,6 +6637,10 @@ header {
     border-radius: 0.25rem;
   }
 
+  .sm\:rounded-2xl{
+    border-radius: 1rem;
+  }
+
   .sm\:rounded-XL{
     border-radius: 32px;
   }
@@ -6757,6 +6775,16 @@ header {
     margin-right: 16px;
   }
 
+  .md\:mx-10{
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+  }
+
+  .md\:mx-20{
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+
   .md\:-mt-24{
     margin-top: -6rem;
   }
@@ -6787,6 +6815,10 @@ header {
 
   .md\:mt-L{
     margin-top: 24px;
+  }
+
+  .md\:mt-2{
+    margin-top: 0.5rem;
   }
 
   .md\:line-clamp-none{
@@ -6832,12 +6864,16 @@ header {
     height: 84px;
   }
 
-  .md\:min-h-\[194px\]{
-    min-height: 194px;
+  .md\:h-8{
+    height: 2rem;
   }
 
   .md\:min-h-\[390px\]{
     min-height: 390px;
+  }
+
+  .md\:min-h-\[194px\]{
+    min-height: 194px;
   }
 
   .md\:w-\[292px\]{
@@ -6863,6 +6899,14 @@ header {
   .md\:w-fit{
     width: -moz-fit-content;
     width: fit-content;
+  }
+
+  .md\:w-full{
+    width: 100%;
+  }
+
+  .md\:w-8{
+    width: 2rem;
   }
 
   .md\:min-w-\[200px\]{
@@ -6917,6 +6961,10 @@ header {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
+  .md\:grid-cols-4{
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
   .md\:flex-row{
     flex-direction: row;
   }
@@ -6967,6 +7015,14 @@ header {
 
   .md\:rounded-lg{
     border-radius: 0.5rem;
+  }
+
+  .md\:rounded-2xl{
+    border-radius: 1rem;
+  }
+
+  .md\:rounded-XL{
+    border-radius: 32px;
   }
 
   .md\:border-brNeutral{
@@ -7105,6 +7161,12 @@ header {
     font-weight: 700;
   }
 
+  .md\:text-H5{
+    font-size: 18px;
+    line-height: 21.78px;
+    font-weight: 500;
+  }
+
   .md\:leading-\[48px\]{
     line-height: 48px;
   }
@@ -7207,6 +7269,11 @@ header {
   .lg\:mx-\[56px\]{
     margin-left: 56px;
     margin-right: 56px;
+  }
+
+  .lg\:mx-auto{
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .lg\:-mt-XL{
@@ -7630,6 +7697,10 @@ header {
 
   .xl\:max-w-screen-lg{
     max-width: 1024px;
+  }
+
+  .xl\:max-w-7xl{
+    max-width: 80rem;
   }
 
   .xl\:grid-cols-3{
