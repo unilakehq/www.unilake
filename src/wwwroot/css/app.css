@@ -6785,6 +6785,11 @@ header {
     margin-right: 5rem;
   }
 
+  .md\:mx-L{
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+
   .md\:-mt-24{
     margin-top: -6rem;
   }
