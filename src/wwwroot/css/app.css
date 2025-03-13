@@ -1855,20 +1855,12 @@ header {
   z-index: 100;
 }
 
-.z-\[200\]{
-  z-index: 200;
-}
-
-.z-\[5\]{
-  z-index: 5;
-}
-
-.z-\[3\]{
-  z-index: 3;
-}
-
 .z-\[1\]{
   z-index: 1;
+}
+
+.z-\[200\]{
+  z-index: 200;
 }
 
 .col-span-1{
@@ -2009,11 +2001,6 @@ header {
 .my-M{
   margin-top: 16px;
   margin-bottom: 16px;
-}
-
-.mx-5{
-  margin-left: 1.25rem;
-  margin-right: 1.25rem;
 }
 
 .-mb-px{
@@ -6528,10 +6515,6 @@ header {
     margin-top: 0px;
   }
 
-  .sm\:mt-2{
-    margin-top: 0.5rem;
-  }
-
   .sm\:mt-20{
     margin-top: 5rem;
   }
@@ -6572,10 +6555,6 @@ header {
     height: 11rem;
   }
 
-  .sm\:h-8{
-    height: 2rem;
-  }
-
   .sm\:min-h-\[822px\]{
     min-height: 822px;
   }
@@ -6586,10 +6565,6 @@ header {
 
   .sm\:w-44{
     width: 11rem;
-  }
-
-  .sm\:w-8{
-    width: 2rem;
   }
 
   .sm\:w-full{
@@ -6633,28 +6608,12 @@ header {
     flex-direction: row-reverse;
   }
 
-  .sm\:flex-col{
-    flex-direction: column;
-  }
-
-  .sm\:items-start{
-    align-items: flex-start;
-  }
-
   .sm\:items-center{
     align-items: center;
   }
 
   .sm\:rounded{
     border-radius: 0.25rem;
-  }
-
-  .sm\:rounded-2xl{
-    border-radius: 1rem;
-  }
-
-  .sm\:rounded-XL{
-    border-radius: 32px;
   }
 
   .sm\:rounded-lg{
@@ -6671,10 +6630,6 @@ header {
 
   .sm\:p-6{
     padding: 1.5rem;
-  }
-
-  .sm\:p-L{
-    padding: 24px;
   }
 
   .sm\:px-0{
@@ -6702,19 +6657,9 @@ header {
     padding-right: 2rem;
   }
 
-  .sm\:px-L{
-    padding-left: 24px;
-    padding-right: 24px;
-  }
-
   .sm\:py-32{
     padding-top: 8rem;
     padding-bottom: 8rem;
-  }
-
-  .sm\:py-XXL{
-    padding-top: 64px;
-    padding-bottom: 64px;
   }
 
   .sm\:pb-0{
@@ -6752,12 +6697,6 @@ header {
     line-height: 1;
   }
 
-  .sm\:text-H5{
-    font-size: 18px;
-    line-height: 21.78px;
-    font-weight: 500;
-  }
-
   .sm\:text-lg{
     font-size: 1.125rem;
     line-height: 1.75rem;
@@ -6782,24 +6721,14 @@ header {
     margin: 0px;
   }
 
-  .md\:mx-M{
-    margin-left: 16px;
-    margin-right: 16px;
-  }
-
   .md\:mx-10{
     margin-left: 2.5rem;
     margin-right: 2.5rem;
   }
 
-  .md\:mx-20{
-    margin-left: 5rem;
-    margin-right: 5rem;
-  }
-
-  .md\:mx-L{
-    margin-left: 24px;
-    margin-right: 24px;
+  .md\:mx-M{
+    margin-left: 16px;
+    margin-right: 16px;
   }
 
   .md\:-mt-24{
@@ -6822,6 +6751,10 @@ header {
     margin-left: 5rem;
   }
 
+  .md\:mt-2{
+    margin-top: 0.5rem;
+  }
+
   .md\:mt-24{
     margin-top: 6rem;
   }
@@ -6832,10 +6765,6 @@ header {
 
   .md\:mt-L{
     margin-top: 24px;
-  }
-
-  .md\:mt-2{
-    margin-top: 0.5rem;
   }
 
   .md\:line-clamp-none{
@@ -6873,6 +6802,10 @@ header {
     aspect-ratio: 412/390;
   }
 
+  .md\:h-8{
+    height: 2rem;
+  }
+
   .md\:h-\[32px\]{
     height: 32px;
   }
@@ -6881,16 +6814,12 @@ header {
     height: 84px;
   }
 
-  .md\:h-8{
-    height: 2rem;
-  }
-
   .md\:min-h-\[390px\]{
     min-height: 390px;
   }
 
-  .md\:min-h-\[194px\]{
-    min-height: 194px;
+  .md\:w-8{
+    width: 2rem;
   }
 
   .md\:w-\[292px\]{
@@ -6922,16 +6851,8 @@ header {
     width: 100%;
   }
 
-  .md\:w-8{
-    width: 2rem;
-  }
-
   .md\:min-w-\[200px\]{
     min-width: 200px;
-  }
-
-  .md\:min-w-\[300px\]{
-    min-width: 300px;
   }
 
   .md\:max-w-5xl{
@@ -6990,10 +6911,6 @@ header {
     flex-direction: column;
   }
 
-  .md\:flex-nowrap{
-    flex-wrap: nowrap;
-  }
-
   .md\:items-start{
     align-items: flex-start;
   }
@@ -7030,16 +6947,16 @@ header {
     gap: 92px;
   }
 
-  .md\:rounded-lg{
-    border-radius: 0.5rem;
-  }
-
   .md\:rounded-2xl{
     border-radius: 1rem;
   }
 
   .md\:rounded-XL{
     border-radius: 32px;
+  }
+
+  .md\:rounded-lg{
+    border-radius: 0.5rem;
   }
 
   .md\:border-brNeutral{
@@ -7150,6 +7067,12 @@ header {
     font-weight: 700;
   }
 
+  .md\:text-H5{
+    font-size: 18px;
+    line-height: 21.78px;
+    font-weight: 500;
+  }
+
   .md\:text-Regular{
     font-size: 16px;
     line-height: 28px;
@@ -7176,12 +7099,6 @@ header {
     font-size: 20px;
     line-height: 32px;
     font-weight: 700;
-  }
-
-  .md\:text-H5{
-    font-size: 18px;
-    line-height: 21.78px;
-    font-weight: 500;
   }
 
   .md\:leading-\[48px\]{
@@ -7684,6 +7601,10 @@ header {
     max-width: 48rem;
   }
 
+  .xl\:max-w-7xl{
+    max-width: 80rem;
+  }
+
   .xl\:max-w-\[1000px\]{
     max-width: 1000px;
   }
@@ -7714,10 +7635,6 @@ header {
 
   .xl\:max-w-screen-lg{
     max-width: 1024px;
-  }
-
-  .xl\:max-w-7xl{
-    max-width: 80rem;
   }
 
   .xl\:grid-cols-3{
@@ -7870,10 +7787,6 @@ header {
 
   .\32xl\:w-\[562px\]{
     width: 562px;
-  }
-
-  .\32xl\:max-w-7xl{
-    max-width: 80rem;
   }
 
   .\32xl\:max-w-full{
