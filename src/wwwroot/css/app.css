@@ -1859,6 +1859,18 @@ header {
   z-index: 200;
 }
 
+.z-\[5\]{
+  z-index: 5;
+}
+
+.z-\[3\]{
+  z-index: 3;
+}
+
+.z-\[1\]{
+  z-index: 1;
+}
+
 .col-span-1{
   grid-column: span 1 / span 1;
 }
