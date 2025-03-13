@@ -5,7 +5,7 @@
     ViewData["Title"] = "Unilake.Www Changelog";
 }
 <div class="bg-white">
-    <div class="lg:max-w-8xl md:max-w-5xl w-full px-L mx-auto md:py-XXXL py-XXL">
+    <div class="w-full mx-auto lg:max-w-8xl md:max-w-5xl px-L md:py-XXXL py-XXL">
         <div class="grid grid-cols-1 md:gap-[92px] gap-XL">
             <div class="flex flex-col gap-M">
                 <span class="xl:text-headline2 md:text-15 md:leading-[48px] text-headline3 text-brand">Changelog</span>
@@ -33,7 +33,7 @@
                             </div>
                             <div class="lg:h-full changelog-date-bottom-div"></div>
                         </div>
-                        <div class="bg-neutral p-L rounded-S h-95 w-full lg:-mt-XL lg:ml-0 relative change-log-div">
+                        <div class="relative w-full bg-neutral p-L rounded-S h-95 lg:-mt-XL lg:ml-0 change-log-div">
                             <div class="flex flex-col change-log-card gap-L">
                                 <img src="./img/Pic.png" class="rounded-S">
                                 <h2 class="text-headline3 text-headLines">Introducing Unilake, the self-hosted unified data and AI platform</h2>
@@ -49,13 +49,10 @@
             </div>
         </div>
     </div>
-    <div class="">
-        @await Html.PartialAsync("Subscribe")
-    </div>
 </div>
 
 <script>
-    function showMore(event){
+    function showMore(event) {
         var textElement = event.currentTarget.querySelector('h1');
         if (textElement.textContent.trim() === "Show more") {
             textElement.textContent = "Show less";
@@ -74,17 +71,17 @@
                 card.classList.add('hidden')
                 card.classList.remove('block')
             }
-            console.log(card,'1')
+            console.log(card, '1')
         })
     }
     function toggleTag(event) {
-      const currentTag = event.currentTarget;
-      if (currentTag.classList.contains('active-tag')) {
-          currentTag.classList.remove('active-tag');
-          currentTag.classList.add('inactive-tag');
-      } else {
-          currentTag.classList.remove('inactive-tag');
-          currentTag.classList.add('active-tag');
-      }
+        const currentTag = event.currentTarget;
+        if (currentTag.classList.contains('active-tag')) {
+            currentTag.classList.remove('active-tag');
+            currentTag.classList.add('inactive-tag');
+        } else {
+            currentTag.classList.remove('inactive-tag');
+            currentTag.classList.add('active-tag');
+        }
     }
 </script>
