@@ -2401,6 +2401,10 @@ header {
   height: 24px;
 }
 
+.h-\[300px\]{
+  height: 300px;
+}
+
 .h-\[36px\]{
   height: 36px;
 }
@@ -3805,6 +3809,16 @@ header {
 .object-cover{
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.object-fill{
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
+.object-none{
+  -o-object-fit: none;
+     object-fit: none;
 }
 
 .p-0{
