@@ -11,6 +11,9 @@
         href="@AppConfig.PublicBaseUrl.CombineWith("feed.xml")" />
     <link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
 
+    @* Plausible *@
+    <script defer data-domain="unilake.com" src="https://plausible.io/js/script.js"></script>
+
     <title>@ViewData["Title"]</title>
     <base href="@(RazorSsg.GetBaseHref() ?? "/")" />
     <script>
