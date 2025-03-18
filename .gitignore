@@ -290,3 +290,6 @@ __pycache__/
 *.btm.cs
 *.odx.cs
 *.xsd.cs
+branch_structure.json
+temp_auto_push.bat
+temp_interactive_push.bat
