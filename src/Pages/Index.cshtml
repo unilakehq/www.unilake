@@ -931,36 +931,36 @@
         },
     }
 
-    function updateImage(trigger) {
-        const tabId = trigger.closest('.tab-content').id.replace('-content', '')
-        const accordionTitle = trigger.querySelector('span').textContent
-        const imageElement =
-            document.getElementById(`${tabId}-image`) ||
-            document.getElementById('feature-image')
-        const smallImageElement = document.getElementById(
-            `feature-image-small-${tabId}-${accordionTitle
-                .toLowerCase()
-                .replace(/\s+/g, '-')}`
-        )
-
-        if (images[tabId] && images[tabId][accordionTitle]) {
-            if (imageElement) {
-                imageElement.style.opacity = '0'
-                setTimeout(() => {
-                    imageElement.src = images[tabId][accordionTitle]
-                    imageElement.style.opacity = '1'
-                }, 100)
-            }
-
-            if (smallImageElement) {
-                smallImageElement.style.opacity = '0'
-                setTimeout(() => {
-                    smallImageElement.src = images[tabId][accordionTitle]
-                    smallImageElement.style.opacity = '1'
-                }, 100)
-            }
+   function updateImage(trigger) {
+    const tabId = trigger.closest('.tab-content').id.replace('-content', '')
+    const accordionTitle = trigger.querySelector('span').textContent.trim()
+    
+    const mainImageElement = document.getElementById(`${tabId}-image`) || 
+                            document.getElementById('feature-image')
+    
+    if (images[tabId] && images[tabId][accordionTitle]) {
+        const imagePath = images[tabId][accordionTitle]
+        
+        if (mainImageElement) {
+            mainImageElement.style.opacity = '0'
+            setTimeout(() => {
+                mainImageElement.src = imagePath
+                mainImageElement.style.opacity = '1'
+            }, 100)
+        }
+        
+        const accordionContent = trigger.nextElementSibling
+        const smallImage = accordionContent.querySelector('img')
+        
+        if (smallImage) {
+            smallImage.style.opacity = '0'
+            setTimeout(() => {
+                smallImage.src = imagePath
+                smallImage.style.opacity = '1'
+            }, 100)
         }
     }
+}
 
     tabButtons[0].click()
 </script>
